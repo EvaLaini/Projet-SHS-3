@@ -1,0 +1,67 @@
+U : Utilitarisme
+L : Libertarisme
+K : Kantisme
+(Pour/contre)
+
+Cas 1 :
+Une personne se noie
+Choix :
+- Plonger pour sauver la personne (K/L)
+- Appeler les pompiers et continuer sa route (L)
+- Continuer sa route (L/K)
+
+Cas 2 :
+5€ pour acheter du pain pour toute la famille. Un SDF demande de l’argent pour manger
+Choix :
+- Dire qu’on pas d’argent (mentir) (U/K)
+- Lui donner une partie 
+- Tous lui donner (/U,K)
+
+Cas 3 :
+Dispute entre frère et sœur
+Choix :
+- Intervenir et régler le conflit (U,K/L)
+- Intervenir et disputer tout le monde (/U,L)
+- Ne pas intervenir (L/U,K)
+
+Cas 4 :
+Une personne se fait agresser
+Choix :
+- Ne pas intervenir (L/K)
+- Intervenir (K/U,L)
+- Attendre que l’agresseur s’en aille et secourir la victime (U,L)
+
+Cas 5 :
+Un cambrioleur a pris en otage la famille et menace de les tuer. Il demande où est le coffre-fort.
+Choix :
+- Lui donner l’emplacement du coffre-fort (K,U)
+- Lui dire qu’il peut tuer une personne car elle sert à rien (L/K,U)
+
+Cas 6 :
+Au commissariat après le cambriolage.
+Description des faits
+Choix : 
+- Acte héroïque (mensonge) (U/K)
+- Vérité (K)
+Reconnaître le coupable
+Choix :
+- Dire qu’on reconnaît (mensonge) (U/K,L)
+- Dire qu’on est pas sûr (K,L/U)
+
+Cas limite :
+Meilleur ami a besoin d’un organe et la grand-mère est dans le coma. L’opération la tuerait.
+Choix :
+- Sauver le meilleur ami (U)
+- Le laisser mourir (/U)
+
+Cas limite :
+Suicide d’une personne de l’entourage
+Choix :
+- Empêcher le suicide (/L)
+- Laisser la personne mourir (L)
+
+
+Présentation implicites des courants de pensé (élections municipales, héros à la télé, manifestation…) :
+K : toujours faire des actes moraux et respecter la vie
+L : laisser les autres disposer d’eux-mêmes
+U : maximiser le bonheur collectif au détriment du bonheur individuel
