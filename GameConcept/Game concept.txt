@@ -1,0 +1,30 @@
+Game concept
+
+Idées : 
+- Editeur de personnage ?
+- Le personnage vit des rêves étranges qui le mettent dans des situations particulières, mettant en avant les courants éthiques. Le joueur effectue des choix. Ensuite, durant la journée en fonction des choix qu’il a fait pendant ses rêves différentes possibilités s’offrent à lui. Typiquement s’il est très libertarianiste et un peu utilitariste dans ses rêves, il a accès aux choix avancés libertarianistes et aux choix de bases de l’utilitarisme.
+
+Expérience de jeu visée : 
+Réussir à questionner le joueur sur sa morale et l’éthique en générale. L’amener à remettre en question ses valeurs. Réussir à le faire tout en l’impliquant dans une histoire intéressante et un univers intéressant. Réussir à ce que le joueur s’identifie à un personnage et qu’il se sente concerné par les choix. Le jeu serait un « visual novel ».
+Moyens permettant la mise en œuvre de cette expérience :
+Pour implication du joueur : éditeur de personnage, importance des choix.
+Objectifs donnés au joueur : Pas vraiment d’objectif pour le joueur, si ce n’est ressortir de l’expérience  enrichi.
+Type d’obstacles rencontrés : Pas d’obstacles. Impossible d’  «échouer ».
+Moyens d’actions mis à la disposition du joueur : Faire des choix.
+Mise en scène et caméra : « Point and click » : Panneau interactif, contient des éléments cliquables qui permettent d’apporter des compléments d’informations. S’il y a une interaction avec un personnage, il apparaît en avant plan avec une boîte de dialogue.
+
+
+
+
+
+
+Personnages : 
+	Avatar : (Editeur) Personnage lambda. Travail dans un bureau. Job classique. Famille.
+		Collègues/Amis
+		Game master : Apparaît dans les rêves. Force le personnage à vivre des situations complexes. Il fait aussi office de guide pour le joueur. Omniscient.
+Univers et narration : Deux univers distincts. Le monde des rêves où le GM apparaît et fait vivre les situations au personnage. Le monde réel où le personnage évolue en suivant un schéma classique (métro, boulot, dodo, etc.). Cependant, des « éléments perturbateurs » apparaissent à certains moments de la journée et c’est à ce moment-là que le joueur peut choisir entre différentes options qui se présentent à lui. 
+
+Aventure :
+Quelle est le propos de l’histoire ? :
+Quel est le rôle de l’avatar du joueur et son objectif ? : Le personnage vit des rêves étranges qui le mettent dans des situations particulières, mettant en avant les courants éthiques. Le joueur effectue des choix. Ensuite, durant la journée en fonction des choix qu’il a fait pendant ses rêves différentes possibilités s’offrent à lui. Typiquement s’il est très libertarianiste et un peu utilitariste dans ses rêves, il a accès aux choix avancés libertarianistes et aux choix de bases de l’utilitarisme.
+Qui sont les autres personnages ? : 

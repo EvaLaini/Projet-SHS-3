@@ -1,0 +1,10 @@
+A faire :
+-	Détailler l’enchaînement des jours, le système rêve/monde réel. Fonctionnement du monde virtuel.
+-	Backstory plus fourni, notamment sur le GM.
+-	Ajouter la liste de tout les personnages, et détailler leurs rôles.
+-	Détailler l’histoire.
+-	Un peu plus de détails sur la mise en scène.
+-	Rédiger correctement le GameConcept.
+-	Se renseigner sur les bases de données d’images.
+-	Trier les histoires.
+-	Rédiger l’histoire/fil conducteur.
