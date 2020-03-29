@@ -18,7 +18,7 @@ Choix :
 - Tous lui donner (/U,K)
 
 Cas 3 :
-Dispute entre frère et sœur
+Dispute entre les enfants
 Choix :
 - Intervenir et régler le conflit (U,K/L)
 - Intervenir et disputer tout le monde (/U,L)
