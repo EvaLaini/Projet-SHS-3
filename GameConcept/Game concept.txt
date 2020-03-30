@@ -11,15 +11,27 @@ Répartition des rôles :
 
 Pitch actualisé : (200 mots max)
 
-Sous forme de visual novel interactive, notre jeu se propose de questionner le joueur sur les choix éthiques et moraux que nous vivons quotidiennement. Le joueur pourra se mettre à la place d’un individu lambda vivant dans notre société, en suivant sa vie, au premier abord tout à fait banale, pendant quelques jours. Cependant, cet individu sera confronté à des rêves étranges où apparaîtra un personnage mystérieux. Celui-ci l’amènera dans des situations où il sera amené à faire des choix moraux complexes illustrant divers courant éthiques. Lors de la journée suivante, des situations particulières apparaîtront au milieu de sa vie banale où le joueur sera forcé à faire des choix en lumière de ce qu’il aura apprit durant la nuit précédente. Un système de points invisible au joueur lui permettra de débloquer des situations ou dialogues, suivant les choix effectués au cours de la nuit.
+Sous forme de visual novel interactive, notre jeu se propose de questionner le joueur sur les choix éthiques et moraux que nous vivons quotidiennement. 
+Le joueur pourra se mettre à la place d’un individu lambda vivant dans notre société, en suivant sa vie, au premier abord tout à fait banale, pendant quelques jours. 
+Cependant, cet individu sera confronté à des rêves étranges où apparaîtra un personnage mystérieux. 
+Celui-ci l’amènera dans des situations où il sera amené à faire des choix moraux complexes illustrant divers courant éthiques. 
+Lors de la journée suivante, des situations particulières apparaîtront au milieu de sa vie banale où le joueur sera forcé à faire des choix en lumière de ce qu’il aura apprit durant la nuit précédente. 
+Un système de points invisible au joueur lui permettra de débloquer des situations ou dialogues, suivant les choix effectués au cours de la nuit.
 
 Gamification : (100-150 mots)
 
-L’introduction aux choix moraux sera faite grâce à 3 courants éthiques, l’utilitarisme, le libertarianisme et la morale de Kant. Ces courants seront présentés par un personnage mystérieux, pour l’instant appelé simplement Game Master (GM), qui apparaîtra au joueur pendant des périodes de rêves. Durant ces rêves, le GM expliquera les idées générales de ces courants au joueur et le mettra dans des situations critiques mettant en avant les dilemmes qui peuvent se poser quand ces idées sont confrontées à des situations complexes. Le jour suivant, le joueur sera confronté à des choix moraux du quotidien. Différentes possibilités de dialogues et d’avancement de l’histoire seront débloqués suivant les choix faits durant la nuit.
+L’introduction aux choix moraux sera faite grâce à 3 courants éthiques, l’utilitarisme, le libertarianisme et la morale de Kant. 
+Ces courants seront présentés par un personnage mystérieux, pour l’instant appelé simplement Game Master (GM), qui apparaîtra au joueur pendant des périodes de rêves. 
+Durant ces rêves, le GM expliquera les idées générales de ces courants au joueur et le mettra dans des situations critiques mettant en avant les dilemmes qui peuvent se poser quand ces idées sont confrontées à des situations complexes. 
+Le jour suivant, le joueur sera confronté à des choix moraux du quotidien. 
+Différentes possibilités de dialogues et d’avancement de l’histoire seront débloqués suivant les choix faits durant la nuit.
 
 Gameplay : (100 mots)
 
-Le jeu sera programmé sous forme de visual novel interactive. L’histoire sera présentée par des panneaux interactifs représentant des scènes de l’histoire. En cliquant sur certains éléments des panneaux, le joueur pourra se déplacer dans le monde et interagir avec des objets et personnages. Interagir avec un objet ou personnage ouvrira une boite de dialogue spécifique.  Lors de ces dialogues, le joueur sera parfois confronté à des choix et ses réponses aux diverses situations lui apporteront des points, chaque courant éthique ayant sa propre jauge. Les points ainsi accumulés lui permettront de débloquer des dialogues ou situations spécifiques.
+Le jeu sera programmé sous forme de visual novel interactive. L’histoire sera présentée par des panneaux interactifs représentant des scènes de l’histoire. 
+En cliquant sur certains éléments des panneaux, le joueur pourra se déplacer dans le monde et interagir avec des objets et personnages. Interagir avec un objet ou personnage ouvrira une boite de dialogue spécifique. 
+Lors de ces dialogues, le joueur sera parfois confronté à des choix et ses réponses aux diverses situations lui apporteront des points, chaque courant éthique ayant sa propre jauge.
+Les points ainsi accumulés lui permettront de débloquer des dialogues ou situations spécifiques.
 
 Moteur/plateforme/éditeur de jeu :
 
