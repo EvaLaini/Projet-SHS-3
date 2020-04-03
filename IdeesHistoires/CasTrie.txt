@@ -1,0 +1,190 @@
+Cas limite 1 :
+. Meilleur ami a besoin d’un organe et la grand-mère est dans le coma. L’opération la tuerait.
+Choix :
+- Sauver le meilleur ami (U)
+- Le laisser mourir (/U)
+
+Cas limite 2 :
+. Suicide d’une personne de l’entourage
+Choix :
+- Empêcher le suicide (/L)
+- Laisser la personne mourir (L)
+
+Cas limite 3 :
+Si l’état demande à tout les citoyens s’ils connaissent quelqu’un qui a déjà commis une infraction(en voiture par exemple)
+Choix :
+- Dire la vérité (K, U?)
+- Mentir (L)
+
+Cas limite 4 :
+Rôle d'un dictateur ou "roi". Le joeuur doit maximiser le bonheur de la population. Elle en a marre de payer des taxes sur l'écologie et sur l'essence par exemple.
+Choix :
+- Choisir de ne plus faire attention à l'écologie (U)
+- Continuer à faire attention à l'écologie (K, mais aussi U protège tout le monde d'un désastre)
+En fonction de ses choix --> assiste à la destruction de son monde. (Soit révolté totale de la pop., soit destruction car trop de pollution (cancer etc.))
+
+Cas limite 5 :
+Cas des sectes. Je suis libre de m’enrôler dans n’importe quelle secte. Je suis libre de décider d’écouter mon gourou. Et je suis libre de faire ce qu’il me dit de 
+faire.
+Le joueur doit punir ou non le gouron d'une secte. Tous les membres de la secte le supplit de ne pas le punir.
+- Punir (K, \U)
+- Ne pas punir (U, L)
+
+Cas limite 6 :
+Le joueur prend le rôle d'un roi (mais à l'époque contemporaine) pendant un rêve. On lui propose de légaliser toutes les drogues. 
+Le conseiller lui fait une liste de tous les points positifs et négatifs pour rendre le choix difficile.
+Choix :
+- Légaliser les drogues (L, U)
+- Ne pas légaliser les drogues(\L, \U, K?)
+
+Cas limite 7 :
+Vente d'un rein pour ahceter une console par exemple.
+
+Cas limite 8 :
+Assited suicide. Un proche du joueur est dans une souffrance immense (chancer, maladies, ...) depuis maintenant 6 mois.
+Choix :
+- Autoriser le suicide assisté (L, U?, \K)
+- Le refuser (\L, U?, K)
+
+Cas limite 9 :
+Cannibalisme.
+Choix :
+- L'autoriser (L)
+- Ne pas l'autoriser (\L)
+Dans le monde des rêves faire en sorte que le joeur assiste aux conséquences de ses choix.
+
+Cas limite 10:
+Le "trolley" problème. Avec les deux voies et avec la personne en surpoids. Utilitarisme.
+
+Cas limite 11 :
+Cas des transplatations. Un patient meurt pour 5 sauvés.
+
+Cas limite 12 :
+Revenue des taxes des cigarettes qui "annulent" ses mauvais effets
+
+Cas limite 13 :
+Un coma articifiel qui stimul les percepteurs de bonheur du cerveau serait tout à fait moral pour l’entièreté de la population puisque ça maximise le bonheur.
+Choix :
+- Les mettre dans le coma (U, \K)
+- Ne pas les mettre dans le coma (\U, K)
+
+Cas limite 14 :
+Exploiter des humains/animaux/handicapés qui n’ont pas la capacité de savoir qu’ils sont exploités serait aussi moral.
+Choix :
+- Les eploiter (U, \K)
+- Ne pas les exploiter (\U, K)
+
+Cas limite 15 :
+Les impôts. Je devrai être libre de ne pas pouvoir en payer. Pas de redistributions des richesses.
+
+Cas limite 16:
+Utilitarisme.
+Un petit groupe possédant un terrain ont travaillé dur pour pouvoir extraire des minéraux précieux. La ville où se trouve le terrain est particulièrement endetté 
+et en prenant possession du terrain ils pourraient alléger le fardeau des taxes sur les citoyens de la ville. Mais génère de la pollution.
+
+Cas limite 17 :
+Utilitarisme
+Une espèce animale est vecteur d’une maladie mortelle pour les hommes. Les autorités ont fait le choix d’abattre cette espèce.
+
+
+
+
+Monde réel :
+
+Cas 1:
+Une personne se noie
+Choix :
+- Plonger pour sauver la personne (K/L)
+- Appeler les pompiers et continuer sa route (L)
+- Continuer sa route (L/K)
+
+Cas 2 :
+5€ pour acheter du pain pour toute la famille. Un SDF demande de l’argent pour manger
+Choix :
+- Dire qu’on pas d’argent (mentir) (U/K)
+- Lui donner une partie 
+- Tous lui donner (/U,K)
+
+Cas 3 :
+Dispute entre les enfants
+Choix :
+- Intervenir et régler le conflit (U,K/L)
+- Intervenir et disputer tout le monde (/U,L)
+- Ne pas intervenir (L/U,K)
+
+Cas 4 :
+Une personne se fait agresser
+Choix :
+- Ne pas intervenir (L/K)
+- Intervenir (K/U,L)
+- Attendre que l’agresseur s’en aille et secourir la victime (U,L)
+
+Cas 5 :
+Un cambrioleur a pris en otage la famille et menace de les tuer. Il demande où est le coffre-fort.
+Choix :
+- Lui donner l’emplacement du coffre-fort (K,U)
+- Lui dire qu’il peut tuer une personne car elle sert à rien (L/K,U)
+
+Cas 6 :
+Au commissariat après le cambriolage.
+Description des faits
+Choix : 
+- Acte héroïque (mensonge) (U/K)
+- Vérité (K)
+Reconnaître le coupable
+Choix :
+- Dire qu’on reconnaît (mensonge) (U/K,L)
+- Dire qu’on est pas sûr (K,L/U)
+
+Cas 7 :
+Un individu propose au perso de la drogue. Le perso a envie d'essayer.
+Choix:
+- Il en prend (L, \K)
+- Il refuse (U (pense à sa famille), K)
+- Il le dénonce (K)
+
+Cas 8 :
+Un groupe de 4 amis décide d’organiser une sortie.
+Pour une proposition : Tout le monde est satisfait(normal).
+		       Pour l’autre : Tout le monde est très satisfait mais une personne ne souhaite vraiment pas participer ou ne peut pas 
+		       (handicap, moyen financier ou déteste vraiment l’activité proposer).
+Choix :
+- Le projet 1 (K)
+- Le projet 2 (U)
+
+Cas 9 :
+Si un collègue est détesté par tout les employés d’un établissement pour quelconque raison, alors ces employés ont le droit de lui infliger tout ce qu’ils veulent.
+Choix :
+- Participer au bullying (U)
+- Ne rien faire (L)
+- Dénoncer ce harcèlement (K)
+
+Cas 10 :
+. Allez à un concert ou une soirée organisé par un ami. Il vous demande si vous avez aimé et vous vous êtes ennuyé.
+Choix :
+- Lui dire la vérité (K)
+- Mentir (U, mentir est plus facile pour tout le monde dans ce cas)
+
+Cas 11:
+Libertarianisme
+Dans une région le seul point accès à l’eau potable est une pompe à la disposition de la population sur une place publique. 
+Un riche homme d’affaire sent le potentiel de cette pompe et décide d’acheter la place où se trouve cette dernière. 
+Comme cet endroit devient sa propriété privée il décide d’interdire l’accès à la pompe à moins de payer un certain prix pour pouvoir l’utiliser.
+
+Cas 12 :
+Utilitarisme
+- Un ami a besoin de toi pour aller en urgence à l'hôpital mais tu dois aller donner une conférence importante/cuisiner pour des personnes 
+agées/conduire un mini-bus d'enfants...
+
+Cas 13 :
+Utilitarisme
+- Un enfant se fait harceler dans la rue par un groupe de jeunes :
+  - ne rien faire, les jeunes sont trop nombreux (\U, L, \K)
+  - allez défendre l'enfant (U, K)
+
+Cas 14 :
+Libertarianisme.
+- Un mec jette sa clope dans une plante verte :
+  - ne rien faire : il a le droit de faire ce qu'il veux (L, U, \K)
+  - lui dire de la jeter dans une poubelle (\L, \U, K)
+  - lui dire que fumer c'est mauvais pour la santé (\L, \U, K)
