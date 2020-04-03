@@ -1,0 +1,23 @@
+Fonctionnement et mise en scène du monde virtuel
+
+
+  Le début du jeu comportera une introduction qui fonctionnera comme un visual-novel pur. On y introduira les personnages, dont l'édition 
+du personnage principal, les lieux et le contexte de l'histoire.
+  Après l'introduction, le joueur aura la possiblité de se déplacer librement dans un monde restreint. Les déplacements se feront sous 
+forme de panneaux et le joueur cliquera à gauche ou à droite pour se rendre la direction souhaitée (salon, cuisine, chambre, ...). Le 
+joueur aura aussi accès à une carte d'où il pourra se déplacer entre les différents lieux (maison, travail, hôpital, ...). On se placera
+donc dans une vue à la première personne. Les déplacements seront libres mais l'histoire sera scriptée, le joueur pourra donc rencontrer 
+des personnages qui ne feront pas avancer l'histoire. Certaines tâches de l'histoire pourront se faire dans un ordre choisi par le joueur 
+mais l'ordre n'influera pas sur l'histoire. Pour faire avancer l'histoire, le joueur devra interragir avec la ou les bonnes personnes 
+situées dans le bon lieu en fonction de l'histoire. Cela déclenchera des phases de dialogue qui comporteront des choix.
+  Nous implementerons aussi un système de temps mais le joueur ne pourra pas avancer dans le temps sans avancer dans l'histoire (script).
+Cela permettra simplement un changement du décor et une meilleur contextualisation. Un système d'indice assez simple sera aussi 
+mis en place pour permettre au joueur de ne pas se perdre au cours de l'histoire.
+  Le but de notre jeu étant de différencier les courants de pensée utilitariste, libertariste et kantien, un système de point suivant 
+l'état d'esprit du joueur sera mis en place. Ces points influenceront les choix qui pourront se présenter au joueur. La journée, 
+le joueur pourra faire des choix qui influenceront l'histoire mais qui ne modifieront pas ses points (courants de pensée). En revanche, 
+durant la nuit, nous implementeront une phase de rêve. Cette phase nous permettra de poser des problèmes plus complexes et 
+potentiellement fictif (impossible dans la vie) au joueur pour déterminer son état d'esprit. Ces choix n'influenceront donc pas l'histoire
+masi modifieront les points du joueur. 
+  A la fin du jeu, nous présenteront un petit récapitulatif des orentations du joueur avec une présentation des courants de pensée. Le jeu
+sera donc rejouable et différentes fin seront accessibles.
