@@ -1,13 +1,13 @@
-Nom du groupe : 
+Nom du groupe : Groupe 3
 
-Titre du jeu :
+Titre du jeu : EthiQuest
 
 Répartition des rôles :
-	•	Colin
-	•	Antoine
-	•	Valton
-	•	Ylies
-	•	Eva
+	•	Colin : Histoire
+	•	Antoine : Programmation
+	•	Valton : Visuel
+	•	Ylies : Programmation
+	•	Eva : Histoire
 
 Pitch actualisé : (200 mots max)
 
@@ -15,14 +15,14 @@ Sous forme de visual novel interactive, notre jeu se propose de questionner le j
 Le joueur incarnera un individu lambda vivant dans une société contemporaine (type démocratie européenne), en suivant sa vie, au premier abord tout à fait banale, pendant quelques jours. 
 Cependant, cet individu sera confronté à des rêves étranges au cours desquels apparaîtra un personnage mystérieux. 
 Celui-ci amènera le joueur dans des situations atypiques où différents choix moraux complexes se présenteront à lui. Ces dilemmes auront pour but d'illustrer divers courants éthiques.
-Lors de la journée suivante, des évènements surprenants viendront perturber le joueur. Ceux-ci auront pour but de mettre en lumière ce qu’il a appris la nuit précédente. 
+Lors de la journée suivante, des situations particulières apparaîtront au milieu de sa vie banale où le joueur sera forcé à faire des choix en lumière de ce qu’il aura apprit durant la nuit précédente.
 Un système de points invisible au joueur lui permettra de débloquer des situations ou dialogues, suivant les choix effectués au cours de la nuit.
 
 Gamification : (100-150 mots)
 
-L’introduction aux choix moraux sera faite à travers 3 courants éthiques, l’utilitarisme, le libertarianisme et la morale de Kant. 
+L’introduction aux choix moraux sera faite à travers 2 courants éthiques, l’utilitarisme et le libertarianisme. Le Kantisme pourrait être ajouté en fonction du temps à disposition. 
 Ces courants seront présentés par un personnage mystérieux, pour l’instant appelé Game Master (GM), qui se manifestera lors des rêves. 
-Il expliquera les idées générales de ces courants au joueur et le mettra dans des situations critiques mettant en avant les dilemmes qui peuvent se poser quand ces idées sont confrontées à des situations complexes. 
+Durant ces rêves, le GM expliquera les idées générales de ces courants au joueur et le mettra dans des situations critiques mettant en avant les dilemmes qui peuvent se poser quand ces idées sont confrontées à des situations complexes. 
 Le jour suivant, le joueur sera confronté à des choix moraux du quotidien. 
 Différentes possibilités de dialogues et d’avancement de l’histoire seront débloqués suivant les choix faits durant la nuit.
 
@@ -33,7 +33,7 @@ En cliquant sur certains éléments des panneaux, le joueur pourra se déplacer 
 Lors de ces dialogues, le joueur sera parfois confronté à des choix et ses réponses aux diverses situations lui apporteront des points, chaque courant éthique ayant sa propre jauge.
 Les points ainsi accumulés lui permettront de débloquer des dialogues ou situations spécifiques.
 
-Moteur/plateforme/éditeur de jeu :
+Moteur/plateforme/éditeur de jeu : Ren'Py
 
 Inspirations : 
 
