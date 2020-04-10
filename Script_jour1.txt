@@ -40,8 +40,44 @@
     - "Je préfère passer du temps avec toi!"
 **MA** : "Haha, tu as bien raison !", "En parlant de ça, cette nuit, j'ai fait un rêve où on était les deux enfermés à l'école jusqu'à qu'on arrive à résoudre un exercice de math impossible!", 
   "Je regardais la feuille mais je comprenais rien et toi tu pleurais en disant qu'on allait mourir de faim avant d'y arriver.",
-  "Puis Pikachu est arrivé et a mangé la feuille.", "Là, je me suis réveillé en sursaut...", "Bizarre non?"
+  "Puis un Pikachu géant est arrivé et a mangé la feuille.", "Là, je me suis réveillé en sursaut...", "Bizarre non?"
 **Joueur** : "Haha, oui mais ne t'inquiète pas, c'est qu'un rêve, c'était pas réel..."
+**MA** : "Je sais ! Mais imagine si les rêves avaient des conséquences sur la réalité ! Ca serait terrifiant..."
+**Joueur** : "En effet... Heureusement, que ça reste dans nos têtes!"
+"Ding ding*
+**MA** : "Ah, c'est l'heure de retourner en classe. Bon, j'y vais. Bon aprem @!
+*Ecran noir*
+
+*En classe, prof au tableau* 
+**Prof** : "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parle tous ensemble demain.", "Bonne soirée."
+*Prof part*
+**Camarade de classe** : "Aaaah, j'avais oublié, je vais devoir repousser mon entrainement..."
+**Autre camarade** : "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énérgie dans les révisions..."
+**Joueur** : "Ils plaisantent pas avec ces examens..."
+**Autre camarade** : "Vraiment... Et en plus, on a une grosse journée demain..."
+**Joueur** : "Il va falloir que j'aie me coucher tôt si je veux être en forme."
+*Ecran noir*
+
+*A la maison*
+
+**Père** : "Alors, tu as bien travaillé aujourd'hui, @?"
+**Joueur** :
+    - "Oui, on a vu le système digestif. Mais c'est compliqué."
+    - "J'ai pas tellement suivi..."
+    - "Oui, mais j'ai encore des devoirs pour demain à finir."
+ **Mère** : "Alors, il faut que tu travailles consciencieusement ce soir. Tu aurais besoin d'aide?"
+ **Joueur** : "Non, ça va aller."
+ **Mère** : "N'hésite pas, si besoin. Il faut que tu les réussisses ces examens!"
+ **Père** : "Ne lui mets pas tant de pression, c'est encore un/une enfant."
+ **Joueur** : "Papa !"
+ **Père** : "Oui, je sais... Un/une adolescent/e."
+ **Joueur** : "*Soupir* Je vais travailler dans ma chambre."
+ *Ecran noir*
+ 
+ *Chambre*
+ **Joueur** : "J'ai fini mes devoirs mais je n'arrive pas à dormir...", "Ces histoires d'examens me stressent.", "J'espère que je ne vais pas faire un rêve comme MA cette nuit, je suis crevée."
+ 
+ *Ecran noir, début du rêve 1*
 
 
 
