@@ -1,3 +1,6 @@
+Antoine : Self-driving car, et organe pour sauver le plus grand nombre de personnes
+
+
 Cas limite 1 :
 . Meilleur ami a besoin d’un organe et la grand-mère est dans le coma. L’opération la tuerait.
 Choix :
