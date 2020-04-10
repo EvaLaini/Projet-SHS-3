@@ -1,0 +1,61 @@
+Situation choisies / Cas limites :
+
+Apparition du GM dans le rêve du personnage. Celui-ci ne s'y est toujours pas habitué et affiche un air perturbé. Il se demande encore quels choix cornéliens
+va lui imposer le GM. Le joueur se réveil chez lui, si le GM n'était pas là il n'aurait aucun moyen de savoir qu'il est dans un des rêves. Le GM dit au joueur que
+cette fois il n'y aura pas de torture de l'esprit, qu'il va juste vivre le quotidien d'un homme lambda qui a la particularité d'être un chirurgien. Ca lui changera des
+habitudes de son quotidien. Lors du petit déjeuner, le GM entame une discussion avec le joeur où il parle de la société et plus particulièrement du bonheur. Il demande au
+joueur, si pour une lui une société dans laquelle le bonheur d'une majorité de gens est maximisé est un idéal. Plusieurs possbilités de réponses :
+
+1. Oui c'est idéal. Je rêverai de vivre dans une telle société.
+2. Je ne sais pas, cela me paraît utopique mais assez difficilement réalisable.
+3. Cela dépend si la maximisation du bonheur se fait au détriment d'une partie de la population. (donne trop d'indices)
+3 bis. Je n'ai pas assez étudié la question, il y a peut être des cas où ce n'est pas la meilleure chose à faire.
+
+Fin du déjeuner, le joueur prend sa voiture (autonome) pour se rendre à l'hôpital. Le personnage principal est content, fait des remarques sur la qualité de la 
+voiture etc. (chirurgien gagne plus d'argent que lui dans sa vrai vie etc.)
+Il arrive à son travail, opère différents patients jusqu'au moment où 5 patients différents ont besoin de différents organes. Une collègue Michelle a un de ses proches
+dans les malades. Elle le prend à part et lui explique la situation (bcp d'émotion il faut que ça marque le joueur). Lui demande de tout faire pour sauver son fils. 
+
+
+Plus tôt dans la journée, comme il manquait un peu de personnel médical vous avez effectué un contrôle de routine sur un prisonnier amené à l'hôpital après avoir été blessé lors
+d'une bagarre. Il s'avère que Nicolas, le prisonnier, a surjoué ses blessures et n'a rien de grave si ce n'est quelques bleus. Il vous demande de ne pas parler de ses
+blessures aux gardes pour qu'il reste un peu plus longtemps. Il vous parle de sa vie en prison, que c'est dur, qu'il en peu plus (déjà longtemps qu'il est en prison genre
+10 ans) . Pour essayer de vous convaincre que c'est "un bon gars" il vous dit qu'il est sur la liste des donneurs d'organes et qu'il pourrait sauver des personnes lors de
+sa mort. (Essaye peut être aussi de justifier ses actes : "C'est eux qu'il voulait se suicider je n'ai fais que les aider à faire ce qu'il voulait au fond d'eux" etc.)
+Vous avez entendu les policiers qui l'accompagnent parler de Nicolas. Il est en prison à perpétuité après avoir manipulé 15 personnes pour qu'elles lui donnent leur argent puis se suicident. (Si 
+qqn a utilisé le cas de la secte dans son histoire utiliser le même prénom).  Vous êtes le seul a savoir que le prisonnier a menti.
+
+De retour au présent un choix se présente au joueur :
+1. Faire croire que le cas du prisonnier était plus grave que ce que tout le monde pensait et le tuer. Récupérer ses organes pour sauver les 5 patients.
+2. Laisser les 5 patients mourrir.
+
+Après cette journée particuliètement épuisante, le joueur retrouve le confort de la voiture pour rentrer chez lui. Sur le chemin, il y a des travaux devant un passage 
+piéton mais la voiture ne semble pas ralentir. Le personnage décide de faire confiance à la technologie. Voyant que rien ne change, le joueur reprend le contrôle au
+dernier moment. Le temps se ralentit et deux choix s'offrent à lui :
+1. Rentrer dans la barricade et se tuer lui et sa collègue pour sauver un père, une mère et leur deux enfants.
+2. Rentrer dans les piétons.
+
+Le joueur se réveil dans la "vrai vie" en sursaut juste après avoir fait un des deux choix.
+
+
+Personnages (optionnel) :
+Personnage principal, GM, Michelle, Nicolas.
+
+Scripts (concis) :
+Voir situation
+
+Choix :
+Voir situation
+
+Conséquences :
+1. 1. --> +2 en utilitarisme s'il fait les 2 choix utilitaristes.
+1. 2. --> +1 en utilitarisme +1 en morale Kantienne
+2. 1. --> +1 en morale Kantienne +1 en utilitarisme
+2. 2. --> +2 en morale Kantienne
+
+Si on ne fait pas morale Kantienne, on peut aplliquer des - en utilitarisme peut être
+
+
+Courants éthiques visés :
+
+Utilitarisme
