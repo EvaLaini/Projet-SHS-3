@@ -1,0 +1,31 @@
+Situation choisies / Cas limites :
+En tant de famine, un village doit payer des impôts et un roi doit prendre des décisions
+
+Personnages (optionnel) :
+Chef du villages
+Quelques enfants
+Le collecteur d’impôts
+Le roi
+Un/des gardes
+
+Scripts (concis) :
+Epoque médiévale, temps de famine. Un village perd tout espoir car il n’a plus rien à manger. Pourtant le roi continue à imposer des taxes contraignantes. Les enfants du village sont en train de mourir de faim. Un collecteur d’impôt du roi arrive et demande encore plus de taxe. Il dit que le roi en a besoin pour acheter du grain en gros aux pays voisins et mettre fin à la famine en les redistribuant au peuple. En tant que chef du village, vous devez faire un choix :
+-	Faire confiance au roi et lui donner tout ce qu’il reste, sachant que certains villageois ne vont pas survivre (+2 U)
+-	Refuser de payer et risquer la prison ou la corde (+1 L, +1 U, +1 K)
+-	Tuer le collecteur et masquer le crime (+1 L, +1 U, -1 K)
+-	Tuer le collecteur et le cuisiner pour sauver les enfants (+1 L, +1 U, -2 K)
+
+Vous êtes maintenant dans la peau du roi. Vous devez réagir aux choix du chef du village. 
+Les villageois ont payé les taxes :
+-	Leur envoyer du grain immédiatement sans penser à l’avenir (-1 U, +1 K)
+-	Garder leur argent pour acheter plus tard une plus grande quantité de grain qui pourrait sauver plus de gens (+1 U, -1 K)
+Les villageois n’ont pas payé :
+-	Envoyer la garde prendre les taxes de force (-1 L, +1 U)
+-	Accepter et les laisser succomber à la famine (+1 L, -1 K)
+Le collecteur a été tué : 
+-	Envoyer la garde mettre le chef en prison (+1 K)
+-	Faire pendre le chef et brutaliser la population pour les punir (-1 L, -1 K)
+-	Ignorer le village et les laisser mourir (+1 L, -1 K)
+Conséquences : sur script
+
+Courants éthiques visés : Mélange de tout
