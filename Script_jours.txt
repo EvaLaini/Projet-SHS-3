@@ -4,3 +4,21 @@
 "Toc toc toc"
 **Mère au loin** : "Réveille-toi, @! Tu va être en retard à l'école!!"
 *Le joueur se lève, panorama de la chambre*
+**Joueur** : "*Bâille* Il faut que j'aie à la cuisine prendre mon petit déjeuner avant d'aller en cours..."
+*La porte/flèche de déplacement vers la cuisine s'allume, le joueur clique*
+
+*Dans la cuisine, avec la mère*
+**Mère** : "Ah tu es debout, très bien! Voilà tes céréales, @. Manges les vite, tu dois te dépécher." 
+*Un bol s'allume, le joueur clique*
+**Joueur** : "Crunch, crunch" , "Bon, j'y vais! A ce soir, maman."
+**Mère** : "Bonne journée, mon chou!"
+*La porte/flèche de déplacement vers l'extérieur s'allume, le joueur clique*
+
+*Carte de la ville, l'école est allumée, le joueur clique*
+*En classe, on voit le/la prof devant le tableau*
+**Prof** : "Bonjour tout le monde, aujourd'hui nous allons voir ensemble l'anatomie du système digestif.", "Est-ce que quelqu'un arrive à me dire quels organes en font partie ?"
+**Joueur** : "Je sens que cette matinée va être longue... Vivement la pause de midi!"
+
+
+
+
