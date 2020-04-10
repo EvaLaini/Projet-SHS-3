@@ -1,0 +1,50 @@
+Le joueur se trouve dans une petite ville située dans une zone rural. Les seules localités les plus proche sont des petits villages.
+Dans cette ville, le maire est quelqu’un de très respecté. Il est présenté comme un homme qui fait très attention à ses citoyens 
+et cherche toujours à les satisfaire dans la majorité. Il considère que la valeur du bonheur de chaque habitant à la même valeur 
+pour tout le monde. Lorsqu’il a plusieurs choix à faire il pèse toujours le pour et le contre et choisit la solution qui satisfera 
+le plus la population. Evidemment il ne cherche jamais le profit personnel et n’accepte jamais les pots-de-vin.  
+Par exemple le mois passé il a eu le choix d’aménager le quartier où sa famille et lui habitent ou le parc central de la ville. 
+Il a décidé de choisir le parc car c’était la solution qui satisferait le plus de monde et le bonheur de sa famille n’avait pas 
+plus de poids que celui des habitants de la ville. 
+
+La ville connaît une croissance de population depuis quelques temps et afin de satisfaire la nouvelle demande de logement le maire. 
+Une place se prête particulièrement bien à la construction d’un nouveau quartier. Le seul problème c’est qu’une petite maison 
+habitée se trouve au milieu de cette place. 
+
+1.	Je détruis cette maison pour pouvoir construire le nouveau quartier. (U+)
+
+2.	Je cherche une autre place pour construire mon quartier en sachant que je ne trouverai pas une place aussi adaptée au projet. (U-)
+
+
+
+Avec la croissance de la population de la ville, la pollution de l’air à significativement augmentée. 
+Pour tenter de la réduire, le maire a pour projet de favoriser les transports en commun au profil des véhicules privés. 
+Pour ce faire, il décide de créer partout des voies réservées pour les bus pour leur donner en tout temps la priorité. 
+Dans la plupart des cas ce choix supprime l’accès aux véhicules privés. Les premières estimations de ce projet montrent 
+une grande baisse de la pollution et améliorait grandement la qualité de vie car elle réduirait également le bruit et les accidents. 
+Toutefois une partie de la population, notamment ceux habitant en dehors de la ville mais qui y travaille, proteste car cela rendrait 
+l’accès à la ville très difficile. Au point que certains vont perdre leur travail. 
+
+1.	Le gain des ces mesures sur la qualité de vie sont bien supérieures aux pertes occasionnées par ceux habitant en dehors de la ville. (U+)
+
+2.	 Ces mesures sont bien trop injustes pour ceux habitant en dehors de la ville. (U-)
+
+
+
+Durant une période de canicule particulièrement intense et à cause d’une mauvaise gestion des eaux, le niveau de la nappe d’eau
+phréatique a baissé au point qu’il n’y aura pas assez d’eau pour toute la population de la ville. Pour palier à ce problème la ville
+décide de puiser de l’eau dans le village voisin. Celui-ci assez d’eau pour sa population mais si la ville puise une partie de son eau,
+il n’aura plus assez pour son agriculture. Le village se trouverait en pénurie de nourriture pendant se lapse de temps. 
+
+1.	Je puise de l’eau dans la nappe du village. Combien même ce village se trouverait dans une situation compliquée, 
+sauver un maximum de vie est la priorité. (U++)
+
+2.	Je rationne au maximum l’accès à l’eau dans la ville et puise jusque ce qu’il faut dans le village voisin. 
+Ceci permettrait aux villageois d’avoir assez d’eau pour l’agriculture. Toutefois cela entrainerait un mécontentement général 
+car d’une part la population de la ville trouve que rationner l’eau à l’extrême n’est pas justifié puisqu’on peut chercher de 
+l’eau ailleurs et d’autre part les villageois pensent qu’ils n’ont pas à en partir des problèmes des autres. (U-)
+
+3.	Je ne peux pas faire payer la mauvaise gestion des eaux de la ville aux village voisins. Je rationne au maximum l’eau 
+pour limiter les morts liés à la soif. (U--)
+
+
