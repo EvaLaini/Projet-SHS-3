@@ -1,4 +1,4 @@
-Antoine : Self-driving car, trolley problem et organe pour sauver le plus grand nombre de personnes
+Antoine : Self-driving car, et organe pour sauver le plus grand nombre de personnes
 
 
 Cas limite 1 :
