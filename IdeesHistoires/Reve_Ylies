@@ -21,12 +21,12 @@ que la mère prends des médicaments qui provoque des somnolences et que les amb
 ce mois-ci
 
 Choix :
--Envoyer 2 ambulances aux criminels                                   ()
--Envoyer 1 ambulance aux criminels et 1 ambulance à l'homme ivre      ()
--Envoyer 1 ambulance aux criminels et 1 ambulance à la personne agée  ()
--Envoyer 1 ambulance à l'homme ivre et 1 ambulance à la personne agée ()
--Envoyer 1 ambulance à l'homme ivre                                   ()
--Envoyer 1 ambulance à la personne agée                               ()
+-Envoyer 2 ambulances aux criminels                                   (U--)
+-Envoyer 1 ambulance aux criminels et 1 ambulance à l'homme ivre      (U---)
+-Envoyer 1 ambulance aux criminels et 1 ambulance à la personne agée  (U+)
+-Envoyer 1 ambulance à l'homme ivre et 1 ambulance à la personne agée (U-)
+-Envoyer 1 ambulance à l'homme ivre                                   (U--)
+-Envoyer 1 ambulance à la personne agée                               (U++)
 
 
 Le personnage se retrouve quelques jours plus tard et voit les conséquences de ces actes.
