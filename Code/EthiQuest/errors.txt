@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 454: end of line expected.
+    player "J'ai fini mes devoirs mais je n'arrive pas à dormir...", "Ces histoires d'examens me stressent."
+                                                                   ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Thu Apr 23 16:13:29 2020

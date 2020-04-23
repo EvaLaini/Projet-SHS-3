@@ -7,7 +7,7 @@ GML : Game Master Libertarisme
 
 Fond noir
 
-N :  Bienvenue dans EthicQuest.
+N :  Bienvenue dans EthiQuest.
 - Veuillez entrer votre nom.
 GMU : NON PAS TOUT, TU TE TROMPE !
 GML : C’EST TOI QUI TE TROMPE. TU RACONTE N’IMPORTE QUOI !
