@@ -1,0 +1,113 @@
+Script soir 1
+O = option, R = réponse
+
+GMU : Hey ! T’es enfin réveillé ?
+Le joueur se réveille petit à petit et se trouve en face d’un mystérieux personnage dans une salle étrange. 
+GMU : Dis-moi tu n’as pas l’air de comprendre ce qui t’arrives
+
+	O1 : Qui es-tu ?
+	O2 : Où suis-je ?
+
+GMU : C’est bien ce qui me semblait. J’ai peut-être pas choisis la meilleure personne finalement… Bon pour faire simple tu as été 
+choisis parmi tous les humains pour avoir la noble tâche de prouver que je suis le plus sage et que mon éthique est la meilleure.
+GMU : Tu as l’air un peu perplexe. T’inquiète pas ça va bien se passer. Ce sera facile de prouver que j’ai la meilleure 
+éthique puisque c’est la meilleure. Tiens je vais déjà t’expliquer de quoi ça parle. Tu verras on ne peut pas faire plus 
+limpide et simple que ça. Le noyau central de ma pensée est qu’il faut toujours chercher à maximiser le bonheur de la majorité. 
+Alors qu’est-ce tu en penses ?
+
+	O1 : Oui c’est idéal. Je rêverai de vivre dans une telle société. 
+	O2 : Je ne sais pas, cela me paraît utopique mais assez difficilement réalisable.
+	O3 : Je n’ai pas encore assez étudié la question, il y a peut-être des cas où ce n’est pas la meilleure solution.
+
+	R1 : Finalement j’ai peut-être choisi la bonne personne
+	R2 : Toujours septique hein ? Tu verras bien assez vite comment ça s’applique 
+	R3 : Un cas où ce n’est pas la meilleure solution ? Qu’est-ce qu’il ne faut pas entendre des fois. 
+
+GMU : Bon à présent on va passer à la partie un peu plus pratique. Pour le reste de la journée tu vivras dans la peau 
+d’un chirurgien. Tu seras amené à faire des choix importants et tu comprendras aussi pourquoi ma façon de penser est 
+la meilleure. Bon allons-y.
+
+* Le GMU clac des doigts et les deux se retrouvent dans une rue d’une ville devant une superbe voiture. *
+GMU : Tiens les clés de la voiture
+Joueur : Quoi ? C’est ma voiture ?
+GMU : Evidemment, t’es chirurgien. Tu pensais quand même pas conduire dans une vielle voiture. Bon rentrons dans la voiture et démarre.
+*Le joueur et le GMU rentrent dans la voiture*
+Joueur : Où est-ce que je dois aller maintenant ?
+GMU : Roule seulement. Tu iras de toi-même au bon endroit. 
+Joueur : Mais comment ?
+GMU : Je t’ai déjà dit de ne pas t’inquiéter. Tout se passera bien, fais-moi confiance.
+*Le joueur s’exécute. Au début il conduisait un peu aléatoirement à travers la ville mais petit à petit il sentait 
+qu’il prenait le bon chemin. Au bout d’une dizaine de minutes ils arrivent enfin devant un grand hôpital*
+Joueur : Comment ça se fait que je sois arrivé au bon endroit alors que c’est la première fois que je viens par ici ?
+GMU : Je n’allais pas te lancer dans la vie de chirurgien sans que tu en aies les connaissances. Je suis un gars 
+cool moi hehehehe. Bon à partir de maintenant je te laisse. 
+Joueur : Comment ça ?
+GMU : Tant que tu feras les bons choix tout ira bien pour toi. Allez à plus
+
+*Le GMU disparaît et le joueur se retrouve seul devant l’hôpital. Le joueur rentre dans l’hôpital et une infirmière 
+vient le voir*
+Infirmière : Vous voilà enfin. Le patient est déjà prêt pour son opération. Il s’agit d’une fracture de l’avant-bras. 
+Nous allons vous préparer. 
+*Après quelques minutes le joueur se trouve dans une salle d’opération avec d’autres chirurgien. Au début le joueur 
+n’est pas sûr que ce qu’il faut faire mais comme annoncer par le GMU il commence à procéder à l’opération comme si 
+c’était quelque chose qu’il avait fait tout sa vie*
+*Après l’opération le joueur se sent fatigué et décide de prendre une petite pause à la cafétéria. Mais à peine le 
+temps de s’assoir qu’une autre infirmière vient vers le joueur*
+
+Infirmière : Désolé de vous déranger mais on manque de personnel aujourd’hui alors svp pourriez-vous vous occupez 
+du patient dans le bloc B3 ?
+*Le joueur se rend au bloc B3*
+??? : AHHHH ! J’AI MAL !!! APPELEER VITE UN MEDECIN !
+*Le jouer voit un homme en habit de prisonnier entouré de deux gardes de prison*
+Joueur : Qu’est-ce qui s’est passé ?
+Garde 1 : Il y a eu une bagarre dans la prison et il a été blessé. Malheureusement nous ne connaissons pas la gravité 
+de ses blessures. 
+Garde 2 : S’il joue la comédie venez immédiatement nous voir.
+*les deux gardes s’en vont*
+
+Joueur : Comment vous appelez vous ?
+Prisonnier : Je m’appelle Nicolas.
+Joueur : Bien Nicolas, je vais procéder à un contrôle général. Tenez vous tranquille.
+*après quelques minutes*
+Joueur : Vous n’avez rien de grave, je vais …
+Nicolas : Doc attendez. Je sais que j’ai surjoué mes douleurs mais svp je voudrais juste rester ici un peu plus. 
+Ça fait trop longtemps que je suis en prison. La vie est dure là-bas. Les plus forts règnent en maître et les gardes n’osent 
+pas intervenir. Je sais que ce que j’ai fait dans le passé mérite une condamnation mais le juge m’a puni excessivement 
+pour que je serve d'exemple. 
+Joueur : Et qu’avez-vous fait ?
+Nicolas : J’ai essayé de faire un Hold-up dans une station-service quand j’avais 18ans. Malheureusement les choses 
+se sont compliqués et des personnes ont été blessées. 
+Joueur : Pourquoi avoir fait ce braquage ? 
+Nicolas : J’ai toujours vécu seul et quand j’étais jeune et lorsque je demandais de l’aide aux personnes autour de moi, 
+personne ne m’avait tendu la main… Depuis ce jour je regrette sincèrement mon acte. Je suis même inscris sur la liste 
+des donneurs d’organes. Alors svp doc laissez moi juste me reposer pour cette journée.
+Joueur : Bien je vais voir ce que je peux faire.
+
+Le joueur se rapproche des gardiens et entend leur discussion*
+Garde 1 : Ce mec me glace le sang à chaque fois que je le vois. 
+Garde 2 : C’est clair. Ce mec est juste effrayant. Manipulé une dizaine de personnes pour prendre leurs argents et 
+ensuite les pousser aux suicides, seul un taré peut un truc pareil.
+Garde 1 : Bien content qu’il ait prit perpète. 
+
+*Avant que le joueur ait eu le temps de parler avec les gardiens, une collègue s’approche du joueur*
+Michelle : Viens vite il y a eu un grave accident de voiture et 3 personnes ont eu leurs organes touchés. 
+Joueur : Oui j’arrive tout de suite.
+Michelle : L’un d’eux et mon unique enfant. Je t’en supplie fait ton maximum et sauve mon fils. 
+*Le joueur lit le premier diagnostic des trois patients. Il est clair qu’ils sont dans un état grave, à tel point 
+qu’attendre que les organes arrivent à l’hôpital reviendrait à les laisser mourir*
+
+	O1 : Faire croire que le cas du prisonnier était plus grave que ce que tout le monde pensait et le tuer. 
+  Récupérer ses organes pour sauver les 3 patients.
+	O2 : Laisser les 3 patients mourir.
+
+*Après cette journée fatigante le joueur peut enfin rentrer chez lui. Au passage il décide de raccompagner une collègue 
+(il raccompagne Michelle s’il a décidé de sauver les 3 patients sinon une autre personne s’il a décidé de les laisser mourir). 
+Le joueur décide de laisser l’intelligence artificiels le reconduire à la maison. Durant le trajet il y a une zone de travaux 
+mais le véhicule ne semble pas ralentir. Toutefois le joueur fait confiance à la technologie. Un peu plus loin une famille 
+traverse un passage piéton. Voyant que le véhicule ne ralentit pas le joueur décide de reprendre le contrôle de la voiture. 
+Malheureusement pour lui il est déjà trop tard pour pouvoir s’arrêter à temps. 
+
+	O1 : Rentrer dans la barricade et se tuer lui et sa collègue pour sauver un père, une mère et leurs deux enfants.
+	O2 : Rentrer dans les piétons.
+
+*Après cela le joueur se réveille en sursaut dans sa chambre en sueur*
