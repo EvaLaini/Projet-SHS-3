@@ -78,8 +78,12 @@ Nous allons vous préparer.
 *Après quelques minutes le joueur se trouve dans une salle d’opération avec d’autres chirurgien. Au début le joueur 
 n’est pas sûr que ce qu’il faut faire mais comme annoncer par le GMU il commence à procéder à l’opération comme si 
 c’était quelque chose qu’il avait fait tout sa vie*
-*Après l’opération le joueur se sent fatigué et décide de prendre une petite pause à la cafétéria. Mais à peine le 
-temps de s’assoir qu’une autre infirmière vient vers le joueur*
+*Après l’opération le joueur se sent fatigué et décide de prendre une petite pause. 
+	O1 : Prendre l'air dehors
+	O2 : Aller à la cafétéria
+	O3 : Aller à la salle de repos
+
+Mais à peine le temps de commencer la pause qu’une autre infirmière vient vers le joueur*
 
 Infirmière : Désolé de vous déranger mais on manque de personnel aujourd’hui alors svp pourriez-vous vous occupez 
 du patient dans le bloc B3 ?
@@ -109,6 +113,9 @@ Nicolas : J’ai toujours vécu seul et quand j’étais jeune et lorsque je dem
 personne ne m’avait tendu la main… Depuis ce jour je regrette sincèrement mon acte. Je suis même inscris sur la liste 
 des donneurs d’organes. Alors svp doc laissez moi juste me reposer pour cette journée.
 Joueur : Bien je vais voir ce que je peux faire.
+
+	O1 : Dire aux gardes que le prisonnier présente des blessures graves et nécéssite qu'il reste en observation plus longtemps
+	O2 : Dire qux gardes que le prisonnier a simulé ses blessures et qu'il peut retourner en prison. 
 
 Le joueur se rapproche des gardiens et entend leur discussion*
 Garde 1 : Ce mec me glace le sang à chaque fois que je le vois. 
