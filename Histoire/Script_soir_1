@@ -9,9 +9,10 @@ GMU : Dis-moi tu n’as pas l’air de comprendre ce qui t’arrives
 	O2 : Où suis-je ?
 
 GMU : C’est bien ce qui me semblait. J’ai peut-être pas choisis la meilleure personne finalement… Bon pour faire simple tu as été 
-choisis parmi tous les humains pour avoir la noble tâche de prouver que je suis le plus sage et que mon éthique est la meilleure.
+choisis parmi tous les humains pour avoir la noble tâche de prouver que je suis le plus sage et que ma vision du monde est la meilleure.
+
 GMU : Tu as l’air un peu perplexe. T’inquiète pas ça va bien se passer. Ce sera facile de prouver que j’ai la meilleure 
-éthique puisque c’est la meilleure. Tiens je vais déjà t’expliquer de quoi ça parle. Tu verras on ne peut pas faire plus 
+vision puisque c’est la meilleure. Tiens je vais déjà t’expliquer de quoi ça parle. Tu verras on ne peut pas faire plus 
 limpide et simple que ça. Le noyau central de ma pensée est qu’il faut toujours chercher à maximiser le bonheur de la majorité. 
 Alors qu’est-ce tu en penses ?
 
@@ -22,6 +23,32 @@ Alors qu’est-ce tu en penses ?
 	R1 : Finalement j’ai peut-être choisi la bonne personne
 	R2 : Toujours septique hein ? Tu verras bien assez vite comment ça s’applique 
 	R3 : Un cas où ce n’est pas la meilleure solution ? Qu’est-ce qu’il ne faut pas entendre des fois. 
+
+GMU: Bon pour voir si tu as bien compris je vais te poser quelques questions. Essaie d'y répondre en appliquant mon idée.
+
+GMU: Première question. Tu verras elle est toute simple. Tu préfères sauver 5 personnes ou 1 personne ?
+	O1 : 5 personnes 
+	O2 : 1 personne
+	
+	R1 : Difficile de se tromper ici 
+	R2 : J'ai rarement vu quelqu'un d'aussi nul... 
+
+GMU : Deuxième question. Pour l'anniversaire de ton meilleur ami tu décides de lui acheter la figurine de son personne de fiction
+favorite. En chemin pour le magasin tu croises une association qui vient en aide aux familles en situation précaire. Que décides-tu
+de faire de ton argent ?
+	O1 : J'achète la figure de mon meilleur ami
+	O2 : Je préfère donner mon argent à cette association.
+	
+	R1 : Tu ne maximises pas le bonheur de la majorité là.
+	R2 : Bonne réponse.
+	
+GMU : Dernière question. Imagine que tu es le maire d'une ville et que tu souhaites aménager un nouveau quartier mais que la majorité
+de la population de la ville préférerait plutôt rénover l'ancien parc de la ville.
+	O1 : Je rénove le parc
+	O2 : J'aménage un nouveau quartier.
+	
+	R1 : Bien vu. 
+	R2 : Tu fais exprès de te tromper ?
 
 GMU : Bon à présent on va passer à la partie un peu plus pratique. Pour le reste de la journée tu vivras dans la peau 
 d’un chirurgien. Tu seras amené à faire des choix importants et tu comprendras aussi pourquoi ma façon de penser est 
