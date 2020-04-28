@@ -17,11 +17,16 @@ Mardi 28/04 :
 	. Script jour 2 --> Eva
 
 Vendredi 01/05 :
-
+	. Implémenter script jour 2 et script rêve 1 --> Antoine
+	. Finir jour 2 --> Eva
+	. Script rêve 2 --> Valton
+	. Script jour 3 --> Ylies
+	. Visuels --> Colin
 
 Mardi 05/05 :
 	. Script rêve 4 --> Ylies
+	. Bilan --> Colin
 
 A regarder :
 	. Choix grisés
-	. Intéraction avec l'environment
+	. Intéraction avec l'environnement
