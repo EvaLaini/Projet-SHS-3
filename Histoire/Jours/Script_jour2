@@ -4,7 +4,7 @@ Dilemme du SDF.
 # Jour 2 :
 
 *Chambre*
-"Vous vous réveillez en sursaut, des sueurs froids coulant dans votre dos"
+"Tu te réveilles en sursaut, des sueurs froids coulant dans ton dos"
 
 **Joueur, pense** : "Qu'est-ce que c'était que ce rêve??", "Je n'en avais jamais fait d'aussi réaliste... J'en ai encore des frissons.",
   "En tout cas, ça me donne pas envie de devenir médecin!" 
@@ -73,12 +73,31 @@ Dilemme du SDF.
 **SDF** : "Ah, oui c'était moi ! Excuse moi mais tu a l'air de quelqu'un de généreux. J'ai perdu mon travail l'année passée et depuis, mon mari m'a quitté et on m'a éjecté de mon appart...", 
   "Tu aurais pas un peu d'argent pour que je m'achète à manger?" 
 **Joueur** : "L'argent que j'ai sur moi est pour acheter un gouter à mes amis... " :
-  - "Mais je te le donne volontiers, ils comprendront bien!"
-  - "Mais je t'en donne la moitié, ils se contenteront de pain sans chocolat!
-  - "Je suis désolé demande à quelqu'un d'autre. Bonne chance!"
-  - "Trouve toi un travail au lieu de vivre comme un parasite!"
-**
-
-
+  1- "Mais je te le donne volontiers, ils comprendront bien!"
+  2- "Mais je t'en donne la moitié, ils se contenteront de pain sans chocolat! (U+)
+  3- "Je suis désolé demande à quelqu'un d'autre. Bonne chance!" (U++)
+  4- "Trouve toi un travail au lieu de vivre comme un parasite!" (U+++)
+1/2 **SDF** : "Merci! Je suis sûr ques tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin.", "Bonne soirée!"
+    **Joueur, pense** : "Même si mes amis risquent d'être déçu et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
+3/4 **SDF** : "..."
+    **Joueur, pense** : "J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
+    
+*Ecran noir*
+"La scéance de révision paraît durer des heures, tes yeux se ferment tout seuls, tu n'arrives pas à te concentrer."
+"Quand c'est enfin le moment de rentrer chez toi, tu dis à peine au revoir et te dépêche d'aller prendre le bus."
+*A la maison*
+**Mère** : "Alors, cette séance de révision ? Tu as pensé à acheté du goûter cette fois ?"
+**Joueur** :
+    1 (Gené) : "...", "Non... J'ai donné l'argent à quelqu'un dans la rue qui en avait plus besoin que moi..."
+    2/3/4 (Enervé) : "Oui, oui, je l'ai fait cette fois!", "Quand est-ce que tu vas arrêter de m'embêter avec ça, j'ai juste oublié une fois!!"
+**Mère** : 
+    1 : "...", "Bon, au moins cette fois c'était pour une bonne cause. Mais j'espère que tes amis ne vont pas t'en vouloir, tu leur avais quand même promis d'amener quelque chose!"
+    2/3/4 : "Pas besoin de t'énerver! Tes amis devaient être content que tu aie pensé à eux cette fois.", "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
+**Joueur** : "Oui, maman..."
+*Pause*
+**Joueur** : "J'ai mal dormi hier soir, je vais aller me coucher tôt pour rattraper ça."
+**Mère** : "D'accord, chou.", "Bonne nuit et fait de beaux rêves!"
+**Joueur, pense** : "J'espère..."
+*Ecran noir*
 
 
