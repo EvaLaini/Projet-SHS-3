@@ -6,8 +6,8 @@ jour 1 rien ne se passe
 nuit 1 rencontre GMU
 jour 2 dilemme
 nuit 2 rencontre GML
-jour 3 joueur parle avec MA, rituel/invocation 
-nuit 3 papa dieu conclusion : explication des courants joueur + compte rendu des choix 
+jour 3 joueur parle avec MA, rituel/invocation à faire pendant un rêve
+nuit 3 GMU et GML se disputent -> le joueur invoque papa dieu conclusion : explication des courants joueur + compte rendu des choix 
 
 
 3 premier jour de narration (pas de choix trop compliqué) et 3 jour de "vrai jeu"
