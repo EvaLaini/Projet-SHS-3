@@ -3,11 +3,12 @@ Le joueur voit les 2 GM discuter entre eux pour une intro au monde
 
 intro 
 jour 1 rien ne se passe
-nuit 1 rencontre GMU
+nuit 1 rencontre GMU - utilitarisme soft
 jour 2 dilemme
-nuit 2 rencontre GML
+nuit 2 rencontre GML - libertarianisme soft
 jour 3 joueur parle avec MA, rituel/invocation à faire pendant un rêve
-nuit 3 GMU et GML se disputent -> le joueur invoque papa dieu conclusion : explication des courants joueur + compte rendu des choix 
+nuit 3 GMU et GML se disputent - chacun propose un dilemme qui pose les limites de l'autre courant
+  -> le joueur en a marre, invoque papa dieu -> conclusion : explication des courants au joueur + compte rendu des choix 
 
 
 3 premier jour de narration (pas de choix trop compliqué) et 3 jour de "vrai jeu"
