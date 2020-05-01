@@ -8,14 +8,14 @@ GML : Vu ta tête tu as surement passé une sale soirée avec mon frère. Pas é
 Tu verras avec moi ta soirée se passera son accro. Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
 C’est pas beau ça ? Tu verras c’est simple à comprendre.
 
-*Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un mangé une glace*
+*Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un manger une glace*
 GML : Tu vois le mec là-bas qui mange une glace ? C’est John. Pourquoi il a le droit de manger une glace ? Eh bin c’est simple 
 il l’a acheté avec son argent et qu’il dérange personne. 
 *LE GML claque de nouveau des doigts et les deux se trouvent dans un jardin où on voit un nain de jardin*
 
 GML : ça c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, il entrave la liberté 
 de propriété de Martine. Tu vois un peu l’idée de la liberté protégée par la liberté ? Mais si Martine est d’accord alors il n’y a pas 
-de problème et comme ils n’entravent pas le liberté de quelqu’un, alors personne n’a le droit d’interférer dans leur échange. 
+de problème et comme ils n’embêtent personne, alors personne n’a le droit d’interférer dans leur échange. 
 Bien qu’est-ce que tu en penses jusque-là ?
 
 	O1 : Je suis d’accord, du moment que l’on entrave pas la liberté de quelqu’un d’autre, on peut faire ce qu’on veut.
@@ -23,7 +23,7 @@ Bien qu’est-ce que tu en penses jusque-là ?
 	O3 : Je suis pas trop d’accord, je trouve ce principe limité, il faudrait l’accompagner de règles plus détaillées
   
 	R1 : ça fait plaisir de croiser des personnes avec un minimum d’intellect sur cette planète
-	R2 : Je vois qu’il te faut plus d’exemple.
+	R2 : Je vois qu’il te faut plus d’exemples.
  	R3 : Tu verras c’est une idée qui se gère par elle-même. 
   
 GML : Bon on va voir si tu as bien compris le concept. Le premier cas est ultra simple. C’est juste pour poser les bases. 
@@ -43,19 +43,19 @@ d’accepter le dossier ou non. Que fais-tu ?
 	O1 : J’accepte
 	O2 : Je refuse
   
-	R1 : Bien vu, son choix vient de sa liberté de disposé de sa vie comme il l’entend et il n’interfère pas avec les libertés des autres. 
+	R1 : Bien vu, son choix vient de sa liberté de disposer de sa vie comme il l’entend et il n’interfère pas avec les libertés des autres. 
 	R2 : Tu n’as aucune raison de le privé de sa liberté
   
- GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. Cet après-midi tu seras un juge dans un tribunal.
+ GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. Cet après-midi tu seras juge dans un tribunal.
 *Le GML claque des doigts et les deux apparaissent dans un tribunal*
-GML : Faut que je te laisse, faut que j’aille vérifier un truc.
-*Le GML dissipait et laisse le joueur seul et quelques instants après une personne arrive*
+GML : Faut que je te laisse, je dois aller vérifier un truc.
+*Le GML disparaît et laisse le joueur seul et quelques instants après, une personne arrive*
 ??? : Votre honneur l’audience va bientôt commencer.
 *Le joueur s’installe et on lui présente le premier cas*
 
-Une ville refuse catégoriquement d’ouvrir une nouvelle piscine et ne souhaite en voir une s’ouvrir par des particuliers, 
+Une ville refuse catégoriquement d’ouvrir une nouvelle piscine et ne souhaite pas en voir une s’ouvrir par des particuliers, 
 malgré que la population réclame depuis déjà un certain temps une nouvelle piscine. Une personne décide de construire une piscine 
-dans son propre terrain et décide que faire payer une petite somme pour rendre son projet un minimum rentable. La ville décide de 
+dans son propre terrain et décide de faire payer une petite somme pour rendre son projet un minimum rentable. La ville décide de 
 porter plainte contre la personne qui a construit la nouvelle piscine. 
 
 	O1 : La personne qui a construit la piscine est en règle car il utilise sa propriété comme il l’entend sans entraver la liberté de qui ce soit.
@@ -67,11 +67,11 @@ Ajout d'autres situations en rapport avec le libertarianisme sans que ce soit de
 ??? : Votre honneur il reste encore une dernière affaire à régler
 *Possible effet de bug*
 
-Voilà la situation. Gilbert a égorgé son meilleur ami Justin vivant puis l’a empaillé avant de le stocker dans son grenier. 
+Voilà la situation: Gilbert a égorgé son meilleur ami Justin vivant puis l’a empaillé avant de le stocker dans son grenier. 
 Justin lui avait dit qu’il souhaitait mourir et que ses derniers souhaits seraient de se faire égorger vivant puis empailler par un 
 taxidermiste. Gilbert étant taxidermiste de profession, s’est assuré que Justin possédait une capacité durable de discernement en 
 lui demandant sa carte de vote ainsi qu’une attestation d’un psychologue qui affirmait qu’il n’avait aucune maladie psychiatrique. 
-Rassuré et puisque Justin est consentant ainsi que son meilleur ami, il s’est exécuté.
+Rassuré et puisque Justin est consentant, il s’est exécuté.
 
 	O1 : Je le mets en prison à vie pour homicide volontaire
 	O2 : je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et 
@@ -84,5 +84,5 @@ fréquentée. Quelque chose attire son attention au sommet d’un immeuble. Le j
 	O1 : La laisser faire
 	O2 : Aller l’aider
   
-	R1 : Le joueur voit la femme sautée et au moment où elle atteint le sol, le joueur se réveille en sursaut
+	R1 : Le joueur voit la femme sauter et au moment où elle atteint le sol, le joueur se réveille en sursaut
 	R2 : Le joueur se précipite pour aller aider la femme mais au moment où il arrive au sommet de l’immeuble la femme saute. Le joueur assiste impuissant à la chute de la femme et se réveille en sursaut. 
