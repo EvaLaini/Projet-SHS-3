@@ -24,8 +24,11 @@ Vendredi 01/05 :
 	. Visuels --> Colin
 
 Mardi 05/05 :
-	. Script rêve 4 --> Ylies
 	. Bilan --> Colin
+	. Suite prog --> Antoine
+	. Suite Visuel --> Ylies
+	. Jour 3 --> Eva
+	. Suite nuit 2 --> Valton
 
 A regarder :
 	. Choix grisés
