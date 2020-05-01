@@ -1,5 +1,15 @@
 Le joueur voit les 2 GM discuter entre eux pour une intro au monde
 
+
+intro 
+jour 1 rien ne se passe
+nuit 1 rencontre GMU
+jour 2 dilemme
+nuit 2 rencontre GML
+jour 3 joueur parle avec MA, rituel/invocation 
+nuit 3 papa dieu conclusion : explication des courants joueur + compte rendu des choix 
+
+
 3 premier jour de narration (pas de choix trop compliqué) et 3 jour de "vrai jeu"
 6 nuit : 
 -1ere soft U        reve Antoine              apparition du 1er GM (GMU)
