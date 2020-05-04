@@ -46,6 +46,47 @@
 **Clara** : "Mais non, mais non! Bon, mettons-nous au boulot, il doit bien y avoir des livres sur les visions envoyées par des dieux dans cette bibliothèque!",
   "Tu prends cette étagère et moi celle d'à côté, okay?"
 **Joueur** : "C'est parti!"
+*Pause*
+**Clara** : "Regarde cette pile de livres! On va bien pouvoir trouver quelque chose là dedans!"
+*Pause*
+**Joueur** : "Pffff, ce livre parle uniquement de dieux grecs... Je pense pas que ce soit utile."
+*Pause*
+**Clara** : "@, viens vite! Je crois que j'ai trouvé quelque chose!", "Ce livre parle d'un rituel qui permet d'invoquer des kami!",
+    "Apparemment, c'était très utilisé pendant l'époque Edo pour communiquer avec divers dieux, dont Kamimusubi, le créateur divin.", 
+    "Si on arrive à l'invoquer, il saura peut-être comment se débarrasser de ceux de tes rêves!"
+**Joueur** : "Bravo Clara! Il reste plus qu'à espèrer que ça marche!", "De quoi on va avoir besoin?"
+**Clara** : "Hum... Ils parlent d'une offrande de gâteaux de riz aux algues et de sake... Puis ils disent de purifier l'air par de l'encense...",
+    "Et pour appeler le kami-sama, il nous faudra une cloche consacrée au dieu qu'on veut invoquer."
+**Joueur** : 
+    - "ça va être compliqué de trouver tout ça..."
+    - "Plus que quelques étapes et je serais libéré de ces rêves!"
+    - "Je doute que ça marche mais ça vaut la peine d'essayer..."
+**Clara** : "Je peux aller piquer des gâteaux de riz et du sake chez mes parents mais il va falloir aller acheter le reste."
+**Joueur** : "Va chez toi chercher les offrandes! Je m'occupe de l'encense et de la cloche."
+**Clara** : "Très bien, j'y vais. On se retrouve ici dès qu'on a tout ce qu'il faut, okay?"
+**Joueur** : "Oui, à toute!"
+*Clara part*
+**Joueur** : "Bon, où est-ce que je vais bien pouvoir trouver ces trucs... Je vais faire une recherche sur mon natel.", 
+    "Ah, j'ai trouvé une boutique shinto pas loin d'ici! Même s'il ont pas exactement ce qu'il faut, ils pourront me renseigner."
+*Pause*
+**Enfant 1, effrayé** : "Laissez-moi tranquille, j'essaye de faire mes devoirs!"
+**Enfant 2, méchant** : "Hahah! Le petit je-sais-tout prend de l'avance pour pouvoir bien lècher les pieds du prof!"
+**Enfant 3, méchant** : "De toute façons, tout le monde le déteste, il a rien d'autre a faire! Et il faut bien qu'il fasse ses devoir s'il veut garder sa place de chouchou!"
+**Enfant 2, méchant** : "Moi je sais pourquoi il veux absolument que le prof l'aime!"
+**Enfant 3, méchant** : "Vas-y!"
+**Enfant 1, effrayé** : "Arrêtez..."
+**Enfant 2, méchant** : "J'ai entendu dire que son père l'a abandonné quand il était petit!"
+**Enfant 3, méchant** : "Mwahahah! Il a dû te trouver tellement moche qu'il est parti se faire une autre vie!"
+**Enfant 1, effrayé** : "C'est pas vrai..."
+**Joueur, pense** : "Que faire?" :
+    - "Je vais faire comme si je n'avais rien entendu et partir discrètement." (U++, L++)
+    - "Engueuler les deux agresseurs, il faut qu'ils arrêtent ce comportement, ce n'est sûrement pas le seul élève qu'ils embêtent!" (U+)
+    - "Défendre le père, il avait sûrement ses raisons de partir!" (L++)
+    - "Défendre le petit, il a bien le droit de faire ses devoirs tranquille!" (L+)
+
+
+
+
 
 
 
