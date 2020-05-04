@@ -1,7 +1,36 @@
 *Chambre, nuit*
 
 **Joueur** : "HAAAAAA !!!"
-**halète** - "J'en peux plus ! Si ça continue je vais devenir dingue !"
-- "Il faut absolument que je trouve une solution."
+"Il te faut un moment pour te rappeler qui tu es et où tu te trouve"
+**Joueur** : "*halète* J'en peux plus ! Si ça continue je vais devenir dingue !", "Il faut absolument que je trouve une solution."
 
-**Mère, au loin** : "Debout, chérie ! C'est bientôt l'heure de partir"
+**Mère, au loin** : "Tout va bien, chérie ? Je t'ai entendu crier!"
+**Joueur** : "Oui, oui, juste un mauvais rêve !"
+**Mère, au loin** : "Tu veux venir m'en parler ?", "Fait vite, c'est bientôt l'heure de partir!"
+**Joueur, pense** : "Il faut vraiment que j'en parle à quelqu'un, mais ma mère va encore me dire que c'est juste le stress des examens et que je dois manger mieux...",
+  "Alors qui ? Clara ?", "Si elle me croit, on pourrait chercher une solution ensemble après les cours! Elle a toujours des bonnes idées."
+**Mère** : "@?"
+**Joueur** : "J'arrive!"
+
+*Dans la salle de classe* 
+**Prof** : "... les formules au tableau sont à apprendre absolument pour les examens!", "On va maintenant démontrer ensemble le théorème 3."
+**Joueur, pense** : "Je commence à stresser... Et si Clara me prenait pour un fou ??", "Mais non , on est amis depuis bien trop longtemps...", 
+  "Courage ! Je vais lui envoyer un message pour se retrouver après les cours."
+*Ecran de téléphone*
+**Joueur** : "Hum... :
+    - 'Coucou! Est-ce que tu as du temps cet aprem pour que je te parle d'un truc??'
+    - "Tu peux me retrouver cet aprem après les cours ? J'ai besoin de toi!"
+**Joueur, pense** : "Oui, autant faire simple. Envoyer!", "Il reste plus qu'à attendre une réponse..."
+**Prof** : "C'est tout pour la théorie. Reprenez vos cahiers et commencez les exercices du chapitre 8."
+*Vibration*
+**Joueur, pense** : "Ah c'est déjà la réponse de Clara!", "... 'Oui, pas de problème! Retrouve-moi à la bibliothèque.'"
+**Prof, énervé** : "@! Encore sur votre téléphone?! Si je vous retrouve à regarder cet appareil pendant mon cours, je vous le confisque jusqu'à la fin de la journée!"
+**Joueur** : Ah, désolé.. Je le range tout de suite!"
+**Prof** : "Bon, reprenez vos exercices. Et en silence!"
+
+
+
+
+
+
+
