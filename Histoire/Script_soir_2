@@ -2,15 +2,17 @@ Script rêve 2
 *Le joueur se réveille de nouveau dans une étrange salle. *
 
 GML : Ah te voilà enfin réveillé 
-*Le joueur regarde effrayer le GML*
 
-GML : Vu ta tête tu as surement passé une sale soirée avec mon frère. Pas étonnant avec son idée qui ne tient absolument pas la route. 
-Tu verras avec moi ta soirée se passera son accro. Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
+Joueur : Je... Je suis de nouveau dans la même salle que hier?
+
+GML : Non pas tout à fait. Hier tu étais dans la dimension de mon frère. Comme tu as déjà vécu ça je vais être bref. Cette fois je vais
+t'expliquer comment je vois le monde et comment il devrait être régis. Tu verras c'est bien plus réaliste que l'idée de mon idiot de 
+frère.  Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
 C’est pas beau ça ? Tu verras c’est simple à comprendre.
 
 *Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un manger une glace*
 GML : Tu vois le mec là-bas qui mange une glace ? C’est John. Pourquoi il a le droit de manger une glace ? Eh bin c’est simple 
-il l’a acheté avec son argent et qu’il dérange personne. 
+il l’a acheté avec son argent et il dérange personne. 
 *LE GML claque de nouveau des doigts et les deux se trouvent dans un jardin où on voit un nain de jardin*
 
 GML : ça c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, il entrave la liberté 
@@ -43,10 +45,13 @@ d’accepter le dossier ou non. Que fais-tu ?
 	O1 : J’accepte
 	O2 : Je refuse
   
-	R1 : Bien vu, son choix vient de sa liberté de disposer de sa vie comme il l’entend et il n’interfère pas avec les libertés des autres. 
+	R1 : Bien vu, son choix vient de sa liberté de disposer de sa vie comme il l’entend et il n’interfère pas avec les libertés des 
+	autres. 
 	R2 : Tu n’as aucune raison de le privé de sa liberté
   
- GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. Cet après-midi tu seras juge dans un tribunal.
+GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. 
+Cet après-midi tu seras juge dans un tribunal.
+
 *Le GML claque des doigts et les deux apparaissent dans un tribunal*
 GML : Faut que je te laisse, je dois aller vérifier un truc.
 *Le GML disparaît et laisse le joueur seul et quelques instants après, une personne arrive*
@@ -58,13 +63,43 @@ malgré que la population réclame depuis déjà un certain temps une nouvelle p
 dans son propre terrain et décide de faire payer une petite somme pour rendre son projet un minimum rentable. La ville décide de 
 porter plainte contre la personne qui a construit la nouvelle piscine. 
 
-	O1 : La personne qui a construit la piscine est en règle car il utilise sa propriété comme il l’entend sans entraver la liberté de qui ce soit.
+	O1 : La personne qui a construit la piscine est en règle car il utilise sa propriété comme il l’entend sans entraver la liberté 
+	de qui ce soit.
 	O2 : La ville a ses raisons d’interdire la construction de la piscine et le propriétaire est en situation illicite. 
 
-Ajout d'autres situations en rapport avec le libertarianisme sans que ce soit des situations hard
+Une personne a acheté une place dans le centre-ville pour y construire des attractions et ainsi rendre cette partie de la ville plus
+attractive. Toutfois un commerçant se pleint que cette attraction va impacter négativement ses gains.
+
+	O1 : La personne qui a acheté la place et tout à fait en droit de faire ce qu'il souhaite sur sa propriété et le commerçant 
+	qui se dit atteint par ce projet n'a pas de preuve qu'il sera lésé 
+	O2 : Le risque de léser les autres commerçants est trop grand de ne fait ce projet ne peut pas être autorisé.
+
+Un architecte veut imposer son modèle architectural aux autres architectes de la région pour uniformiser les prochaines conceptions. 
+Les autres architectes trouvent cela aberrant et décident de porter plainte.
+
+	O1 : L'architecte a de bonnes raisons d'imposer sa conception des bâtiments aux autres car cela permetterait d'avoir un style 
+	cohérent dans la région
+	O2 : L'achitecte qui cherche à imposer son idée entrave totalement la liberté de conception des autres architectes. 
+	
+*Après avoir réglé tous ces affaires judiciaires le joueur peut enfin rentrer chez lui. Il fait déjà nuit et le joueur empreinte une 
+rue peu fréquentée. Quelque chose attire son attention au sommet d’un immeuble. Le joueur voit une femme sur le point de sauter de 
+l’immeuble.
+
+	O1 : La laisser faire
+	O2 : Aller l’aider
+  
+	R1 : Le joueur voit la femme sauter et au moment où elle atteint le sol, le joueur se réveille en sursaut
+	R2 : Le joueur se précipite pour aller aider la femme mais au moment où il arrive au sommet de l’immeuble la femme saute. 
+	Le joueur assiste impuissant à la chute de la femme et se réveille en sursaut. 
+
+
+
+
+-------------------------------------Peut être utilisépour le rêve 3-------------------------------------
 
 *Après toutes ces audiences le joueur est fatigué pense avoir fini sa journée mais est retenu avant de pouvoir sortir du tribunal*
 ??? : Votre honneur il reste encore une dernière affaire à régler
+
 *Possible effet de bug*
 
 Voilà la situation: Gilbert a égorgé son meilleur ami Justin vivant puis l’a empaillé avant de le stocker dans son grenier. 
@@ -78,11 +113,4 @@ Rassuré et puisque Justin est consentant, il s’est exécuté.
   conscient de son acte
 	O3 : Je choisis de le relaxer
 
-*Après cette dernière affaire sordide le joueur peut enfin rentrer chez lui. Il fait déjà nuit et le joueur empreinte une rue peu 
-fréquentée. Quelque chose attire son attention au sommet d’un immeuble. Le joueur voit une femme sur le point de sauter de l’immeuble.
 
-	O1 : La laisser faire
-	O2 : Aller l’aider
-  
-	R1 : Le joueur voit la femme sauter et au moment où elle atteint le sol, le joueur se réveille en sursaut
-	R2 : Le joueur se précipite pour aller aider la femme mais au moment où il arrive au sommet de l’immeuble la femme saute. Le joueur assiste impuissant à la chute de la femme et se réveille en sursaut. 
