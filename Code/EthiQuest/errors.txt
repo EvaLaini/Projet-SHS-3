@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 454: end of line expected.
-    player "J'ai fini mes devoirs mais je n'arrive pas à dormir...", "Ces histoires d'examens me stressent."
-                                                                   ^
+File "game/script.rpy", line 921: expected ':' not found.
+    label reve1_fin
+                   ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Apr 23 16:13:29 2020
+Sat May 02 11:25:13 2020

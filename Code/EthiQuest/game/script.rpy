@@ -6,53 +6,134 @@
 # Déclarez les personnages utilisés dans le jeu.
 
 # Narrateur
-define narrateur = Character('Narratuer', color="#ebc634")
+define narrateur = Character('Narrateur', color="#ebc634")
 
-#Joueur
+screen show_char(path, alignX, alignY, zoomV):
+  tag show_char
+  add path xalign alignX yalign alignY zoom zoomV
+
+screen show_char1(path, alignX, alignY, zoomV):
+  tag show_char1
+  add path xalign alignX yalign alignY zoom zoomV
+
+screen show_char2(path, alignX, alignY, zoomV):
+  add path xalign alignX yalign alignY zoom zoomV
+
+screen show_char_pos(path, posX, posY, zoomV):
+  add path zoom zoomV xpos posX ypos posY
+
+screen show_char_pos1(path, posX, posY, zoomV):
+  add path zoom zoomV xpos posX ypos posY
+
+screen show_char_pos2(path, posX, posY, zoomV):
+  add path zoom zoomV xpos posX ypos posY
+
+#Hero ========================================================================================
 define player = Character("[nom]", color="#ebc634", image="boy")
-image boy_angry = Image("Jour_1/pere_et_hero/boy_angry.png", xalign=0.0, yalign=1.0)
-image boy_confused = Image("Jour_1/pere_et_hero/boy_confused.png", xalign=0.0, yalign=1.0)
-image boy_cry = Image("Jour_1/pere_et_hero/boy_cry.png", xalign=0.0, yalign=1.0)
-image boy_flustered = Image("Jour_1/pere_et_hero/boy_flustered.png", xalign=0.0, yalign=1.0)
-image boy_happy = Image("Jour_1/pere_et_hero/boy_happy.png", xalign=0.0, yalign=1.0)
-image boy_nervous = Image("Jour_1/pere_et_hero/boy_nervous.png", xalign=0.0, yalign=1.0)
-image boy = Image("Jour_1/pere_et_hero/boy_normal.png", xalign=0.0, yalign=1.0)
-image boy_sad = Image("Jour_1/pere_et_hero/boy_sad.png", xalign=0.0, yalign=1.0)
-image boy_shocked = Image("Jour_1/pere_et_hero/boy_shocked.png", xalign=0.0, yalign=1.0)
 
-#Pere
+define boy_angry = "Perso/hero/boy_angry.png"
+define boy_confused = "Perso/hero/boy_confused.png"
+define boy_cry = "Perso/hero/boy_cry.png"
+define boy_flustered = "Perso/hero/boy_flustered.png"
+define boy_happy = "Perso/hero/boy_happy.png"
+define boy_nervous = "Perso/hero/boy_nervous.png"
+define boy = "Perso/hero/boy_normal.png"
+define boy_sad = "Perso/hero/boy_sad.png"
+define boy_shocked = "Perso/hero/boy_shocked.png"
+
+define zoom_boy = 0.25
+#Hero ========================================================================================
+
+#Pere ========================================================================================
 define dad = Character("Papa", color="#3443eb", image="dad")
-image dad = Image("Jour_1/pere_et_hero/dad.png", xalign=0.0, yalign=1.0)
-image dad_smoking = Image("Jour_1/pere_et_hero/dad_smoking.png", xalign=0.0, yalign=1.0)
+define dad_path = "Perso/pere/dad.png"
+define dad_smoking = "Perso/pere/dad_smoking.png"
 
-#Meilleur amie
+define zoom_dad=0.7
+#========================================================================================
+
+#Meilleur amie ========================================================================================
 define best_friend = Character("Emma", color="#3443eb", image="best_friend")
-image best_friend = Image("Jour_1/meilleur_amie/best_friend_neutral01.png", xalign=0.0, yalign=1.0)
-image best_friend_angry = Image("Jour_1/meilleur_amie/best_friend_angry01.png", xalign=0.0, yalign=1.0)
-image best_friend_annoyed = Image("Jour_1/meilleur_amie/best_friend_annoyed01.png", xalign=0.0, yalign=1.0)
-image best_friend_sad = Image("Jour_1/meilleur_amie/best_friend_sad01.png", xalign=0.0, yalign=1.0)
-image best_friend_smile = Image("Jour_1/meilleure_amie/best_friend_smile01.png", xalign=0.0, yalign=1.0)
+define best_friend_neutral = "Perso/amie/amie_neutral.png"
+#define best_friend_angry = "Perso/amie/amie_neutral.png"
+define best_friend_annoyed = "Perso/amie/amie_gene.png"
+#define best_friend_sad = "Perso/amie/amie_neutral.png"
+define best_friend_smile = "Perso/amie/amie_happy.png"
+define best_friend_reading = "Perso/amie/amie_lecture.png"
 
-#Mere
+define zoom_best_friend = 1.4
+#========================================================================================
+
+#Mere ========================================================================================
 define mere = Character("Maman", color="#ebe834", image="mere")
-image mere = Image("Jour_1/mere/mere_neutral.png", xalign=0.0, yalign=1.0)
-image mere_angry = Image("Jour_1/mere/mere_angry.png", xalign=0.0, yalign=1.0)
-image mere_happy = Image("Jour_1/mere/mere_happy.png", xalign=0.0, yalign=1.0)
-image mere_sad = Image("Jour_1/mere/mere_sad.png", xalign=0.0, yalign=1.0)
-image mere_surprised = Image("Jour_1/mere/mere_surprised.png", xalign=0.0, yalign=1.0)
+define mere_neutral = "Perso/mere/mere_bienveillante.png"
+define mere_angry = "Perso/mere/mere_colere.png"
+define mere_happy = "Perso/mere/mere_rire.png"
+define mere_sad = "Perso/mere/mere_sad.png"
+define mere_surprised = "Perso/mere/mere_surprised.png"
+define zoom_mom = 0.7
+# ========================================================================================
 
-#Professeur
+#Professeur =========================================================================
 define teacher = Character("Professeur", color="#ebe834", image="teacher")
-image teacher = Image("Jour_1/Professeur/teacher_neutral.png", xalign=0.0, yalign=1.0)
-image teacher_annoyed = Image("Jour_1/Professeur/teacher.png", xalign=0.0, yalign=1.0)
+define teacherP = "Perso/professeur/professeur_talking.png"
+define teacher_annoyed = "Perso/professeur/professeur_talking_2.png"
 
-#GM
+define zoom_teacher = 0.9
+#=====================================================================================
+
+#GM =========================================================================
 define gm1 = Character('Game Master 1', color="#c8ffc8", image = "game_master_1")
-image game_master_1 = Image("game_master.png", xalign=0.0)
+define game_master_1 = "Perso/gm1/GM1_1.png"
 
 define gm2 = Character("Game Master 2", color="#c8ffc8")
-image game_master_2 = Image("game_master.png", xalign=0.0)
+define game_master_2 = "Perso/gm2/GM2_1.png"
 
+# =========================================================================
+
+#Docteur perso =========================================================================
+define doc = Character("[nom]", color="#c8ffc8")
+define docteur = "Perso/docteur/Dr_noname.png"
+
+define zoom_doc = 0.4
+# ======================================================================================
+
+#Camarade =========================================================================
+define camarade_1 = Character("Camarade", color="#32a852")
+define camarade_2 = Character("Autre camarade", color="#32a852")
+#======================================================================================
+
+#Infirmiere ======================================================================================
+define infirmiere = Character("Infirmiere", color="#85ce25")
+define infirmierePath = "Perso/infirmiere/infirmiere.png"
+define zoom_infirmiere = 0.9
+#======================================================================================
+
+#Chirurgien ======================================================================================
+define chir = Character("Michelle", color="#85ce25")
+define chirurgien = "Perso/docteur/dr_Michelle.png"
+define zoom_chir = 0.4
+#======================================================================================
+
+#Prisonnier ======================================================================================
+define priso = Character("[nom_priso]", color="#85ce25")
+define prisonnier = "Perso/prisonnier/prisonnier.png"
+
+define nom_priso = "Prisonnier"
+define zoom_priso = 0.4
+#======================================================================================
+
+#Policiers ======================================================================================
+define poli1 = Character("Policier 1", color="#85ce25")
+define poli2 = Character("Policier 2", color="#85ce25")
+
+define policier_1 = "Perso/policiers/police_1.png"
+define policier_2 = "Perso/policiers/police_2.png"
+
+define zoom_poli1 = 1.9
+define zoom_poli2 = 0.8
+
+#======================================================================================
 #Backgrounds
 
 #Space
@@ -61,36 +142,47 @@ image earth_far = im.Scale("Intro/earth_far.jpg", 1920, 1080)
 image universe = im.Scale("Intro/universe.png", 1920, 1080)
 
 #Chambre hreo
-image room_hero = im.Scale("Jour_1/chambre_hero/room_day.png", 1920, 1080)
-image room_hero_night = im.Scale("Jour_1/chambre_hero/room_night.png", 1920, 1080)
-image room_night_light = im.Scale("Jour_1/chambre_hero/room_night_light.png", 1920, 1080)
+image room_hero = im.Scale("Backgrounds/chambre_hero/room_day.png", 1920, 1080)
+image room_hero_night = im.Scale("Backgrounds/chambre_hero/room_night.png", 1920, 1080)
+image room_night_light = im.Scale("Backgrounds/chambre_hero/room_night_light.png", 1920, 1080)
 
 #Salon
-image salon = im.Scale("Jour_1/cuisine_salon/salon_jour.png", 1920, 1080)
-image salon_crepuscule = im.Scale("Jour_1/cuisine_salon/salon_dawn.png", 1920, 1080)
-image salon_nuit = im.Scale("Jour_1/cusiine_salon/salon_nuit.png", 1920, 1080)
+image salon = im.Scale("Backgrounds/cuisine_salon/salon_jour.png", 1920, 1080)
+image salon_crepuscule = im.Scale("Backgrounds/cuisine_salon/salon_dawn.png", 1920, 1080)
+image salon_nuit = im.Scale("Backgrounds/cusiine_salon/salon_nuit.png", 1920, 1080)
 
 #Ecole
-image classroom = im.Scale("Jour_1/ecole/classroom.png", 1920, 1080)
-image classroom_empty_full_light = im.Scale("Jour_1/ecole/classroom_empty_full_light.png", 1920, 1080)
-image classroom_empty_mid_light = im.Scale("Jour_1/ecole/classroom_empty_mid_light.png", 1920, 1080)
-image classroom_empty_no_day_light = im.Scale("Jour_1/ecole/classroom_empty_no_day_light.png", 1920, 1080)
-image classroom_teacher = im.Scale("Jour_1/ecole/classroom_teacher.png", 1920, 1080)
-image ecole_couloir = im.Scale("Jour_1/ecole/couloir.png", 1920, 1080)
-image ecole_entree_jour = im.Scale("Jour_1/ecole/entree_jour.png", 1920, 1080)
-image lunchroom_empty_dawn = im.Scale("Jour_1/ecole/lunchroom_empty_dawn.png", 1920, 1080)
-image lunchroom_empty = im.Scale("Jour_1/ecole/lunchroom_empty.png", 1920, 1080)
-image lunchroom_full = im.Scale("Jour_1/ecole/lunchroom_full.png", 1920, 1080)
-image lunchroom_full_no_sunlight = im.Scale("Jour_1/ecole/luchroom_full_no_sunlight", 1920, 1080)
-image lunchroom_half_full = im.Scale("Jour_1/ecole/lunchroom_half_full.png", 1920, 1080)
+image classroom = im.Scale("Backgrounds/ecole/classroom.png", 1920, 1080)
+image classroom_empty_full_light = im.Scale("Backgrounds/ecole/classroom_empty_full_light.png", 1920, 1080)
+image classroom_empty_mid_light = im.Scale("Backgrounds/ecole/classroom_empty_mid_light.png", 1920, 1080)
+image classroom_empty_no_day_light = im.Scale("Backgrounds/ecole/classroom_empty_no_day_light.png", 1920, 1080)
+image classroom_teacher = im.Scale("Backgrounds/ecole/classroom_teacher.png", 1920, 1080)
+image ecole_couloir = im.Scale("Backgrounds/ecole/couloir.png", 1920, 1080)
+image ecole_entree_jour = im.Scale("Backgrounds/ecole/entree_jour.png", 1920, 1080)
+image lunchroom_empty_dawn = im.Scale("Backgrounds/ecole/lunchroom_empty_dawn.png", 1920, 1080)
+image lunchroom_empty = im.Scale("Backgrounds/ecole/lunchroom_empty.png", 1920, 1080)
+image lunchroom_full = im.Scale("Backgrounds/ecole/lunchroom_full.png", 1920, 1080)
+image lunchroom_full_no_sunlight = im.Scale("Backgrounds/ecole/luchroom_full_no_sunlight", 1920, 1080)
+image lunchroom_half_full = im.Scale("Backgrounds/ecole/lunchroom_half_full.png", 1920, 1080)
 
 
-define camarade_1 = Character("Camarade", color="#32a852")
-define camarade_2 = Character("Autre camarade", color="#32a852")
+
+
+#transition : jour nuit plus de temps genre ellipse
+
+
+#Ville
+image city_day  = im.Scale("Backgrounds/ville/ville_jour.png", 1920, 1080)
+image city_night = im.Scale("Backgrounds/ville/ville_nuit.png", 1920, 1080)
+
+#hopital
+image hopital_couloir = im.Scale("Backgrounds/hopital/hopital_couloir.jpg", 1920, 1080)
+image hopital_consultation = im.Scale("Backgrounds/hopital/hopital_consultation.jpg", 1920, 1080)
+image hopital_exterieur = im.Scale("Backgrounds/hopital/hopital_exterieur.png", 1920, 1080)
+image hopital_operation = im.Scale("Backgrounds/hopital/operation_1.jpg", 1920, 1080)
 
 # Le jeu commence ici
 label start:
-
     #Bienvenue
     narrateur "Bienvenue dans EthiQuest"
 
@@ -110,16 +202,19 @@ label start:
     return
 
 label intro_gm:
-    
+
     scene universe
     with dissolve
 
-    show game_master_1
+    #show screen test_screen()
+
+    #show game_master_1
+    #with dissolve
+    show screen show_char(game_master_1, -0.1, 1.0, 1.0)
     with dissolve
 
-    show game_master_2:
-      xalign 1.0
-      yalign 1.0
+
+    show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
     with dissolve
 
     gm1 "NON PAS DU TOUT, TU TE TROMPES !"
@@ -146,6 +241,8 @@ label intro_gm:
     gm1 "Alors c’est moi qui choisis la…"
     gm2 "Trop tard, hi hi hi ! J’ai déjà choisi celle-là."
 
+    call hide_chars
+
     jump intro_gm_earth
 
 label intro_gm_earth:
@@ -153,21 +250,22 @@ label intro_gm_earth:
     scene earth_far
     with dissolve
 
-    show game_master_1
+    show screen show_char(game_master_1, -0.1, 1.0, 1.0)
     with dissolve
 
-    show game_master_2:
-      xalign 1.0
-      yalign 1.0
+    show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
     with dissolve
 
     gm2 "Reste plus qu'à trouver notre ..."
     gm1 "J'ai déjà choi ! On se retrouve en bas frangin !"
 
-    hide game_master_1
+    hide screen show_char
     with dissolve
 
     gm2 "Hé attends-moi ! Aaaaarrrrh, il m'énerve ..."
+
+    hide screen show_char1
+    with dissolve
 
     jump intro_context
 
@@ -192,17 +290,16 @@ label jour1_appartement:
     scene room_hero
     with dissolve
 
-    show mere
+    show screen show_char(mere_neutral, 0.0, 1.0, zoom_mom)
     with dissolve
 
-    show boy:
-      xalign 1.0
-      yalign 1.0
-      zoom 0.3
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
 
     player "*Bâille* Il faut que j'aille à la cuisine prendre mon petit déjeuner avant d'aller en cours..."
+    
 
+    call hide_chars
     menu:
       "Cuisine":
         jump jour1_cuisine
@@ -212,17 +309,11 @@ label jour1_cuisine:
     scene salon
     with dissolve
 
-    show mere:
-      xalign 0.0
-      yalign 0.0
+    show screen show_char(mere_neutral, 0.0, 1.0, zoom_mom)
     with dissolve
 
-    show boy:
-      xalign 1.0
-      yalign 1.0
-      zoom 0.3
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
-
 
     mere "Ah tu es debout, très bien! Voilà tes céréales, [nom]. Manges les vite, tu dois te dépêcher." 
 
@@ -237,6 +328,7 @@ label jour1_bol:
     mere "Bonne journée, mon chou !"
     menu:
       "Extérieur":
+        call hide_chars
         jump jour1_exterieur
 
 label jour1_exterieur:
@@ -245,10 +337,7 @@ label jour1_exterieur:
     scene classroom_teacher
     with dissolve
 
-    show teacher:
-      xalign 0.0
-      yalign 1.0
-      zoom 0.7
+    show screen show_char(teacherP, 0.0, 1.0, zoom_teacher)
     with dissolve
 
 
@@ -257,27 +346,21 @@ label jour1_exterieur:
 
     "*Silence*"
 
-    hide teacher
-    with dissolve
+    call hide_chars
 
-    show teacher_annoyed:
-      xalign 0.0
-      yalign 1.0
-      zoom 0.7
+    show screen show_char(teacher_annoyed, 0.0, 1.0, zoom_teacher)
     with dissolve
 
     teacher "Personne ? N'oubliez pas que vous examens finaux sont le mois prochain, il va falloir se mettre au travail !"
 
-    hide teacher_annoyed
-    with dissolve
-
-    show boy_nervous:
-      xalign 1.0
-      yalign 1.0
-      zoom 0.25
+    call hide_chars
+   
+    show screen show_char(boy_nervous, 1.0, 1.0, zoom_boy)
     with dissolve
 
     player "Je sens que cette matinée va être longue...Vivement la pause de midi !"
+
+    call hide_chars
 
     jump jour1_lunch
 
@@ -286,16 +369,11 @@ label jour1_lunch:
     scene lunchroom_full
     with dissolve
 
-    show best_friend_smile:
-      xalign 0.0
-      yalign 1.0
-      zoom 0.6
+
+    show screen show_char(best_friend_smile, 0.0, 1.0, zoom_best_friend)
     with dissolve
 
-    show boy_confused:
-      xalign 1.0
-      yalign 1.0
-      zoom 0.25
+    show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
     with dissolve
 
 
@@ -313,6 +391,8 @@ label jour1_lunch:
     best_friend "Je vois ! Dépêchons nous d'aller manger, il y a déjà une queue."
     player "J'arrive!"
 
+    call hide_chars
+
     jump jour1_manger
 
 label jour1_manger:
@@ -322,16 +402,10 @@ label jour1_manger:
     scene lunchroom_full
     with dissolve
 
-    show best_friend_smile:
-      xalign 0.0
-      yalign 1.0
-      zoom 0.6
+    show screen show_char(best_friend_smile, 0.0, 1.0, zoom_best_friend)
     with dissolve
-
-    show boy_confused:
-      xalign 1.0
-      yalign 1.0
-      zoom 0.25
+    
+    show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
     with dissolve
 
 
@@ -359,6 +433,9 @@ label jour1_manger:
     "*Ding* *Ding*"
 
     best_friend "Ah, c'est l'heure de retourner en classe. Bon j'y vais. Bon aprem [nom] !"
+    
+
+    call hide_chars
 
     jump jour1_cours
 
@@ -367,30 +444,27 @@ label jour1_cours:
     scene classroom_teacher
     with dissolve
 
-    show teacher:
-      xalign 0.0
-      yalign 1.0
-      zoom 0.7
+
+    show screen show_char(teacherP, 0.0, 1.0, zoom_teacher)
     with dissolve
 
     teacher "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parle tous ensemble demain."
     teacher "Bonne soirée."
 
-    hide teacher
-    with dissolve
+    call hide_chars
 
     camarade_1 "Aaaah, j'avais oublié, je vais devoir repousser mon entrainement..."
     camarade_2 "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énérgie dans les révisions..."
     
-    show boy:
-      xalign 1.0
-      yalign 1.0
-      zoom 0.25
+    show screen show_char(boy, 1.0, 1.0, zoom_boy)
     with dissolve
 
     player "Ils plaisantent pas avec ces examens..."
     camarade_2 "Vraiment... Et en plus, on a une grosse journée demain..."
     player "Il va falloir que j'aie me coucher tôt si je veux être en forme."
+
+    call hide_chars
+
 
     jump jour1_maison_soir
 
@@ -399,19 +473,15 @@ label jour1_maison_soir:
     scene salon
     with dissolve
 
-    show dad:
-      xpos -250
-      yalign 1.0
-      zoom 0.7
+    show screen show_char_pos(dad_path, -250, 500, zoom_dad)
     with dissolve
 
     dad "Alors, tu as bien travaillé aujourd'hui, [nom] ?"
 
-    show boy:
-      xpos 1500
-      ypos   1800
-      zoom 0.4
+    show screen show_char_pos1(boy, 1300, 500, 0.4)
     with dissolve
+
+
     menu:
       "Oui":
         player "Oui, on a vu le système digestif. Mais c'est compliqué."
@@ -420,10 +490,7 @@ label jour1_maison_soir:
       "J'ai beaucoup de travail.":
         player "Oui, mais j'ai encore des devoirs pour demain à finir."
 
-    show mere:
-      xalign 0.5
-      ypos 1600
-      zoom 1.2
+    show screen show_char_pos2(mere_neutral, 700, 500, 0.9)
     with dissolve
 
     mere "Alors, il faut que tu travailles consciencieusement ce soir. Tu aurais besoin d'aide?"
@@ -434,6 +501,8 @@ label jour1_maison_soir:
     mere "Oui, je sais... Un adolescent."
     player "*Soupir* Je vais travailler dans ma chambre."
 
+    call hide_chars
+
     jump jour1_chambre_soir
 
 label jour1_chambre_soir:
@@ -441,22 +510,437 @@ label jour1_chambre_soir:
     scene room_night_light
     with dissolve
 
-    show boy:
-      xalign 0.0
-      yalign 1.0
-      zoom 0.25
+    show screen show_char(boy, 0.0, 1.0, zoom_boy)
     with dissolve
 
     player "J'ai fini mes devoirs mais je n'arrive pas à dormir..."
     player "Ces histoires d'examens me stressent."
     player "J'espère que je ne vais pas faire un rêve comme Emma cette nuit, je suis crevée."
+    call hide_chars
+    jump reve_1
+
+label reve_1:
+
+  scene universe
+  with dissolve
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  with dissolve
+
+  gm1 "Hey ! T’es enfin réveillé ?"
+
+  narrateur "Le joueur se réveille petit à petit et se trouve en face d’un mystérieux personnage dans une salle étrange."
+
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  gm1 "Dis-moi tu n’as pas l’air de comprendre ce qui t’arrives."
+
+  menu:
+    "Qui est-tu ?":
+      jump reve1_next
+    "Où suis-je":
+      jump reve1_next
+
+label reve1_next:
+
+  
+  gm1 "C’est bien ce qui me semblait. J’ai peut-être pas choisis la meilleure personne finalement… Bon pour faire simple tu as été 
+      choisis parmi tous les humains pour avoir la noble tâche de prouver que je suis le plus sage et que ma vision du monde est la meilleure."
+  gm1 "Tu as l’air un peu perplexe."
+  gm1 "T’inquiète pas ça va bien se passer. Ce sera facile de prouver que j’ai la meilleure 
+  vision puisque c’est la meilleure. Tiens je vais déjà t’expliquer de quoi ça parle. Tu verras on ne peut pas faire plus 
+  limpide et simple que ça."
+  gm1 "Le noyau central de ma pensée est qu’il faut toujours chercher à maximiser le bonheur de la majorité. 
+  Alors qu’est-ce tu en penses ?"
+
+  menu:
+    "Oui c'est idéal":
+      player "Oui c’est idéal. Je rêverai de vivre dans une telle société."
+      gm1 "Finalement j’ai peut-être choisi la bonne personne"
+    "Indécis":
+      player "Je ne sais pas, cela me paraît utopique mais assez difficilement réalisable."
+      gm1 "Toujours septique hein ? Tu verras bien assez vite comment ça s’applique."
+    "Suspicieux":
+      player "Je n’ai pas encore assez étudié la question, il y a peut-être des cas où ce n’est pas la meilleure solution."
+      gm1 "Un cas où ce n’est pas la meilleure solution ? Qu’est-ce qu’il ne faut pas entendre des fois."
+
+  gm1 "Bon pour voir si tu as bien compris je vais te poser quelques questions. Essaie d'y répondre en appliquant mon idée."
+  gm1 "Première question. Tu verras elle est toute simple. Tu préfères sauver 5 personnes ou 1 personne ?"
+  menu:
+    "5 personnes":
+      gm1 "Difficile de se tromper ici."
+    "1 personne":
+      gm1 "J'ai rarement vu quelqu'un d'aussi nul... "
+  gm1 "Deuxième question."
+  gm1 "Pour l'anniversaire de ton meilleur ami tu décides de lui acheter la figurine de son personne de fiction
+  favorite."
+  gm1 "En chemin pour le magasin tu croises une association qui vient en aide aux familles en situation précaire. Que décides-tu
+  de faire de ton argent ?"
+  menu:
+    "J'achète la figurine pour mon meilleur ami":
+      gm1 "Tu ne maximises pas le bonheur de la majorité là."
+    "Je préfère donner mon argent à cette association.":
+      gm1 "Bonne réponse."
+  gm1 "Dernière question."
+  gm1 "Imagine que tu es le maire d'une ville et que tu souhaites aménager un nouveau quartier mais que la majorité
+de la population de la ville préférerait plutôt rénover l'ancien parc de la ville."
+  menu:
+    "Je rénove le parc.":
+      gm1 "Bien vu."
+    "J'aménage un nouveau quartier.":
+      gm1 "Tu fais exprès de te tromper ?"
+
+  gm1 "Bon à présent on va passer à la partie un peu plus pratique."
+  gm1 "Pour le reste de la journée tu vivras dans la peau 
+  d’un chirurgien."
+  gm1 "Tu seras amené à faire des choix importants et tu comprendras aussi pourquoi ma façon de penser est 
+  la meilleure. Bon allons-y."
+
+  call hide_chars
+
+label ville_reve1:
+  
+  scene city_day
+  with dissolve
+
+  show voiture_1:
+    xpos 800
+    ypos 600
+    zoom 0.5
+
+  with dissolve
+  
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  with dissolve
+
+  show screen show_char1(game_master_1, 1.0, 1.0, 1.0)
+  with dissolve
+
+  gm1 "Tiens les clés de ta voiture."
+  doc "Quoi ? C’est ma voiture ?"
+  gm1 " Evidemment, t’es chirurgien. Tu pensais quand même pas conduire dans une vielle voiture. Bon rentrons dans la voiture et démarre."
+  doc "Où est-ce que je dois aller maintenant ?"
+  gm1 "Roule seulement. Tu iras de toi-même au bon endroit."
+  doc "Mais comment ?"
+  gm1 "Je t’ai déjà dit de ne pas t’inquiéter. Tout se passera bien, fais-moi confiance."
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  narrateur "Le joueur s’exécute. Au début il conduisait un peu aléatoirement à travers la ville mais petit à petit il sentait 
+qu’il prenait le bon chemin. Au bout d’une dizaine de minutes ils arrivent enfin devant un grand hôpital."
+
+  call hide_chars
+
+  jump reve1_hopital
+
+label reve1_hopital:
+
+  scene hopital_exterieur
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  with dissolve
+
+  show screen show_char1(game_master_1, 1.0, 1.0, 1.0)
+  with dissolve
+
+  doc "Comment ça se fait que je sois arrivé au bon endroit alors que c’est la première fois que je viens par ici ?"
+  gm1 "Je n’allais pas te lancer dans la vie de chirurgien sans que tu en aies les connaissances. Je suis un gars 
+  cool moi hehehehe. Bon à partir de maintenant je te laisse."
+  doc "Comment ça ?"
+  gm1 "Tant que tu feras les bons choix tout ira bien pour toi. Allez à plus."
+
+  call hide_chars
+
+  jump reve1_hopital_interieur
+
+label reve1_hopital_interieur:
+  
+  scene hopital_couloir
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  with dissolve
+
+  show screen show_char1(infirmierePath, 1.0, 1.0, zoom_infirmiere)
+  with dissolve
+
+  infirmiere "Vous voilà enfin. Le patient est déjà prêt pour son opération. Il s’agit d’une fracture de l’avant-bras. 
+Nous allons vous préparer."
+
+  call hide_chars
+
+label reve1_hopital_after_op:
+
+  scene black_background
+  with dissolve
+
+  narrateur "Après quelques minutes le joueur se trouve dans une salle d’opération avec d’autres chirurgien. Au début le joueur 
+  n’est pas sûr que ce qu’il faut faire mais comme annoncer par le GMU il commence à procéder à l’opération comme si 
+  c’était quelque chose qu’il avait fait tout sa vie"
+
+  menu:
+    "Aller dehors":
+      call hide_chars
+      jump reve1_hopital_after_op_next
+    "Aller à la cafétéria":
+      call hide_chars
+      jump reve1_hopital_after_op_next
+    "Aller à la salle de repos":
+      call hide_chars
+      jump reve1_hopital_after_op_next
+
+label reve1_hopital_after_op_next:
+
+  scene hopital_couloir
+  with dissolve
+
+  show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
+  with dissolve
+
+  show screen show_char1(docteur, 1.0, 1.1, zoom_doc)
+  with dissolve
+
+  infirmiere "Désolé de vous déranger mais on manque de personnel aujourd’hui alors svp pourriez-vous vous occupez 
+du patient dans le bloc B3 ?"
+
+  call hide_chars
+
+  jump reve1_prisonnier
+
+
+label reve1_prisonnier:
+
+  scene hopital_consultation
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  with dissolve
+
+  "AHHHHH ! J'AI MAL !!! APPELER VITE UN MEDECIN !"
+
+  show screen show_char_pos(prisonnier, 1000, 300, zoom_priso)
+  show screen show_char_pos1(policier_1, 800, 300, zoom_poli1)
+  show screen show_char_pos2(policier_2, 1450, 300, zoom_poli2)
+  with dissolve
+
+  player "Que s'est-il passé ?"
+  poli1 "Il y a eu une bagarre dans la prison et il a été blessé. Malheureusement nous ne connaissons pas la gravité 
+de ses blessures."
+  poli2 "S’il joue la comédie venez immédiatement nous voir."
+
+  hide screen show_char_pos1
+  hide screen show_char_pos2
+  with dissolve
+
+  player "Comment vous-appelez vous ?"
+  $ nom_priso = "Nicolas"
+  priso "Je m’appelle Nicolas."
+
+  player "Bien Nicolas, je vais procéder à un contrôle général. Tenez vous tranquille."
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  narrateur "Après quelques minutes."
+
+  scene hopital_consultation
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  show screen show_char_pos(prisonnier, 1000, 300, zoom_priso)
+  with dissolve
+
+  player "Vous n'avez rien de grave, je vais ..."
+
+  priso "Doc attendez. Je sais que j’ai surjoué mes douleurs mais svp je voudrais juste rester ici un peu plus. 
+              Ça fait trop longtemps que je suis en prison. La vie est dure là-bas."
+  
+  priso "Les plus forts règnent en maître et les gardes n’osent 
+              pas intervenir. Je sais que ce que j’ai fait dans le passé mérite une condamnation mais le juge m’a puni excessivement 
+              pour que je serve d'exemple."
+
+  player "Et qu'avez-vous fait ?"
+
+  priso "J’ai essayé de faire un Hold-up dans une station-service quand j’avais 18ans. Malheureusement les choses 
+              se sont compliqués et des personnes ont été blessées."
+  player "Pourquoi avoir fait ce braquage ?"
+
+  priso "J’ai toujours vécu seul et quand j’étais jeune et lorsque je demandais de l’aide aux personnes autour de moi, 
+personne ne m’avait tendu la main… Depuis ce jour je regrette sincèrement mon acte."
+
+  priso "Je suis même inscris sur la liste 
+              des donneurs d’organes. Alors svp doc laissez moi juste me reposer pour cette journée."
+
+  player "Bien je vais voir ce que je peux faire."
+
+  menu:
+    "Dire la vérité aux gardes":
+      call hide_chars
+      jump reve1_prisonnier_next
+    "Mentir aux gardes":
+      call hide_chars
+      jump reve1_prisonnier_next
+
+
+label reve1_prisonnier_next:
+
+  scene black_background
+  with dissolve
+
+  "Le joueur se rapproche des gardes et entend leur discussion"
+
+  poli1 "Ce mec me glace le sang à chaque fois que je le vois."
+  poli2 " C’est clair. Ce mec est juste effrayant. Manipulé une dizaine de personnes pour prendre leurs argents et 
+ensuite les pousser aux suicides, seul un taré peut un truc pareil."
+
+  poli1 "Bien content qu’il ait prit perpète."
+
+  call hide_chars
+
+  jump reve1_grave_accident
+
+label reve1_grave_accident:
+
+  scene hopital_couloir
+  with dissolve
+
+  show screen show_char(chirurgien, 0.0, 1.0, zoom_chir)
+  show screen show_char1(docteur, 1.0, 1.0, zoom_doc)
+  with dissolve
+
+  chir "Viens vite il y a eu un grave accident de voiture et 3 personnes ont eu leurs organes touchés."
+  player "Oui j’arrive tout de suite."
+  chir "L’un d’eux et mon unique enfant. Je t’en supplie fait ton maximum et sauve mon fils."
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  "Le joueur lit le premier diagnostic des trois patients. Il est clair qu’ils sont dans un état grave, à tel point 
+qu’attendre que les organes arrivent à l’hôpital reviendrait à les laisser mourir."
+
+  scene hopital_operation
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  with dissolve
+
+  menu:
+    "Mentir sur l'état du prisonnier et le tuer.":
+      call hide_chars
+      jump reve1_patients_sauves
+    "Laisser les 3 patients mourrir.":
+      call hide_chars
+      jump reve1_patients_non_sauves
+
+label reve1_patients_sauves:
+  scene black_background
+  with dissolve
+
+  "Après cette journée fatigante le joueur peut enfin rentrer chez lui. Au passage il décide de raccompagner Michelle."
+
+  jump reve1_retour_Michelle
+
+label reve1_patients_non_sauves:
+  scene black_background
+  with dissolve
+
+  "Après cette journée fatigante le joueur peut enfin rentrer chez lui. Au passage il décide de raccompagner une infrimière."
+
+  jump reve1_retour_infirmiere
+
+label reve1_retour_Michelle:
+
+  scene hopital_couloir
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  show screen show_char1(chirurgien, 1.0, 1.0, zoom_chir)
+  with dissolve
+
+  chir "Merci d'avoir sauvé mon enfant. L'opération a dû être stressante."
+
+  jump reve1_retour_voiture
+
+label reve1_retour_infirmiere:
+  scene hopital_couloir
+  with dissolve
+
+  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  show screen show_char1(infirmierePath, 1.0, 1.0, zoom_infirmiere)
+  with dissolve
+
+  infirmiere "Ca a dû être très difficile de ne rien pouvoir faire pour ces trois patients..."
+
+  call hide_chars
+
+  jump reve1_retour_voiture
+
+label reve1_retour_voiture:
+
+  scene black_background
+  with dissolve
+
+  "Le joueur décide de laisser l’intelligence artificiels le reconduire à la maison. Durant le trajet il y a une zone de travaux 
+mais le véhicule ne semble pas ralentir. Toutefois le joueur fait confiance à la technologie."
+  "Un peu plus loin une famille traverse un passage piéton. Voyant que le véhicule ne ralentit pas le joueur décide de reprendre le contrôle de la voiture. 
+Malheureusement pour lui il est déjà trop tard pour pouvoir s’arrêter à temps."
+
+  scene city_day
+  with dissolve
+
+  show voiture_1:
+    xpos 1350
+    ypos 500
+    zoom 0.15
+
+  with dissolve
+
+  show famille_5:
+    xpos 1550
+    ypos 500
+    zoom 0.5
+  with dissolve
+
+  menu:
+    "Rentrer dans la barricade et se tuer lui et sa collègue pour sauver un père et ses deux enfants.":
+      jump reve1_fin
+    "Rentrer dans les piétons mais survivre à l'accident.":
+      jump reve1_fin
+
+
+label reve1_fin:
+  scene black_background
+  with dissolve
+
+  
+  "FIN !!!"  
 
 
 
 
 
-    
 
+  
 
+label hide_chars:
+  
+  hide screen show_char
+  hide screen show_char1
+  hide screen show_char_pos
+  hide screen show_char_pos1
+  hide screen show_char_pos2
+  with dissolve
+
+  return
 
 
