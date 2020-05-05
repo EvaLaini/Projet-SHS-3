@@ -134,6 +134,18 @@ define zoom_poli1 = 1.9
 define zoom_poli2 = 0.8
 
 #======================================================================================
+
+#SDF
+define sdf = Character("SDF", color="#85ce25")
+
+define sdf_normal = "Jour2/SDF/SDF complet - Normal.png"
+define sdf_decu = "Jour2/SDF/SDF complet - decu.png"
+define sdf_gene = "Jour2/SDF/SDF complet - gene.png"
+
+define zoom_sdf = 1.0
+
+
+
 #Backgrounds
 
 #Space
@@ -180,6 +192,18 @@ image hopital_couloir = im.Scale("Backgrounds/hopital/hopital_couloir.jpg", 1920
 image hopital_consultation = im.Scale("Backgrounds/hopital/hopital_consultation.jpg", 1920, 1080)
 image hopital_exterieur = im.Scale("Backgrounds/hopital/hopital_exterieur.png", 1920, 1080)
 image hopital_operation = im.Scale("Backgrounds/hopital/operation_1.jpg", 1920, 1080)
+
+#salle_info
+image salle_info_ouverte = im.Scale("Jour2/Ordinateur/salle_ordi_porte_ouverte.png", 1920, 1080)
+image salle_info_ferme = im.Scale("Jour2/Ordinateur/salle_ordi_porte_ferme.png", 1920, 1080)
+image ecran_ordi = im.Scale("Jour2/Ordinateur/Ecran ordi - Recherche 1.png", 1920, 1080)
+
+#rue jour 2 
+image rue = im.Scale("Jour2/Rue/Rue1 - Jour.png", 1920, 1080)
+image boulangerie = im.Scale("Jour2/Rue/Boulangerie - Jour.png", 1920, 1080)
+
+#bibliotheque
+image bibliotheque = im.Scale("Jour2/Bibliotheque/Bibliotheque - Jour.png", 1920, 1080)
 
 # Le jeu commence ici
 label start:
@@ -922,8 +946,339 @@ label reve1_fin:
   scene black_background
   with dissolve
 
+  jump jour2
+
+label jour2:
   
-  "FIN !!!"  
+  scene room_hero
+  with dissolve 
+
+  "Réveil en sursaut, des sueurs froides coulant dans ton dos."
+
+  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Qu'est-ce que c'était que ce rêve??"
+  player "Je n'en avais jamais fait d'aussi réaliste... J'en ai encore des frissons."
+  player "En tout cas, ça me donne pas envie de devenir médecin!"
+
+  "..."
+  "..."
+
+  player "Je ne me sens pas du tout reposé, c'est comme si j'avais vraiment dû faire ces opérations!"
+  player "Et ces choix ...:"
+  menu:
+    "C'était facile":
+      player "Au moins, c'était facile de choisir !"
+    "Intéressant":
+      player "Je me suis vraiment creusé la tête dans mon rêve, c'était intéressant !"
+    "Plus jamais !":
+      player "J'espère que j'aurais jamais à faire des choix pareils dans la vraie vie..."
+  
+  mere "[nom], qu'est ce que tu fais encore ? Tu vas de nouveau devoir courir!"
+  player "J'arrive, j'arrive ..."
+
+  call hide_chars
+
+  jump jour2_cuisine
+
+label jour2_cuisine:
+  scene salon
+  with dissolve
+
+  show screen show_char_pos(dad_path, -250, 500, zoom_dad)
+  show screen show_char_pos1(boy_nervous, 1300, 500, 0.4)
+  show screen show_char_pos2(mere_neutral, 700, 500, 0.9)
+  with dissolve
+
+  dad "Tu as bien dormi, [nom] ?"
+  player "Pas vraiment non..."
+  mere "Il va falloir te reprendre, chou, n'oublie pas que tu as un groupe de travail ce soir."
+  player  "Ah oui... Et en plus c'est mon tour d'amener un truc à manger aujourd'hui."
+  player "D'ailleurs, je peux avoir des sous?"
+  mere "Tiens, 10.-, mais ne fais pas comme la dernière fois, achète vraiment quelque chose pour tes amis!"
+
+  show screen show_char_pos1(boy_flustered, 1300, 500, 0.4)
+  with dissolve
+
+  player "Oui, oui, ne t'inquiète pas."
+  player "Bon, j'y vais, sinon je vais vraiment devoir courir."
+  dad "Bonne journée!"
+
+  call hide_chars
+
+  jump jour2_classe
+
+
+label jour2_classe:
+
+  scene classroom_teacher
+  with dissolve
+
+  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "*Pense* Je n'arrive pas à me concentrer..."
+  player "Je n'arrête pas de repenser à mon rêve de cette nuit."
+  player "Et si c'était pas vraiment un rêve?"
+  player "On entend souvent parler de gens qui ont des visions envoyée par des démons ou des dieux..."
+  
+  menu:
+    "Mais ce sont des fous":
+      player "Mais je me suis toujours dit qu'ils devaient être fous ou rechercher l'attention!"
+    "C'est plutôt cool en fait":
+      show screen show_char(boy_happy, 0.0, 1.0, zoom_boy)
+      with dissolve
+      player "Je me suis toujours dit que c'était trop classe!"
+    "Je n'y crois pas.":
+      player "Je ne sais pas si je peux vraiment y croire..."
+  
+
+  teacher "[nom]! Qu'est ce que tu as ce matin?? Ca fait 3 fois que je te pose une question et tu ne fais que de regarder dans le vague!"
+
+  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Ah, désole Professeur... J'ai mal dormi cette nuit."
+
+  teacher "Hum, je vais laisser passer pour cette fois, mais tâchez à que cela ne se reproduise plus!"
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  "Pause de midi"
+
+  jump jour2_midi
+
+label jour2_midi:
+  scene lunchroom_full
+  with dissolve
+
+  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+  show screen show_char1(best_friend_smile, 1.0, 1.0, zoom_best_friend)
+  with dissolve
+
+  best_friend "... Et quand il s'est enfin retourné, toute la classe a vu l'énorme trou dans son pantalon! HAHAHAH"
+
+  "..."
+
+  show screen show_char1(best_friend_neutral, 1.0, 1.0, zoom_best_friend)
+  with dissolve
+
+  best_friend "[nom] ? Tu t'es endormi pendant mon histoire ou bien? Tu as même pas rigolé!"
+
+  player "Ah désolé, Emma!"
+  player "J'ai la tête ailleurs..."
+
+  best_friend "Je vois ça, quelque chose te tracasse? Un problème à la maison ? Ou juste les examens?"
+
+  player "*Pense* Je ne peux pas lui parler de mon rêve, elle ne va jamais comprendre..."
+  player "*Pense* Déjà qu'hier je lui ai dit que les rêves sont pas réels, elle va me prendre pour un fou."
+
+  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Les examens..."
+  player "D'ailleurs, il faut que j'aie faire des recherches pour"
+  menu:
+    "Danse contemporaine":
+      player "Mon cours de danse contemporaine."
+    "La chute de l'Atlantide":
+      player "Mon exposé sur la chute d'Atlantide."
+    "Le coeur des fourmis":
+      "En apprendre plus sur les problèmes de coeur des fourmis."
+  
+  best_friend "Je vois.. A bientôt alors."
+  player "A plus!"
+
+  call hide_chars
+
+  jump jour2_salle_info
+
+label jour2_salle_info:
+
+
+
+  scene salle_info_ouverte
+  with dissolve
+
+  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Je n'aime pas mentir à MA mais là je n'avais pas le choix..."
+  player "Bon, j'aurais quand même pu trouver une meilleure excuse par contre!"
+  player "J'aurais pu lui dire que j'avais mal à la tête..."
+  player "Au moins, maintenant je suis tranquille pour faire des recherches sur les rêves et visions."
+
+  
+
+  call hide_chars
+
+  scene ecran_ordi
+  with dissolve
+
+  player "Que ce que je pourrais bien rechercher ?"
+
+  menu:
+    "Visions + Dieu":
+      jump jour2_info_next
+    "Rêves + réalistes":
+      jump jour2_info_next
+    "Ethique + Démon":
+      jump jour2_info_next
+  
+label jour2_info_next:
+  
+  scene black_background
+  with dissolve
+
+  "*Après quelques recherches...*"
+
+  scene salle_info_ferme
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+
+  player "On trouve vraiment de tout et de rien sur internet!"
+  player "Je tombe autant sur des articles scientifiques qui expliquent les rêves lucides, que sur des témoignages de gens qui affirment avoir rencontré Dieu..."
+  player "J'ai le cerveau qui surchauffe, je crois que je vais m'arrêter là pour aujourd'hui..."
+  player "D'autant plus que si je pars pas maintenant je vais arriver en retard à mon groupe de travail, et je dois encore aller acheter à grignoter"
+
+  jump jour2_rue
+
+label jour2_rue:
+  scene rue
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Il me semble qui il y a une boulangerie au coin de cette rue."
+  player "Avec 10.-, je vais pouvoir me rattraper de la dernière fois, où j'ai oublié d'amener quelque chose!"
+  player "Peut-être des croissants pour tout le monde... Ou du pain et plein de chocolat ?"
+  player "Hummmm...."
+
+  call hide_chars
+
+  jump jour2_boulangerie
+
+label jour2_boulangerie:
+  scene boulangerie
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char1(sdf_normal, 1.0, 1.0, zoom_sdf)
+  with dissolve
+
+  sdf "Eh !"
+  sdf "Eh, toi là!"
+
+  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "On m'a parlé ?"
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  sdf "Ah, oui c'était moi ! Excuse moi mais tu a l'air de quelqu'un de généreux. J'ai perdu mon travail l'année passée et depuis, ma femme m'a quitté et on m'a éjecté de mon appart..."
+  sdf "Tu n'aurais pas un peu d'argent pour que je m'achète à manger?"
+
+  player "L'argent que j'ai sur moi est pour acheter un gouter à mes amis... "
+
+  menu:
+    "Mais je te le donne.":
+      player "Mais je te le donne volontiers, ils comprendront bien!"
+      sdf "Merci! Je suis sûr ques tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin."
+      sdf "Bonne soirée!"
+      hide screen show_char1
+      with dissolve
+      player "Même si mes amis risquent d'être déçu et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
+    "Mais je te donne la moité.":
+      player "Mais je t'en donne la moitié, ils se contenteront de pain sans chocolat!"
+      sdf "Merci! Je suis sûr ques tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin."
+      sdf "Bonne soirée!"
+      hide screen show_char1
+      with dissolve
+      player "Même si mes amis risquent d'être déçu et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
+    "Je suis désolé.":
+      player "Je suis désolé demande à quelqu'un d'autre. Bonne chance!"
+      show screen show_char1(sdf_decu, 1.0, 1.0, zoom_sdf)
+      with dissolve
+      sdf "..."
+      hide screen show_char1
+      with dissolve
+      player "*Pense* J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
+    "Trouves-toi du travail !":
+      player "Trouve toi un travail au lieu de vivre comme un parasite!"
+      show screen show_char1(sdf_decu, 1.0, 1.0, zoom_sdf)
+      with dissolve
+      sdf "..."
+      hide screen show_char1
+      with dissolve
+      player "*Pense* J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
+  
+  call hide_chars
+
+
+  jump jour2_revisions
+
+label jour2_revisions:
+  
+  scene bibliotheque
+  with dissolve
+
+  "La scéance de révision paraît durer des heures, tes yeux se ferment tout seuls, tu n'arrives pas à te concentrer."
+  "Quand c'est enfin le moment de rentrer chez toi, tu dis à peine au revoir et te dépêche d'aller prendre le bus."
+
+  jump jour2_fin
+
+label jour2_fin:
+  scene salon_crepuscule
+  with dissolve
+
+  show screen show_char(mere_neutral, 0.0, 1.0, zoom_mom)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  mere "Alors, cette séance de révision ? Tu as pensé à acheté du goûter cette fois ?"
+
+  menu:
+    "J'ai donné l'argent à un SDF":
+      show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
+      with dissolve
+      player "..."
+      player "Non... J'ai donné l'argent à quelqu'un dans la rue qui en avait plus besoin que moi..."
+      mere "..."
+      mere "Bon, au moins cette fois c'était pour une bonne cause. Mais j'espère que tes amis ne vont pas t'en vouloir, tu leur avais quand même promis d'amener quelque chose!"
+    "Oui !":
+      show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
+      with dissolve
+
+      player "Oui, oui, je l'ai fait cette fois!"
+      player "Quand est-ce que tu vas arrêter de m'embêter avec ça, j'ai juste oublié une fois!!"
+
+      mere "Pas besoin de t'énerver! Tes amis devaient être content que tu aie pensé à eux cette fois."
+      mere "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
+  
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+  player "Oui, maman ..."
+  "..."
+  "..."
+  player "J'ai mal dormi hier soir, je vais aller me coucher tôt pour rattraper ça."
+  mere "D'accord, chou."
+  mere "Bonne nuit et fait de beaux rêves!"
+  player "*Pense* J'espère."
+
+
+
+
+
 
 
 

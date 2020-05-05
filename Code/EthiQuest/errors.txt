@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 921: expected ':' not found.
-    label reve1_fin
-                   ^
+File "game/script.rpy", line 1268: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+      player "*Pense* "J'espère...""
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat May 02 11:25:13 2020
+Tue May 05 11:37:50 2020
