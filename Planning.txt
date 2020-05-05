@@ -29,6 +29,12 @@ Mardi 05/05 :
 	. Suite Visuel --> Ylies
 	. Jour 3 --> Eva
 	. Suite nuit 2 --> Valton
+Vendredi 08/05 :
+	. Ajouts dilemmes quotidiens qui dépendent des points dans le Jour 2 --> Ylies
+	. Dilemmes extrêmes et début soir 3 --> Valton
+	. Finir jour 3 --> Eva
+	. Réécriture soir 2 --> Colin
+	. Réécriture soir 1 --> Antoine
 
 A regarder :
 	. Choix grisés
