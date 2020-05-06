@@ -8,13 +8,13 @@
 **Joueur** : "Oui, oui, juste un mauvais rêve !"
 **Mère, au loin** : "Tu veux venir m'en parler ?", "Fait vite, c'est bientôt l'heure de partir!"
 **Joueur, pense** : "Il faut vraiment que j'en parle à quelqu'un, mais ma mère va encore me dire que c'est juste le stress des examens et que je dois manger mieux...",
-  "Alors qui ? Clara ?", "Si elle me croit, on pourrait chercher une solution ensemble après les cours! Elle a toujours des bonnes idées."
+  "Alors qui ? Emma ?", "Si elle me croit, on pourrait chercher une solution ensemble après les cours! Elle a toujours des bonnes idées."
 **Mère** : "@?"
 **Joueur** : "J'arrive!"
 
 *Dans la salle de classe* 
 **Prof** : "... les formules au tableau sont à apprendre absolument pour les examens!", "On va maintenant démontrer ensemble le théorème 3."
-**Joueur, pense** : "Je commence à stresser... Et si Clara me prenait pour un fou ??", "Mais non , on est amis depuis bien trop longtemps...", 
+**Joueur, pense** : "Je commence à stresser... Et si Emma me prenait pour un fou ??", "Mais non , on est amis depuis bien trop longtemps...", 
   "Courage ! Je vais lui envoyer un message pour se retrouver après les cours."
 *Ecran de téléphone*
 **Joueur** : "Hum... :
@@ -23,49 +23,49 @@
 **Joueur, pense** : "Oui, autant faire simple. Envoyer!", "Il reste plus qu'à attendre une réponse..."
 **Prof** : "C'est tout pour la théorie. Reprenez vos cahiers et commencez les exercices du chapitre 8."
 *Vibration*
-**Joueur, pense** : "Ah c'est déjà la réponse de Clara!", "... 'Oui, pas de problème! Retrouve-moi à la bibliothèque.'"
+**Joueur, pense** : "Ah c'est déjà la réponse d'Emma!", "... 'Oui, pas de problème! Retrouve-moi à la bibliothèque.'"
 **Prof, énervé** : "@! Encore sur votre téléphone?! Si je vous retrouve à regarder cet appareil pendant mon cours, je vous le confisque jusqu'à la fin de la journée!"
 **Joueur** : Ah, désolé.. Je le range tout de suite!"
 **Prof** : "Bon, reprenez vos exercices. Et en silence!"
 
 *Après les cours, dans la bibliothèque/salle vide quelconque"
-**Clara** : "@, te voilà ! Qu'est ce qui se passe ? ça avait l'air important dans ton message."
+**Emma** : "@, te voilà ! Qu'est ce qui se passe ? ça avait l'air important dans ton message."
 **Joueur** : "*Grande inspiration*":
     - "J'ai besoin de ton aide pour faire un exorsisme! Je crois que je suis maudit."
     - "Je suis hanté par des sortes de dieux bizarres, j'ai besoin de ton aide pour m'en débarrasser!"
     - "J'ai besoin de toi pour trouver la cause de mes rêves bizarres et les arrêter."
-**Clara** : "Quoi ?? Attends, je comprends pas. Explique moi depuis le début!"
+**Emma** : "Quoi ?? Attends, je comprends pas. Explique moi depuis le début!"
 
 *Après de longues explications détaillées*
-**Clara** : "..."
-**Joueur** : "Clara?"
-**Clara** : "..."
-**Joueur** : "Clara, dit quelque chose!"
-**Clara** : "Hum...", "Je dois avouer que j'ai de la peine à y croire mais si tu me dit que c'est vrai, alors je vais t'aider à trouver une solution!"
+**Emma** : "..."
+**Joueur** : "Emma?"
+**Emma** : "..."
+**Joueur** : "Emma, dit quelque chose!"
+**Emma** : "Hum...", "Je dois avouer que j'ai de la peine à y croire mais si tu me dit que c'est vrai, alors je vais t'aider à trouver une solution!"
 **Joueur** : "Merci! Je sais pas ce que je ferais sans toi!"
-**Clara** : "Mais non, mais non! Bon, mettons-nous au boulot, il doit bien y avoir des livres sur les visions envoyées par des dieux dans cette bibliothèque!",
+**Emma** : "Mais non, mais non! Bon, mettons-nous au boulot, il doit bien y avoir des livres sur les visions envoyées par des dieux dans cette bibliothèque!",
   "Tu prends cette étagère et moi celle d'à côté, okay?"
 **Joueur** : "C'est parti!"
 *Pause*
-**Clara** : "Regarde cette pile de livres! On va bien pouvoir trouver quelque chose là dedans!"
+**Emma** : "Regarde cette pile de livres! On va bien pouvoir trouver quelque chose là dedans!"
 *Pause*
 **Joueur** : "Pffff, ce livre parle uniquement de dieux grecs... Je pense pas que ce soit utile."
 *Pause*
-**Clara** : "@, viens vite! Je crois que j'ai trouvé quelque chose!", "Ce livre parle d'un rituel qui permet d'invoquer des kami!",
+**Emma** : "@, viens vite! Je crois que j'ai trouvé quelque chose!", "Ce livre parle d'un rituel qui permet d'invoquer des kami!",
     "Apparemment, c'était très utilisé pendant l'époque Edo pour communiquer avec divers dieux, dont Kamimusubi, le créateur divin.", 
     "Si on arrive à l'invoquer, il saura peut-être comment se débarrasser de ceux de tes rêves!"
-**Joueur** : "Bravo Clara! Il reste plus qu'à espèrer que ça marche!", "De quoi on va avoir besoin?"
-**Clara** : "Hum... Ils parlent d'une offrande de gâteaux de riz aux algues et de sake... Puis ils disent de purifier l'air par de l'encense...",
+**Joueur** : "Bravo Emma! Il reste plus qu'à espèrer que ça marche!", "De quoi on va avoir besoin?"
+**Emma** : "Hum... Ils parlent d'une offrande de gâteaux de riz aux algues et de sake... Puis ils disent de purifier l'air par de l'encense...",
     "Et pour appeler le kami-sama, il nous faudra une cloche consacrée au dieu qu'on veut invoquer."
 **Joueur** : 
     - "ça va être compliqué de trouver tout ça..."
     - "Plus que quelques étapes et je serais libéré de ces rêves!"
     - "Je doute que ça marche mais ça vaut la peine d'essayer..."
-**Clara** : "Je peux aller piquer des gâteaux de riz et du sake chez mes parents mais il va falloir aller acheter le reste."
+**Emma** : "Je peux aller piquer des gâteaux de riz et du sake chez mes parents mais il va falloir aller acheter le reste."
 **Joueur** : "Va chez toi chercher les offrandes! Je m'occupe de l'encense et de la cloche."
-**Clara** : "Très bien, j'y vais. On se retrouve ici dès qu'on a tout ce qu'il faut, okay?"
+**Emma** : "Très bien, j'y vais. On se retrouve ici dès qu'on a tout ce qu'il faut, okay?"
 **Joueur** : "Oui, à toute!"
-*Clara part*
+*Emma part*
 **Joueur** : "Bon, où est-ce que je vais bien pouvoir trouver ces trucs... Je vais faire une recherche sur mon natel.", 
     "Ah, j'ai trouvé une boutique shinto pas loin d'ici! Même s'il ont pas exactement ce qu'il faut, ils pourront me renseigner."
 *Pause*
@@ -83,6 +83,32 @@
     - "Engueuler les deux agresseurs, il faut qu'ils arrêtent ce comportement, ce n'est sûrement pas le seul élève qu'ils embêtent!" (U+)
     - "Défendre le père, il avait sûrement ses raisons de partir!" (L++)
     - "Défendre le petit, il a bien le droit de faire ses devoirs tranquille!" (L+)
+    
+    
+
+
+*De retour dans la bibliothèque, Emma est déjà là à attendre*
+**Emma** : "Ah te voilà! T'en as mis du temps, ça fait un moment que je t'attends.","J'ai trouvé tout ce que je devais chez moi!",
+  "Bon, et toi? Tu as tout trouvé? 
+**Joueur** : "Oui, on a tout ce qu'il nous faut!", "Qu'est ce qu'il faut faire ensuite?"
+**Emma** : "Alors... Il faut allumer l'encense et préparer les offrandes comme pour un invité.", 
+  "Puis, quand tu seras prêt, il faudra sonner la cloche trois fois, en laissant bien le son s'éteindre entre chaque fois.",
+  "Et finalement, appeler le kami par cette formule rituelle : 'Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés.'"
+  "Tu as compris, @?"
+**Joueur** : "Oui."
+**Emma** : "D'après ce livre, le kami va décider s'il pense que tu es digne de sa visite et si c'est le cas, il devrait t'envoyer une vision dans ton sommeil, ou quelque chose comme ça. 
+  Cette partie est pas très claire..."
+**Joueur** : "Comment je saurais si ça a marché?"
+**Emma** :"Hummm... Je penses que tu devras attendre cette nuit et tu verras bien..."
+*Silence* 
+**Emma** :"Ah, encore une chose! Ils disent que tu peux aider le kami à trouver le chemin de tes rêves en l'appelant par son nom cinq fois." 
+
+
+
+    
+    
+
+Le joueur s'endort - 
 
 
 
