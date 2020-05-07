@@ -34,9 +34,9 @@ Dans l’immeuble de John le bruit dérange son voisinage à partir de 21h. Est-
 	O1 : Oui
 	O2 : Non
   
-	R1 : Bien, les locataires, en signant leur bail, ont accepté que le bruit soit toléré dans cette plage horaire
+	R1 : Bien, les locataires n'étant pas dérangés par le bruit du piano, il est tout à fait moral de la part de John de faire du piano
 	R2 : Eh non, il a bien le droit de le faire à ce moment de la journée. Si ça avait été après 21h, il n’aurait pas eu le droit de 
-  le faire puisqu’il aurait entravé la liberté des autres locataires de l’immeuble. 
+  le faire puisqu’il aurait entravé la liberté de dormir des autres locataires.
   
 GML : Un petit dernier. Michel, 70ans est paraplégique depuis 30ans, orphelin, il n’a jamais eu de famille et ses proches se sont 
 éloignés au fil du temps. Seul, souffrant de son handicap, Michel souhaite solliciter un suicide assisté. Tu es le secrétaire chargé 
@@ -49,7 +49,7 @@ d’accepter le dossier ou non. Que fais-tu ?
 	autres. 
 	R2 : Tu n’as aucune raison de le privé de sa liberté
   
-GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. 
+( GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. 
 Cet après-midi tu seras juge dans un tribunal.
 
 *Le GML claque des doigts et les deux apparaissent dans un tribunal*
@@ -90,7 +90,7 @@ l’immeuble.
   
 	R1 : Le joueur voit la femme sauter et au moment où elle atteint le sol, le joueur se réveille en sursaut
 	R2 : Le joueur se précipite pour aller aider la femme mais au moment où il arrive au sommet de l’immeuble la femme saute. 
-	Le joueur assiste impuissant à la chute de la femme et se réveille en sursaut. 
+	Le joueur assiste impuissant à la chute de la femme et se réveille en sursaut. )
 
 
 
