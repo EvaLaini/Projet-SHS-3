@@ -79,13 +79,68 @@
 **Enfant 3, méchant** : "Mwahahah! Il a dû te trouver tellement moche qu'il est parti se faire une autre vie!"
 **Enfant 1, effrayé** : "C'est pas vrai..."
 **Joueur, pense** : "Que faire?" :
-    - "Je vais faire comme si je n'avais rien entendu et partir discrètement." (U++, L++)
-    - "Engueuler les deux agresseurs, il faut qu'ils arrêtent ce comportement, ce n'est sûrement pas le seul élève qu'ils embêtent!" (U+)
-    - "Défendre le père, il avait sûrement ses raisons de partir!" (L++)
-    - "Défendre le petit, il a bien le droit de faire ses devoirs tranquille!" (L+)
-    
-    
+    1- "Je vais faire comme si je n'avais rien entendu et partir discrètement." (U+, L++)
+    2- "Engueuler les deux agresseurs, il faut qu'ils arrêtent ce comportement, ce n'est sûrement pas le seul élève qu'ils embêtent!" (U+)
+    3- "Défendre le père, il avait sûrement ses raisons de partir!" (L++)
+    4- "Défendre le petit, il a bien le droit de faire ses devoirs tranquille!" (L+)
+1 : 
+  *Tu te lève discrètement et sors de la salle en évitant les enfants.*
+2/4 :
+  **Joueur** : "ça suffit, laissez ce garçon tranquille! Ses histoires familiales ne vous concernent pas et si c'est un bon élève, tant mieux pour lui!"
+3 :
+  **Joueur** : "Si son père est parti, c'est qu'il avait ses raisons et elles ne vous regardent pas!"
 
+**Enfant 3, méchant** : "Pfff, de quoi tu te mèle?"
+**Enfant 2** : "Laisse tomber, on y va."
+*Ils partent*
+**Enfant 1** : "Merci d'avoir essayé, mais ils vont continuer à m'embêter tu sais...."
+**Joueur** : "Il faut bien que quelqu'un leur disent un truc... Au moins j'aurais essayé!", "La prochaine fois, va voir un professeur!"
+**Enfant 1** : "Oui, peut-être..."
+**Joueur** : "Bon, je dois y aller. A plus."
+
+*Dans la rue*
+**Joueur, pense** : "Avec ces histoires, je vais devoir me dépêcher d'aller acheter ce qu'il me faut pour l'invocation.",
+  "Bon, où est le magasin?", "... C'est une petite rue pas loin. Je devrais vite y être."
+*Dans une petite ruelle sombre*
+**Joueur, pense** : "Cette ruelle est vraiment glauque, je serais jamais passé par là normalement...", "Aller, courage, le magasin est juste là!"
+
+*Heureusement, le vendeur avait de l'encense de tous types et même la bonne cloche dans ses stocks. Tu payes et ressors, soulagé.*
+**Joueur, pense** : "Je pensais pas que ça serait si facile, il avait même la cloche consacrée!", 
+  "Il me reste plus qu'à retourner à la bibliothèque, Emma doit déjà m'attendre."
+**Personnage louche** : "Eh petit!", "Oui, toi!", "J'ai entendu ce que tu disais au vendeur, tu cherche à avoir des visions, c'est ça?", 
+  "Approche, j'ai ce qu'il te faut..."
+**Joueur** : 
+    1- "Hum, je vais voir ce qu'il propose." (L+)
+    2- "Il est vraiment trop louche, je m'en vais." (U+)
+
+
+
+1: 
+  **Joueur** : "Qu'est ce que c'est?"
+  **Personnage louche** : "Oh, juste des champignons, tout c'qu'il y a d'plus naturel...", 
+    "Si tu les fais infuser et qu'tu bois le jus, t'es garantis d'avoir toutes sortes de visions, hehe."
+  **Joueur** : "Est-ce que ça permet de parler avec les kami?"
+  **Personnage louche** : "Hehe, avec ça, tu parles avec qui tu veux, crois moi!
+  **Joueur, pense** : "Que faire?"
+      3- "Je t'en achète un, il faut mettre toutes les chances de mon côté pour ce soir." (L++)
+      4- "Non, merci, c'est trop risqué." (U+)
+      5- "Non et ça m'a l'air pas très légal ton truc..." (U++)
+  
+  3: **Personnage louche** : "T'as fait le bon choix, petit. Tiens, c'est 20.- pour un champi magique!"
+     **Joueur** : "Voilà... Au revoir."
+     **Personnage louche** : "C'est ça..."
+     **Joueur, pense** : "Je vais le garder de côté, comme ça, si le rituel ne marche pas, j'ai toujours une autre solution..."
+     *Tu mets le champignon en sécurité dans ton sac et repart pour ton rendez-vous avec Emma.*
+  
+ 2/4: 
+   **Joueur** : "ça m'intéresse pas. Au revoir."
+   **Personnage louche** : "Tu sais pas c'que tu rates..."
+   *Sans un regard en arrière, tu te dépêche de quitter la ruelle pour retourner à la bibliothèque.*
+ 5: 
+   **Personnage louche** : "C'que je fais dans mon coin te regardes pas, petit!"
+   *Il part*
+   **Joueur, pense** : "Si quelque chose n'est pas légal, c'est qu'il y a un danger pour la population... Il faut que j'appelle la police pour le dénoncer!"
+   *Après un court appel avec la police qui prend note de l'information, tu peux reprendre la route de la bibliothèque.*
 
 *De retour dans la bibliothèque, Emma est déjà là à attendre*
 **Emma** : "Ah te voilà! T'en as mis du temps, ça fait un moment que je t'attends.","J'ai trouvé tout ce que je devais chez moi!",
@@ -125,33 +180,18 @@
 *De retour à la maison*
 **Joueur, pense** : "Dans quelques heures, tout ce calvaire sera enfin fini et je pourrai reprendre ma vie comme avant!", 
     "Enfin, si le rituel a fonctionné...", "Je suis trop stressé, je vais jamais réussir à m'endormir!", 
+    - Si as acheté le champignon : "Mais au pire, si ça marche pas, j'ai toujours le champignon de cet aprem..."
     "Peut-être que si je répète la phrase d'invocation, il y aura plus de chance que Kamimusubi vienne?"
     "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
     "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
     "Kami-sama, répond... Répond à ma prière et..."
     "Kami-sama..."
 *Le joueur s'endort*
-    
-    
-    
 
 
-
-
-
-Un individu propose au perso de la drogue. Le perso a envie d'essayer.
-Choix:
-- Il en prend (L, \K)
-- Il refuse (U (pense à sa famille), K)
-- Il le dénonce (K)
 
 Libertarianisme.
 - Un mec jette sa clope dans une plante verte :
   - ne rien faire : il a le droit de faire ce qu'il veux (L, U, \K)
   - lui dire de la jeter dans une poubelle (\L, \U, K)
   - lui dire que fumer c'est mauvais pour la santé (\L, \U, K)
-
-
-
-
-
