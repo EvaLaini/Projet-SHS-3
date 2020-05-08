@@ -3,20 +3,20 @@ Script rêve 2
 
 GML : Ah te voilà enfin réveillé 
 
-Joueur : Je... Je suis de nouveau dans la même salle que hier?
+Joueur : Je... Je suis au même endroit que hier ?
 
-GML : Non pas tout à fait. Hier tu étais dans la dimension de mon frère. Comme tu as déjà vécu ça je vais être bref. Cette fois je vais
+GML : Non pas du tout. Hier tu étais dans la dimension de mon frère. Il t'a raconté n'importe quoi, c'est à mon tour de
 t'expliquer comment je vois le monde et comment il devrait être régis. Tu verras c'est bien plus réaliste que l'idée de mon idiot de 
 frère.  Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
 C’est pas beau ça ? Tu verras c’est simple à comprendre.
 
 *Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un manger une glace*
 GML : Tu vois le mec là-bas qui mange une glace ? C’est John. Pourquoi il a le droit de manger une glace ? Eh bien c’est simple 
-il l’a achetée avec son argent et il dérange personne. 
+il l’a achetée legitement avec son argent et il ne dérange personne. 
 *LE GML claque de nouveau des doigts et les deux se trouvent dans un jardin où on voit un nain de jardin*
 
 GML : ça c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, il entrave la liberté 
-de propriété de Martine et donc son action est mauvaise. Tu vois un peu l’idée ? Tes actions sont mauvaises uniquement si elles entravent la liberté de quelqu'un d'autre. 
+de propriété de Martine et donc son action est mauvaise. Tu vois un peu l’idée ? Tes actions sont immorales uniquement si elles entravent la liberté de quelqu'un d'autre. 
 Mais si Martine est d’accord alors il n’y a pas de problème et comme ils n’embêtent personne, alors personne n’a le droit d’interférer dans leur échange. 
 Bien qu’est-ce que tu en penses jusque-là ?
 
@@ -26,9 +26,10 @@ Bien qu’est-ce que tu en penses jusque-là ?
   
 	R1 : ça fait plaisir de croiser des personnes avec un minimum d’intellect sur cette planète
 	R2 : Je vois qu’il te faut plus d’exemples.
- 	R3 : Tu verras c’est une idée qui se gère par elle-même. 
+ 	R3 : Tu verras c’est une idée qui se gère par elle-même.
+	
   
-GML : Bon on va voir si tu as bien compris le concept. Le premier cas est ultra simple. C’est juste pour poser les bases. 
+GML : Bien alors on va voir si tu es d'accord avec moi. Premier cas ultra simple.
 Dans l’immeuble de John le bruit dérange son voisinage à partir de 21h. Est-ce qu’il a le droit de jouer du piano dans l’après-midi ?
 
 	O1 : Oui
@@ -38,7 +39,7 @@ Dans l’immeuble de John le bruit dérange son voisinage à partir de 21h. Est-
 	R2 : Eh non, il a bien le droit de le faire à ce moment de la journée. Si ça avait été après 21h, il n’aurait pas eu le droit de 
   le faire puisqu’il aurait entravé la liberté de dormir des autres locataires.
   
-GML : Un petit dernier. Michel, 70ans est paraplégique depuis 30ans, orphelin, il n’a jamais eu de famille et ses proches se sont 
+GML : Un petit dernier. Philippe, 70ans est paraplégique depuis 30ans, orphelin, il n’a jamais eu de famille et ses proches se sont 
 éloignés au fil du temps. Seul, souffrant de son handicap, Michel souhaite solliciter un suicide assisté. Tu es le secrétaire chargé 
 d’accepter le dossier ou non. Que fais-tu ? 
 
@@ -47,8 +48,11 @@ d’accepter le dossier ou non. Que fais-tu ?
   
 	R1 : Bien vu, son choix vient de sa liberté de disposer de sa vie comme il l’entend et il n’interfère pas avec les libertés des 
 	autres. 
-	R2 : Tu n’as aucune raison de le privé de sa liberté
+	R2 : Tu n’as aucune raison de le privé de sa liberté. Sa vie lui appartient il peu en faire ce qu'il veut. 
   
+
+
+
 ( GML : Bon je pense que ça suffira pour l’instant. Je te propose une mise en situation pour que tu puisses explorer mon idée. 
 Cet après-midi tu seras juge dans un tribunal.
 
