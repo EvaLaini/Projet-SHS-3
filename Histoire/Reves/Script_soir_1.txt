@@ -1,0 +1,121 @@
+Script soir 1
+
+GMU : Hey ! T’es enfin réveillé ?
+Le joueur se réveille petit à petit et se trouve en face d’un mystérieux personnage dans une salle étrange. 
+GMU : Dis-moi tu n’as pas l’air de comprendre ce qui t’arrive.
+
+	O1 : Qui es-tu ?
+	O2 : Où suis-je ?
+GMU : C’est bien ce qui me semblait. Tu as été choisi parmi tous les êtres intelligents de l’univers pour avoir la noble tâche de prouver que je suis le plus sage et que ma vision du monde est la meilleure.
+Joueur : Tous les êtres humains de l’univers ??? Il y a d’autres formes de vie intelligente ?
+GMU : *Ne fais pas attention à ce que le joueur dit* C’est simple : il faut toujours chercher à maximiser le bonheur du plus grand nombre. L’individu est au centre de ma philosophie, ça ne devrait que t’enchanter…Je n’ai jamais vu d’espèce aussi égocentrée et vaniteuse que les humains.
+Alors qu’est-ce tu en penses ?
+	O1 : Oui c’est idéal. Je rêverai de vivre dans une telle société. 
+	O2 : Je ne sais pas, cela me paraît utopique mais assez difficilement réalisable.
+	O3 : Je n’ai pas encore assez étudié la question, il y a peut-être des cas où ce n’est pas la meilleure solution.
+
+	R1 : Finalement j’ai peut-être choisi la bonne personne
+	R2 : Toujours septique hein ? Tu verras bien assez vite comment ça s’applique 
+	R3 : Un cas où ce n’est pas la meilleure solution ? Les humains sont-ils tous aussi stupides que toi ?
+
+
+R2 ou R3 --> O2 :
+	Joueur : J’ai un peu peur de la place des minorités dans tout ça. Et puis… Comment définir le bonheur ?
+	GMU : Définir le bonheur…
+	GMU : C’est simple, c’est quand t’es heureux.
+
+
+
+GMU : Bon allez, passons à la suite. Je n’ai pas que ça à faire que de t’apprendre des choses que tout le monde sait déjà.
+GMU : Pour pouvoir interpréter correctement les résultats de ma petite expérience, j’ai besoin de savoir qui est mon sujet.
+Joueur : Ça te tuerait de me respecter un peu… Je m’appelle [nom].
+GMU : Je n’en ai strictement rien à faire. Je sais que tu es allé voir ta meilleure amie durant son audition de pi… « Interjection ».
+Player : Attends ! Comment-tu sais qu’elle joue de la musique ?
+GMU : Je sais tout ! Enfin presque…  Lui as-tu dit ce que tu en avais vraiment pensé ? Je crois sentir que ça ne t’a pas spécialement plus.
+Player : Ça ne te regarde pas !
+GMU : Dis-moi juste si tu lui as dit ce que tu en as réellement pensé ?
+Player :
+	R1 : Oui --> +1
+	R1 Non --> 0
+GMU : Très bien.
+GMU : Deuxième question. Pour l'anniversaire de ton meilleur ami tu lui achètes une figurine pour laquelle il économise depuis longtemps. 
+GMU : Sûr de ton cadeau, tu lui as laissé savoir qu’il allait être très surpris. En chemin pour le magasin tu croises une association qui vient en aide aux familles en situation précaire. Que décides-tu de faire de ton argent ? Pense bien au fait que c’est de ton meilleur ami dont on parle…
+	O1 : J'achète la figurine. --> 0
+	O2 : Je donne mon argent à l’association. --> +1
+GMU : Intéressant…	
+Player : Ces choix vont-ils avoir des conséquences sur ma vie ??? J’ai un peu peur…
+GMU : Ah ça, tu le découvriras plus tard.
+GMU : Bon à présent on va passer à la partie un peu plus pratique. Pour le reste de la journée tu vivras dans la peau d’un chirurgien. Tu seras amené à faire des choix importants et tu comprendras, je l’espère, pourquoi ma façon de penser est la meilleure.
+
+* Le GMU clac des doigts et les deux se retrouvent dans une rue d’une ville devant une superbe voiture. *
+GMU : Tiens les clés de la voiture
+Joueur : Quoi ? C’est ma voiture ?
+GMU : Evidemment, t’es chirurgien. Tu ne pensais quand même pas conduire dans une vieille voiture. Bon rentrons dans la voiture et démarre.
+
+*Le joueur et le GMU rentrent dans la voiture*
+
+Joueur : Où est-ce que je dois aller maintenant ?
+GMU : Roule seulement. Tu iras de toi-même au bon endroit. 
+Joueur : Mais comment ?
+GMU : Roule !
+
+*Le joueur s’exécute. Au début il conduisait un peu aléatoirement à travers la ville mais petit à petit il sentait qu’il prenait le bon chemin. Au bout d’une dizaine de minutes ils arrivent enfin devant un grand hôpital*
+
+Joueur : Comment ça se fait que je sois arrivé au bon endroit alors que c’est la première fois que je viens par ici ?
+GMU : Je n’allais pas te lancer dans la vie de chirurgien sans que tu en aies les connaissances. Je suis un gars cool moi hehehehe. Bon à partir de maintenant je te laisse. 
+Joueur : Comment ça ?
+GMU : Tant que tu feras les bons choix tout ira bien pour toi. Ciao !
+
+*Le GMU disparaît et le joueur se retrouve seul devant l’hôpital. Le joueur rentre dans l’hôpital et une infirmière vient le voir*
+
+Infirmière : Vous voilà enfin. Le patient est déjà prêt pour son opération. Il s’agit d’une fracture de l’avant-bras. 
+Nous allons vous préparer. 
+
+
+*Après quelques minutes le joueur se trouve dans une salle d’opération avec d’autres chirurgiens. Au début le joueur n’est pas sûr que ce qu’il faut faire mais comme annoncer par le GMU il commence à procéder à l’opération comme si c’était quelque chose qu’il avait fait toute sa vie*
+
+
+*Après l’opération le joueur se sent fatigué et décide de prendre une petite pause. 
+	O1 : Prendre l'air dehors
+	O2 : Aller à la cafétéria
+	O3 : Aller à la salle de repos
+
+*En se rendant à sa destination, le joueur se rend compte que tout le monde semble paniqué*
+
+Player : Qu’est-ce qu’il passe ici ? 
+Infirmière : *Affolé* Un camion est rentré dans un bus scolaire, c’est un carnage…
+Infirmière : On a besoin de tout le personnel. On va devoir faire des opérations avec une seule équipe pour plusieurs patients. Il y a trois adultes qui ont des bouts de verre un peu partout sur le corps. Ils sont stables pour l’instant mais ça pourrait s’aggraver si le travail est mal fait ou si ça tourne en septicémie. Les infirmières essayent de faire de leur mieux mais elles ont besoin d’un chirurgien expérimenté pour les guider et tout contrôler. Tu peux aller au bloc B3 et t’en occuper ?
+Joueur : Oui, j’y vais tout de suite. 
+
+*En se rendant au bloc B3 le joueur est interpellé par une maman*
+
+Mère : S’il vous plaît, sauvez mon fils ! Je vous en supplie !
+Infirmière : Madame, laissez le personnel travailler.
+Mère : Je vous en supplie !
+Joueur : Dans quel état est son fils ?
+Infirmière : Dans un état grave. Saignement interne, perte de conscience. De nombreux organes sont touchés, si on ne l’opère pas tout de suite c’est fini pour lui. Mais il n’y a plus personne de disponible. Même si on intervient, vu son état on n’est même pas sûr de pouvoir le sauver.
+Joueur :
+	O1 : S’occuper des adultes
+	O2 :S’occuper de l’enfant.
+	R1 : Vous sentez une infirmière dans le doute à un moment. Vous décidez d’intervenir, vous venez de sauver la vie de cet adulte.
+	R2 : Vous vous démenez pour sauver l’enfant et essayez tout ce qui est en votre pouvoir pour le sauver mais rien n’y fait. Il est 15h47, ce jeune garçon décède.
+
+*Après plusieurs heures d’opérations*
+	
+R1 : Les adultes sont sains et saufs. Ils ne courent plus aucun risque et pourront rejoindre leurs familles dans 4 jours.
+	
+R2 : L’enfant était dans un état trop grave. Vous n’avez rien pu faire. Une des infirmières qui venait de commencer à l’hôpital a malheureusement commis une erreur et a sectionné une artère, le patient est mort.
+
+A change : Une fois les patients dans un état grave stabilisés, la situation se calme. Il est 21h, vous avez promis à votre femme de manger à la maison ce soir, c’est son anniversaire. 
+==> Peut-être aider un autre hôpital ? Ou une autre situation d’urgence pour rendre le choix plus difficile ?
+
+Vous êtres fatigués mais vous prenez un café. Après quelques minutes vous sentez l’effet. Le prochain bus est dans 30 min, si vous le prenez, vous ratez « Insérer évènement ». 
+	
+O1 : Rentrer en voiture.
+	O2 : Rentrer en bus
+
+	R1 :  *Sur le chemin vous n’arrêtez pas de penser à ce jeune garçon, mort dans d’atroces souffrances* * Perdu dans vos pensées, vous ne faites pas attention. *
+		*Cul de poule, perte de contrôle, accident* Une riveraine et leur mari sont décédés*
+	R2 : *Le bus arrive en avance* *La route est dégagée sur le chemin* Vous arrivez à l’heure pour l’évènement*. 
+	*Réveil en sursaut*
+
