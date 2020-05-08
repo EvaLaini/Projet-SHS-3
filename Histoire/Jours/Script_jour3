@@ -12,7 +12,7 @@
 **Mère** : "@?"
 **Joueur** : "J'arrive!"
 
-*Dans la salle de classe* 
+*Dans la salle de classe* Dans la cours d'école!
 **Prof** : "... les formules au tableau sont à apprendre absolument pour les examens!", "On va maintenant démontrer ensemble le théorème 3."
 **Joueur, pense** : "Je commence à stresser... Et si Emma me prenait pour un fou ??", "Mais non , on est amis depuis bien trop longtemps...", 
   "Courage ! Je vais lui envoyer un message pour se retrouver après les cours."
@@ -21,12 +21,24 @@
     - 'Coucou! Est-ce que tu as du temps cet aprem pour que je te parle d'un truc??'
     - "Tu peux me retrouver cet aprem après les cours ? J'ai besoin de toi!"
 **Joueur, pense** : "Oui, autant faire simple. Envoyer!", "Il reste plus qu'à attendre une réponse..."
+
+Libertarianisme.
+- Un mec jette sa clope dans une plante verte :
+  - ne rien faire : il a le droit de faire ce qu'il veux (L, U, \K)
+  - lui dire de la jeter dans une poubelle (\L, \U, K)
+  - lui dire que fumer c'est mauvais pour la santé (\L, \U, K)
+  
+  
 **Prof** : "C'est tout pour la théorie. Reprenez vos cahiers et commencez les exercices du chapitre 8."
 *Vibration*
 **Joueur, pense** : "Ah c'est déjà la réponse d'Emma!", "... 'Oui, pas de problème! Retrouve-moi à la bibliothèque.'"
 **Prof, énervé** : "@! Encore sur votre téléphone?! Si je vous retrouve à regarder cet appareil pendant mon cours, je vous le confisque jusqu'à la fin de la journée!"
 **Joueur** : Ah, désolé.. Je le range tout de suite!"
 **Prof** : "Bon, reprenez vos exercices. Et en silence!"
+
+
+
+  
 
 *Après les cours, dans la bibliothèque/salle vide quelconque"
 **Emma** : "@, te voilà ! Qu'est ce qui se passe ? ça avait l'air important dans ton message."
@@ -111,8 +123,7 @@
   "Approche, j'ai ce qu'il te faut..."
 **Joueur** : 
     1- "Hum, je vais voir ce qu'il propose." (L+)
-    2- "Il est vraiment trop louche, je m'en vais." (U+)
-
+    2- "Il est vraiment trop louche, je m'en vais."
 
 
 1: 
@@ -190,8 +201,4 @@
 
 
 
-Libertarianisme.
-- Un mec jette sa clope dans une plante verte :
-  - ne rien faire : il a le droit de faire ce qu'il veux (L, U, \K)
-  - lui dire de la jeter dans une poubelle (\L, \U, K)
-  - lui dire que fumer c'est mauvais pour la santé (\L, \U, K)
+
