@@ -36,6 +36,14 @@ Vendredi 08/05 :
 	. Réécriture soir 2 --> Colin
 	. Réécriture soir 1 --> Antoine
 
+Mardi 12/05 :
+	. Eva --> Modifier jour 3 && recherche soir 3
+	. Valton --> Dilemmes extrêmes et début soir 3
+	. Ylies --> Visuels && dilemme jour 2
+	. Colin --> Bilan && modif soir 2
+	. Antoine --> Modification soir1 (rajouter des dialogues pour les choix, ajouter l'evenement, virer dilemme figurine)
+		      && recherche soir 3 && prog
+
 A regarder :
 	. Choix grisés
 	. Intéraction avec l'environnement
