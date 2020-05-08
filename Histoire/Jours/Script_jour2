@@ -23,11 +23,20 @@ Dilemme du SDF.
 **Mère** : "Il va falloir te reprendre, chou, n'oublie pas que tu as un groupe de travail ce soir."
 **Joueur** : "Ah oui... Et en plus c'est mon tour d'amener un truc à manger aujourd'hui.", "D'ailleurs, je peux avoir des sous?"
 **Mère** : "Tiens, 10.-, mais ne fais pas comme la dernière fois, achète vraiment quelque chose pour tes amis!"
-**Joueur, blush** : "Oui, oui, ne t'inquiète pas.", "Bon, j'y vais, sinon je vais vraiment devoir courir."
+**Joueur, blush** : "Oui, oui, ne t'inquiète pas.", "Bon, j'ai vraiment la dalle. Je mange un bout et j'y vais."
+**Joueur, pense** : "Zut ! Il ne reste qu'une seule brioche. J'ai vraiment faim mais mon père va encore me faire une crise.", 
+  "J'ai pas de temps a perdre avec ça."
+
+Choix : 
+C1 : Manger la brioche
+C2 : Laisser la brioche à ton père
+C3 : Partager la brioche en deux (if 2 U)
+
 **Père** : "Bonne journée!"
 
 *A l'école, en classe*
 **Joueur, pense** : "Je n'arrive pas à me concentrer...", "Je n'arrête pas de repenser à mon rêve de cette nuit.",
+  (if C2) "En plus j'ai du mal à réfléchir le ventre vide."
   "Et si c'était pas vraiment un rêve?", "On entend souvent parler de gens qui ont des visions envoyée par des démons ou des dieux..." :
    - "Mais je me suis toujours dit qu'ils devaient être fous ou rechercher l'attention!"
    - "Je me suis toujours dit que c'était trop classe!"
@@ -66,6 +75,7 @@ Dilemme du SDF.
  
 *Dans la rue* 
 
+(if C1) **Joueur** : J'aurais peut être pas dû prendre la brioche de papa ce matin. J'espère qu'il m'en voudra pas trop.", "Mais bon, j'ai d'autres choses à pensé."
 **Joueur** : "Il me semble qui il y a une boulangerie au coin de cette rue.", "Avec 10.-, je vais pouvoir me rattraper de la dernière fois, où j'ai oublié d'amener quelque chose!",
     "Peut-être des croissants pour tout le monde... Ou du pain et plein de chocolat ?", "Hummmm...."
 **SDF** : "Eh !", "Eh, toi là!"
@@ -94,10 +104,18 @@ Dilemme du SDF.
     1 : "...", "Bon, au moins cette fois c'était pour une bonne cause. Mais j'espère que tes amis ne vont pas t'en vouloir, tu leur avais quand même promis d'amener quelque chose!"
     2/3/4 : "Pas besoin de t'énerver! Tes amis devaient être content que tu aie pensé à eux cette fois.", "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
 **Joueur** : "Oui, maman..."
+(if C1) {**Mère** : "Au fait, ton père était vraiment mécontent quand il a vu que tu avait mangé sa brioche"
+         **Joueur** : "Je sais maman, je ne peux aller à l'école le ventre vide"
+         **Mère** : "Pense à aller t'excuser et évite que ça se reproduise."}
+(if C2) {**Mère** : "Au fait, tu est parti le ventre vide ce matin ?"
+         **Joueur** : "Oui, j'ai vu qu'il ne restait qu'une brioche. Je l'ai laissé à papa."
+         **Mère** : "C'est très gentil à toi mon chéri."}
+(if C3) {**Mère** : "Ton père était content que tu lui ai laissé la moitié de sa brioche. Il était étonné  de cette réflexion venant de ta part."
+         **Joueur** : "haha ! On en apprends tout les jours !"
+         **Joueur, pense** : "Ou dans mon cas la nuit."
+         **Mère** : "C'est bien mon chéri, tu deviens vraiment mature."}
 *Pause*
 **Joueur** : "J'ai mal dormi hier soir, je vais aller me coucher tôt pour rattraper ça."
 **Mère** : "D'accord, chou.", "Bonne nuit et fait de beaux rêves!"
 **Joueur, pense** : "J'espère..."
 *Ecran noir*
-
-
