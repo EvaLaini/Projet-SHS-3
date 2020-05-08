@@ -114,7 +114,10 @@ A change : Une fois les patients dans un état grave stabilisés, la situation 
 ==> Peut-être aider un autre hôpital ? Ou une autre situation d’urgence pour rendre le choix plus difficile ?
 
 Vous êtes fatigués mais vous prenez un café. Après quelques minutes vous sentez l’effet. Le prochain bus est dans 30 min, si vous le prenez, vous ratez « Insérer évènement ». 
-	
+
+Evenement : Film ou concert --> evenement avec un horaire
+
+
 O1 : Rentrer en voiture.
 	O2 : Rentrer en bus
 
