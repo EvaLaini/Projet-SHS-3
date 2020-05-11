@@ -12,9 +12,12 @@
 **Mère** : "@?"
 **Joueur** : "J'arrive!"
 
-*Dans la salle de classe* Dans la cours d'école!
-**Prof** : "... les formules au tableau sont à apprendre absolument pour les examens!", "On va maintenant démontrer ensemble le théorème 3."
-**Joueur, pense** : "Je commence à stresser... Et si Emma me prenait pour un fou ??", "Mais non , on est amis depuis bien trop longtemps...", 
+*Dans la cours d'école/rue*
+
+**Joueur, pense** : "Pour une fois, je suis un peu en avance en cours.", 
+**Mec qui fume** : "*Souffle de la fumée.*"
+**Joueur, pense, énervé** : "Hum, je croyais que c'était interdit vers les écoles...", "Bref, je commence à stresser... Et si Emma me prenait pour un fou ??", 
+  "Mais non , on est amis depuis bien trop longtemps...", 
   "Courage ! Je vais lui envoyer un message pour se retrouver après les cours."
 *Ecran de téléphone*
 **Joueur** : "Hum... :
@@ -29,12 +32,32 @@ Libertarianisme.
   - lui dire que fumer c'est mauvais pour la santé (\L, \U, K)
   
   
-**Prof** : "C'est tout pour la théorie. Reprenez vos cahiers et commencez les exercices du chapitre 8."
+**Mec qui fume** : "*Souffle de la fumée.*"
+**Joueur, pense, enervé** : "Ah, il m'a envoyé sa fumée dans la tête!"
+*Le mec qui fume jette sa clope dans un pot de fleurs*
+**Joueur, pense** : "Est-ce que je lui dit  quelque chose?"
+    1-"Non, rien, il a le droit de faire ce qu'il veux..." (L+)
+    2-"Je vais lui demander de la jeter dans une poubelle." 
+    3-"Je vais lui expliquer que fumer, c'est mauvais pour la santé!" (U+)
+
+1- **Mec qui fume** : "Bonne journée, gamin!
+   **Joueur** : "Ah! A vous aussi..."
+   *Il s'en va*
+2- **Joueur** : "Monsieur! Jeter des cigarettes dans les fleurs, c'est très mauvais écologiquement!", "Est-ce que vous pouvez la jeter dans une poubelle?"
+   **Mec qui fume** : "Euh... Oui, okay..."
+   **Joueur** : "Merci! Bonne journée."
+   **Mec qui fume** : "Ouais... A toi aussi."
+   *Il s'en va*
+3- **Joueur** : "Monsieur! Fumer c'est mauvais pour la santé! Et en plus ça coûte super cher aux assurances tous les cancers..."
+   **Mec qui fume, énervé** : "De quoi tu te mèles, gamin! C'est ma vie et elle te regarde pas!"
+   *Il s'en va*
+   **Joueur** : "Ah, peut-être que c'était pas la bonne méthode..."
+    
 *Vibration*
 **Joueur, pense** : "Ah c'est déjà la réponse d'Emma!", "... 'Oui, pas de problème! Retrouve-moi à la bibliothèque.'"
-**Prof, énervé** : "@! Encore sur votre téléphone?! Si je vous retrouve à regarder cet appareil pendant mon cours, je vous le confisque jusqu'à la fin de la journée!"
-**Joueur** : Ah, désolé.. Je le range tout de suite!"
-**Prof** : "Bon, reprenez vos exercices. Et en silence!"
+**Prof, énervé** : "@! Encore sur votre téléphone?! Je vous signale que les cours commencent dans 1 minute!"
+**Joueur** : Ah, désolé.. J'arrive tout de suite!"
+**Prof** : "Bon, je vous retrouve en classe."
 
 
 
