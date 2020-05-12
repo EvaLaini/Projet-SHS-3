@@ -150,7 +150,7 @@
   **Joueur, pense** : "Que faire?"
       3- "Je t'en achète un, il faut mettre toutes les chances de mon côté pour ce soir." (L++)
       4- "Non, merci, c'est trop risqué." 
-      5- "Non et ça m'a l'air pas très légal ton truc..." (U++)
+      5- "Non, si mes parents l'apprenent, ils me tueraient!" (U++)
   
   3: **Personnage louche** : "T'as fait le bon choix, petit. Tiens, c'est 20.- pour un champi magique!"
      **Joueur** : "Voilà... Au revoir."
@@ -163,10 +163,10 @@
    **Personnage louche** : "Tu sais pas c'que tu rates..."
    *Sans un regard en arrière, tu te dépêche de quitter la ruelle pour retourner à la bibliothèque.*
  5: 
-   **Personnage louche** : "C'que je fais dans mon coin te regardes pas, petit!"
+   **Personnage louche** : "C'que tu fais dans ton coin regardes que toi, petit!", "Bah, tant pis pour toi..."
    *Il part*
-   **Joueur, pense** : "Si quelque chose n'est pas légal, c'est qu'il y a un danger pour la population... Il faut que j'appelle la police pour le dénoncer!"
-   *Après un court appel avec la police qui prend note de l'information, tu peux reprendre la route de la bibliothèque.*
+   **Joueur, pense** : "Jamais je pourrais décevoir ma famille comme ça... Même si ça me débarrasserait des visions! "
+   *Tu reprends la route de la bibliothèque.*
 
 *De retour dans la bibliothèque, Emma est déjà là à attendre*
 **Emma** : "Ah te voilà! T'en as mis du temps, ça fait un moment que je t'attends.","J'ai trouvé tout ce que je devais chez moi!",
