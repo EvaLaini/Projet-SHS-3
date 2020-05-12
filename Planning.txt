@@ -43,6 +43,12 @@ Mardi 12/05 :
 	. Colin --> Bilan && modif soir 2
 	. Antoine --> Modification soir1 (rajouter des dialogues pour les choix, ajouter l'evenement, virer dilemme figurine)
 		      && recherche soir 3 && prog
+Vednredi 15/05 :
+	. Colin --> Ce qu'il reste à implémenter
+	. Antoine --> Gestion du projet && developpement
+	. Eva --> Gameplay
+	. Ylies --> Demo
+	. Valton --> Intro
 
 A regarder :
 	. Choix grisés
