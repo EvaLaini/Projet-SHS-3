@@ -1,0 +1,19 @@
+Gestion du projet
+
+Pour ce genre de jeu, visual novel, il y une grosse phase de préparation avant de commencer la réelle implémentation. Il faut que tout le monde soit d’accord sur le déroulement de l’histoire, 
+son contexte, le rôle des personnages, les visuels, etc., … Il faut aussi s’assurer que la gamification de la matière scientifique s’insère bien dans le gameplay du jeu. C’est pourquoi les 
+premières semaines, les discussions représentaient le principal du travail. Très tôt, nous avons décidé de nous réunir deux fois par semaine, une fois le mardi après la leçon et une fois le vendredi 
+en fin d’après-midi. Lors de chacune de ces réunions, un bilan du travail effectué par chacun des membres du groupe était fait. Celui-ci consiste en une revue du travail, c’est-à-dire, est ce que tel 
+ou tel élément convient à tout le monde, sinon comment pourrait-on le modifier pour qu’il s’insère mieux dans le jeu ? Puis, après ces bilans qui représentaient bien 90% de la réunion, généralement d’une 
+durée de deux heures, on distribuait les tâches que chacun devait accomplir pour la prochaine fois. Ainsi, chaque membre s’est vu attribué un « rôle ». Eva, Ylies et Valton travaillent principalement sur les scripts 
+quand Colin travail sur les images, et je, Antoine, développe le jeu avec ren’py. Ces rôles ne sont pas « stricts ». En effet, Ylies a notamment travaillé sur les images et j’ai écrit un script. Aussi,
+tout le monde a participé activement aux bilans durant toutes les semaines du projet et continue de le faire malgré une charge de travail élevé. Après les deux premières semaines, les bases étant posées, 
+nous avons pu commencer à écrire les scripts et implémenter le jeu, peut-être même un peu trop tôt. 
+
+Au début, nous avions décidé d’avoir 6 jours et 6 nuits mais compte tenu de la quantité astronomique de travail que cela représentait nous avons préféré réduire le jeu à trois jours et trois nuits.
+
+Je vais maintenant parler de la programmation du jeu avec ren’py. Nous avons choisi d’utiliser cet outil car il semblait parfaitement adapter à nos besoins. En effet, ce moteur a été conçu dans le but de 
+permettre la création de visual novel. Son langage est très proche de python, dont j’ai des bases. Cependant, il m’a fallu plus de temps d’adaptation que prévu.
+
+
+Ces deux dernières semaines, pour donner suite aux remarques de Selim Krichane, nous sommes passés par une phase de réécriture total des scripts mais qui ne devrait pas nous obligés à revoir nos ambitions à la baisse.
