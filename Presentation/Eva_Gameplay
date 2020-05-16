@@ -1,0 +1,11 @@
+
+
+Comme vous avez pu le voir, le jeu est sous forme de visual novel interactive. Le gameplay se limite donc à cliquer sur les choix du 
+joueur et suivre l'histoire. C'est donc l'histoire et tous les scripts que nous avons écrit qui constituent l'essence de notre jeu.
+Mais au cours de cette histoire, le joueur sera parfois confronté à des choix. Certains de ces choix ont un impact sur le reste du jeu. 
+Lors des rêves, les choix du joueur lui rapportent, ou pas, des points pour les deux courants illustrés. Ces points vont déterminer quels 
+choix seront à sa disposition les jours suivants. Dans cet exemple, on peut voir que le joueur a décider de choisir... Ce qui lui rapporte des 
+points pour ... Le jour suivant, les choix ... sont disponibles car ... Pour l'instant, nous n'avons pas implémenté d'arbre d'histoire complexe,
+comme nous voulions le faire à la base. Les choix lors du jours changent donc minimalement l'histoire, en général, juste un ou deux dialogue par la suite.
+
+A la fin du jeu, le joueur aura un feedback sur les conséquences de ses choix et sur le/les courants éthiques qui lui correspondent le plus. 
