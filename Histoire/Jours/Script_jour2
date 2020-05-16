@@ -4,7 +4,7 @@ Dilemme du SDF.
 # Jour 2 :
 
 *Chambre*
-"Tu te réveilles en sursaut, des sueurs froids coulant dans ton dos"
+"Tu te réveilles en sursaut, des sueurs froides coulantes dans ton dos"
 
 **Joueur, pense** : "Qu'est-ce que c'était que ce rêve??", "Je n'en avais jamais fait d'aussi réaliste... J'en ai encore des frissons.",
   "En tout cas, ça me donne pas envie de devenir médecin!" 
@@ -12,9 +12,9 @@ Dilemme du SDF.
 **Joueur, pense** : "Je me sens pas du tout reposé, c'est comme si j'avais vraiment dû faire ces opérations!", "Et ces choix... :
   - "Au moins, c'était facile de choisir !"
   - "Je me suis vraiment creusé la tête dans mon rêve, c'était intéressant !"
-  - "J'espère que j'aurais jamais à faire des choix pareils dans la vraie vie..."
+  - "J'espère que je n'aurais jamais à faire des choix pareils dans la vraie vie..."
 
-**Mère au loin** : "@, qu'est ce que tu fais encore ? Tu vas de nouveau devoir courir!"
+**Mère au loin** : "@, qu'est-ce que tu fais encore ? Tu vas de nouveau devoir courir!"
 **Joueur** : "J'arrive, j'arrive..."
 
 *Dans la cuisine*
@@ -25,7 +25,7 @@ Dilemme du SDF.
 **Mère** : "Tiens, 10.-, mais ne fais pas comme la dernière fois, achète vraiment quelque chose pour tes amis!"
 **Joueur, blush** : "Oui, oui, ne t'inquiète pas.", "Bon, j'ai vraiment la dalle. Je mange un bout et j'y vais."
 **Joueur, pense** : "Zut ! Il ne reste qu'une seule brioche. J'ai vraiment faim mais mon père va encore me faire une crise.", 
-  "J'ai pas de temps a perdre avec ça."
+  "Je n'ai pas de temps à perdre avec ça."
 
 Choix : 
 C1 : Manger la brioche
@@ -37,12 +37,12 @@ C3 : Partager la brioche en deux (if 2 U)
 *A l'école, en classe*
 **Joueur, pense** : "Je n'arrive pas à me concentrer...", "Je n'arrête pas de repenser à mon rêve de cette nuit.",
   (if C2) "En plus j'ai du mal à réfléchir le ventre vide."
-  "Et si c'était pas vraiment un rêve?", "On entend souvent parler de gens qui ont des visions envoyée par des démons ou des dieux..." :
+  "Et si ce n'était pas vraiment un rêve?", "On entend souvent parler de gens qui ont des visions envoyées par des démons ou des dieux..." :
    - "Mais je me suis toujours dit qu'ils devaient être fous ou rechercher l'attention!"
    - "Je me suis toujours dit que c'était trop classe!"
    - "Je ne sais pas si je peux vraiment y croire..."
   "J'arrive pas à m'empêcher de penser que c'est possible que c'est ça qui m'est arrivé..."
-**Prof, énervé** : "@! Qu'est ce que tu as ce matin?? Ca fait 3 fois que je te pose une question et tu ne fais que de regarder dans le vague!"
+**Prof, énervé** : "@! Qu'est-ce que tu as ce matin?? Ca fait 3 fois que je te pose une question et tu ne fais que regarder dans le vague!"
 **Joueur, blush" : "Ah, désole Professeur... J'ai mal dormi cette nuit."
 **Prof** : "Hum, je vais laisser passer pour cette fois, mais tâcher que cela ne se reproduise plus!"
 *Pause de midi*
@@ -52,8 +52,8 @@ C3 : Partager la brioche en deux (if 2 U)
 **Joueur** : "Ah désolé, MA!", "J'ai la tête ailleurs..."
 **MA** : "Je vois ça, quelque chose te tracasse? Un problème à la maison ? Ou juste les examens?"
 **Joueur, pense** : "Je ne peux pas lui parler de mon rêve, elle ne va jamais comprendre...", 
-  "Déjà qu'hier je lui ai dit que les rêves sont pas réels, elle va me prendre pour un fou."
-**Joueur** : "Les examens...", "D'ailleurs, il faut que j'aie faire des recherches pour" :
+  "Déjà qu'hier je lui ai dit que les rêves ne sont pas réels, elle va me prendre pour un fou."
+**Joueur** : "Les examens...", "D'ailleurs, il faut que j'aille faire des recherches pour" :
   - "Mon cours de danse contemporaine."
   - "Mon exposé sur la chute d'Atlantide."
   - "En apprendre plus sur les problèmes de coeur des fourmis."
@@ -63,7 +63,7 @@ C3 : Partager la brioche en deux (if 2 U)
 *Dans la salle d'informatique/salle vide*
 
 **Joueur** : "Je n'aime pas mentir à MA mais là je n'avais pas le choix...", "Bon, j'aurais quand même pu trouver une meilleure excuse par contre!,
-  "*Insérer excuse choisie*! Qui pourrais croire à ça?!", "Au moins, maintenant je suis tranquille pour faire des recherche sur les rêves et visions."
+  "*Insérer excuse choisie*! Qui pourrait croire à ça?!", "Au moins, maintenant je suis tranquille pour faire des recherches sur les rêves et visions."
 *Ecran d'ordinateur/télephone*
 **Joueur** : "Que ce que je pourrais bien rechercher ?" :
   - "Visions + Dieu"
@@ -71,47 +71,47 @@ C3 : Partager la brioche en deux (if 2 U)
   - "Ethique + Démon"
 *Après quelques recherches...*
 **Joueur** : "On trouve vraiment de tout et de rien sur internet!", "Je tombe autant sur des articles scientifiques qui expliquent les rêves lucides, que sur des témoignages de gens qui affirment avoir rencontré Dieu...",
-  "J'ai le cerveau qui surchauffe, je crois que je vais m'arrêter là pour aujourd'hui...", "D'autant plus que si je pars pas maintenant je vais arriver en retard à mon groupe de travail, et je dois encore aller acheter à grignoter"
+  "J'ai le cerveau qui surchauffe, je crois que je vais m'arrêter là pour aujourd'hui...", "D'autant plus que si je ne pars pas maintenant je vais arriver en retard à mon groupe de travail, et je dois encore aller acheter à grignoter"
  
 *Dans la rue* 
 
-(if C1) **Joueur** : J'aurais peut être pas dû prendre la brioche de papa ce matin. J'espère qu'il m'en voudra pas trop.", "Mais bon, j'ai d'autres choses à pensé."
+(if C1) **Joueur** : J'aurais peut-être pas dû prendre la brioche de papa ce matin. J'espère qu'il ne m'en voudra pas trop.", "Mais bon, j'ai d'autres choses à penser."
 **Joueur** : "Il me semble qui il y a une boulangerie au coin de cette rue.", "Avec 10.-, je vais pouvoir me rattraper de la dernière fois, où j'ai oublié d'amener quelque chose!",
     "Peut-être des croissants pour tout le monde... Ou du pain et plein de chocolat ?", "Hummmm...."
 **SDF** : "Eh !", "Eh, toi là!"
 **Joueur, surpris** : "On m'a parlé ?"
 **SDF** : "Ah, oui c'était moi ! Excuse moi mais tu a l'air de quelqu'un de généreux. J'ai perdu mon travail l'année passée et depuis, mon mari m'a quitté et on m'a éjecté de mon appart...", 
-  "Tu aurais pas un peu d'argent pour que je m'achète à manger?" 
+  "Tu n'aurais pas un peu d'argent pour que je m'achète à manger?" 
 **Joueur** : "L'argent que j'ai sur moi est pour acheter un gouter à mes amis... " :
   1- "Mais je te le donne volontiers, ils comprendront bien!"
   2- "Mais je t'en donne la moitié, ils se contenteront de pain sans chocolat! (U+)
   3- "Je suis désolé demande à quelqu'un d'autre. Bonne chance!" (U++)
   4- "Trouve toi un travail au lieu de vivre comme un parasite!" (U+++)
-1/2 **SDF** : "Merci! Je suis sûr ques tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin.", "Bonne soirée!"
-    **Joueur, pense** : "Même si mes amis risquent d'être déçu et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
+1/2 **SDF** : "Merci! Je suis sûr que tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin.", "Bonne soirée!"
+    **Joueur, pense** : "Même si mes amis risquent d'être déçus et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
 3/4 **SDF** : "..."
     **Joueur, pense** : "J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
     
 *Ecran noir*
-"La scéance de révision paraît durer des heures, tes yeux se ferment tout seuls, tu n'arrives pas à te concentrer."
-"Quand c'est enfin le moment de rentrer chez toi, tu dis à peine au revoir et te dépêche d'aller prendre le bus."
+"La séance de révision paraît durer des heures, tes yeux se ferment tout seuls, tu n'arrives pas à te concentrer."
+"Quand c'est enfin le moment de rentrer chez toi, tu dis à peine au revoir et te dépêches d'aller prendre le bus."
 *A la maison*
-**Mère** : "Alors, cette séance de révision ? Tu as pensé à acheté du goûter cette fois ?"
+**Mère** : "Alors, cette séance de révision ? Tu as pensé à acheter du goûter cette fois ?"
 **Joueur** :
     1 (Gené) : "...", "Non... J'ai donné l'argent à quelqu'un dans la rue qui en avait plus besoin que moi..."
     2/3/4 (Enervé) : "Oui, oui, je l'ai fait cette fois!", "Quand est-ce que tu vas arrêter de m'embêter avec ça, j'ai juste oublié une fois!!"
 **Mère** : 
     1 : "...", "Bon, au moins cette fois c'était pour une bonne cause. Mais j'espère que tes amis ne vont pas t'en vouloir, tu leur avais quand même promis d'amener quelque chose!"
-    2/3/4 : "Pas besoin de t'énerver! Tes amis devaient être content que tu aie pensé à eux cette fois.", "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
+    2/3/4 : "Pas besoin de t'énerver! Tes amis devaient être contents que tu aies pensé à eux cette fois.", "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
 **Joueur** : "Oui, maman..."
-(if C1) {**Mère** : "Au fait, ton père était vraiment mécontent quand il a vu que tu avait mangé sa brioche"
+(if C1) {**Mère** : "Au fait, ton père était vraiment mécontent quand il a vu que tu avais mangé sa brioche"
          **Joueur** : "Je sais maman, je ne peux aller à l'école le ventre vide"
          **Mère** : "Pense à aller t'excuser et évite que ça se reproduise."}
-(if C2) {**Mère** : "Au fait, tu est parti le ventre vide ce matin ?"
+(if C2) {**Mère** : "Au fait, tu es parti le ventre vide ce matin ?"
          **Joueur** : "Oui, j'ai vu qu'il ne restait qu'une brioche. Je l'ai laissé à papa."
          **Mère** : "C'est très gentil à toi mon chéri."}
-(if C3) {**Mère** : "Ton père était content que tu lui ai laissé la moitié de sa brioche. Il était étonné  de cette réflexion venant de ta part."
-         **Joueur** : "haha ! On en apprends tout les jours !"
+(if C3) {**Mère** : "Ton père était content que tu lui aies laissé la moitié de sa brioche. Il était étonné  de cette réflexion venant de ta part."
+         **Joueur** : "haha ! On en apprend tous les jours !"
          **Joueur, pense** : "Ou dans mon cas la nuit."
          **Mère** : "C'est bien mon chéri, tu deviens vraiment mature."}
 *Pause*

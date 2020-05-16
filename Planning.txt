@@ -49,7 +49,16 @@ Vednredi 15/05 :
 	. Eva --> Gameplay
 	. Ylies --> Demo
 	. Valton --> Intro
-
+	
+Dimanche 17/05:
+	ATTENTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! : Mettez les présentations sur le git et pensez à vérifier celles des autres pour éviter les répétitions et les conflits.
+	. Eva --> Presentation + slide
+	. Colin --> Presentation + slide + soir 2
+	. Valton --> Presentation + slide
+	. Ylies --> Presentation + slide
+	. Antoine --> Programmation + slide
+	
+	
 A regarder :
 	. Choix grisés
 	. Intéraction avec l'environnement

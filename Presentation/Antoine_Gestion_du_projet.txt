@@ -1,19 +1,20 @@
 Gestion du projet
 
-Pour ce genre de jeu, visual novel, il y une grosse phase de préparation avant de commencer la réelle implémentation. Il faut que tout le monde soit d’accord sur le déroulement de l’histoire, 
-son contexte, le rôle des personnages, les visuels, etc., … Il faut aussi s’assurer que la gamification de la matière scientifique s’insère bien dans le gameplay du jeu. C’est pourquoi les 
-premières semaines, les discussions représentaient le principal du travail. Très tôt, nous avons décidé de nous réunir deux fois par semaine, une fois le mardi après la leçon et une fois le vendredi 
-en fin d’après-midi. Lors de chacune de ces réunions, un bilan du travail effectué par chacun des membres du groupe était fait. Celui-ci consiste en une revue du travail, c’est-à-dire, est ce que tel 
-ou tel élément convient à tout le monde, sinon comment pourrait-on le modifier pour qu’il s’insère mieux dans le jeu ? Puis, après ces bilans qui représentaient bien 90% de la réunion, généralement d’une 
-durée de deux heures, on distribuait les tâches que chacun devait accomplir pour la prochaine fois. Ainsi, chaque membre s’est vu attribué un « rôle ». Eva, Ylies et Valton travaillent principalement sur les scripts 
-quand Colin travail sur les images, et je, Antoine, développe le jeu avec ren’py. Ces rôles ne sont pas « stricts ». En effet, Ylies a notamment travaillé sur les images et j’ai écrit un script. Aussi,
-tout le monde a participé activement aux bilans durant toutes les semaines du projet et continue de le faire malgré une charge de travail élevé. Après les deux premières semaines, les bases étant posées, 
-nous avons pu commencer à écrire les scripts et implémenter le jeu, peut-être même un peu trop tôt. 
+Pour ce genre de jeu, visual novel, il y une grosse phase de prÃ©paration avant de commencer la rÃ©elle implÃ©mentation. Il faut que tout le monde soit dâ€™accord sur le dÃ©roulement de lâ€™histoire, 
+son contexte, le rÃ´le des personnages, les visuels, etc., â€¦ Il faut aussi sâ€™assurer que la gamification de la matiÃ¨re scientifique sâ€™insÃ¨re bien dans le gameplay du jeu. Câ€™est pourquoi les 
+premiÃ¨res semaines, les discussions reprÃ©sentaient le principal du travail. TrÃ¨s tÃ´t, nous avons dÃ©cidÃ© de nous rÃ©unir deux fois par semaine, une fois le mardi aprÃ¨s la leÃ§on et une fois le vendredi 
+en fin dâ€™aprÃ¨s-midi. Lors de chacune de ces rÃ©unions, un bilan du travail effectuÃ© par chacun des membres du groupe Ã©tait fait. Celui-ci consiste en une revue du travail, câ€™est-Ã -dire, est ce que tel 
+ou tel Ã©lÃ©ment convient Ã  tout le monde, sinon comment pourrait-on le modifier pour quâ€™il sâ€™insÃ¨re mieux dans le jeuÂ ? Puis, aprÃ¨s ces bilans qui reprÃ©sentaient bien 90% de la rÃ©union, gÃ©nÃ©ralement dâ€™une 
+durÃ©e de deux heures, on distribuait les tÃ¢ches que chacun devait accomplir pour la prochaine fois. Ainsi, chaque membre sâ€™est vu attribuÃ© un Â«Â rÃ´leÂ Â». Eva, Ylies et Valton travaillent principalement sur les scripts 
+quand Colin travail sur les images, et je, Antoine, dÃ©veloppe le jeu avec renâ€™py. Ces rÃ´les ne sont pas Â«Â strictsÂ Â». En effet, Ylies a notamment travaillÃ© sur les images et jâ€™ai Ã©crit un script. Aussi,
+tout le monde a participÃ© activement aux bilans durant toutes les semaines du projet et continue de le faire malgrÃ© une charge de travail Ã©levÃ©. AprÃ¨s les deux premiÃ¨res semaines, les bases Ã©tant posÃ©es, 
+nous avons pu commencer Ã  Ã©crire les scripts et implÃ©menter le jeu, peut-Ãªtre mÃªme un peu trop tÃ´t. 
 
-Au début, nous avions décidé d’avoir 6 jours et 6 nuits mais compte tenu de la quantité astronomique de travail que cela représentait nous avons préféré réduire le jeu à trois jours et trois nuits.
+Au dÃ©but, nous avions dÃ©cidÃ© dâ€™avoir 6 jours et 6 nuits mais compte tenu de la quantitÃ© astronomique de travail que cela reprÃ©sentait nous avons prÃ©fÃ©rÃ© rÃ©duire le jeu Ã  trois jours et trois nuits.
 
-Je vais maintenant parler de la programmation du jeu avec ren’py. Nous avons choisi d’utiliser cet outil car il semblait parfaitement adapter à nos besoins. En effet, ce moteur a été conçu dans le but de 
-permettre la création de visual novel. Son langage est très proche de python, dont j’ai des bases. Cependant, il m’a fallu plus de temps d’adaptation que prévu.
+Je vais maintenant parler de la programmation du jeu avec renâ€™py. Nous avons choisi dâ€™utiliser cet outil car il semblait parfaitement adapter Ã  nos besoins. En effet, ce moteur a Ã©tÃ© conÃ§u dans le but de 
+permettre la crÃ©ation de visual novel. Son langage est trÃ¨s proche de python, dont jâ€™ai des bases. Cependant, il mâ€™a fallu plus de temps dâ€™adaptation que prÃ©vu.
 
 
-Ces deux dernières semaines, pour donner suite aux remarques de Selim Krichane, nous sommes passés par une phase de réécriture total des scripts mais qui ne devrait pas nous obligés à revoir nos ambitions à la baisse.
+Ces deux derniÃ¨res semaines, pour donner suite aux remarques de Selim Krichane, nous sommes passÃ©s par une phase de rÃ©Ã©criture total des scripts mais qui ne devrait pas nous obligÃ©s Ã  revoir nos ambitions Ã  la baisse.
+
