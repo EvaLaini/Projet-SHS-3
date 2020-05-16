@@ -2,13 +2,13 @@
 
 *Ecran noir*
 "Toc toc toc"
-**Mère au loin** : "Réveille-toi, @! Tu va être en retard à l'école!!"
+**Mère au loin** : "Réveille-toi, @! Tu vas être en retard à l'école!!"
 *Le joueur se lève, panorama de la chambre*
 **Joueur** : "*Bâille* Il faut que j'aie à la cuisine prendre mon petit déjeuner avant d'aller en cours..."
 *La porte/flèche de déplacement vers la cuisine s'allume, le joueur clique*
 
 *Dans la cuisine, avec la mère*
-**Mère** : "Ah tu es debout, très bien! Voilà tes céréales, @. Manges les vite, tu dois te dépécher." 
+**Mère** : "Ah tu es debout, très bien! Voilà tes céréales, @. Mange-les vite, tu dois te dépêcher." 
 *Un bol s'allume, le joueur clique*
 **Joueur** : "Crunch, crunch" , "Bon, j'y vais! A ce soir, maman."
 **Mère** : "Bonne journée, mon chou!"
@@ -24,38 +24,38 @@
 
 *Panorama de la cafétéria/cours d'école*
 *MA (meilleur/e ami/e) apparaît*
-**MA** : "@! Tu es là !", "Comment s'est passé ta matinée ?"
+**MA** : "@! Tu es là !", "Comment s'est passée ta matinée ?"
 **Joueur** :
     - "Ennuyant à mourir... On a fait de la biologie."
-    - "Passionant! Le corps humain est fascinant."
+    - "Passionnant! Le corps humain est fascinant."
     - "Long, je meurs de faim."
-**MA** : "Je vois! Dépéchons nous d'aller manger, il y a déjà une queue."
+**MA** : "Je vois! Dépêchons-nous d'aller manger, il y a déjà une queue."
 **Joueur** : "J'arrive!"
 
 *A une table*
-**MA** : "Heureusement qu'on s'est dépéchés, on a eu les dernières places!", "Avec les examens qui arrivent tout le monde est stressé et veux manger au plus vite pour avoir le temps de réviser..."
+**MA** : "Heureusement qu'on s'est dépêché, on a eu les dernières places!", "Avec les examens qui arrivent tout le monde est stressé et veut manger au plus vite pour avoir le temps de réviser..."
 **Joueur** : 
     - "Pas moi en tout cas! Je sais que je vais réussir sans problèmes!"
     - "Oui, le temps passe trop vite... Il faut aussi que je m'y mette."
     - "Je préfère passer du temps avec toi!"
 **MA** : "Haha, tu as bien raison !", "En parlant de ça, cette nuit, j'ai fait un rêve où on était les deux enfermés à l'école jusqu'à qu'on arrive à résoudre un exercice de math impossible!", 
-  "Je regardais la feuille mais je comprenais rien et toi tu pleurais en disant qu'on allait mourir de faim avant d'y arriver.",
+  "Je regardais la feuille mais je ne comprenais rien et toi tu pleurais en disant qu'on allait mourir de faim avant d'y arriver.",
   "Puis un Pikachu géant est arrivé et a mangé la feuille.", "Là, je me suis réveillé en sursaut...", "Bizarre non?"
-**Joueur** : "Haha, oui mais ne t'inquiète pas, c'est qu'un rêve, c'était pas réel..."
-**MA** : "Je sais ! Mais imagine si les rêves avaient des conséquences sur la réalité ! Ca serait terrifiant..."
+**Joueur** : "Haha, oui mais ne t'inquiète pas, c'est qu'un rêve, ce n'était pas réel..."
+**MA** : "Je sais ! Mais imagine si les rêves avaient des conséquences sur la réalité ! Ce serait terrifiant..."
 **Joueur** : "En effet... Heureusement, que ça reste dans nos têtes!"
 "Ding ding*
 **MA** : "Ah, c'est l'heure de retourner en classe. Bon, j'y vais. Bon aprem @!
 *Ecran noir*
 
 *En classe, prof au tableau* 
-**Prof** : "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parle tous ensemble demain.", "Bonne soirée."
+**Prof** : "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parlera tous ensemble demain.", "Bonne soirée."
 *Prof part*
 **Camarade de classe** : "Aaaah, j'avais oublié, je vais devoir repousser mon entrainement..."
-**Autre camarade** : "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énérgie dans les révisions..."
-**Joueur** : "Ils plaisantent pas avec ces examens..."
+**Autre camarade** : "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énergie dans les révisions..."
+**Joueur** : "Ils ne plaisantent pas avec ces examens..."
 **Autre camarade** : "Vraiment... Et en plus, on a une grosse journée demain..."
-**Joueur** : "Il va falloir que j'aie me coucher tôt si je veux être en forme."
+**Joueur** : "Il va falloir que j'aille me coucher tôt si je veux être en forme."
 *Ecran noir*
 
 *A la maison*
