@@ -21,8 +21,8 @@ GML :  Mais il y a des règles ! Chacun dispose de lui-même comme il le souhait
 GMU : Ça ne marchera jamais !
 GML : Bien sûr que si ! 
     - Et tu penses que laisser la décision au plus grand nombre est plus efficace ?
-GMU : Tout à fait ! En satisfaisant le plus gens, tout le monde est content.
-GML : Non, pas tout le monde ! Tu ne pense pas à toutes les minorités que tu exclues. 
+GMU : Tout à fait ! En satisfaisant le plus de gens, tout le monde est content.
+GML : Non, pas tout le monde ! Tu ne penses pas à toutes les minorités que tu exclus. 
     - Si tout le monde dispose de lui comme il l’entend, chacun est satisfait.
 GMU : Mais c’est l’anarchie ! Personne n’a le contrôle.
 GML : C’est ça ton problème, tu veux toujours avoir le contrôle sur tout. Laisse les autres décider de ce qu’ils veulent.
@@ -36,7 +36,7 @@ GML : Trop tard, hi hi hi ! J’ai déjà choisi celle-là.
 
 Fond d’univers avec les 2 GM et la Terre derrière
 
-GML : Reste plus qu’a trouvé notre…
+GML : Reste plus qu’à trouver notre…
 GMU : J’ai déjà choisi ! On se retrouve en bas frangin !
 
 GMU disparaît
