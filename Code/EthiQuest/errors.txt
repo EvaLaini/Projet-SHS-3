@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1268: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-      player "*Pense* "J'espère...""
+File "game/script.rpy", line 1183: expected '=' not found.
+    define sdf_state
+                    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue May 05 11:37:50 2020
+Sat May 16 22:08:42 2020

@@ -83,10 +83,10 @@ define zoom_teacher = 0.9
 #=====================================================================================
 
 #GM =========================================================================
-define gm1 = Character('Game Master 1', color="#c8ffc8", image = "game_master_1")
+define gmu = Character('Shiawase', color="#c8ffc8", image = "game_master_1")
 define game_master_1 = "Perso/gm1/GM1_1.png"
 
-define gm2 = Character("Game Master 2", color="#c8ffc8")
+define gml = Character("Jiyu", color="#c8ffc8")
 define game_master_2 = "Perso/gm2/GM2_1.png"
 
 # =========================================================================
@@ -144,6 +144,12 @@ define sdf_gene = "Jour2/SDF/SDF complet - gene.png"
 
 define zoom_sdf = 1.0
 
+
+define mere_enfant = Character("Mere", color="#85ce25")
+
+define mere_enfant_im = "Soir1/mere/coral_sad.png"
+
+define zoom_mere_enfant = 0.7
 
 
 #Backgrounds
@@ -205,6 +211,13 @@ image boulangerie = im.Scale("Jour2/Rue/Boulangerie - Jour.png", 1920, 1080)
 #bibliotheque
 image bibliotheque = im.Scale("Jour2/Bibliotheque/Bibliotheque - Jour.png", 1920, 1080)
 
+image black_background = im.Scale("black_background.png", 1920, 1080)
+
+define utilitarisme = 0
+define libertarianisme = 0
+
+define config.menu_include_disabled = True
+
 # Le jeu commence ici
 label start:
     #Bienvenue
@@ -241,29 +254,29 @@ label intro_gm:
     show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
     with dissolve
 
-    gm1 "NON PAS DU TOUT, TU TE TROMPES !"
-    gm2 "C'EST TOI QUI TE TROMPES TU RACONTES N'IMPORTE QUOI !"
+    gmu "NON PAS DU TOUT, TU TE TROMPES !"
+    gml "C'EST TOI QUI TE TROMPES TU RACONTES N'IMPORTE QUOI !"
 
-    gm1 "De toute façon c’est moi le plus grand alors c’est moi qui décide."
-    gm2 " Mais non, on a le même âge ! Et c’est moi le plus beau."
+    gmu "De toute façon c’est moi le plus grand alors c’est moi qui décide."
+    gml " Mais non, on a le même âge ! Et c’est moi le plus beau."
 
-    gm1 "Arrête un peu tes conneries ! On ne peut pas laisser tout le monde faire ce qu’il veut. Il faut des règles."
-    gm2 " Mais il y a des règles ! Chacun dispose de lui-même comme il le souhaite, sans que personne ne puisse l’en empêcher."
-    gm1 "Ça ne marchera jamais !"
-    gm2 "Bien sûr que si ! "
-    gm2 "Et tu penses que laisser la décision au plus grand nombre est plus efficace ?"
-    gm1 "Tout à fait ! En satisfaisant le plus gens, tout le monde est content."
-    gm2 "Non, pas tout le monde ! Tu ne pense pas à toutes les minorités que tu exclues. "
-    gm2 "Si tout le monde dispose de lui comme il l’entend, chacun est satisfait."
-    gm1 "Mais c’est l’anarchie ! Personne n’a le contrôle."
-    gm2 "C’est ça ton problème, tu veux toujours avoir le contrôle sur tout. Laisse les autres décider de ce qu’ils veulent."
-    gm1 "Mais les gens ont besoin d’être guidés."
-    gm2 "…"
-    gm1 "…"
-    gm2 "Je sais comment te prouver que tu as tort. "
-    gm2 "On va faire une expérience sur des cas réels. On a tout l’univers à notre disposition. On peut choisir n’importe qui, n’importe où parmi les 299 792 458 planètes."
-    gm1 "Alors c’est moi qui choisis la…"
-    gm2 "Trop tard, hi hi hi ! J’ai déjà choisi celle-là."
+    gmu "Arrête un peu tes conneries ! On ne peut pas laisser tout le monde faire ce qu’il veut. Il faut des règles."
+    gml " Mais il y a des règles ! Chacun dispose de lui-même comme il le souhaite, sans que personne ne puisse l’en empêcher."
+    gmu "Ça ne marchera jamais !"
+    gml "Bien sûr que si ! "
+    gml "Et tu penses que laisser la décision au plus grand nombre est plus efficace ?"
+    gmu "Tout à fait ! En satisfaisant le plus gens, tout le monde est content."
+    gml "Non, pas tout le monde ! Tu ne penses pas à toutes les minorités que tu exclus. "
+    gml "Si tout le monde dispose de lui comme il l’entend, chacun est satisfait."
+    gmu "Mais c’est l’anarchie ! Personne n’a le contrôle."
+    gml "C’est ça ton problème, tu veux toujours avoir le contrôle sur tout. Laisse les autres décider de ce qu’ils veulent."
+    gmu "Mais les gens ont besoin d’être guidés."
+    gml "…"
+    gmu "…"
+    gml "Je sais comment te prouver que tu as tort. "
+    gml "On va faire une expérience sur des cas réels. On a tout l’univers à notre disposition. On peut choisir n’importe qui, n’importe où parmi les 299 792 458 planètes."
+    gmu "Alors c’est moi qui choisis la…"
+    gml "Trop tard, hi hi hi ! J’ai déjà choisi celle-là."
 
     call hide_chars
 
@@ -280,13 +293,13 @@ label intro_gm_earth:
     show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
     with dissolve
 
-    gm2 "Reste plus qu'à trouver notre ..."
-    gm1 "J'ai déjà choi ! On se retrouve en bas frangin !"
+    gml "Reste plus qu'à trouver notre ..."
+    gmu "J'ai déjà choi ! On se retrouve en bas frangin !"
 
     hide screen show_char
     with dissolve
 
-    gm2 "Hé attends-moi ! Aaaaarrrrh, il m'énerve ..."
+    gml "Hé attends-moi ! Aaaaarrrrh, il m'énerve ..."
 
     hide screen show_char1
     with dissolve
@@ -309,7 +322,7 @@ label jour1_appartement:
 
     "TOC TOC TOC"
 
-    mere "Réveille-toi, [nom]! Tu va être en retard à l'école!!"
+    mere "Réveille-toi, [nom]! Tu vas être en retard à l'école!!"
 
     scene room_hero
     with dissolve
@@ -339,7 +352,7 @@ label jour1_cuisine:
     show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
 
-    mere "Ah tu es debout, très bien! Voilà tes céréales, [nom]. Manges les vite, tu dois te dépêcher." 
+    mere "Ah tu es debout, très bien! Voilà tes céréales, [nom]. Mange-les vite, tu dois te dépêcher." 
 
     menu:
       "Bol":
@@ -402,13 +415,13 @@ label jour1_lunch:
 
 
     best_friend "[nom]! Tu es là !"
-    best_friend "Comment s'est passé ta matinée ?"
+    best_friend "Comment s'est passée ta matinée ?"
 
     menu:
       "Ennuyant":
         player "Ennuyant à mourir... On a fait de la biologie."
-      "Passionant":
-        player "Passionant! Le corps humain est fascinant."
+      "Passionnant":
+        player "Passionnant! Le corps humain est fascinant."
       "Long":
         player "Long, je meurs de faim."
 
@@ -433,8 +446,8 @@ label jour1_manger:
     with dissolve
 
 
-    best_friend "Heureusement qu'on s'est dépéchés, on a eu les dernières places!" 
-    best_friend "Avec les examens qui arrivent tout le monde est stressé et veux manger au plus vite pour avoir le temps de réviser..."
+    best_friend "Heureusement qu'on s'est dépêché, on a eu les dernières places!" 
+    best_friend "Avec les examens qui arrivent tout le monde est stressé et veut manger au plus vite pour avoir le temps de réviser..."
     menu:
       "Sûr de soi":
         player "Pas moi en tout cas! Je sais que je vais réussir sans problèmes!"
@@ -472,20 +485,20 @@ label jour1_cours:
     show screen show_char(teacherP, 0.0, 1.0, zoom_teacher)
     with dissolve
 
-    teacher "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parle tous ensemble demain."
+    teacher "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parlera tous ensemble demain."
     teacher "Bonne soirée."
 
     call hide_chars
 
     camarade_1 "Aaaah, j'avais oublié, je vais devoir repousser mon entrainement..."
-    camarade_2 "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énérgie dans les révisions..."
+    camarade_2 "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énergie dans les révisions..."
     
-    show screen show_char(boy, 1.0, 1.0, zoom_boy)
+    show screen show_char(boy_nervous, 1.0, 1.0, zoom_boy)
     with dissolve
 
     player "Ils plaisantent pas avec ces examens..."
     camarade_2 "Vraiment... Et en plus, on a une grosse journée demain..."
-    player "Il va falloir que j'aie me coucher tôt si je veux être en forme."
+    player "Il va falloir que j'aille me coucher tôt si je veux être en forme."
 
     call hide_chars
 
@@ -517,6 +530,7 @@ label jour1_maison_soir:
     show screen show_char_pos2(mere_neutral, 700, 500, 0.9)
     with dissolve
 
+
     mere "Alors, il faut que tu travailles consciencieusement ce soir. Tu aurais besoin d'aide?"
     player  "Non, ça va aller."
     mere "N'hésite pas, si besoin. Il faut que tu les réussisses ces examens!"
@@ -534,7 +548,7 @@ label jour1_chambre_soir:
     scene room_night_light
     with dissolve
 
-    show screen show_char(boy, 0.0, 1.0, zoom_boy)
+    show screen show_char(boy_sad, 0.0, 1.0, zoom_boy)
     with dissolve
 
     player "J'ai fini mes devoirs mais je n'arrive pas à dormir..."
@@ -542,6 +556,29 @@ label jour1_chambre_soir:
     player "J'espère que je ne vais pas faire un rêve comme Emma cette nuit, je suis crevée."
     call hide_chars
     jump reve_1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 label reve_1:
 
@@ -551,14 +588,14 @@ label reve_1:
   show screen show_char(game_master_1, 0.0, 1.0, 1.0)
   with dissolve
 
-  gm1 "Hey ! T’es enfin réveillé ?"
+  gmu "Hey ! T’es enfin réveillé ?"
 
   narrateur "Le joueur se réveille petit à petit et se trouve en face d’un mystérieux personnage dans une salle étrange."
 
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  gm1 "Dis-moi tu n’as pas l’air de comprendre ce qui t’arrives."
+  gmu "Dis-moi tu n’as pas l’air de comprendre ce qu'il t’arrive."
 
   menu:
     "Qui est-tu ?":
@@ -569,98 +606,65 @@ label reve_1:
 label reve1_next:
 
   
-  gm1 "C’est bien ce qui me semblait. J’ai peut-être pas choisis la meilleure personne finalement… Bon pour faire simple tu as été 
-      choisis parmi tous les humains pour avoir la noble tâche de prouver que je suis le plus sage et que ma vision du monde est la meilleure."
-  gm1 "Tu as l’air un peu perplexe."
-  gm1 "T’inquiète pas ça va bien se passer. Ce sera facile de prouver que j’ai la meilleure 
-  vision puisque c’est la meilleure. Tiens je vais déjà t’expliquer de quoi ça parle. Tu verras on ne peut pas faire plus 
-  limpide et simple que ça."
-  gm1 "Le noyau central de ma pensée est qu’il faut toujours chercher à maximiser le bonheur de la majorité. 
-  Alors qu’est-ce tu en penses ?"
+  gmu "C’est bien ce qui me semblait. 
+      Tu as été choisi parmi tous les êtres intelligents de l’univers pour avoir la noble tâche de prouver que je suis le plus sage et que ma vision du monde est la meilleure."
+
+  player "Tous les êtres humains de l’univers ??? Il y a d’autres formes de vie intelligente ?"
+
+  gmu " *Ne fais pas attention à ce que le joueur dit* C’est simple : il faut toujours chercher à maximiser le bonheur du plus grand nombre."
+
+  gmu "Le noyau central de ma pensée est qu’il faut toujours chercher à maximiser le bonheur de la majorité."
+  gmu "Alors qu’est-ce tu en penses ?"
 
   menu:
     "Oui c'est idéal":
       player "Oui c’est idéal. Je rêverai de vivre dans une telle société."
-      gm1 "Finalement j’ai peut-être choisi la bonne personne"
+      gmu "Finalement j’ai peut-être choisi la bonne personne"
     "Indécis":
       player "Je ne sais pas, cela me paraît utopique mais assez difficilement réalisable."
-      gm1 "Toujours septique hein ? Tu verras bien assez vite comment ça s’applique."
+      gmu "Toujours septique hein ? Tu verras bien assez vite comment ça s’applique."
+      player "J’ai un peu peur de la place des minorités dans tout ça. Et puis… Comment définir le bonheur ?"
+      gmu "Définir le bonheur…"
+      gmu "C’est simple, c’est quand t’es heureux."
     "Suspicieux":
       player "Je n’ai pas encore assez étudié la question, il y a peut-être des cas où ce n’est pas la meilleure solution."
-      gm1 "Un cas où ce n’est pas la meilleure solution ? Qu’est-ce qu’il ne faut pas entendre des fois."
+      gmu "Un cas où ce n’est pas la meilleure solution ? Les humains sont-ils tous aussi stupides que toi ?"
+      player "J’ai un peu peur de la place des minorités dans tout ça. Et puis… Comment définir le bonheur ?"
+      gmu "Définir le bonheur…"
+      gmu "C’est simple, c’est quand t’es heureux."
 
-  gm1 "Bon pour voir si tu as bien compris je vais te poser quelques questions. Essaie d'y répondre en appliquant mon idée."
-  gm1 "Première question. Tu verras elle est toute simple. Tu préfères sauver 5 personnes ou 1 personne ?"
-  menu:
-    "5 personnes":
-      gm1 "Difficile de se tromper ici."
-    "1 personne":
-      gm1 "J'ai rarement vu quelqu'un d'aussi nul... "
-  gm1 "Deuxième question."
-  gm1 "Pour l'anniversaire de ton meilleur ami tu décides de lui acheter la figurine de son personne de fiction
-  favorite."
-  gm1 "En chemin pour le magasin tu croises une association qui vient en aide aux familles en situation précaire. Que décides-tu
-  de faire de ton argent ?"
-  menu:
-    "J'achète la figurine pour mon meilleur ami":
-      gm1 "Tu ne maximises pas le bonheur de la majorité là."
-    "Je préfère donner mon argent à cette association.":
-      gm1 "Bonne réponse."
-  gm1 "Dernière question."
-  gm1 "Imagine que tu es le maire d'une ville et que tu souhaites aménager un nouveau quartier mais que la majorité
-de la population de la ville préférerait plutôt rénover l'ancien parc de la ville."
-  menu:
-    "Je rénove le parc.":
-      gm1 "Bien vu."
-    "J'aménage un nouveau quartier.":
-      gm1 "Tu fais exprès de te tromper ?"
+  gmu "Bon allez, passons à la suite. Je n’ai pas que ça à faire que de t’apprendre des choses que tout le monde sait déjà."
+  gmu "Pour pouvoir interpréter correctement les résultats de ma petite expérience, j’ai besoin de savoir qui est mon sujet."
 
-  gm1 "Bon à présent on va passer à la partie un peu plus pratique."
-  gm1 "Pour le reste de la journée tu vivras dans la peau 
-  d’un chirurgien."
-  gm1 "Tu seras amené à faire des choix importants et tu comprendras aussi pourquoi ma façon de penser est 
-  la meilleure. Bon allons-y."
-
-  call hide_chars
-
-label ville_reve1:
-  
-  scene city_day
+  show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  show voiture_1:
-    xpos 800
-    ypos 600
-    zoom 0.5
+  player "Ça te tuerait de me respecter un peu… Je m’appelle [nom]."
 
+  gmu "Je n’en ai strictement rien à faire. Je sais que tu es allé voir ta meilleure amie durant son audition de pi… * Interjection *."
+  player "Attends ! Comment-tu sais qu’elle joue de la musique ?"
+  gmu "Je sais tout ! Enfin presque…  Lui as-tu dit ce que tu en avais vraiment pensé ? Je crois sentir que ça ne t’a pas spécialement plus."
+  player "Ça ne te regarde pas !"
+  gmu "Dis-moi juste si tu lui as dit ce que tu en as réellement pensé ?"
+
+  menu:
+    "Oui":
+      $ utilitarisme+=0
+    "Non":
+      $ utilitarisme+=1
+  
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
   
+  gmu "Très bien."
 
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
-  with dissolve
 
-  show screen show_char1(game_master_1, 1.0, 1.0, 1.0)
-  with dissolve
-
-  gm1 "Tiens les clés de ta voiture."
-  doc "Quoi ? C’est ma voiture ?"
-  gm1 " Evidemment, t’es chirurgien. Tu pensais quand même pas conduire dans une vielle voiture. Bon rentrons dans la voiture et démarre."
-  doc "Où est-ce que je dois aller maintenant ?"
-  gm1 "Roule seulement. Tu iras de toi-même au bon endroit."
-  doc "Mais comment ?"
-  gm1 "Je t’ai déjà dit de ne pas t’inquiéter. Tout se passera bien, fais-moi confiance."
+  player "Ces choix vont-ils avoir des conséquences sur ma vie ??? J’ai un peu peur…"
+  gmu "Ah ça, tu le découvriras plus tard."
+  gmu "Bon à présent on va passer à la partie un peu plus pratique. Pour le reste de la journée tu vivras dans la peau d’un chirurgien."
+  gmu "Tu seras amené à faire des choix importants et tu comprendras, je l’espère, pourquoi ma façon de penser est la meilleure."
 
   call hide_chars
-
-  scene black_background
-  with dissolve
-
-  narrateur "Le joueur s’exécute. Au début il conduisait un peu aléatoirement à travers la ville mais petit à petit il sentait 
-qu’il prenait le bon chemin. Au bout d’une dizaine de minutes ils arrivent enfin devant un grand hôpital."
-
-  call hide_chars
-
-  jump reve1_hopital
 
 label reve1_hopital:
 
@@ -673,11 +677,12 @@ label reve1_hopital:
   show screen show_char1(game_master_1, 1.0, 1.0, 1.0)
   with dissolve
 
-  doc "Comment ça se fait que je sois arrivé au bon endroit alors que c’est la première fois que je viens par ici ?"
-  gm1 "Je n’allais pas te lancer dans la vie de chirurgien sans que tu en aies les connaissances. Je suis un gars 
-  cool moi hehehehe. Bon à partir de maintenant je te laisse."
+  narrateur "* Shiawase clac des doigts et les deux se retrouvent devant l'hôpital. *"
+
+  doc "Nous sommes devant un hôpital à ce que je vois."
+  gmu "Oui c'est bien ça. Bon à partir de maintenant je te laisse."
   doc "Comment ça ?"
-  gm1 "Tant que tu feras les bons choix tout ira bien pour toi. Allez à plus."
+  gmu "Tant que tu feras les bons choix tout ira bien pour toi. Allez à plus."
 
   call hide_chars
 
@@ -724,200 +729,125 @@ label reve1_hopital_after_op_next:
   scene hopital_couloir
   with dissolve
 
+  narrateur "En se rendant à sa destination, le joueur se rend compte que tout le monde semble paniqué"
+
   show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
   with dissolve
 
   show screen show_char1(docteur, 1.0, 1.1, zoom_doc)
   with dissolve
 
-  infirmiere "Désolé de vous déranger mais on manque de personnel aujourd’hui alors svp pourriez-vous vous occupez 
-du patient dans le bloc B3 ?"
+  player "Qu’est-ce qu’il passe ici ? "
 
-  call hide_chars
+  infirmiere "*Affolé* Un camion est rentré dans un bus scolaire, c’est un carnage…"
 
-  jump reve1_prisonnier
-
-
-label reve1_prisonnier:
-
-  scene hopital_consultation
-  with dissolve
-
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
-  with dissolve
-
-  "AHHHHH ! J'AI MAL !!! APPELER VITE UN MEDECIN !"
-
-  show screen show_char_pos(prisonnier, 1000, 300, zoom_priso)
-  show screen show_char_pos1(policier_1, 800, 300, zoom_poli1)
-  show screen show_char_pos2(policier_2, 1450, 300, zoom_poli2)
-  with dissolve
-
-  player "Que s'est-il passé ?"
-  poli1 "Il y a eu une bagarre dans la prison et il a été blessé. Malheureusement nous ne connaissons pas la gravité 
-de ses blessures."
-  poli2 "S’il joue la comédie venez immédiatement nous voir."
-
-  hide screen show_char_pos1
-  hide screen show_char_pos2
-  with dissolve
-
-  player "Comment vous-appelez vous ?"
-  $ nom_priso = "Nicolas"
-  priso "Je m’appelle Nicolas."
-
-  player "Bien Nicolas, je vais procéder à un contrôle général. Tenez vous tranquille."
+  infirmiere "On a besoin de tout le personnel. On va devoir faire des opérations avec une seule équipe pour plusieurs patients."
+  infirmiere "Il y a trois adultes qui ont des bouts de verre un peu partout sur le corps."
+  infirmiere "Ils sont stables pour l’instant mais ça pourrait s’aggraver si le travail est mal fait ou si ça tourne en septicémie."
+  infirmiere "Les infirmières essayent de faire de leur mieux mais elles ont besoin d’un chirurgien expérimenté pour les guider et tout contrôler."
+  infirmiere "Tu peux aller au bloc B3 et t’en occuper ?"
+  player "Oui, j’y vais tout de suite. "
 
   call hide_chars
 
   scene black_background
   with dissolve
 
-  narrateur "Après quelques minutes."
-
-  scene hopital_consultation
-  with dissolve
-
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
-  show screen show_char_pos(prisonnier, 1000, 300, zoom_priso)
-  with dissolve
-
-  player "Vous n'avez rien de grave, je vais ..."
-
-  priso "Doc attendez. Je sais que j’ai surjoué mes douleurs mais svp je voudrais juste rester ici un peu plus. 
-              Ça fait trop longtemps que je suis en prison. La vie est dure là-bas."
-  
-  priso "Les plus forts règnent en maître et les gardes n’osent 
-              pas intervenir. Je sais que ce que j’ai fait dans le passé mérite une condamnation mais le juge m’a puni excessivement 
-              pour que je serve d'exemple."
-
-  player "Et qu'avez-vous fait ?"
-
-  priso "J’ai essayé de faire un Hold-up dans une station-service quand j’avais 18ans. Malheureusement les choses 
-              se sont compliqués et des personnes ont été blessées."
-  player "Pourquoi avoir fait ce braquage ?"
-
-  priso "J’ai toujours vécu seul et quand j’étais jeune et lorsque je demandais de l’aide aux personnes autour de moi, 
-personne ne m’avait tendu la main… Depuis ce jour je regrette sincèrement mon acte."
-
-  priso "Je suis même inscris sur la liste 
-              des donneurs d’organes. Alors svp doc laissez moi juste me reposer pour cette journée."
-
-  player "Bien je vais voir ce que je peux faire."
-
-  menu:
-    "Dire la vérité aux gardes":
-      call hide_chars
-      jump reve1_prisonnier_next
-    "Mentir aux gardes":
-      call hide_chars
-      jump reve1_prisonnier_next
-
-
-label reve1_prisonnier_next:
-
-  scene black_background
-  with dissolve
-
-  "Le joueur se rapproche des gardes et entend leur discussion"
-
-  poli1 "Ce mec me glace le sang à chaque fois que je le vois."
-  poli2 " C’est clair. Ce mec est juste effrayant. Manipulé une dizaine de personnes pour prendre leurs argents et 
-ensuite les pousser aux suicides, seul un taré peut un truc pareil."
-
-  poli1 "Bien content qu’il ait prit perpète."
-
-  call hide_chars
-
-  jump reve1_grave_accident
-
-label reve1_grave_accident:
+  narrateur "*En se rendant au bloc B3 le joueur est interpellé par une maman*"
 
   scene hopital_couloir
   with dissolve
 
-  show screen show_char(chirurgien, 0.0, 1.0, zoom_chir)
+
+  show screen show_char(mere_enfant_im, 0.0, 1.0, zoom_mere_enfant)
+  with dissolve
+
+  show screen show_char1(docteur, 1.0, 1.1, zoom_doc)
+  with dissolve
+
+  mere_enfant "S’il vous plaît, sauvez mon fils ! Je vous en supplie !"
+
+  infirmiere "Madame, laissez le personnel travailler."
+
+  mere_enfant "Je vous en supplie !"
+
+  player "Dans quel état est son fils ?"
+
+  show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
+  with dissolve
+
+
+  infirmiere "Dans un état grave. Saignement interne, perte de conscience. "
+  infirmiere "De nombreux organes sont touchés, si on ne l’opère pas tout de suite c’est fini pour lui."
+  infirmiere "Mais il n’y a plus personne de disponible. Même si on intervient, vu son état on n’est même pas sûr de pouvoir le sauver."
+
+
+  menu:
+    "S'occuper des adultes":
+      $ utilitarisme+=2
+      call hide_chars
+      jump reve1_soins_adultes
+    "S'occuper de l'enfant":
+      call hide_chars
+      jump reve1_soin_enfant
+
+label reve1_soins_adultes:
+  scene hopital_consultation
+  with dissolve
+
+  show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
   show screen show_char1(docteur, 1.0, 1.0, zoom_doc)
   with dissolve
 
-  chir "Viens vite il y a eu un grave accident de voiture et 3 personnes ont eu leurs organes touchés."
-  player "Oui j’arrive tout de suite."
-  chir "L’un d’eux et mon unique enfant. Je t’en supplie fait ton maximum et sauve mon fils."
+  infirmiere "J'ai un doute sur la façon de procéder ici. Cette zone est assez sensible et j'ai peur de lui sectionner une artère."
+  doc "Oui, il suffit juste de faire comme ça."
+
+  narrateur "Vous sentez une infirmière dans le doute à un moment. Vous décidez d’intervenir, vous venez de sauver la vie de cet adulte."
 
   call hide_chars
 
   scene black_background
   with dissolve
 
-  "Le joueur lit le premier diagnostic des trois patients. Il est clair qu’ils sont dans un état grave, à tel point 
-qu’attendre que les organes arrivent à l’hôpital reviendrait à les laisser mourir."
+  narrateur "Après plusieurs heures d’opérations, les adultes sont sains et saufs. Ils ne courent plus aucun risque et pourront rejoindre leurs familles dans 4 jours."
 
+  call hide_chars
+
+label reve1_soins_enfant:
   scene hopital_operation
   with dissolve
 
   show screen show_char(docteur, 0.0, 1.0, zoom_doc)
   with dissolve
 
-  menu:
-    "Mentir sur l'état du prisonnier et le tuer.":
-      call hide_chars
-      jump reve1_patients_sauves
-    "Laisser les 3 patients mourrir.":
-      call hide_chars
-      jump reve1_patients_non_sauves
+  doc " *Pense* Il faut que je te donne tout pour que cette mère revoit son enfant sain et sauf."
 
-label reve1_patients_sauves:
-  scene black_background
-  with dissolve
+  "..."
 
-  "Après cette journée fatigante le joueur peut enfin rentrer chez lui. Au passage il décide de raccompagner Michelle."
-
-  jump reve1_retour_Michelle
-
-label reve1_patients_non_sauves:
-  scene black_background
-  with dissolve
-
-  "Après cette journée fatigante le joueur peut enfin rentrer chez lui. Au passage il décide de raccompagner une infrimière."
-
-  jump reve1_retour_infirmiere
-
-label reve1_retour_Michelle:
-
-  scene hopital_couloir
-  with dissolve
-
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
-  show screen show_char1(chirurgien, 1.0, 1.0, zoom_chir)
-  with dissolve
-
-  chir "Merci d'avoir sauvé mon enfant. L'opération a dû être stressante."
-
-  jump reve1_retour_voiture
-
-label reve1_retour_infirmiere:
-  scene hopital_couloir
-  with dissolve
-
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
-  show screen show_char1(infirmierePath, 1.0, 1.0, zoom_infirmiere)
-  with dissolve
-
-  infirmiere "Ca a dû être très difficile de ne rien pouvoir faire pour ces trois patients..."
+  doc "J'ai donné tout ce que j'avais, je ne peux rien faire de plus."
 
   call hide_chars
 
-  jump reve1_retour_voiture
-
-label reve1_retour_voiture:
-
   scene black_background
   with dissolve
 
-  "Le joueur décide de laisser l’intelligence artificiels le reconduire à la maison. Durant le trajet il y a une zone de travaux 
-mais le véhicule ne semble pas ralentir. Toutefois le joueur fait confiance à la technologie."
-  "Un peu plus loin une famille traverse un passage piéton. Voyant que le véhicule ne ralentit pas le joueur décide de reprendre le contrôle de la voiture. 
-Malheureusement pour lui il est déjà trop tard pour pouvoir s’arrêter à temps."
+  narrateur "L’enfant était dans un état trop grave. 
+  Vous n’avez rien pu faire. Une des infirmières qui venait de commencer à l’hôpital a malheureusement commis une erreur et a sectionné une artère d'un adulte, le patient est mort."
+
+  narrateur "Vous êtes fatigués mais vous prenez un café. Après quelques minutes vous sentez l’effet."
+  narrateur "Le prochain bus est dans 30 min, si vous le prenez, vous allez peut-être rater le concert que vous avez offert à votre femme pour son 30eme anniversaire"
+
+  menu:
+    "Rentrer en voiture":
+      jump voiture_reve1
+    "Rentrer en bus":
+      $ utilitarisme+=1
+      jump bus_reve1
+
+  
+
+label voiture_reve1:
+
 
   scene city_day
   with dissolve
@@ -935,18 +865,50 @@ Malheureusement pour lui il est déjà trop tard pour pouvoir s’arrêter à te
     zoom 0.5
   with dissolve
 
-  menu:
-    "Rentrer dans la barricade et se tuer lui et sa collègue pour sauver un père et ses deux enfants.":
-      jump reve1_fin
-    "Rentrer dans les piétons mais survivre à l'accident.":
-      jump reve1_fin
+  narrateur "Sur le chemin vous n’arrêtez pas de penser à ce jeune garçon, mort dans d’atroces souffrances* * Perdu dans vos pensées, vous ne faites pas attention. *"
+  narrateur "*Cul de poule, perte de contrôle, accident* *Une famille décède*"
+
+  call hide_chars
+
+label bus_reve1:
 
 
-label reve1_fin:
-  scene black_background
+  scene city_day
   with dissolve
 
-  jump jour2
+  narrateur "*Le bus arrive en avance* *La route est dégagée sur le chemin* Vous arrivez à l’heure pour l’évènement*. *Réveil en sursaut*"
+
+  call hide_chars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 label jour2:
   
@@ -973,9 +935,9 @@ label jour2:
     "Intéressant":
       player "Je me suis vraiment creusé la tête dans mon rêve, c'était intéressant !"
     "Plus jamais !":
-      player "J'espère que j'aurais jamais à faire des choix pareils dans la vraie vie..."
+      player "J'espère que je n'aurais jamais à faire des choix pareils dans la vraie vie..."
   
-  mere "[nom], qu'est ce que tu fais encore ? Tu vas de nouveau devoir courir!"
+  mere "[nom], qu'est-ce que tu fais encore ? Tu vas de nouveau devoir courir!"
   player "J'arrive, j'arrive ..."
 
   call hide_chars
@@ -997,13 +959,33 @@ label jour2_cuisine:
   player  "Ah oui... Et en plus c'est mon tour d'amener un truc à manger aujourd'hui."
   player "D'ailleurs, je peux avoir des sous?"
   mere "Tiens, 10.-, mais ne fais pas comme la dernière fois, achète vraiment quelque chose pour tes amis!"
-
+  
   show screen show_char_pos1(boy_flustered, 1300, 500, 0.4)
   with dissolve
 
   player "Oui, oui, ne t'inquiète pas."
-  player "Bon, j'y vais, sinon je vais vraiment devoir courir."
-  dad "Bonne journée!"
+
+  show screen show_char_pos1(boy, 1300, 500, 0.4)
+  with dissolve
+  
+  hide screen show_char_pos
+  hide screen show_char_pos2
+  with dissolve
+  
+  player "Bon, j'ai vraiment la dalle. Je mange un bout et j'y vais."
+  player "Zut ! Il ne reste qu'une seule brioche. J'ai vraiment faim mais mon père va encore me faire une crise."
+  player "Je n'ai pas de temps à perdre avec ça."
+
+  define brioche_state = 0
+
+  menu:
+    "Manger toute la brioche":
+      $ brioche_state=1
+    "Laisser la brioche à ton père":
+      $ brioche_state=2
+    "Partager la brioche en deux" if utilitarisme>=2:
+      $ brioche_state=3
+  
 
   call hide_chars
 
@@ -1020,8 +1002,10 @@ label jour2_classe:
 
   player "*Pense* Je n'arrive pas à me concentrer..."
   player "Je n'arrête pas de repenser à mon rêve de cette nuit."
-  player "Et si c'était pas vraiment un rêve?"
-  player "On entend souvent parler de gens qui ont des visions envoyée par des démons ou des dieux..."
+  if brioche_state==2:
+    player "En plus j'ai du mal à réfléchir le ventre vide."
+  player "Et si ce n'était pas vraiment un rêve?"
+  player "On entend souvent parler de gens qui ont des visions envoyées par des démons ou des dieux..."
   
   menu:
     "Mais ce sont des fous":
@@ -1034,7 +1018,7 @@ label jour2_classe:
       player "Je ne sais pas si je peux vraiment y croire..."
   
 
-  teacher "[nom]! Qu'est ce que tu as ce matin?? Ca fait 3 fois que je te pose une question et tu ne fais que de regarder dans le vague!"
+  teacher "[nom]! Qu'est-ce que tu as ce matin?? Ca fait 3 fois que je te pose une question et tu ne fais que regarder dans le vague!"
 
   show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
   with dissolve
@@ -1075,13 +1059,13 @@ label jour2_midi:
   best_friend "Je vois ça, quelque chose te tracasse? Un problème à la maison ? Ou juste les examens?"
 
   player "*Pense* Je ne peux pas lui parler de mon rêve, elle ne va jamais comprendre..."
-  player "*Pense* Déjà qu'hier je lui ai dit que les rêves sont pas réels, elle va me prendre pour un fou."
+  player "*Pense* Déjà qu'hier je lui ai dit que les rêves ne sont pas réels, elle va me prendre pour un fou."
 
   show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "Les examens..."
-  player "D'ailleurs, il faut que j'aie faire des recherches pour"
+  player "D'ailleurs, il faut que j'aille faire des recherches pour"
   menu:
     "Danse contemporaine":
       player "Mon cours de danse contemporaine."
@@ -1119,7 +1103,7 @@ label jour2_salle_info:
   scene ecran_ordi
   with dissolve
 
-  player "Que ce que je pourrais bien rechercher ?"
+  player "Qu'est-ce que je pourrais bien rechercher ?"
 
   menu:
     "Visions + Dieu":
@@ -1139,14 +1123,16 @@ label jour2_info_next:
   scene salle_info_ferme
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
   with dissolve
 
 
   player "On trouve vraiment de tout et de rien sur internet!"
   player "Je tombe autant sur des articles scientifiques qui expliquent les rêves lucides, que sur des témoignages de gens qui affirment avoir rencontré Dieu..."
   player "J'ai le cerveau qui surchauffe, je crois que je vais m'arrêter là pour aujourd'hui..."
-  player "D'autant plus que si je pars pas maintenant je vais arriver en retard à mon groupe de travail, et je dois encore aller acheter à grignoter"
+  player "D'autant plus que si je ne pars pas maintenant je vais arriver en retard à mon groupe de travail, et je dois encore aller acheter à grignoter"
+
+  call hide_chars
 
   jump jour2_rue
 
@@ -1156,6 +1142,10 @@ label jour2_rue:
 
   show screen show_char(boy, 0.0, 1.0, zoom_boy)
   with dissolve
+
+  if brioche_state==1:
+    player "Je n'aurais peut-être pas dû prendre la brioche de papa ce matin. J'espère qu'il ne m'en voudra pas trop."
+    player "Mais bon, j'ai d'autres choses à penser."
 
   player "Il me semble qui il y a une boulangerie au coin de cette rue."
   player "Avec 10.-, je vais pouvoir me rattraper de la dernière fois, où j'ai oublié d'amener quelque chose!"
@@ -1190,35 +1180,49 @@ label jour2_boulangerie:
 
   player "L'argent que j'ai sur moi est pour acheter un gouter à mes amis... "
 
+  define sdf_state = 0
+
   menu:
     "Mais je te le donne.":
+      $ sdf_state=1
       player "Mais je te le donne volontiers, ils comprendront bien!"
-      sdf "Merci! Je suis sûr ques tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin."
+      sdf "Merci! Je suis sûr que tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin."
       sdf "Bonne soirée!"
       hide screen show_char1
       with dissolve
-      player "Même si mes amis risquent d'être déçu et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
-    "Mais je te donne la moité.":
+      player "Même si mes amis risquent d'être déçus et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
+    "Mais je te donne la moité." if utilitarisme>=1:
+      $ sdf_state=2
       player "Mais je t'en donne la moitié, ils se contenteront de pain sans chocolat!"
-      sdf "Merci! Je suis sûr ques tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin."
+      sdf "Merci! Je suis sûr que tes amis ne t'en voudront pas d'aider quelqu'un dans le besoin."
       sdf "Bonne soirée!"
       hide screen show_char1
       with dissolve
-      player "Même si mes amis risquent d'être déçu et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
-    "Je suis désolé.":
+      player "Même si mes amis risquent d'être déçus et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui!"
+    "Je suis désolé." if utilitarisme>=2:
+      $ sdf_state=2
+      show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+      with dissolve
       player "Je suis désolé demande à quelqu'un d'autre. Bonne chance!"
       show screen show_char1(sdf_decu, 1.0, 1.0, zoom_sdf)
       with dissolve
       sdf "..."
       hide screen show_char1
       with dissolve
+      show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+      with dissolve
       player "*Pense* J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
-    "Trouves-toi du travail !":
+    "Trouves-toi du travail !" if utilitarisme>=3:
+      $ sdf_state=2
+      show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
+      with dissolve
       player "Trouve toi un travail au lieu de vivre comme un parasite!"
       show screen show_char1(sdf_decu, 1.0, 1.0, zoom_sdf)
       with dissolve
       sdf "..."
       hide screen show_char1
+      with dissolve
+      show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
       with dissolve
       player "*Pense* J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
   
@@ -1232,8 +1236,8 @@ label jour2_revisions:
   scene bibliotheque
   with dissolve
 
-  "La scéance de révision paraît durer des heures, tes yeux se ferment tout seuls, tu n'arrives pas à te concentrer."
-  "Quand c'est enfin le moment de rentrer chez toi, tu dis à peine au revoir et te dépêche d'aller prendre le bus."
+  "La séance de révision paraît durer des heures, tes yeux se ferment tout seuls, tu n'arrives pas à te concentrer."
+  "Quand c'est enfin le moment de rentrer chez toi, tu dis à peine au revoir et te dépêches d'aller prendre le bus."
 
   jump jour2_fin
 
@@ -1245,29 +1249,50 @@ label jour2_fin:
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  mere "Alors, cette séance de révision ? Tu as pensé à acheté du goûter cette fois ?"
+  mere "Alors, cette séance de révision ? Tu as pensé à acheter du goûter cette fois ?"
 
-  menu:
-    "J'ai donné l'argent à un SDF":
-      show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
-      with dissolve
-      player "..."
-      player "Non... J'ai donné l'argent à quelqu'un dans la rue qui en avait plus besoin que moi..."
-      mere "..."
-      mere "Bon, au moins cette fois c'était pour une bonne cause. Mais j'espère que tes amis ne vont pas t'en vouloir, tu leur avais quand même promis d'amener quelque chose!"
-    "Oui !":
-      show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
-      with dissolve
+  if sdf_state==1:
+    show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
+    with dissolve
+    player "..."
+    player "Non... J'ai donné l'argent à quelqu'un dans la rue qui en avait plus besoin que moi..."
+    mere "..."
+    mere "Bon, au moins cette fois c'était pour une bonne cause. Mais j'espère que tes amis ne vont pas t'en vouloir, tu leur avais quand même promis d'amener quelque chose!"
+  elif sdf_state==2:
+    show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
+    with dissolve
 
-      player "Oui, oui, je l'ai fait cette fois!"
-      player "Quand est-ce que tu vas arrêter de m'embêter avec ça, j'ai juste oublié une fois!!"
+    player "Oui, oui, je l'ai fait cette fois!"
+    player "Quand est-ce que tu vas arrêter de m'embêter avec ça, j'ai juste oublié une fois!!"
 
-      mere "Pas besoin de t'énerver! Tes amis devaient être content que tu aie pensé à eux cette fois."
-      mere "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
+    mere "Pas besoin de t'énerver! Tes amis devaient être contents que tu aies pensé à eux cette fois."
+    mere "Tu sais, c'est important de tenir tes promesses si tu veux garder tes amis."
   
-  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
   with dissolve
   player "Oui, maman ..."
+
+  if brioche_state==1:
+    mere "Au fait, ton père était vraiment mécontent quand il a vu que tu avais mangé sa brioche"
+    show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
+    with dissolve
+    player  "Je sais maman, je ne peux pas aller à l'école le ventre vide"
+    mere "Pense à aller t'excuser et évite que ça se reproduise."
+  elif brioche_state==2:
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+    with dissolve
+    mere "Au fait, tu es parti le ventre vide ce matin ?"
+    player "Oui, j'ai vu qu'il ne restait qu'une brioche. Je l'ai laissé à papa."
+    mere "C'est très gentil à toi mon chéri."
+  elif brioche_state==3:
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+    with dissolve
+    mere "Ton père était content que tu lui aies laissé la moitié de sa brioche. Il était étonné  de cette réflexion venant de ta part."
+    player "haha ! On en apprend tous les jours !"
+    player "*Pense* Ou dans mon cas la nuit."
+    mere "C'est bien mon chéri, tu deviens vraiment mature."
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
   "..."
   "..."
   player "J'ai mal dormi hier soir, je vais aller me coucher tôt pour rattraper ça."
