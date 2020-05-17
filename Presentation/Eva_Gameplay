@@ -12,11 +12,14 @@ par la suite.
 
 A améliorer :
 
--	Visuels si possible
+suite de l'implémentation
+
+-	Visuels si possible, choix du genre au départ
 -	Fond musical et bruitages
 -	Retravailler scripts pour plus de cohérence dans les personnages
 -	Plus de dilemmes/intéractions avec le joueur
 -	Intefaces plus propres, menu de départ...
+
 
 Le dernier élément de notre jeu , sur lequel on travaille en ce moment, c'est la fin. L'idée est que le joueur, voulant se débarraser des
 visions et retrouver sa vie normale, va invoquer le dieu créateur pour lui demander son aide. Ce dieu va apparaître au milieu du troisième rêve,
