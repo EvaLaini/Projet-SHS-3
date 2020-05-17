@@ -1,16 +1,16 @@
 Intro
 
 EthiQuest est un visuel novel interactif créé à partir de Ren’Py. Le joueur incarne un personnage lambda dans une société contemporaine. 
-Sa routine habituelle sera troublée par d’étranges rêves que fait le joueur où il devra faire face à des situations qui le pousseront à 
-questionner son éthique et choix moraux. Par la suite les choix que fera le joueur durant ces périodes de rêves auront une influence sur 
-les actions du joueur durant les phases de jour. 
+Sa routine habituelle sera troublée par d’étranges rêves où il devra faire face à des situations qui le pousseront à 
+questionner son éthique et choix moraux. Lors de ces rêves, les choix que fera le joueur auront une influence sur 
+ses actions pendant les phases de jour. 
 
 L’introduction aux choix moraux sera faite à travers 2 courants éthiques, l’utilitarisme et le libertarianisme. Ces courants seront 
 présentés au joueur par le biais de deux personnages surnaturels qui viendront expliquer chacun leur tour en quoi leur éthique est 
 meilleure que celle de l’autre. C’est dans ce contexte que le joueur aura à se questionner sur les courants présentés par ces êtres et 
-aussi à sa propre moral. 
+par la même occasion à sa propre moral. 
 
 Le jeu se présente comme un visuel novel classique où le joueur aura à cliquer pour faire avancer les dialogues et aura à faire des choix 
-sous forme de panneaux. Les choix que fera le joueur durant les nuits seront enregistrés sous forme de points qui lui seront cachés tout 
-au long de la partie. C’est une fois la partie terminée que le joueur recevra un feedback de ses choix et des explications plus 
-approfondies sur les différents courants éthiques. 
+qui se présenteront sous la forme de panneaux. Les choix que fera le joueur durant les nuits seront enregistrés sous forme de points qui 
+lui seront cachés tout au long de la partie. C’est une fois la partie terminée que le joueur recevra un feedback de ses choix et des 
+explications plus approfondies sur les deux courants éthiques traités dans le jeu.
