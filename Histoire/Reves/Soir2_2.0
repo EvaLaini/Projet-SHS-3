@@ -1,0 +1,185 @@
+Script rêve 2
+*Le joueur se réveille de nouveau dans une étrange salle. *
+
+GML : Ah te voilà enfin réveillé 
+
+Joueur : Je... Je suis au même endroit que hier ?
+
+GML : Non pas du tout. Hier tu étais dans la dimension de mon frère. Il t'a raconté n'importe quoi, c'est à mon tour de
+t'expliquer comment je vois le monde et comment il devrait être régie. Tu verras c'est bien plus réaliste que l'idée de mon idiot de 
+frère.  Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
+C’est pas beau ça ? Tu verras c’est très simple.
+
+*Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un manger une glace*
+GML : Tu vois le mec là-bas qui mange une glace ? C’est John. Pourquoi il a le droit de manger une glace ? Eh bien c’est simple 
+il l’a achetée légitimement avec son argent et il ne dérange personne. 
+*LE GML claque de nouveau des doigts et les deux se trouvent dans un jardin où on voit un nain de jardin*
+
+GML : ça c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, il entrave la liberté 
+de propriété de Martine et donc son action est mauvaise. Tu vois un peu l’idée ? Tes actions sont immorales uniquement si elles entravent la liberté de quelqu'un d'autre. 
+Mais si Martine est d’accord alors il n’y a pas de problème et comme ils n’embêtent personne, alors personne n’a le droit d’empêcher leur échange. 
+Bien qu’est-ce que tu en penses jusque-là ?
+
+	O1 : Je suis d’accord, du moment que l’on entrave pas la liberté de quelqu’un d’autre, on peut faire ce qu’on veut.
+	O2 : Je suis plutôt sans avis. C’est encore trop tôt me faire une idée
+	O3 : Je suis pas trop d’accord, je trouve ce principe limité, il faudrait l’accompagner de règles plus détaillées
+  
+	R1 : ça fait plaisir de croiser des personnes avec un minimum d’intellect sur cette planète
+	R2 : Je vois qu’il te faut plus d’exemples.
+ 	R3 : Tu verras c’est une idée qui se gère par elle-même.
+	
+  
+GML : Bien alors on va voir si tu es d'accord avec moi. Premier cas ultra simple.
+Dans l’immeuble de John le bruit dérange son voisinage à partir de 21h. Est-ce qu’il a le droit de jouer du piano dans l’après-midi ?
+
+	O1 : Oui (+1)
+	O2 : Non
+  
+	R1 : Bien, les locataires n'étant pas dérangés par le bruit du piano, il est tout à fait moral de la part de John de jouer du piano
+	R2 : Eh non, il a bien le droit de le faire. Si ça avait été après 21h, il n’aurait pas eu le droit puisqu’il aurait entravé la liberté de dormir des autres locataires.
+  
+
+Maintenant une situation un peu plus compliquée. John souhaite acheter de la cocaïne afin de passer une bonne soirée. Pour cela,
+il se rend chez un dealeur qu'il connaît bien et qui lui vend de la cocaïne de qualité. Est-ce que John a le droit de procéder à ce genre d'échange ? 
+
+	O1: Oui, il n'entrave la liberté de personne ici. (+1)
+	O2: Non la vente et l'achat de drogue dure est illégale.
+	
+	R1: Exactement ! On pourrait remettre en question le mode de vie de John qui n'est pas très saint mais en soit,
+	l'achat qu'il fait n'atteint en rien la liberté de qui que ce soit.
+	R2: C'est peut-être illégale mais John ne dérange personne. C'est ça le problème avec l'Etat, il se mêle de chose qui ne le 
+	regarde pas ! 
+	  
+  
+  GML: Bien tu m'a l'air d'avoir compris le concept. Que penses-tu de l'impôt ? 
+  	
+	O1: C'est une taxe nécessaire pour assurer le bon fonctionnement de la société.
+	O2: On ne devrait pas être taxé sur un revenu qu'on a amplement mérité. (+1)
+	O3: Euuhhh... Je sais pas j'ai jamais vraiment réfléchi à la question.
+	
+	R1: Mais tu n'as rien compris à ce que je te dis ! Si je gagne de l'argent à la sueur de mon front je mérite d'en profiter entièrement.
+	Le gouvernement en me taxant atteint ma liberté de profiter de l'argent que j'ai gagné. L'impôt est donc immoral et ne devrait pas exister.
+	Ah moi qui te croyait plus malin que mon frère, au-final tu es tout aussi bête que lui...
+	
+	R2: Exactement ! Bravo tu as tout compris ! Tu es plus malin que tu en a l'air au-final. L’impôt atteint directement notre liberté de disposer de notre revenu, ça ne devrait pas exister. 
+
+	R3: Bon sang mais tu m'écoute depuis le début ou tu dors ? L'impôt est d'une bêtise sans nom. Si je gagne de l'argent à la sueur de mon front,
+	je mérite d'en profiter entièrement. Le gouvernement en me taxant atteint ma liberté de profiter de l'argent que j'ai gagnée. 
+	L'impôt est donc immoral et ne devrait pas exister.
+
+(Si nbr de point >=2) Bien tu m’as l’air d’avoir bien compris le concept. Je te propose une petit mise en situation histoire de te convaincre entièrement.
+Tu vas travailler dans un EMS
+
+(si nbr de point <2) T’as vraiment pas l’air d’avoir compris ce que je te raconte. On va faire une petite mise en situation pour te mettre les idées au claire. 
+Tu vas travailler dans un EMS.
+
+*Le GML claque des doigts et ils re trouvent avec le héros devant/à la réception d’un EMS*
+
+GML : Bon je vais pas venir avec toi je déteste les vieux moi. Je te laisse t’annoncer à la réception, 
+dépêche-toi t’es sensé commencé dans 5min et ne fuis pas hein. C’est pas parce qu’on est dans un rêve que je peux pas te faire souffrir hehe. Aller à plus !  * disparaît*
+
+Héros : Pfff ils commencent à me fatiguer ces petits démons…
+*arrive à la réception*
+
+Réceptionniste : « Oh salut Evan ! T’en fais une des ces têtes t’as passé une mauvaise nuit ? »
+
+Héro : « Salut Murielle, on peut dire ça ouai… »
+
+Receptioniste : « Bref dépêche toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche » 
+
+Héro : « Sa… sa douche !? »
+
+Receptioniste :  « Bah oui elle peut pas se doucher toute seule fait pas le surpris. Allez fonce ! »
+
+*Le héros en courant à la salle 548* « ce métier m’a l’air d’être plus difficile que chirurgien …
+Je connaissais le nom de Murielle sans l’avoir jamais vue, on dirait que comme dans l’autre rêves, je connais mon environnement.» 
+
+Héro : « Bonjours Mme Raymond»
+
+Mme.Raymond : « Bonjours Monsieur, vous avez 2min et 23 secondes de retard c’est inacceptable ! »
+
+Héro : « écoutez madame on fait ce qu’on peut. Allez allons-y »
+
+*elipse *
+
+Héro : « pffff je ne me suis pas trompé. C’était 100x plus éprouvant que d’opérer à cœur ouvert »
+
+*téléphone sonne*
+
+Héro : « allo ? »
+
+supérieur : « Oui Evan, tu dois aller dans la chambre de M.Dumas pour lui administrer ses médicaments, chambre 433.
+ Oublie pas de prendre les médicament au rez-de-chaussée avant j’en ai marre de te voir faire 10 aller-retour on perd du temps. »
+ 
+héro : « ça marche je fais ça tout de suite »
+
+supérieur : « Fais vite pour une fois, ça te changera… » *raccroche *
+
+*le héro arrive dans la « pharmacie » de l’EMS *
+
+Héro : « Salut Justine, il me faudrait les médicaments quotidien de M.Dumas s’il-te-plaît »
+
+Pharmacieuse : « Oui ils sont déjà prêts tiens. Oh et puis, essaye de discuter un moment avec lui, je sais que le supérieur déteste ça mais ça doit bientôt faire 10ans que M.Dumas ne reçoit plus de visite,
+le pauvre il se sent tellement seul. »
+
+Héro : « Bien-sûr je ferais tout pour toi Justine. »
+
+*le héro vérifie le contenu*
+
+Héro : « Mmmmh on dirait qu’il manque les somnifères »
+
+Pharmacieuse : « Mais c’est normal ça. Les somnifères sont dans le petit coffre-fort juste à côté de la table de chevet comme pour toute les chambres. 
+Tu devrais avoir la clef dans ton trousseau de travail. »
+
+Héro : « Ah ok bizarre j’étais pas au courant »
+
+Pharm : « Ca a été mis en place y’a quelques jours seulement. On leur donne tellement de somnifères que la direction a jugé que ce serait plus efficace 
+de mettre un stock directement dans chaque chambre plutôt que de tout le temps aller demander l’autorisation à la pharmacie. 
+Par-contre ils sont plus du tout réglementés du coup, ils subissent le même contrôle qu’un vulgaire stock de gants ahah. »
+
+Héro : « Ah ok je savais pas merci Justine à bientôt ! »
+
+*Le héro arrive entre dans la chambre 433*
+
+Héro : « Bonjours Monsieur Dumas, je viens pour vous donner vos médicaments »
+
+*donne les médicaments *
+
+M.Dumas : « Merci bien vous êtes très aimable. Dites-moi, vous pourriez me rendre un service ? »
+
+Héro : « Bien-sûr Monsieur Dumas, qu’est-ce que vous voulez ? »
+
+M.Dumas :  « J’ai entendu dire que les somnifères ne sont plus contrôlés c’est vrai ? »
+
+Héro : « Tout à fait on vient de m’en parler justement. Pourquoi ? »
+
+M.Dumas « S’il vous plait, est-ce que vous pourriez m’en donner une dizaine que j’en finisse »
+
+Héro :  « Mais enfin M.Dumas je peux p.. »
+
+M.Dumas *pleur* : « S’il-vous-plait SILVOUPLAIT ! je n’en peux plus cela fait des années qu’on ne me rend plus visite, 
+des années que je suis seul à attendre l’inévitable. 
+J’ai demandé un suicide assisté mais cette foutu association chrétienne ne veut rien entendre. 
+Vous voyez bien mon état, je peux même plus bouger, mon quotidien est ponctué par mes maladies chroniques. 
+Je passe mes journées dans mon lit à rien faire à part souffrir et attendre la mort. 
+Tout ce que vous avez à faire c’est me donner les somnifères, je suis encore capable de les ingérer moi-même et vous ne risquez rien puisqu’ils ne sont plus contrôlés. 
+S’il vous plait… aidez-moi. »
+
+O1 : Lui donner les somnifères et partir
+O2 : refuser de lui donner les somnifères et partir 
+
+R1 : « Bon tenez après tout c’est votre choix, vous faites ce que vous voulez »
+Md : « Enfin.. merci beaucoup Monsieur, merci beaucoup. »
+
+*sort de la chambre*
+
+Héro : « J’ai fait le bon choix mais ça reste perturbant d’aider quelqu’un à mourir. J’espère qu’on ne va pas savoir que c’est moi. 
+
+R2 : « C’est pas mon problème. Je suis auxiliaire de santé pas bourreau. Débrouillez vous sans moi »
+Md : « Non attendez ATTENDEEEEZ ! »
+
+*sort chambre *
+
+Héro : « Pour qui il se prend, c’est pas à moi de me salir les mains. J’y peut rien si l’EMS ne veut pas l’aider, ils doivent avoir leurs raisons. 
+
+*reveil ?*
