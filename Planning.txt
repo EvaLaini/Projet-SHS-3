@@ -57,7 +57,14 @@ Dimanche 17/05:
 	. Valton --> Presentation + slide
 	. Ylies --> Presentation + slide
 	. Antoine --> Programmation + slide
-	
+
+Vendredi 22/05:
+	. Valton --> Début du script soir 3 (dilemmes extrêmes jusqu'à invocation)
+	. Colin --> Fin soir 3 et relecture scripts
+	. Ylies --> Visuel nuit 2
+	. Antoine --> programmation jour 3
+	. Tout le monde --> Jouer au jeu et lsite de bugs
+	. Lire soir 2
 	
 A regarder :
 	. Choix grisés
