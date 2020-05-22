@@ -66,6 +66,13 @@ Vendredi 22/05:
 	. Tout le monde --> Jouer au jeu et lsite de bugs
 	. Lire soir 2
 	
+A faire :
+	. Antoine --> Propreté code, upload sur git, changer image
+	. Eva --> Modifs jeu (corrections orthographes, précisions, etc.)
+	. Ylies --> Images soir 2 et soir 3 et script soir 2
+	. Valton --> Modifs script soir 3
+	. Colin --> Modifs script soir 3
+	
 A regarder :
 	. Choix grisés
 	. Intéraction avec l'environnement
