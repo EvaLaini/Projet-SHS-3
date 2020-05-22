@@ -1,3 +1,5 @@
+*Le joueur se trouve de nouveau dans l’étrange salle*
+
 GML : Non même ce que tu dis c’est n’importe quoi !
 GMU : Comment ça ? C’est toi qui dis de la merde !
 GML : Je suis ton aîné alors forcément que j’ai raison
@@ -8,83 +10,106 @@ GML : Alors laquelle de nos idées t’as le plus séduit et convaincu ?
 	O1 : l’utilitarisme 
 	O2 : le libertarianisme 
 	O3 : ni l’un ni l’autre
-	O4 : euh c’est quoi déjà vos idées ? (Nombre de points minimal dans les deux courants, option qui apparait uniquement 
-  si on a rempli cette condition)
-  
+	O4 : euh c’est quoi déjà vos idées ? (Nombre de points minimal dans les deux courants)
+
 	R1 : GMU : Ah ah ah ! Alors on ne sait plus quoi dire. Tu dois bien accepter que j’ai gagné !
-GML : N’importe quoi ! Tu ne lui pas présenté les coins les plus sombres de ton idée. (Saut rêve utili.)
+GML : N’importe quoi ! Tu ne lui pas présenté les limites évidentes de ton idée. (Saut rêve utilitariste)
+
 	R2 : GML : Ce résultat était totalement prévisible. Je t’ai prouvé une nouvelle fois que je suis meilleur que toi. 
-GMU : J’ai pas dit mon dernier mot ! On va voir comment le cobaye va réagir quand il verra les côtés absurdes de ton idée. (saut rêve liber.)
-	R3 : GML : Je sais comment régler ça. Je vais te montrer en quoi l’idée de mon frère est nul. (saut rêve utili.)
+GMU : J’ai pas dit mon dernier mot ! On va voir comment le cobaye va réagir quand il verra les côtés absurdes de ton idée. (saut rêve libertarianisme)
 
-Rêve utilitariste :
+	R3 : GML : Je sais comment régler ça. Je vais te montrer en quoi l’idée de mon frère est nul. (saut rêve utilitariste)
+	
+	R4 : GML : Mais tu te fous de nous. On s’est fait chier à tout t’expliquer et toi tu t’en as rien à foutre. Frangin tu sais 
+	vraiment pas choisir les bonnes personnes. Je vais en chercher un qui aura un minimum d’intellect. 
+GMU : Qu’est-ce que je fais de celui-là ?
+GML : Tue-le. On en a plus besoin.
+GMU : Bon débarras. *Game Over*
 
-GML : On va reprendre dans l’hôpital. Tu es de nouveau chirurgien. On v voir comment tu vas agir cette fois.
 
-Infirmière : Désolé de vous déranger mais on manque de personnel aujourd’hui alors svp pourriez-vous vous occupez du patient dans le bloc B3 ?
-*Le joueur se rend au bloc B3*
-??? : AHHHH ! J’AI MAL !!! APPELEER VITE UN MEDECIN !
-*Le jouer voit un homme en habit de prisonnier entourner de deux gardes de prison*
-Joueur : Qu’est-ce qui s’est passé ?
-Garde 1 : Il y a eu une bagarre dans la prison et il a été blessé. Malheureusement nous ne connaissons pas la gravité de ses blessures. 
-Garde 2 : S’il s’agit de comédie venez immédiatement nous voir.
+---------------------------------------------
+Rêve utilitarisme :
+GML : Je vais te mettre dans la peau du maire d’une petite ville dans une zone désertique. Bonne chance à toi.
+*Le GML disparaît* 
+*toc toc*
 
-*les deux gardes s’en vont*
-Joueur : Comment vous appelez vous ?
-Prisonnier : Je m’appelle Nicolas.
-Joueur : Bien Nicolas, je vais procéder à un contrôle général.
-*après quelques minutes*
+?? : Monsieur le maire vous êtes là ?
+Joueur : Oui rentré 
 
-Joueur : Vous n’avez rien de grave, je vais …
-Nicolas : Doc attendez. Je sais que j’ai surjoué mes douleurs mais svp je voudrais juste rester ici un peu plus. 
-Ça fait trop longtemps que je suis en prison. La vie est dure là-bas. Les plus forts règnent et les gardes n’osent pas intervenir. 
-Je sais que ce que j’ai fait dans le passé mérite une condamnation mais le juge m’a puni excessivement pour que je serve de prison. 
-Joueur : Et qu’avez-vous fait ?
-Nicolas : J’ai essayé de faire un Hold-up dans une station-service quand j’avais 18ans. Malheureusement les choses se sont compliqués 
-et des personnes ont été blessées. 
-Joueur : Pourquoi avez-vous fait ce braquage ? 
-Nicolas : J’ai toujours vécu seul et quand j’étais jeune lorsque je demandais de l’aide aux personnes autour de moi, personne ne 
-m’avait tendu la main… Depuis ce jour je regrette sincèrement mon acte. Je suis même inscris sur la liste des donneurs d’organes. 
-Alors svp doc laissez mi juste me reposer pour cette journée.
-Joueur : Bien je vais voir ce que je peux faire.
+*L’assistant du maire rentre l’air inquiet et anxieux*
 
-  O1 : Dire la vérité aux gardiens 
-  O2 : Mentir sur l'état de santé du prisonnier
+Assistant : Monsieur le maire c’est une catastrophe ! La sécheresse va durer plus longtemps que prévu. 
+Joueur : Est-ce qu’on aura assez d’eau pour les habitants de la ville d’ici la fin de la sécheresse ?
+Assistant : Malheureusement non. Nous avons trop sous-estimé la sécheresse et nous avons eu une gestion de l’eau catastrophique. 
+Jamais nous ne tiendrons d’ici la fin.  
+Joueur : Il n’y pas d’autre moyen de s’approvisionner en eau ?
+Assistant : Il y aurait un moyen mais ça reviendrait à condamner le village voisin. 
+Joueur : Soyez plus clair. 
+Assistant : Le niveau de la nappe d’eau du village voisin est suffisant pour subvenir à nos besoins mais si on le fait ils n’auront 
+plus assez d’eau pour eux-mêmes. 
+Joueur : Et si on prenait juste ce qu’il faut et qu’on l’eau rationne au maximum. Est-ce qu’il en resterait pour le village ? 
+Assistant : Ce serait une solution. Le village aura assez d’eau pour passer la sécheresse mais plus assez pour l’agriculture. 
+Cela reviendrait à les condamner économiquement. De plus la part de la population de la ville la plus fragile risque de ne pas 
+survivre à un tel rationnement de l’eau. Monsieur le maire il faut que vous preniez une décision maintenant avant qu’il ne soit trop tard.
 
-Le joueur se rapproche des gardiens et entends leur discussion*
-Garde 1 : Ce mec me glace le sang à chaque fois que je le vois. 
-Garde 2 : C’est clair. Ce mec est juste effrayant. Manipulé une dizaine de personnes pour prendre leurs argents et ensuite les 
-pousser aux suicides, seul un taré peut le faire.
-Garde 1 : Bien content qu’il ait prit perpète. 
+	O1 : Nous ne pouvons pas condamner le village voisin à cause de nos propres erreurs. 
+	O2 : Nous allons faire au mieux en rationnent l’eau du village. J’espère que le village se remettra de la crise économique qui va suivre. 
+	O3 : Je suis le maire et ma priorité est les habitants de cette ville. Pompez l’eau du village vers la ville. 
+	
+*Retour dans la dimension des GM*
+(saut deuxième partie si l’option 1 et 3 ont été choisi)
+GMU : Si tu crois avoir gagné la partie avec cette situation, tu te trompes. (saut rêve libertarianisme)
 
-*Avant que le joueur ait eu le temps de parler avec les gardiens, une collègue s’approche du joueur*
-Michelle : Viens vite il y a eu un grave accident de voiture et une personne a eu ses organes touchés. 
-Joueur : Oui j’arrive tout de suite.
-Michelle : L’un d’eux et mon unique enfant. Je t’en supplie fait ton maximum et sauve mon fils. 
-*Le joueur lit le premier diagnostic des trois patients. Il est clair qu’ils sont dans un état grave, à tel point qu’attendre que 
-les organes arrivent à l’hôpital reviendrait à les laisser mourir*
-
-	O1 : Faire croire que le cas du prisonnier était plus grave que ce que tout le monde pensait et le tuer. Récupérer ses organes 
-  pour sauver le patient.
-	O2 : Laisser le patient mourir.
-  
-(s’arrêter ici si l’option 2 a été choisi et passer à la seconde partie du rêve)
-
-GMU : Si c’est comme ça on va voir à quel point ton idée peut être absurde et n’avoir plus aucun sens. (saut rêve libert.)
-
+--------------------------------------------
 Rêve libertarianisme : 
-GMU : On retourne au tribunal pour te présenter une nouvelle situation en lien avec l’idée de mon frère. 
-Voilà la situation. Gilbert a égorgé son meilleur ami Justin vivant puis l’a empaillé avant de le stocker dans son grenier. 
-Justin lui avait dit qu’il souhaitait mourir et que ses derniers souhaits seraient de se faire égorger vivant puis empailler 
-par un taxidermiste. Gilbert étant taxidermiste de profession, s’est assuré que Justin possédait une capacité durable de discernement 
-en lui demandant sa carte de vote ainsi qu’une attestation d’un psychologue qui affirmait qu’il n’avait aucune maladie psychiatrique. 
-Rassuré et puisque Justin est consentant ainsi que son meilleur ami, il s’est exécuté.
+GMU : On va aller au tribunal pour te présenter une nouvelle situation en lien avec l’idée de mon frère. Tu seras un juge. 
+
+*Les deux personnages se trouvent dans un tribunal. Le joueur porte des habits de juge. Alors qu’il rentre dans le tribunal il peut 
+voir qu’il y a beaucoup de monde pour suivre cette affaire. On entendre une des journalistes présente pour suivre cette affaire.*
+Journaliste : Bonjour, nous voici en directe du tribunal pour cette affaire sordide qui a profondément choqué les habitants de tout un 
+village …
+
+Joueur à lui-même : Mais qu’est qu’il est en train de me faire faire. 
+
+*Un groupe de journaliste vient autour du joueur* 
+Journaliste 1 : Monsieur le juge que pensez-vous de cette affaire ?
+Journaliste 2 : Une autre question monsieur le juge, avec les chefs d’accusations qui pèsent sur coupable, avez-vous déjà réfléchi 
+à une sanction ?
+
+*Avant que qu’autres journalistes aient pu poser d’autres questions la sécurité est intervenu.*
+Le joueur arrive finalement dans la salle d’audience. 
+
+Joueur : Bien, la séance est ouverte. Présentez les chefs d’accusations.  
+Voici la situation. Gilbert a égorgé son meilleur ami Justin vivant puis l’a empaillé avant de le stocker dans son grenier. 
+Justin lui avait dit qu’il souhaitait mourir et que ses derniers souhaits seraient de se faire égorger vivant puis empailler par un 
+taxidermiste. Gilbert étant taxidermiste de profession, s’est assuré que Justin possédait une capacité durable de discernement en lui 
+demandant sa carte de vote ainsi qu’une attestation d’un psychologue qui affirmait qu’il n’avait aucune maladie psychiatrique. Rassuré 
+et puisque Justin est consentant ainsi que son meilleur ami, il s’est exécuté.
 
 	O1 : Je le mets en prison à vie pour homicide volontaire
 	O2 : je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte
 	O3 : Je choisis de le relaxer
-  
-(s’arrêter ici si l’option 2 a été choisi et passer à la seconde partie du rêve)
-GML : Si tu veux jouer à ça, tu vas le regreter. (saut rêve utili.)
+*Retour dans la dimension des GM*
+(saut deuxième partie si l’option 2 a été choisi)
+GML : Si tu veux jouer à ça, tu vas le regretter. (saut rêve utilitarisme.)
 
+---------------------------------------
+Deuxième partie : 
+GML : Non mais c’est quoi la situation que tu lui as montrée aussi. 
+GMU : Hien ? On en parle de la tienne. 
+GML : Si c’est comme ça je vais lui montrer d’autres situations
+GMU : J vais faire pareil. J’en ai encore d’autres en stock.
+Joueur : CA SUFFIT !!!
+J’en ai marre de vous. Vous me pourrissez la vie et je vais me débarrasser de vous définitivement !
+KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI !
+GML : Frangin je crois que le cobaye à craquer.
+GMU : Je crois aussi. On en fait quoi ?
+GML : Je pense qu’on va en chercher un nouveau et…
+??? : ça suffit maintenant !
+*Flash blanc et apparition du père des GM* 
+GMU : Oh merde…
+GML : C’est la faute à GMU, je te jure !
+GMU : Papa c’est pas vrai. C’est GML qui m’a encore trainé là-dedans. 
+Père : Je ne veux plus vous entendre. Combien de fois il faut que je vous dise d’arrêter de maltraiter les créatures de notre univers ? Rentrez immédiatement à la maison. Je réfléchirais à votre sanction plus tard. 
 
+Suite la partie à Colin.
