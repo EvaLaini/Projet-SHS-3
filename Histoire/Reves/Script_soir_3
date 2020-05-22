@@ -57,7 +57,7 @@ survivre à un tel rationnement de l’eau. Monsieur le maire il faut que vous p
 	O3 : Je suis le maire et ma priorité est les habitants de cette ville. Pompez l’eau du village vers la ville. 
 	
 *Retour dans la dimension des GM*
-(saut deuxième partie si l’option 1 et 3 ont été choisi)
+(saut deuxième partie si l’option 2 a été choisi)
 GMU : Si tu crois avoir gagné la partie avec cette situation, tu te trompes. (saut rêve libertarianisme)
 
 --------------------------------------------
@@ -90,7 +90,7 @@ et puisque Justin est consentant ainsi que son meilleur ami, il s’est exécut�
 	O2 : je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte
 	O3 : Je choisis de le relaxer
 *Retour dans la dimension des GM*
-(saut deuxième partie si l’option 2 a été choisi)
+(saut deuxième partie si l’option 1 et 3 ont été choisi)
 GML : Si tu veux jouer à ça, tu vas le regretter. (saut rêve utilitarisme.)
 
 ---------------------------------------
