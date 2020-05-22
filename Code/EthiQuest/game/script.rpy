@@ -225,7 +225,7 @@ label start:
 
 
     #Name input
-    narrateur "Commencez par écrire votre nom."
+    narrateur "Commencez par écrire votre nom. (Le personnage est un jeune étudiant)"
     $ nom = renpy.input("Entrez un nom.")
     $ nom = nom.strip()
 
@@ -278,7 +278,7 @@ label intro_gm:
     gmu "Alors c’est moi qui choisis la…"
     gml "Trop tard, hi hi hi ! J’ai déjà choisi celle-là."
 
-    call hide_chars
+    call hide_chars from _call_hide_chars
 
     jump intro_gm_earth
 
@@ -294,7 +294,7 @@ label intro_gm_earth:
     with dissolve
 
     gml "Reste plus qu'à trouver notre ..."
-    gmu "J'ai déjà choi ! On se retrouve en bas frangin !"
+    gmu "J'ai déjà choisi ! On se retrouve en bas frangin !"
 
     hide screen show_char
     with dissolve
@@ -333,10 +333,10 @@ label jour1_appartement:
     show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
 
-    player "*Bâille* Il faut que j'aille à la cuisine prendre mon petit déjeuner avant d'aller en cours..."
+    player "*Bâille* Il faut que j'aille à la cuisine prendre mon petit-déjeuner avant d'aller en cours..."
     
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_1
     menu:
       "Cuisine":
         jump jour1_cuisine
@@ -361,11 +361,11 @@ label jour1_cuisine:
 label jour1_bol:
 
     player "*Crunch, crunch*"
-    player "Bon j'y vais ! A ce soir maman."
+    player "Bon j'y vais ! À ce soir maman."
     mere "Bonne journée, mon chou !"
     menu:
       "Extérieur":
-        call hide_chars
+        call hide_chars from _call_hide_chars_2
         jump jour1_exterieur
 
 label jour1_exterieur:
@@ -383,21 +383,21 @@ label jour1_exterieur:
 
     "*Silence*"
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_3
 
     show screen show_char(teacher_annoyed, 0.0, 1.0, zoom_teacher)
     with dissolve
 
     teacher "Personne ? N'oubliez pas que vous examens finaux sont le mois prochain, il va falloir se mettre au travail !"
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_4
    
     show screen show_char(boy_nervous, 1.0, 1.0, zoom_boy)
     with dissolve
 
     player "Je sens que cette matinée va être longue...Vivement la pause de midi !"
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_5
 
     jump jour1_lunch
 
@@ -428,7 +428,7 @@ label jour1_lunch:
     best_friend "Je vois ! Dépêchons nous d'aller manger, il y a déjà une queue."
     player "J'arrive!"
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_6
 
     jump jour1_manger
 
@@ -460,7 +460,7 @@ label jour1_manger:
     best_friend "En parlant de ça, cette nuit, j'ai fait un rêve où on était les deux enfermés à l'école jusqu'à qu'on arrive à résoudre un exercice de math impossible!"
     best_friend "Je regardais la feuille mais je comprenais rien et toi tu pleurais en disant qu'on allait mourir de faim avant d'y arriver."
     best_friend "Puis un Pikachu géant est arrivé et a mangé la feuille."
-    best_friend "Là, je me suis réveillé en sursaut..."
+    best_friend "Là, je me suis réveillée en sursaut..."
     best_friend "Bizarre non?"
 
     player "Haha, oui mais ne t'inquiète pas, c'est qu'un rêve, c'était pas réel..."
@@ -472,7 +472,7 @@ label jour1_manger:
     best_friend "Ah, c'est l'heure de retourner en classe. Bon j'y vais. Bon aprem [nom] !"
     
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_7
 
     jump jour1_cours
 
@@ -488,7 +488,7 @@ label jour1_cours:
     teacher "N'oubliez pas vos devoirs pour demain! Lire un chapitre du livre et répondre aux questions liées. On en parlera tous ensemble demain."
     teacher "Bonne soirée."
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_8
 
     camarade_1 "Aaaah, j'avais oublié, je vais devoir repousser mon entrainement..."
     camarade_2 "Je pense que tu vas pouvoir les oublier tes entrainements ces prochains temps! On va devoir mettre toute notre énergie dans les révisions..."
@@ -500,7 +500,7 @@ label jour1_cours:
     camarade_2 "Vraiment... Et en plus, on a une grosse journée demain..."
     player "Il va falloir que j'aille me coucher tôt si je veux être en forme."
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_9
 
 
     jump jour1_maison_soir
@@ -539,7 +539,7 @@ label jour1_maison_soir:
     mere "Oui, je sais... Un adolescent."
     player "*Soupir* Je vais travailler dans ma chambre."
 
-    call hide_chars
+    call hide_chars from _call_hide_chars_10
 
     jump jour1_chambre_soir
 
@@ -553,8 +553,8 @@ label jour1_chambre_soir:
 
     player "J'ai fini mes devoirs mais je n'arrive pas à dormir..."
     player "Ces histoires d'examens me stressent."
-    player "J'espère que je ne vais pas faire un rêve comme Emma cette nuit, je suis crevée."
-    call hide_chars
+    player "J'espère que je ne vais pas faire un rêve comme Emma cette nuit, je suis crevé."
+    call hide_chars from _call_hide_chars_11
     jump reve_1
 
 
@@ -598,7 +598,7 @@ label reve_1:
   gmu "Dis-moi tu n’as pas l’air de comprendre ce qu'il t’arrive."
 
   menu:
-    "Qui est-tu ?":
+    "Qui es-tu ?":
       jump reve1_next
     "Où suis-je":
       jump reve1_next
@@ -612,8 +612,6 @@ label reve1_next:
   player "Tous les êtres humains de l’univers ??? Il y a d’autres formes de vie intelligente ?"
 
   gmu " *Ne fais pas attention à ce que le joueur dit* C’est simple : il faut toujours chercher à maximiser le bonheur du plus grand nombre."
-
-  gmu "Le noyau central de ma pensée est qu’il faut toujours chercher à maximiser le bonheur de la majorité."
   gmu "Alors qu’est-ce tu en penses ?"
 
   menu:
@@ -664,7 +662,7 @@ label reve1_next:
   gmu "Bon à présent on va passer à la partie un peu plus pratique. Pour le reste de la journée tu vivras dans la peau d’un chirurgien."
   gmu "Tu seras amené à faire des choix importants et tu comprendras, je l’espère, pourquoi ma façon de penser est la meilleure."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_12
 
 label reve1_hopital:
 
@@ -684,7 +682,7 @@ label reve1_hopital:
   doc "Comment ça ?"
   gmu "Tant que tu feras les bons choix tout ira bien pour toi. Allez à plus."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_13
 
   jump reve1_hopital_interieur
 
@@ -702,7 +700,7 @@ label reve1_hopital_interieur:
   infirmiere "Vous voilà enfin. Le patient est déjà prêt pour son opération. Il s’agit d’une fracture de l’avant-bras. 
 Nous allons vous préparer."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_14
 
 label reve1_hopital_after_op:
 
@@ -715,13 +713,13 @@ label reve1_hopital_after_op:
 
   menu:
     "Aller dehors":
-      call hide_chars
+      call hide_chars from _call_hide_chars_15
       jump reve1_hopital_after_op_next
     "Aller à la cafétéria":
-      call hide_chars
+      call hide_chars from _call_hide_chars_16
       jump reve1_hopital_after_op_next
     "Aller à la salle de repos":
-      call hide_chars
+      call hide_chars from _call_hide_chars_17
       jump reve1_hopital_after_op_next
 
 label reve1_hopital_after_op_next:
@@ -737,7 +735,7 @@ label reve1_hopital_after_op_next:
   show screen show_char1(docteur, 1.0, 1.1, zoom_doc)
   with dissolve
 
-  player "Qu’est-ce qu’il passe ici ? "
+  player "Qu’est-ce qu’il se passe ici ? "
 
   infirmiere "*Affolé* Un camion est rentré dans un bus scolaire, c’est un carnage…"
 
@@ -748,7 +746,7 @@ label reve1_hopital_after_op_next:
   infirmiere "Tu peux aller au bloc B3 et t’en occuper ?"
   player "Oui, j’y vais tout de suite. "
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_18
 
   scene black_background
   with dissolve
@@ -785,11 +783,11 @@ label reve1_hopital_after_op_next:
   menu:
     "S'occuper des adultes":
       $ utilitarisme+=2
-      call hide_chars
+      call hide_chars from _call_hide_chars_19
       jump reve1_soins_adultes
     "S'occuper de l'enfant":
-      call hide_chars
-      jump reve1_soin_enfant
+      call hide_chars from _call_hide_chars_20
+      jump reve1_soins_enfant
 
 label reve1_soins_adultes:
   scene hopital_consultation
@@ -804,14 +802,16 @@ label reve1_soins_adultes:
 
   narrateur "Vous sentez une infirmière dans le doute à un moment. Vous décidez d’intervenir, vous venez de sauver la vie de cet adulte."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_21
 
   scene black_background
   with dissolve
 
   narrateur "Après plusieurs heures d’opérations, les adultes sont sains et saufs. Ils ne courent plus aucun risque et pourront rejoindre leurs familles dans 4 jours."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_22
+
+  jump reve1_suite
 
 label reve1_soins_enfant:
   scene hopital_operation
@@ -826,7 +826,7 @@ label reve1_soins_enfant:
 
   doc "J'ai donné tout ce que j'avais, je ne peux rien faire de plus."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_23
 
   scene black_background
   with dissolve
@@ -834,6 +834,7 @@ label reve1_soins_enfant:
   narrateur "L’enfant était dans un état trop grave. 
   Vous n’avez rien pu faire. Une des infirmières qui venait de commencer à l’hôpital a malheureusement commis une erreur et a sectionné une artère d'un adulte, le patient est mort."
 
+label reve1_suite:
   narrateur "Vous êtes fatigués mais vous prenez un café. Après quelques minutes vous sentez l’effet."
   narrateur "Le prochain bus est dans 30 min, si vous le prenez, vous allez peut-être rater le concert que vous avez offert à votre femme pour son 30eme anniversaire"
 
@@ -868,7 +869,7 @@ label voiture_reve1:
   narrateur "Sur le chemin vous n’arrêtez pas de penser à ce jeune garçon, mort dans d’atroces souffrances* * Perdu dans vos pensées, vous ne faites pas attention. *"
   narrateur "*Cul de poule, perte de contrôle, accident* *Une famille décède*"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_24
 
 label bus_reve1:
 
@@ -876,9 +877,9 @@ label bus_reve1:
   scene city_day
   with dissolve
 
-  narrateur "*Le bus arrive en avance* *La route est dégagée sur le chemin* Vous arrivez à l’heure pour l’évènement*. *Réveil en sursaut*"
+  narrateur "*Le bus arrive en avance* *La route est dégagée sur le chemin* *Vous arrivez à l’heure pour l’évènement*. *Réveil en sursaut*"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_25
 
 
 
@@ -940,7 +941,7 @@ label jour2:
   mere "[nom], qu'est-ce que tu fais encore ? Tu vas de nouveau devoir courir!"
   player "J'arrive, j'arrive ..."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_26
 
   jump jour2_cuisine
 
@@ -987,7 +988,7 @@ label jour2_cuisine:
       $ brioche_state=3
   
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_27
 
   jump jour2_classe
 
@@ -1018,16 +1019,16 @@ label jour2_classe:
       player "Je ne sais pas si je peux vraiment y croire..."
   
 
-  teacher "[nom]! Qu'est-ce que tu as ce matin?? Ca fait 3 fois que je te pose une question et tu ne fais que regarder dans le vague!"
+  teacher "[nom]! Qu'est-ce que tu as ce matin?? Ça fait 3 fois que je te pose une question et tu ne fais que regarder dans le vague!"
 
   show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
   with dissolve
 
-  player "Ah, désole Professeur... J'ai mal dormi cette nuit."
+  player "Ah, désolé Professeur... J'ai mal dormi cette nuit."
 
-  teacher "Hum, je vais laisser passer pour cette fois, mais tâchez à que cela ne se reproduise plus!"
+  teacher "Hum, je vais laisser passer pour cette fois, mais tâchez à ce que cela ne se reproduise plus!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_28
 
   scene black_background
   with dissolve
@@ -1077,7 +1078,7 @@ label jour2_midi:
   best_friend "Je vois.. A bientôt alors."
   player "A plus!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_29
 
   jump jour2_salle_info
 
@@ -1098,7 +1099,7 @@ label jour2_salle_info:
 
   
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_30
 
   scene ecran_ordi
   with dissolve
@@ -1132,7 +1133,7 @@ label jour2_info_next:
   player "J'ai le cerveau qui surchauffe, je crois que je vais m'arrêter là pour aujourd'hui..."
   player "D'autant plus que si je ne pars pas maintenant je vais arriver en retard à mon groupe de travail, et je dois encore aller acheter à grignoter"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_31
 
   jump jour2_rue
 
@@ -1152,7 +1153,7 @@ label jour2_rue:
   player "Peut-être des croissants pour tout le monde... Ou du pain et plein de chocolat ?"
   player "Hummmm...."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_32
 
   jump jour2_boulangerie
 
@@ -1226,7 +1227,7 @@ label jour2_boulangerie:
       with dissolve
       player "*Pense* J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois!"
   
-  call hide_chars
+  call hide_chars from _call_hide_chars_33
 
 
   jump jour2_revisions
