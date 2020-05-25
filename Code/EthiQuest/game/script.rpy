@@ -28,6 +28,9 @@ screen show_char_pos1(path, posX, posY, zoomV):
 screen show_char_pos2(path, posX, posY, zoomV):
   add path zoom zoomV xpos posX ypos posY
 
+screen show_char_pos3(path, posX, posY, zoomV):
+  add path zoom zoomV xpos posX ypos posY
+
 #Hero ========================================================================================
 define player = Character("[nom]", color="#ebc634", image="boy")
 
@@ -184,6 +187,23 @@ image lunchroom_full_no_sunlight = im.Scale("Backgrounds/ecole/luchroom_full_no_
 image lunchroom_half_full = im.Scale("Backgrounds/ecole/lunchroom_half_full.png", 1920, 1080)
 
 
+image ecole_exterieur = im.Scale("Jour3/Ecole/Ecole.png", 1920, 1080)
+
+image rue_avec_enfants = im.Scale("Jour3/Rue_avec_enfants/Rue_avec_enfants.png", 1920, 1080)
+
+define enfant1 = Character("Enfant 1")
+define im_enfant1 = "Jour3/Rue_avec_enfants/Enfant_1.png"
+define zoom_enfant1 = 1.0
+
+define enfant2 = Character("Enfant 2")
+define im_enfant2 = "Jour3/Rue_avec_enfants/Enfant_2.png"
+define zoom_enfant2 = 1.0
+
+define enfant3 = Character("Enfant 3")
+define im_enfant3 = "Jour3/Rue_avec_enfants/Enfant_3.png"
+define zoom_enfant3 = 1.0
+
+
 
 
 #transition : jour nuit plus de temps genre ellipse
@@ -217,6 +237,30 @@ define utilitarisme = 0
 define libertarianisme = 0
 
 define config.menu_include_disabled = True
+
+
+#Jour3
+
+define fumeur = Character("Fumeur", color="#85ce25")
+define im_fumeur = "Jour3/Fumeur/Fumeur.png"
+
+define zoom_fumeur = 1.0
+
+image telephone = "Jour3/Telephone/Telephone_1.png"
+
+image avant_rue = im.Scale("Jour3/Ruelle_sombre/Avant_ruelle.png", 1920, 1080)
+
+image ruelle_sombre = im.Scale("Jour3/Ruelle_sombre/Ruelle_choix_1.png", 1920, 1080)
+
+image parc = im.Scale("Jour3/Ruelle_sombre/Parc.png", 1920, 1080)
+
+define perso_louche = Character("Personnage louche")
+
+define im_perso_louche = "Jour3/Homme louche/Homme louche - Complet - Normal.png"
+
+define zoom_louche = 1.0
+
+define champi_achete = False
 
 # Le jeu commence ici
 label start:
@@ -433,7 +477,7 @@ label jour1_lunch:
     jump jour1_manger
 
 label jour1_manger:
-    scene balck_screen
+    scene black_background
     with dissolve
 
     scene lunchroom_full
@@ -1301,6 +1345,560 @@ label jour2_fin:
   mere "Bonne nuit et fait de beaux rêves!"
   player "*Pense* J'espère."
 
+  call hide_chars
+
+
+
+
+
+
+
+
+
+
+label jour3:
+  scene room_hero_night
+  with dissolve
+
+  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "HAAAAAA !!!"
+
+  narrateur "Il te faut un moment pour te rappeler qui tu es et où tu te trouves"
+
+  player "*halète* J'en peux plus ! Si ça continue je vais devenir dingue !"
+  player "Il faut absolument que je trouve une solution."
+
+  mere "Tout va bien, chérie ? Je t'ai entendu crier!"
+
+  player "Oui, oui, juste un mauvais rêve !"
+
+  mere "Tu veux venir m'en parler ?"
+
+  mere "Fait vite, c'est bientôt l'heure de partir!"
+
+  player "Il faut vraiment que j'en parle à quelqu'un, mais ma mère va encore me dire que c'est juste le stress des examens et que je dois manger mieux..."
+
+  player "Alors qui ? Emma ?"
+
+  player "Si elle me croit, on pourrait chercher une solution ensemble après les cours! Elle a toujours des bonnes idées."
+
+  mere "[nom] ?"
+
+  player "J'arrive!"
+
+  call hide_chars
+
+label jour3_ecole:
+  scene ecole_exterieur
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Pour une fois, je suis un peu en avance en cours."
+
+  show screen show_char1(im_fumeur, 1.0, 1.0, zoom_fumeur)
+  with dissolve
+
+  show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Hum, je croyais que c'était interdit vers les écoles..."
+
+  hide screen show_char1
+  show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+
+  player "Bref, je commence à stresser... Et si Emma me prenait pour un fou ??"
+  player "Mais non , on est amis depuis bien trop longtemps..."
+  player  "Courage ! Je vais lui envoyer un message pour se retrouver après les cours."
+
+  show telephone:
+    xalign 1.0
+    yalign 1.0
+    zoom 1.0
+
+  player "Hum... :"
+  player "'Coucou! Est-ce que tu as du temps cet aprem pour que je te parle d'un truc??'"
+  player "'Tu peux me retrouver cet aprem après les cours ? J'ai besoin de toi!'"
+
+  player "Oui, autant faire simple. Envoyer!"
+
+  hide telephone
+
+  player "Il reste plus qu'à attendre une réponse..."
+
+  show screen show_char1(im_fumeur, 1.0, 1.0, zoom_fumeur)
+  with dissolve
+
+  show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "*Pense* Ah, il m'a envoyé sa fumée dans la tête!"
+
+  narrateur "Le fumeur jette sa cigarette dans un pot de fleur"
+
+  player "Est-ce que je lui dit  quelque chose?"
+
+  menu:
+    "Non, rien, il a le droit de faire ce qu'il veux..." if libertarianisme>=1:
+      show screen show_char(boy, 0.0, 1.0, zoom_boy)
+      with dissolve
+      player "Non, rien, il a le droit de faire ce qu'il veux..."
+      fumeur "Bonne journée, gamin!"
+      player "Ah! A vous aussi..."
+    "Lui demander de la jeter ailleurs":
+      player "Monsieur! Jeter des cigarettes dans les fleurs, c'est très mauvais écologiquement!"
+      show screen show_char(boy, 0.0, 1.0, zoom_boy)
+      with dissolve
+      player "Est-ce que vous pouvez la jeter dans une poubelle?"
+      fumeur "Euh... Oui, okay..."
+      player "Merci! Bonne journée."
+      fumeur "Ouais... A toi aussi."
+    "Réprimander" if utilitarisme>=1:
+      player "Monsieur! Fumer c'est mauvais pour la santé! Et en plus ça coûte super cher aux assurances tous les cancers..."
+      fumeur "De quoi tu te mèles, gamin! C'est ma vie et elle te regarde pas!"
+      hide screen show_char1
+      show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
+      with dissolve
+      player "Ah, peut-être que c'était pas la bonne méthode..."
+    
+  hide screen show_char1
+  with dissolve
+
+    
+  "Vibration"
+  
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Ah c'est déjà la réponse d'Emma!"
+  player  "... 'Oui, pas de problème! Retrouve-moi à la bibliothèque.'"
+
+  show screen show_char1(teacherP, 1.0, 1.0, zoom_teacher)
+  with dissolve
+
+  teacher "[nom]! Encore sur votre téléphone?! Je vous signale que les cours commencent dans 1 minute!"
+
+  player "Ah, désolé.. J'arrive tout de suite!"
+
+  teacher "Bon, je vous retrouve en classe."
+
+  call hide_chars
+
+label jour3_bibliotheque:
+
+  scene bibliotheque
+  with dissolve
+
+  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  best_friend "[nom], te voilà ! Qu'est ce qui se passe ? Ca avait l'air important dans ton message."
+
+  player "*Grande inspiration*"
+
+  show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  menu:
+    "Je veux pratiquer un exorcisme":
+      player "J'ai besoin de ton aide pour faire un exorsisme! Je crois que je suis maudit."
+    "Je suis hanté":
+      player "Je suis hanté par des sortes de dieux bizarres, j'ai besoin de ton aide pour m'en débarrasser!"
+    "Je fais des rêves bizarres":
+      player "J'ai besoin de toi pour trouver la cause de mes rêves bizarres et les arrêter."
+
+  best_friend "Quoi ?? Attends, je comprends pas. Explique moi depuis le début!"
+
+  narrateur "Après de longues explications détaillées"
+
+  best_friend "..."
+
+  player "Emma?"
+
+  best_friend  "..."
+
+  player "Emma, dit quelque chose!"
+
+  best_friend "Hum..."
+
+  best_friend "Je dois avouer que j'ai de la peine à y croire mais si tu me dit que c'est vrai, alors je vais t'aider à trouver une solution!"
+
+  player "Merci! Je sais pas ce que je ferais sans toi!"
+
+  best_friend "Mais non, mais non! Bon, mettons-nous au boulot, il doit bien y avoir des livres sur les visions envoyées par des dieux dans cette bibliothèque!"
+
+  best_friend "Tu prends cette étagère et moi celle d'à côté, okay?"
+
+  player "C'est parti!"
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  scene bibliotheque
+  with dissolve
+
+  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  best_friend "Regarde cette pile de livres! On va bien pouvoir trouver quelque chose là dedans!"
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  scene bibliotheque
+  with dissolve
+
+  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Pffff, ce livre parle uniquement de dieux grecs... Je pense pas que ce soit utile."
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  scene bibliotheque
+  with dissolve
+
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  best_friend "[nom], viens vite! Je crois que j'ai trouvé quelque chose!"
+
+  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  with dissolve
+
+  best_friend "Ce livre parle d'un rituel qui permet d'invoquer des kami!"
+  best_friend "Apparemment, c'était très utilisé pendant l'époque Edo pour communiquer avec divers dieux, dont Kamimusubi, le créateur divin."
+  best_friend "Si on arrive à l'invoquer, il saura peut-être comment se débarrasser de ceux de tes rêves!"
+
+  show screen show_char1(boy_happy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+
+  player  "Bravo Emma! Il reste plus qu'à espèrer que ça marche!"
+
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+
+  player "De quoi on va avoir besoin?"
+
+  best_friend "Hum... Ils parlent d'une offrande de gâteaux de riz aux algues et de sake... Puis ils disent de purifier l'air avec de l'encens..."
+  best_friend "Et pour appeler le kami-sama, il nous faudra une cloche consacrée au dieu qu'on veut invoquer."
+
+  menu:
+    "Ca va être compliqué.":
+      player "ça va être compliqué de trouver tout ça..."
+    "Bientôt libéré !":
+      player "Plus que quelques étapes et je serais libéré de ces rêves!"
+    "Dans le doute":
+      player "Je doute que ça marche mais ça vaut la peine d'essayer..."
+
+  best_friend "Je peux aller piquer des gâteaux de riz et du sake chez mes parents mais il va falloir aller acheter le reste."
+
+  player "Va chez toi chercher les offrandes! Je m'occupe de l'encens et de la cloche."
+
+  best_friend "Très bien, j'y vais. On se retrouve ici dès qu'on a tout ce qu'il faut, okay?"
+
+  player "Oui, à toute!"
+
+  hide screen show_char
+  with dissolve
+
+  player "Bon, où est-ce que je vais bien pouvoir trouver ces trucs... Je vais faire une recherche sur mon natel."
+  player  "Ah, j'ai trouvé une boutique shinto pas loin d'ici! Même s'ils n'ont pas exactement ce qu'il faut, ils pourront me renseigner."
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+label jour3_rue_enfants:
+
+  scene rue_avec_enfants
+  with dissolve
+
+  show screen show_char_pos(im_enfant1, -100, 300, zoom_enfant1)
+  show screen show_char_pos1(im_enfant2, 400, 300, zoom_enfant2)
+  show screen show_char_pos2(im_enfant3, 800, 300, zoom_enfant3)
+  show screen show_char_pos3(boy_sad, 1400, 300, zoom_boy)
+  with dissolve
+
+  enfant1 "Laissez-moi tranquille, j'essaye de faire mes devoirs!"
+  enfant2 "Hahah! Le petit je-sais-tout prend de l'avance pour pouvoir bien lècher les pieds du prof!"
+  enfant3 "De toute façons, tout le monde le déteste, il a rien d'autre a faire! Et il faut bien qu'il fasse ses devoir s'il veut garder sa place de chouchou!"
+  enfant2 "Moi je sais pourquoi il veux absolument que le prof l'aime!"
+  enfant3 "Vas-y!"
+  enfant1 "Arrêtez..."
+  enfant3 "J'ai entendu dire que son père l'a abandonné quand il était petit!"
+  enfant1 "C'est pas vrai..."
+
+  player "Que faire ?"
+
+  menu:
+    "Partir" if utilitarisme>=1 and libertarianisme>=2:
+      narrateur "Tu te lève discrètement et sors de la salle en évitant les enfants."
+      jump jour3_rue
+    "Aller à l'encontre des agresseurs" if utilitarisme>=1:
+      player "Ca suffit, laissez ce garçon tranquille! Ses histoires familiales ne vous concernent pas et si c'est un bon élève, tant mieux pour lui!"
+      jump jour3_defense
+    "Défendre le père":
+      player "Si son père est parti, c'est qu'il avait ses raisons et elles ne vous regardent pas!"
+      jump jour3_defense
+    "Défendre l'enfant" if libertarianisme>=1:
+      player "Défendre le petit, il a bien le droit de faire ses devoirs tranquille!"
+      jump jour3_defense
+
+label jour3_defense:
+
+  enfant3 "Pfff, de quoi tu te mèle?"
+  enfant2 "Laisse tomber, on y va."
+
+  hide screen show_char_pos1
+  hide screen show_char_pos2
+  with dissolve
+
+  enfant1 "Merci d'avoir essayé, mais ils vont continuer à m'embêter tu sais...."
+  player  "Il faut bien que quelqu'un leur disent un truc... Au moins j'aurais essayé!"
+  player "La prochaine fois, va voir un professeur!"
+  enfant1 "Oui, peut-être..."
+  player "Bon, je dois y aller. A plus."
+
+  call hide_chars
+
+
+label jour3_rue:
+  scene avant_rue
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Avec ces histoires, je vais devoir me dépêcher d'aller acheter ce qu'il me faut pour l'invocation."
+  player  "Bon, où est le magasin?"
+  player "... C'est une petite rue pas loin. Je devrais vite y être."
+
+  call hide_chars
+
+  scene ruelle_sombre
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Cette ruelle est vraiment glauque, je serais jamais passé par là normalement..."
+  player "Aller, courage, le magasin est juste là!"
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  narrateur "Heureusement, le vendeur avait de l'encens de tous types et même la bonne cloche dans ses stocks. Tu payes et ressors, soulagé."
+
+  scene parc
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Je pensais pas que ça serait si facile, il avait même la cloche consacrée!"
+  player "Il me reste plus qu'à retourner à la bibliothèque, Emma doit déjà m'attendre."
+
+  show screen show_char1(im_perso_louche, 1.0, 1.0, zoom_louche)
+  with dissolve
+
+  perso_louche "Eh petit!"
+
+  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  perso_louche "Oui, toi!"
+  perso_louche "J'ai entendu ce que tu disais au vendeur, tu cherche à avoir des visions, c'est ça?"
+  perso_louche "Approche, j'ai ce qu'il te faut..."
+
+  menu:
+    "Aller voir" if libertarianisme>=1:
+      jump jour3_louche
+    "Partir":
+      player "Ca m'intéresse pas. Au revoir."
+      perso_louche "Tu sais pas c'que tu rates..."
+      narrateur "Sans un regard en arrière, tu te dépêche de quitter la ruelle pour retourner à la bibliothèque."
+      jump jour3_soir_bibliotheque
+
+label jour3_louche:
+
+  player  "Qu'est ce que c'est?"
+  perso_louche  "Oh, juste des champignons, tout c'qu'il y a d'plus naturel..."
+  perso_louche "Si tu les fais infuser et qu'tu bois le jus, t'es garantis d'avoir toutes sortes de visions, hehe."
+  player "Est-ce que ça permet de parler avec les kami?"
+  perso_louche "Hehe, avec ça, tu parles avec qui tu veux, crois moi!"
+
+  menu:
+    "J'achète" if libertarianisme>=2:
+      $ champi_achete = True
+      perso_louche "T'as fait le bon choix, petit. Tiens, c'est 20.- pour un champi magique!"
+      player "T'as fait le bon choix, petit. Tiens, c'est 20.- pour un champi magique!"
+      perso_louche "C'est ça..."
+      player "Je vais le garder de côté, comme ça, si le rituel ne marche pas, j'ai toujours une autre solution..."
+      narrateur "Tu mets le champignon en sécurité dans ton sac et repart pour ton rendez-vous avec Emma."
+      jump jour3_soir_bibliotheque
+    "Non merci":
+      player "Ca m'intéresse pas. Au revoir."
+      perso_louche "Tu sais pas c'que tu rates..."
+      narrateur "Sans un regard en arrière, tu te dépêche de quitter la ruelle pour retourner à la bibliothèque."
+      jump jour3_soir_bibliotheque
+    "Non, mes parents seraient furieux !" if utilitarisme>=2:
+      player "Non, si mes parents l'apprenent, ils me tueraient!"
+      perso_louche "C'que tu fais dans ton coin regardes que toi, petit!"
+      perso_louche "Bah, tant pis pour toi..."
+      hide screen show_char1
+      with dissolve
+      player "Jamais je pourrais décevoir ma famille comme ça... Même si ça me débarrassait des visions! "
+      jump jour3_soir_bibliotheque
+
+label jour3_soir_bibliotheque:
+  call hide_chars
+
+  scene bibliotheque
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char1(best_friend_neutral, 1.0, 1.0, zoom_best_friend)
+  with dissolve
+
+  best_friend "Ah te voilà! T'en as mis du temps, ça fait un moment que je t'attends."
+  best_friend "J'ai trouvé tout ce que je devais chez moi!"
+  best_friend "Bon, et toi? Tu as tout trouvé?"
+
+  player "Oui, on a tout ce qu'il nous faut!"
+  player "Qu'est ce qu'il faut faire ensuite?"
+
+  best_friend "Alors... Il faut allumer l'encens et préparer les offrandes comme pour un invité."
+  best_friend "Puis, quand tu seras prêt, il faudra sonner la cloche trois fois, en laissant bien le son s'éteindre entre chaque fois."
+  best_friend "Et finalement, appeler le kami par cette formule rituelle : 'Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés.'"
+  best_friend "Tu as compris, [nom] ?"
+
+  player "Oui."
+  best_friend "D'après ce livre, le kami va décider s'il pense que tu es digne de sa visite et si c'est le cas, il devrait t'envoyer une vision dans ton sommeil, ou quelque chose comme ça. 
+  Cette partie est pas très claire..."
+  player "Comment je saurais si ça a marché?"
+  best_friend "Hummm... Je penses que tu devras attendre cette nuit et tu verras bien..."
+
+  "Silence"
+
+  best_friend "Ah, encore une chose! Ils disent que tu peux aider le kami à trouver le chemin de tes rêves en l'appelant par son nom cinq fois." 
+  player "Donc s'il ne vient pas tout de suite, il suffit que je dise Kamimusubi cinq fois?"
+
+  show screen show_char(boy_sad, 0.0, 1.0, zoom_boy)
+  with dissolve
+  
+
+  player "J'espère vraiment que ça va marcher..."
+  best_friend "Bon, assez discuté, il faut qu'on s'y mette! Je devrais déjà être rentrée chez moi!"
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  narrateur "Préparation des offrandes et de l'encense."
+
+  scene bibliotheque
+  with dissolve
+
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char1(best_friend_neutral, 1.0, 1.0, zoom_best_friend)
+  with dissolve
+
+  best_friend "A toi, [nom]. Quand tu es prêt, sonne la cloche et dis les paroles rituelles."
+  "Ding..."
+  "Silence"
+  "Ding..."
+  "Silence"
+  "Ding..."
+  "Silence"
+  
+  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
+  "Silence"
+  player "..."
+  best_friend "Tu penses que ça a marché?"
+  player "Aucune idée..."
+  best_friend "Tu verras bien cette nuit... S'il vient pas tout de suite, oublie pas que tu peux dire son nom pour l'appeler!"
+  player "J'essayerais d'y penser!"
+  player "Bon, je te laisse, à demain."
+  best_friend "A demain! Bonne chance!"
+
+  call hide_chars
+
+label jour3_soir_maison:
+  scene room_hero_night
+  with dissolve
+
+  show screen show_char(boy_happy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Dans quelques heures, tout ce calvaire sera enfin fini et je pourrai reprendre ma vie comme avant!"
+  player "Enfin, si le rituel a fonctionné..."
+  player "Je suis trop stressé, je vais jamais réussir à m'endormir!"
+
+  if champi_achete:
+    player "Mais au pire, si ça marche pas, j'ai toujours le champignon de cet aprem..."
+  
+  player  "Peut-être que si je répète la phrase d'invocation, il y aura plus de chance que Kamimusubi vienne?"
+
+  player "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
+
+  player "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
+
+  player "Kami-sama, répond... Répond à ma prière et..."
+
+  player "Kami-sama..."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  "TEST!!!!!!!!!!!"
+
+
+
+
+
+
 
 
 
@@ -1320,6 +1918,7 @@ label hide_chars:
   hide screen show_char_pos
   hide screen show_char_pos1
   hide screen show_char_pos2
+  hide screen show_char_pos3
   with dissolve
 
   return

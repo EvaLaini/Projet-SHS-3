@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1183: expected '=' not found.
-    define sdf_state
-                    ^
+File "game/script.rpy", line 1840: end of line expected.
+    player "J'essayerais d'y penser!", "Bon, je te laisse, à demain."
+                                     ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat May 16 22:08:42 2020
+Fri May 22 15:46:14 2020
