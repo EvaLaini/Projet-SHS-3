@@ -50,21 +50,21 @@ define zoom_boy = 0.25
 #Pere ========================================================================================
 define dad = Character("Papa", color="#3443eb", image="dad")
 define dad_path = "Perso/pere/dad.png"
-define dad_smoking = "Perso/pere/dad_smoking.png"
+define dad_angry = "Perso/pere/dad_angry.png"
 
-define zoom_dad=0.7
+define zoom_dad=0.4
 #========================================================================================
 
 #Meilleur amie ========================================================================================
 define best_friend = Character("Emma", color="#3443eb", image="best_friend")
 define best_friend_neutral = "Perso/amie/amie_neutral.png"
-#define best_friend_angry = "Perso/amie/amie_neutral.png"
+define best_friend_angry = "Perso/amie/amie_angry.png"
 define best_friend_annoyed = "Perso/amie/amie_gene.png"
-#define best_friend_sad = "Perso/amie/amie_neutral.png"
+define best_friend_sad = "Perso/amie/amie_sad.png"
 define best_friend_smile = "Perso/amie/amie_happy.png"
 define best_friend_reading = "Perso/amie/amie_lecture.png"
 
-define zoom_best_friend = 1.4
+define zoom_best_friend = 0.6
 #========================================================================================
 
 #Mere ========================================================================================
@@ -74,15 +74,15 @@ define mere_angry = "Perso/mere/mere_colere.png"
 define mere_happy = "Perso/mere/mere_rire.png"
 define mere_sad = "Perso/mere/mere_sad.png"
 define mere_surprised = "Perso/mere/mere_surprised.png"
-define zoom_mom = 0.7
+define zoom_mom = 1.4
 # ========================================================================================
 
 #Professeur =========================================================================
 define teacher = Character("Professeur", color="#ebe834", image="teacher")
 define teacherP = "Perso/professeur/professeur_talking.png"
-define teacher_annoyed = "Perso/professeur/professeur_talking_2.png"
+define teacher_annoyed = "Perso/professeur/professeur_angry.png"
 
-define zoom_teacher = 0.9
+define zoom_teacher = 0.3
 #=====================================================================================
 
 #GM =========================================================================
@@ -107,45 +107,17 @@ define camarade_2 = Character("Autre camarade", color="#32a852")
 #======================================================================================
 
 #Infirmiere ======================================================================================
-define infirmiere = Character("Infirmiere", color="#85ce25")
-define infirmierePath = "Perso/infirmiere/infirmiere.png"
-define zoom_infirmiere = 0.9
+define infirmiere = Character("Infirmier", color="#85ce25")
+define infirmierePath = "Perso/infirmiere/infirmier.png"
+define zoom_infirmiere = 1.0
 #======================================================================================
 
-#Chirurgien ======================================================================================
-define chir = Character("Michelle", color="#85ce25")
-define chirurgien = "Perso/docteur/dr_Michelle.png"
-define zoom_chir = 0.4
-#======================================================================================
-
-#Prisonnier ======================================================================================
-define priso = Character("[nom_priso]", color="#85ce25")
-define prisonnier = "Perso/prisonnier/prisonnier.png"
-
-define nom_priso = "Prisonnier"
-define zoom_priso = 0.4
-#======================================================================================
-
-#Policiers ======================================================================================
-define poli1 = Character("Policier 1", color="#85ce25")
-define poli2 = Character("Policier 2", color="#85ce25")
-
-define policier_1 = "Perso/policiers/police_1.png"
-define policier_2 = "Perso/policiers/police_2.png"
-
-define zoom_poli1 = 1.9
-define zoom_poli2 = 0.8
-
-#======================================================================================
 
 #SDF
 define sdf = Character("SDF", color="#85ce25")
 
-define sdf_normal = "Jour2/SDF/SDF complet - Normal.png"
-define sdf_decu = "Jour2/SDF/SDF complet - decu.png"
-define sdf_gene = "Jour2/SDF/SDF complet - gene.png"
-
-define zoom_sdf = 1.0
+define sdf_normal = "Jour2/SDF/SDF.png"
+define zoom_sdf = 1.2
 
 
 define mere_enfant = Character("Mere", color="#85ce25")
@@ -168,28 +140,17 @@ image room_hero_night = im.Scale("Backgrounds/chambre_hero/room_night.png", 1920
 image room_night_light = im.Scale("Backgrounds/chambre_hero/room_night_light.png", 1920, 1080)
 
 #Salon
-image salon = im.Scale("Backgrounds/cuisine_salon/salon_jour.png", 1920, 1080)
-image salon_crepuscule = im.Scale("Backgrounds/cuisine_salon/salon_dawn.png", 1920, 1080)
-image salon_nuit = im.Scale("Backgrounds/cusiine_salon/salon_nuit.png", 1920, 1080)
+image salon = im.Scale("Backgrounds/cuisine_salon/salon_jour.jpg", 1920, 1080)
+image salon_crepuscule = im.Scale("Backgrounds/cuisine_salon/salon_dawn.jpg", 1920, 1080)
 
 #Ecole
-image classroom = im.Scale("Backgrounds/ecole/classroom.png", 1920, 1080)
-image classroom_empty_full_light = im.Scale("Backgrounds/ecole/classroom_empty_full_light.png", 1920, 1080)
-image classroom_empty_mid_light = im.Scale("Backgrounds/ecole/classroom_empty_mid_light.png", 1920, 1080)
-image classroom_empty_no_day_light = im.Scale("Backgrounds/ecole/classroom_empty_no_day_light.png", 1920, 1080)
-image classroom_teacher = im.Scale("Backgrounds/ecole/classroom_teacher.png", 1920, 1080)
-image ecole_couloir = im.Scale("Backgrounds/ecole/couloir.png", 1920, 1080)
-image ecole_entree_jour = im.Scale("Backgrounds/ecole/entree_jour.png", 1920, 1080)
-image lunchroom_empty_dawn = im.Scale("Backgrounds/ecole/lunchroom_empty_dawn.png", 1920, 1080)
-image lunchroom_empty = im.Scale("Backgrounds/ecole/lunchroom_empty.png", 1920, 1080)
-image lunchroom_full = im.Scale("Backgrounds/ecole/lunchroom_full.png", 1920, 1080)
-image lunchroom_full_no_sunlight = im.Scale("Backgrounds/ecole/luchroom_full_no_sunlight", 1920, 1080)
-image lunchroom_half_full = im.Scale("Backgrounds/ecole/lunchroom_half_full.png", 1920, 1080)
+image classroom_teacher = im.Scale("Backgrounds/ecole/classroom.jpg", 1920, 1080)
+image lunchroom_full = im.Scale("Backgrounds/ecole/lunchroom.jpg", 1920, 1080)
 
 
-image ecole_exterieur = im.Scale("Jour3/Ecole/Ecole.png", 1920, 1080)
+image ecole_exterieur = im.Scale("Backgrounds/ecole/Ecole.jpg", 1920, 1080)
 
-image rue_avec_enfants = im.Scale("Jour3/Rue_avec_enfants/Rue_avec_enfants.png", 1920, 1080)
+image rue_avec_enfants = im.Scale("Backgrounds/ecole/Ecole.jpg", 1920, 1080)
 
 define enfant1 = Character("Enfant 1")
 define im_enfant1 = "Jour3/Rue_avec_enfants/Enfant_1.png"
@@ -210,8 +171,8 @@ define zoom_enfant3 = 1.0
 
 
 #Ville
-image city_day  = im.Scale("Backgrounds/ville/ville_jour.png", 1920, 1080)
-image city_night = im.Scale("Backgrounds/ville/ville_nuit.png", 1920, 1080)
+image city_day  = im.Scale("Backgrounds/ville/ville_jour.jpg", 1920, 1080)
+image city_night = im.Scale("Backgrounds/ville/ville_nuit.jpg", 1920, 1080)
 
 #hopital
 image hopital_couloir = im.Scale("Backgrounds/hopital/hopital_couloir.jpg", 1920, 1080)
@@ -220,16 +181,18 @@ image hopital_exterieur = im.Scale("Backgrounds/hopital/hopital_exterieur.png", 
 image hopital_operation = im.Scale("Backgrounds/hopital/operation_1.jpg", 1920, 1080)
 
 #salle_info
-image salle_info_ouverte = im.Scale("Jour2/Ordinateur/salle_ordi_porte_ouverte.png", 1920, 1080)
-image salle_info_ferme = im.Scale("Jour2/Ordinateur/salle_ordi_porte_ferme.png", 1920, 1080)
-image ecran_ordi = im.Scale("Jour2/Ordinateur/Ecran ordi - Recherche 1.png", 1920, 1080)
+image salle_info_ouverte = im.Scale("Jour2/Ordinateur/salle_info.jpg", 1920, 1080)
+image salle_info_ferme = im.Scale("Jour2/Ordinateur/salle_info.jpg", 1920, 1080)
+image ecran_ordi = im.Scale("Jour2/Ordinateur/ordi.png", 1920, 1080)
 
 #rue jour 2 
-image rue = im.Scale("Jour2/Rue/Rue1 - Jour.png", 1920, 1080)
-image boulangerie = im.Scale("Jour2/Rue/Boulangerie - Jour.png", 1920, 1080)
+image rue = im.Scale("Jour2/Rue/Rue1 - Jour.jpg", 1920, 1080)
+image boulangerie = im.Scale("Jour2/Rue/Boulangerie - Jour.jpg", 1920, 1080)
 
 #bibliotheque
-image bibliotheque = im.Scale("Jour2/Bibliotheque/Bibliotheque - Jour.png", 1920, 1080)
+image bibliotheque = im.Scale("Jour2/Bibliotheque/Bibliotheque - Jour.jpg", 1920, 1080)
+image bibliotheque_soir = im.Scale("Jour2/Bibliotheque/Bibliotheque - Soir.jpg", 1920, 1080)
+image bibliotheque_nuit = im.Scale("Jour2/Bibliotheque/Bibliotheque - Nuit.jpg", 1920, 1080)
 
 image black_background = im.Scale("black_background.png", 1920, 1080)
 
@@ -246,19 +209,17 @@ define im_fumeur = "Jour3/Fumeur/Fumeur.png"
 
 define zoom_fumeur = 1.0
 
-image telephone = "Jour3/Telephone/Telephone_1.png"
+image avant_rue = im.Scale("Jour3/Ruelle_sombre/Avant_ruelle.jpg", 1920, 1080)
 
-image avant_rue = im.Scale("Jour3/Ruelle_sombre/Avant_ruelle.png", 1920, 1080)
+image ruelle_sombre = im.Scale("Jour3/Ruelle_sombre/Ruelle_choix_1.jpg", 1920, 1080)
 
-image ruelle_sombre = im.Scale("Jour3/Ruelle_sombre/Ruelle_choix_1.png", 1920, 1080)
-
-image parc = im.Scale("Jour3/Ruelle_sombre/Parc.png", 1920, 1080)
+image parc = im.Scale("Jour3/Ruelle_sombre/Parc.jpg", 1920, 1080)
 
 define perso_louche = Character("Personnage louche")
 
 define im_perso_louche = "Jour3/Homme louche/Homme louche - Complet - Normal.png"
 
-define zoom_louche = 1.0
+define zoom_louche = 0.3
 
 define champi_achete = False
 
@@ -451,7 +412,7 @@ label jour1_lunch:
     with dissolve
 
 
-    show screen show_char(best_friend_smile, 0.0, 1.0, zoom_best_friend)
+    show screen show_char(best_friend_smile, 0.0, 3.0, zoom_best_friend)
     with dissolve
 
     show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
@@ -483,7 +444,7 @@ label jour1_manger:
     scene lunchroom_full
     with dissolve
 
-    show screen show_char(best_friend_smile, 0.0, 1.0, zoom_best_friend)
+    show screen show_char(best_friend_smile, 0.0, 3.0, zoom_best_friend)
     with dissolve
     
     show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
@@ -554,7 +515,7 @@ label jour1_maison_soir:
     scene salon
     with dissolve
 
-    show screen show_char_pos(dad_path, -250, 500, zoom_dad)
+    show screen show_char_pos(dad_path, -150, 500, zoom_dad)
     with dissolve
 
     dad "Alors, tu as bien travaillé aujourd'hui, [nom] ?"
@@ -571,7 +532,7 @@ label jour1_maison_soir:
       "J'ai beaucoup de travail.":
         player "Oui, mais j'ai encore des devoirs pour demain à finir."
 
-    show screen show_char_pos2(mere_neutral, 700, 500, 0.9)
+    show screen show_char_pos2(mere_neutral, 700, 500, 1.4)
     with dissolve
 
 
@@ -738,7 +699,7 @@ label reve1_hopital_interieur:
   show screen show_char(docteur, 0.0, 1.0, zoom_doc)
   with dissolve
 
-  show screen show_char1(infirmierePath, 1.0, 1.0, zoom_infirmiere)
+  show screen show_char1(infirmierePath, 0.95, 1.0, zoom_infirmiere)
   with dissolve
 
   infirmiere "Vous voilà enfin. Le patient est déjà prêt pour son opération. Il s’agit d’une fracture de l’avant-bras. 
@@ -776,7 +737,7 @@ label reve1_hopital_after_op_next:
   show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
   with dissolve
 
-  show screen show_char1(docteur, 1.0, 1.1, zoom_doc)
+  show screen show_char1(docteur, 0.95, 1.1, zoom_doc)
   with dissolve
 
   player "Qu’est-ce qu’il se passe ici ? "
@@ -995,7 +956,7 @@ label jour2_cuisine:
 
   show screen show_char_pos(dad_path, -250, 500, zoom_dad)
   show screen show_char_pos1(boy_nervous, 1300, 500, 0.4)
-  show screen show_char_pos2(mere_neutral, 700, 500, 0.9)
+  show screen show_char_pos2(mere_neutral, 700, 500, 1.4)
   with dissolve
 
   dad "Tu as bien dormi, [nom] ?"
@@ -1086,14 +1047,14 @@ label jour2_midi:
   with dissolve
 
   show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
-  show screen show_char1(best_friend_smile, 1.0, 1.0, zoom_best_friend)
+  show screen show_char1(best_friend_smile, 1.0, 3.0, zoom_best_friend)
   with dissolve
 
   best_friend "... Et quand il s'est enfin retourné, toute la classe a vu l'énorme trou dans son pantalon! HAHAHAH"
 
   "..."
 
-  show screen show_char1(best_friend_neutral, 1.0, 1.0, zoom_best_friend)
+  show screen show_char1(best_friend_neutral, 1.0, 3.0, zoom_best_friend)
   with dissolve
 
   best_friend "[nom] ? Tu t'es endormi pendant mon histoire ou bien? Tu as même pas rigolé!"
@@ -1249,8 +1210,6 @@ label jour2_boulangerie:
       show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
       with dissolve
       player "Je suis désolé demande à quelqu'un d'autre. Bonne chance!"
-      show screen show_char1(sdf_decu, 1.0, 1.0, zoom_sdf)
-      with dissolve
       sdf "..."
       hide screen show_char1
       with dissolve
@@ -1262,8 +1221,6 @@ label jour2_boulangerie:
       show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
       with dissolve
       player "Trouve toi un travail au lieu de vivre comme un parasite!"
-      show screen show_char1(sdf_decu, 1.0, 1.0, zoom_sdf)
-      with dissolve
       sdf "..."
       hide screen show_char1
       with dissolve
@@ -1416,19 +1373,12 @@ label jour3_ecole:
   player "Mais non , on est amis depuis bien trop longtemps..."
   player  "Courage ! Je vais lui envoyer un message pour se retrouver après les cours."
 
-  show telephone:
-    xalign 1.0
-    yalign 1.0
-    zoom 1.0
-
   player "Hum... :"
   player "'Coucou! Est-ce que tu as du temps cet aprem pour que je te parle d'un truc??'"
   player "'Tu peux me retrouver cet aprem après les cours ? J'ai besoin de toi!'"
 
   player "Oui, autant faire simple. Envoyer!"
-
-  hide telephone
-
+  
   player "Il reste plus qu'à attendre une réponse..."
 
   show screen show_char1(im_fumeur, 1.0, 1.0, zoom_fumeur)
@@ -1494,7 +1444,7 @@ label jour3_bibliotheque:
   scene bibliotheque
   with dissolve
 
-  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char(best_friend_neutral, 0.0, 3.0, zoom_best_friend)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1545,7 +1495,7 @@ label jour3_bibliotheque:
   scene bibliotheque
   with dissolve
 
-  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char(best_friend_neutral, 0.0, 3.0, zoom_best_friend)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1559,7 +1509,7 @@ label jour3_bibliotheque:
   scene bibliotheque
   with dissolve
 
-  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char(best_friend_neutral, 0.0, 3.0, zoom_best_friend)
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1578,7 +1528,7 @@ label jour3_bibliotheque:
 
   best_friend "[nom], viens vite! Je crois que j'ai trouvé quelque chose!"
 
-  show screen show_char(best_friend_neutral, 0.0, 1.0, zoom_best_friend)
+  show screen show_char(best_friend_neutral, 0.0, 3.0, zoom_best_friend)
   with dissolve
 
   best_friend "Ce livre parle d'un rituel qui permet d'invoquer des kami!"
@@ -1774,11 +1724,11 @@ label jour3_louche:
 label jour3_soir_bibliotheque:
   call hide_chars
 
-  scene bibliotheque
+  scene bibliotheque_nuit
   with dissolve
 
   show screen show_char(boy, 0.0, 1.0, zoom_boy)
-  show screen show_char1(best_friend_neutral, 1.0, 1.0, zoom_best_friend)
+  show screen show_char1(best_friend_neutral, 1.0, 3.0, zoom_best_friend)
   with dissolve
 
   best_friend "Ah te voilà! T'en as mis du temps, ça fait un moment que je t'attends."
@@ -1818,11 +1768,11 @@ label jour3_soir_bibliotheque:
 
   narrateur "Préparation des offrandes et de l'encense."
 
-  scene bibliotheque
+  scene bibliotheque_nuit
   with dissolve
 
   show screen show_char(boy, 0.0, 1.0, zoom_boy)
-  show screen show_char1(best_friend_neutral, 1.0, 1.0, zoom_best_friend)
+  show screen show_char1(best_friend_neutral, 1.0, 3.0, zoom_best_friend)
   with dissolve
 
   best_friend "A toi, [nom]. Quand tu es prêt, sonne la cloche et dis les paroles rituelles."
