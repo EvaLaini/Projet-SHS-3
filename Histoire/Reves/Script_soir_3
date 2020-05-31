@@ -29,7 +29,7 @@ GMU : Bon débarras. *Game Over*
 
 ---------------------------------------------
 Rêve utilitarisme :
-GML : Je vais te mettre dans la peau du maire d’une petite ville dans une zone désertique. Bonne chance à toi.
+GML : Je vais te mettre dans la peau du maire d’une ville dans une zone désertique. Bonne chance à toi.
 *Le GML disparaît* 
 *toc toc*
 
@@ -40,21 +40,32 @@ Joueur : Oui rentré
 
 Assistant : Monsieur le maire c’est une catastrophe ! La sécheresse va durer plus longtemps que prévu. 
 Joueur : Est-ce qu’on aura assez d’eau pour les habitants de la ville d’ici la fin de la sécheresse ?
-Assistant : Malheureusement non. Nous avons trop sous-estimé la sécheresse et nous avons eu une gestion de l’eau catastrophique. 
+Assistant : Non, Nous avons trop sous-estimé la sécheresse et nous avons eu une gestion de l’eau catastrophique. 
 Jamais nous ne tiendrons d’ici la fin.  
 Joueur : Il n’y pas d’autre moyen de s’approvisionner en eau ?
-Assistant : Il y aurait un moyen mais ça reviendrait à condamner le village voisin. 
-Joueur : Soyez plus clair. 
-Assistant : Le niveau de la nappe d’eau du village voisin est suffisant pour subvenir à nos besoins mais si on le fait ils n’auront 
-plus assez d’eau pour eux-mêmes. 
-Joueur : Et si on prenait juste ce qu’il faut et qu’on l’eau rationne au maximum. Est-ce qu’il en resterait pour le village ? 
-Assistant : Ce serait une solution. Le village aura assez d’eau pour passer la sécheresse mais plus assez pour l’agriculture. 
-Cela reviendrait à les condamner économiquement. De plus la part de la population de la ville la plus fragile risque de ne pas 
-survivre à un tel rationnement de l’eau. Monsieur le maire il faut que vous preniez une décision maintenant avant qu’il ne soit trop tard.
+Assistant : Malheureusement le temps que le prochaine approvisement arrive, il sera déjà trop tard. 
+Joueur : Est-ce que nous pouvons encore rationner l'eau pour que tout le monde puisse avoir au moins le nécessaire. 
+Assistant : Même si nous rationnons l'eau au minimum pour survivre, ils y auraient une partie de la population qui n'aura pas d'eau. 
+Monsieur le maire, il faut prendre une décision maintenant.
+Joueur : Comment pourrait-on choisir qui devra vivre ou mourir. Jamais la population de la ville ne l'acceptrera. Ce sera l'anarchie. 
+Assistant : Justement par rapport à ça. Vous vous souvenez de ce quartier qui trouble régulièrement l'ordre public. 
+Maire : Vous parlez de ce quartier qui se soulève régulièrement en émeute car les habitants pensent que nous ne faisons pas assez 
+pour les intégrer à la ville.
+Assistant : Exactement. Au début la majorité de la ville était derrière ce quartier. Il faut avouer que nous n'avions pas complètement
+respecté nos promesses électorales. Mais récemment ces émeutes ont fini par débordé sur les autres quartiers
+de la ville et des petits groupes finissaient par casser les vivtrines des petits marchés locaux, vendalisaient et incendiaient les 
+voitures dans la rue. 
+Maire : Où voulez-vous en venir.
+Assistant : La tendance de la population à soutenir ce quartier c'est fortement inversée. Beaucoup ont même exprimé leurs mécontontements
+et demandent des interventions plus musclées de la part de la police pour éviter ces débordements. Sur les réseaux sociaux nous avons déjà
+recensé plusieurs messages de haines à l'encontre de ce quartier. Si nous devions choisir qui n'aura pas accès à l'eau, alors voilà 
+notre cible toute désignée. Ce serait le seul moyen de faire accepter notre choix par la majorité de la population et que nous 
+évitions que la ville finisse à feu et à sang tout en sauvant le plus de monde possible. 
+Quel est votre décision ?
 
-	O1 : Nous ne pouvons pas condamner le village voisin à cause de nos propres erreurs. 
-	O2 : Nous allons faire au mieux en rationnent l’eau du village. J’espère que le village se remettra de la crise économique qui va suivre. 
-	O3 : Je suis le maire et ma priorité est les habitants de cette ville. Pompez l’eau du village vers la ville. 
+	O1 : Nous devons assuré la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous. 
+	O2 : Nous ne pouvons pas choisir arbitrairement qui n'aura pas d'eau. Nous ferons ce choix aléatoirement quitte a ce que la ville ne l'accèpte pas.
+	O3 : Nous ne choisirons pas qui n'aura pas accès à l'eau quitte à ce que la situation devienne anarchique.
 	
 *Retour dans la dimension des GM*
 (saut deuxième partie si l’option 2 a été choisi)
