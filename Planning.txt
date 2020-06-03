@@ -79,7 +79,7 @@ Samedi 06/06 10h :
 	. Antoine --> Visuel soir 3 + implémentation soir 2
 	. Eva --> Modifs jeu (corrections orthographes, précisions, etc.)
 	. Valton --> Partie du dossier final sauf Intro
-	
+	. Tous --> Partie individuelle
 	
 A regarder :
 	. Choix grisés
