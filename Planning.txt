@@ -73,6 +73,14 @@ A faire :
 	. Valton --> Modifs script soir 3
 	. Colin --> Modifs script soir 3
 	
+Samedi 06/06 10h :
+	. Ylies --> Intro
+	. Colin --> Script soir 2 + script soir 3 + visuel soir 2
+	. Antoine --> Visuel soir 3 + implémentation soir 2
+	. Eva --> Modifs jeu (corrections orthographes, précisions, etc.)
+	. Valton --> Partie du dossier final sauf Intro
+	
+	
 A regarder :
 	. Choix grisés
 	. Intéraction avec l'environnement
