@@ -1,0 +1,17 @@
+J’ai été surpris d’avoir à faire un jeu vidéo en SHS. Tout d’abord, je n’ai pas réalisé de projet en SHS depuis le début de mes études et si jamais je devais en faire un 
+je n’aurai pas pensé à un projet si complet. La planification a sûrement été la partie la plus dure à gérer de mon côté. En plus de la situation exceptionnelle à laquelle 
+nous avons fait face, il est en général très complexe de réussir à voir l’état de son jeu dans le futur. D’autant plus que cette vision devait être commune. La première 
+compétence qui est rentré en jeu est la communication. Elle a été mise en avant au travers des nombreuses réunions que nous avons tenu avec mon groupe. Il a fallu prendre 
+des décisions, savoir concéder certains points pour avancer mais aussi proposer perpétuellement de nouvelles idées. C’est aussi la première fois que je réalise un projet sans 
+réelle « feuille de route ». D’habitude, à l’EPFL, ou en tout cas dans la section IC, on a souvent un sujet imposé, des consignes données chaque semaine et des rendus intermédiaires.
+ Tout cela permet de structurer le projet. Mais ici, c’est à nous de nous en occuper. Le plus dur étant sûrement de s’imposer à soi-même des deadlines pour faire progresser 
+le jeu. Surtout en plein semestre, lorsque d’autres rendu sont notés, il est parfois difficile de gérer son temps pour en allouer suffisamment pour ce projet. C’est là, la plus
+ grosse difficulté pour chaque projet, gérer son temps. Cependant, cette entreprise m’a permis de pouvoir réaliser le jeu, ou du moins le prototype d’un jeu, que j’avais réellement 
+envie de faire. Le projet m’a également donné la possibilité de mettre en action mes compétences de programmation en situation « réelle » et je suis plutôt satisfait de ma contribution 
+au projet. C’est assez grisant de pouvoir « jouer à son code » plutôt que de vérifier son fonctionnement à l’aide de tests unitaires. Aussi, j’ai été obligé de développer mon côté 
+créatif (autre qu’en programmation) que je n’avais sûrement pas mis en avant depuis le collège (en France). J’essaye toujours d’éviter la création et je suis le plus souvent dans 
+l’implémentation. Je me suis surpris à aimer inventer des histoires et écrire des dialogues, ce que j’ai toujours rechigné à faire. De plus, ce jeu a rempli pour moi le même rôle 
+que pour le joueur, il m’a introduit à deux courants éthiques dont je ne savais pratiquement rien et m’a poussé à réfléchir à des situations assez tordues pour en extraire l’essence. 
+Enfin, cette expérience m’a fait découvrir le processus de création d’un jeu vidéo, du choix du genre, au style visuel, à l’imagination de la trame principale. Mais par-dessus tout, 
+aux changements incessants et aux difficultés rencontrés tout au long de ce processus, même pour un si petit jeu. En tant que joueur, la critique est parfois facile mais je suis persuadé 
+qu’après ce projet mon avis sur les jeux et m’a façon de les juger a profondément changé.

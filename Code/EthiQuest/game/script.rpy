@@ -858,18 +858,6 @@ label voiture_reve1:
   scene city_day
   with dissolve
 
-  show voiture_1:
-    xpos 1350
-    ypos 500
-    zoom 0.15
-
-  with dissolve
-
-  show famille_5:
-    xpos 1550
-    ypos 500
-    zoom 0.5
-  with dissolve
 
   narrateur "Sur le chemin vous n’arrêtez pas de penser à ce jeune garçon, mort dans d’atroces souffrances* * Perdu dans vos pensées, vous ne faites pas attention. *"
   narrateur "*Cul de poule, perte de contrôle, accident* *Une famille décède*"
@@ -1302,7 +1290,7 @@ label jour2_fin:
   mere "Bonne nuit et fait de beaux rêves!"
   player "*Pense* J'espère."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_34
 
 
 
@@ -1345,7 +1333,7 @@ label jour3:
 
   player "J'arrive!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_35
 
 label jour3_ecole:
   scene ecole_exterieur
@@ -1437,7 +1425,7 @@ label jour3_ecole:
 
   teacher "Bon, je vous retrouve en classe."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_36
 
 label jour3_bibliotheque:
 
@@ -1487,7 +1475,7 @@ label jour3_bibliotheque:
 
   player "C'est parti!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_37
 
   scene black_background
   with dissolve
@@ -1501,7 +1489,7 @@ label jour3_bibliotheque:
 
   best_friend "Regarde cette pile de livres! On va bien pouvoir trouver quelque chose là dedans!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_38
 
   scene black_background
   with dissolve
@@ -1515,7 +1503,7 @@ label jour3_bibliotheque:
 
   player "Pffff, ce livre parle uniquement de dieux grecs... Je pense pas que ce soit utile."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_39
 
   scene black_background
   with dissolve
@@ -1572,7 +1560,7 @@ label jour3_bibliotheque:
   player "Bon, où est-ce que je vais bien pouvoir trouver ces trucs... Je vais faire une recherche sur mon natel."
   player  "Ah, j'ai trouvé une boutique shinto pas loin d'ici! Même s'ils n'ont pas exactement ce qu'il faut, ils pourront me renseigner."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_40
 
   scene black_background
   with dissolve
@@ -1628,7 +1616,7 @@ label jour3_defense:
   enfant1 "Oui, peut-être..."
   player "Bon, je dois y aller. A plus."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_41
 
 
 label jour3_rue:
@@ -1642,7 +1630,7 @@ label jour3_rue:
   player  "Bon, où est le magasin?"
   player "... C'est une petite rue pas loin. Je devrais vite y être."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_42
 
   scene ruelle_sombre
   with dissolve
@@ -1653,7 +1641,7 @@ label jour3_rue:
   player "Cette ruelle est vraiment glauque, je serais jamais passé par là normalement..."
   player "Aller, courage, le magasin est juste là!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_43
 
   scene black_background
   with dissolve
@@ -1722,7 +1710,7 @@ label jour3_louche:
       jump jour3_soir_bibliotheque
 
 label jour3_soir_bibliotheque:
-  call hide_chars
+  call hide_chars from _call_hide_chars_44
 
   scene bibliotheque_nuit
   with dissolve
@@ -1761,7 +1749,7 @@ label jour3_soir_bibliotheque:
   player "J'espère vraiment que ça va marcher..."
   best_friend "Bon, assez discuté, il faut qu'on s'y mette! Je devrais déjà être rentrée chez moi!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_45
 
   scene black_background
   with dissolve
@@ -1796,7 +1784,7 @@ label jour3_soir_bibliotheque:
   player "Bon, je te laisse, à demain."
   best_friend "A demain! Bonne chance!"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_46
 
 label jour3_soir_maison:
   scene room_hero_night
