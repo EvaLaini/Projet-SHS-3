@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1840: end of line expected.
-    player "J'essayerais d'y penser!", "Bon, je te laisse, à demain."
-                                     ^
+File "game/script.rpy", line 1705: expected statement.
+    nuit2_fin
+             ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri May 22 15:46:14 2020
+Fri Jun 05 19:48:27 2020

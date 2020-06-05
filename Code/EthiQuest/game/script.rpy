@@ -17,6 +17,7 @@ screen show_char1(path, alignX, alignY, zoomV):
   add path xalign alignX yalign alignY zoom zoomV
 
 screen show_char2(path, alignX, alignY, zoomV):
+  tag show_char2
   add path xalign alignX yalign alignY zoom zoomV
 
 screen show_char_pos(path, posX, posY, zoomV):
@@ -200,6 +201,57 @@ define utilitarisme = 0
 define libertarianisme = 0
 
 define config.menu_include_disabled = True
+
+#Nuit 2
+
+image plage = im.Scale("Nuit2/plage.jpg", 1920, 1080)
+
+define perso_glace = Character("John")
+
+define im_glace = "Nuit2/la_glace.png"
+define zoom_glace = 0.4
+
+image maison_martine = im.Scale("Nuit2/maison_martine.jpg", 1920, 1080)
+
+define nain_de_jardin = "Nuit2/nain_1.png"
+define zoom_nain = 0.4
+
+image EMS_devanture = im.Scale("Nuit2/entree_EMS.jpg", 1920, 1080)
+
+image EMS_reception = im.Scale("Nuit2/reception.jpg", 1920, 1080)
+
+define receptioniste = Character("Murielle")
+
+define im_receptioniste = "Nuit2/Justine/Hana_casual_neutral.png"
+
+define zoom_receptioniste = 0.6
+
+image EMS_couloir = im.Scale("Nuit2/couloir_EMS.jpg", 1920, 1080)
+
+image EMS_chambre_raymond = im.Scale("Nuit2/chambre_2.jpg", 1920, 1080)
+
+image EMS_pharmacie = im.Scale("Nuit2/pharmacie_EMS.jpg", 1920, 1080)
+
+define raymond = Character("Mme Raymond")
+
+define im_raymond = "Nuit2/old_woman.png"
+define zoom_raymond = 1.7
+
+define superieur = Character("Supérieur")
+
+define justine = Character("Justine")
+
+define im_justine = "Nuit2/justine.png"
+
+define zoom_justine = 1.3
+
+image chambre_Dumas = im.Scale("Nuit2/chambre_001.jpg", 1920, 1080)
+
+define im_dumas = "Nuit2/dumas.png"
+
+define zoom_dumas = 1.0
+
+define dumas = Character("M. Dumas")
 
 
 #Jour3
@@ -1294,6 +1346,408 @@ label jour2_fin:
 
 
 
+label nuit2:
+  scene universe
+  with dissolve
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  gml "Ah te voilà enfin réveillé !"
+
+  player "Je... Je suis au même endroit que hier ?"
+
+  gml "Non pas du tout. Hier tu étais dans la dimension de mon frère. Il t'a raconté n'importe quoi et c'est à mon tour de
+       t'expliquer comment je vois le monde et comment il devrait être régi."
+
+  gml "Tu verras c'est bien plus réaliste que l'idée de mon idiot de frère.  Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
+  C’est pas beau ça ? Tu verras c’est simple à comprendre."
+
+  "*Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un manger une glace*"
+
+  call hide_chars
+
+  scene plage
+  with dissolve
+
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  show screen show_char2(im_glace, 0.5, 1.0, zoom_glace)
+  with dissolve
+
+  gml "Tu vois le mec là-bas qui mange une glace ? C’est John. Pourquoi il a le droit de manger une glace ? Eh bien c’est simple 
+       il l’a achetée légitimement avec son argent et il ne dérange personne."
+
+  "*LE GML claque de nouveau des doigts et les deux se retrouvent dans un jardin où on voit un nain de jardin*"
+
+
+  call hide_chars
+
+  scene maison_martine
+  with dissolve
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  gml "Là on est devant la maison de Martine. Attend... "
+
+  hide screen show_char
+  with dissolve
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char2(nain_de_jardin, 0.5, 1.0, zoom_nain)
+  with dissolve
+
+  gml "Ca c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, comme je l'ai fait hehe, il entrave la liberté 
+      de propriété de Martine et donc son action est mauvaise."
+  gml "Tu vois un peu l’idée ? Tes actions sont immorales uniquement si elles entravent la liberté de quelqu'un d'autre."
+  gml "Mais si Martine est d’accord, alors il n’y a pas de problème et comme ils n’embêtent personne, alors personne n’a le droit d’empêcher leur échange."
+  gml "Bien, qu’est-ce que tu en penses jusque-là ?"
+
+  call hide_chars
+
+  scene universe
+  with dissolve
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  menu:
+    "Je suis d'accord":
+      player "Je suis d’accord, du moment que l’on entrave pas la liberté de quelqu’un d’autre, on peut faire ce qu’on veut."
+      gml "Ca fait plaisir de croiser des personnes avec un minimum d’intellect sur cette planète."
+    "Sans avis":
+      player "Je suis plutôt sans avis. C’est encore trop tôt me faire une idée."
+      gml "Je vois qu’il te faut plus d’exemples."
+    "Pas d'accord":
+      player "Je suis pas trop d’accord, je trouve ce principe limité, il faudrait l’accompagner de règles plus détaillées."
+      gml "Tu verras c’est une idée qui se gère par elle-même."
+  
+  gml "Bien, alors on va voir si tu es d'accord avec moi. Premier cas ultra simple."
+  gml "Dans l’immeuble de John le bruit dérange son voisinage à partir de 21h. Est-ce qu’il a le droit de jouer du piano dans l’après-midi ?"
+
+  menu:
+    "Oui":
+      $ libertarianisme+=1
+      gml "Bien, les locataires n'étant pas dérangés par le bruit du piano, il est tout à fait moral de la part de John de jouer du piano."
+    "Non":
+      gml "Eh non, il a bien le droit de le faire. Si ça avait été après 21h, il n’aurait pas eu le droit puisqu’il aurait entravé la liberté de dormir des autres locataires."
+
+  gml "Maintenant, une situation un peu plus compliquée. John souhaite acheter de la cocaïne afin de passer une bonne soirée. Pour cela,
+       il se rend chez un dealeur qu'il connaît bien et qui lui vend de la cocaïne de qualité."
+  gml " Est-ce que John a le droit de procéder à ce genre d'échange ? "
+
+  menu:
+    "Oui":
+      $ libertarianisme+=1
+      player "Oui, il n'entrave la liberté de personne ici."
+      gml "Exactement ! On pourrait remettre en question le mode de vie de John qui n'est pas très saint mais concrètement,
+	         l'achat qu'il fait n'atteint en rien la liberté de qui que ce soit."
+    "Non":
+      player "Non, la vente et l'achat de drogues dures est illégale."
+      gml "C'est peut-être illégal, mais John ne dérange personne. C'est ça le problème avec l'Etat, il se mêle de choses qui ne le 
+	         regardent pas !"
+  
+  gml "Bien, tu devrais avoir compris le concept. Passons à autre chose. Que penses-tu de l'impôt ? "
+
+  menu:
+    "C'est nécessaire":
+      player "Bien, tu m'a l'air d'avoir compris le concept. Passons à autre chose. Que penses-tu de l'impôt ?"
+      gml "Mais tu n'as rien compris à ce que je te dis ! Si je gagne de l'argent à la sueur de mon front, je mérite d'en profiter entièrement."
+      gml "Le gouvernement, en me taxant, atteint ma liberté de profiter librement de mon revenu. L'impôt est donc immoral et ne devrait pas exister."
+      gml "Ah, moi qui te croyais plus malin que mon frère, au final, tu es tout aussi bête que lui..."
+    "Cela ne devrait pas exister":
+      $ libertarianisme+=1
+      player "On ne devrait pas être taxé sur un revenu qu’on a légitimement gagné en travaillant."
+      gml "Exactement ! Bravo, tu as tout compris ! Tu es plus malin que tu en a l'air au final. "
+    "Je ne sais pas":
+      player "Euuhhh... Je sais pas, j'ai jamais vraiment réfléchi à la question."
+      gml "Bon sang, mais tu m'écoutes ou tu dors depuis le début? L'impôt est d'une bêtise sans nom."
+      gml "Si je gagne de l'argent à la sueur de mon front,
+	        je mérite d'en profiter entièrement. Le gouvernement, en me taxant, atteint ma liberté de profiter librement de mon revenu."
+      player "L'impôt est donc immoral et ne devrait pas exister."
+  
+  if libertarianisme>=2:
+    gml "Bien tu m’as l’air d’avoir bien compris le concept."
+    gml "Je te propose une petit mise en situation histoire de te convaincre entièrement."
+    gml "Tu vas travailler dans une maison de retraite."
+  else:
+    gml "T’as vraiment pas l’air d’avoir compris ce que je te raconte."
+    gml "On va faire une petite mise en situation pour te mettre les idées au claire."
+    gml "Tu vas travailler dans une maison de retraite."
+
+  "*Le GML claque des doigts et ils re trouvent avec le héros devant une maison de retraite*"
+
+  call hide_chars
+
+  scene EMS_devanture
+  with dissolve
+
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  gml "Bon je vais pas venir avec toi je déteste les vieux moi."
+  gml "Je te laisse t’annoncer à la réception, dépêche-toi t’es sensé commencer dans 5min et ne fuis pas hein."
+  gml "C’est pas parce qu’on est dans un rêve que je peux pas te faire souffrir hehe. Aller à plus !"
+
+  hide screen show_char
+  with dissolve
+
+  player "Pfff ils commencent à me fatiguer ces petits démons…"
+
+  call hide_chars
+
+  scene EMS_reception
+  with dissolve
+
+  show screen show_char(im_receptioniste, 0.0, 1.0, zoom_receptioniste)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  receptioniste "Oh salut [nom] !"
+
+  player "Salut Murielle."
+
+  receptioniste "T’en fais une des ces têtes t’as passé une mauvaise nuit ?"
+
+  menu:
+    "Oui":
+      player "On peut dire ça ouai…"
+      receptioniste "Bref dépêche toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche."
+    "Cryptique":
+      player "Je passe une mauvaise nuit en ce moment même"
+      receptioniste "Tu te crois drôle ? Je t’ai dit d’arrêter de me draguer sale beauf. Dépêche-toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche"
+    "...":
+      player "..."
+      receptioniste "T’as vraiment pas l’air en forme mais faut te ressaisir."
+      receptioniste "Tu commences dans 3min et tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche."
+  
+  player "Sa… sa douche !?"
+
+  receptioniste "Bah oui elle peut pas se doucher toute seule fait pas le surpris. Allez fonce !"
+
+  call hide_chars
+
+  scene EMS_couloir
+  with dissolve
+
+  show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Ce métier m’a l’air d’être plus difficile que chirurgien …"
+  player "Je connaissais le nom de Murielle sans l’avoir jamais vue, on dirait que comme dans l’autre rêve, je connais mon environnement."
+
+  call hide_chars
+
+  scene EMS_chambre_raymond
+  with dissolve
+
+
+  show screen show_char(im_raymond, 0.0, 1.0, zoom_raymond)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Bonjour Mme.Raymond"
+
+  raymond "Bonjour Monsieur, vous avez 2min et 23 secondes de retard c’est inacceptable !"
+
+  player "Ecoutez madame on fait ce qu’on peut. Allez allons-y"
+
+  call hide_chars
+
+  scene black_background
+  with dissolve
+
+  scene EMS_chambre_raymond
+  with dissolve
+
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Pffff je ne me suis pas trompé. C’était 100x plus éprouvant que d’opérer à cœur ouvert."
+
+  "*téléphone sonne*"
+
+  player "Allô ?"
+
+  superieur "Oui Evan, tu dois aller dans la chambre de M.Dumas pour lui administrer ses médicaments, chambre 433."
+  
+  superieur "Oublie pas de prendre les médicament au rez-de-chaussée avant j’en ai marre de te voir faire 10 allers-retours on perd du temps."
+
+  menu:
+    "Je fais ca tout de suite":
+      player "Ca marche je fais ça tout de suite."
+      superieur "Fais vite pour une fois, ça te changera…"
+      player "Je ferais mieux de pas traîner."
+    "Quel médicament ?":
+      player "Ok je dois prendre quoi comme médicament ?"
+      superieur "Comme d’habitude bon sang ! Tu vas vite devoir arrêter ce genre de question si tu veux continuer à travailler ici."
+      player "Maintenant que j’y réfléchis, c’est Justine qui s’occupe des médicaments que je dois administrer… Je ferais mieux de me pas traîner."
+    "10 allers-retours ?":
+      player "Exactement 10, tu as fait 10 aller-retours hier qui n’étaient pas du tout nécessaire. On en reparlera ce soir crois-moi !"
+      superieur "Je ferais mieux de ne pas traîner."
+
+  call hide_chars
+
+  scene EMS_pharmacie
+  with dissolve
+
+  show screen show_char(im_justine, 0.0, 1.0, zoom_justine)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Salut Justine, il me faudrait les médicaments quotidiens de M.Dumas s’il-te-plaît."
+
+  justine "Oui ils sont déjà prêts tiens."
+  justine "Oh et puis, essaye de discuter un moment avec lui, je sais que le supérieur déteste ça mais ça doit bientôt faire 10ans que M.Dumas ne reçoit plus de visite,
+           le pauvre il se sent tellement seul."
+  
+  player "Bien-sûr je ferais tout pour toi Justine."
+
+  "Verification du contenu"
+
+  player "Mmmmh on dirait qu’il manque les somnifères."
+
+  justine "Mais c’est normal ça."
+
+  justine "Les somnifères sont dans le petit coffre-fort juste à côté de la table de chevet comme pour toute les chambres."
+
+  justine "Tu devrais avoir la clef dans ton trousseau de travail."
+
+  player "Ah ok bizarre j’étais pas au courant."
+
+  justine "Ca a été mis en place y’a quelques jours seulement."
+
+  justine "On leur donne tellement de somnifères que la direction a jugé que ce serait plus efficace 
+          de mettre un stock directement dans chaque chambre plutôt que de tout le temps aller demander l’autorisation à la pharmacie."
+
+  justine "Par-contre ça fait qu’ils sont plus du tout réglementés, ils subissent le même contrôle qu’un vulgaire stock de gants ahah."
+
+  player "Ah d’accord, merci pour l’info Justine et à bientôt !"
+
+  call hide_chars
+
+  scene chambre_Dumas
+  with dissolve
+
+  show screen show_char(im_dumas, 0.0, 1.0, zoom_dumas)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Bonjours Monsieur Dumas, je viens pour vous donner vos médicaments."
+
+  dumas "Merci bien vous êtes très aimable."
+
+  menu:
+    "Comment ca va ?":
+      player "Comment ça va Monsieur Dumas ?"
+      dumas "Pas très bien, je ne peux presque plus me mouvoir, j’ai besoins d’assistance pour prendre mes médicaments, prendre ma douche, m’habiller n’importe quoi !"
+      dumas "C’est insupportable. Si vous saviez à quel point je m’ennuie."
+      menu:
+        "Que faites-vous ?":
+          player "Qu’est-ce que vous faites de vos journées alors ?"
+          dumas "Rien du tout. Cela fait plus de 10ans que j’attends ma mort quotidiennement."
+          player "Je suis sincèrement navré Monsieur Dumas… Vous n’avez pas de famille ?"
+          dumas "Mon fils unique venait régulièrement me rendre visite avec ses enfants."
+          dumas "Au moins deux fois par semaine."
+          dumas "Il avait même prévu de me faire emménager chez lui dès qu’il trouvait une plus grande maison."
+          dumas "Il détestait me voir dans cette maison de retraite."
+          dumas "Malheureusement, il est mort il y a 10ans lors d’un accident de voiture."
+          dumas "Il y avait… il y avait ses deux enfants et sa femme dedans."
+          dumas "En une fraction de seconde je me suis retrouvé sans famille, plus seul que jamais."
+    "Vous n'avez plus de visites ?":
+      player "«On m’a dit que vous n’aviez plus de visites. Comment ça se fait ?"
+      dumas "Mon fils unique venait régulièrement me rendre visite avec ses enfants."
+      dumas "Au moins deux fois par semaine."
+      dumas "Il avait même prévu de me faire emménager chez lui dès qu’il trouvait une plus grande maison."
+      dumas "Il détestait me voir dans cette maison de retraite."
+      dumas "Malheureusement, il est mort il y a 10ans lors d’un accident de voiture."
+      dumas "Il y avait… il y avait ses deux enfants et sa femme dedans."
+      dumas "En une fraction de seconde je me suis retrouvé sans famille, plus seul que jamais."
+      menu:
+        "Je peux faire quelque chose ?":
+          player "Toute mes condoléances Monsieur Dumas. Est-ce que je peux faire quelque chose pour vous ?"
+          jump nuit2_e1
+        "Cétait votre seul famille ?":
+          player "Toutes mes condoléances Monsieur Dumas. C’était la seule famille que vous aviez ?"
+          dumas "J’ai bien encore deux salopes de tantes mais croyez-moi, si elles venaient me rendre visite, ma situation serait encore pire."
+          dumas "Elle sont insupportables je préfère encore être seul que me faire critiquer des heures durant par ces vipères."
+          player "C’est pas faux !"
+  
+  dumas "Est-ce… est-ce que vous pourriez me rendre un service ?"
+  player "Bien-sûr Monsieur Dumas, qu’est-ce que vous voulez ?"
+
+label nuit2_e1:
+  dumas "J’ai entendu dire que les somnifères ne sont plus contrôlés c’est vrai ?"
+  player "Tout à fait on vient de m’en parler justement. Pourquoi ?"
+  dumas "S’il vous plait, pourriez-vous m’en donner une dizaine que j’en finisse."
+  player "Mais enfin M.Dumas je peux p.."
+  dumas "S’il vous plait … Je n’en peux plus."
+  dumas "Cela fait des années qu’on ne me rend plus visite, des années que je suis seul à attendre l’inévitable."
+  dumas "J’ai demandé un suicide assisté mais cette foutu association chrétienne ne veut rien entendre."
+  dumas "Vous voyez bien mon état, 10ans que c’est comme ça et ça ne risque pas de changer."
+
+  player "..."
+
+  dumas "Tout ce que vous avez à faire c’est me donner les somnifères, je suis encore capable de les ingérer moi-même et vous ne risquez rien puisqu’ils ne sont plus contrôlés."
+  dumas "S’il vous plait… aidez-moi."
+
+  menu:
+    "Donner les somnifères":
+      $ libertarianisme+=1
+      player "Bon tenez après tout c’est votre choix, vous faites ce que vous voulez"
+      dumas "Enfin.. merci beaucoup Monsieur, merci beaucoup."
+      jump nuit2_somni
+    "Refuser de lui donner les somnifères":
+      player "C’est pas mon problème. Je suis auxiliaire de santé pas bourreau. Débrouillez-vous sans moi !"
+      dumas "Non attendez ATTENDEEEEZ !"
+      jump nuit2_non_somni
+
+label nuit2_somni:
+  call hide_chars
+
+  scene EMS_couloir
+  with dissolve
+
+  show screen show_char1(boy_sad, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "J’ai fait le bon choix mais ça reste perturbant d’aider quelqu’un à mourir. J’espère qu’on ne va pas savoir que c’est moi."
+
+  call hide_chars
+
+  jump jour3
+
+label nuit2_non_somni:
+  call hide_chars
+
+  scene EMS_couloir
+  with dissolve
+
+  show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Pour qui il se prend, ce n’est pas à moi de me salir les mains. Je n’y peux rien si la maison de retraite ne veut pas l’aider, ils doivent avoir leurs raisons."
+
+  call hide_chars
+
+
+  
+
+
+
+  
+
+
+
+
+
 
 
 
@@ -1853,6 +2307,7 @@ label hide_chars:
   
   hide screen show_char
   hide screen show_char1
+  hide screen show_char2
   hide screen show_char_pos
   hide screen show_char_pos1
   hide screen show_char_pos2
