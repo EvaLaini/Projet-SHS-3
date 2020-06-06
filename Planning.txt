@@ -81,6 +81,12 @@ Samedi 06/06 10h :
 	. Valton --> Partie du dossier final sauf Intro
 	. Tous --> Partie individuelle
 	
+Mardi 09/06 14h:
+	. Valton --> Conclusion + mise en page
+	. Colin --> Script soir 3 + transition
+	. Ylies --> Visuel soir 3
+	. Antoine --> Implémentation soir 3 + amélioration Gestion de projet
+	. Eva --> Cohérence et corrections
 A regarder :
 	. Choix grisés
 	. Intéraction avec l'environnement
