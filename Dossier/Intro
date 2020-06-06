@@ -3,8 +3,8 @@ Intro
 Notre jeu s’appelle Ethiquest. C’est un visual novel qui vise à questionner le joueur sur sa morale. Nous avons ciblé particulièrement
 deux courants éthiques : l’utilitarisme et le libertarisme. L’idée principale de l’utilitarisme est qu’il faut maximiser le bonheur 
 général au détriment de tout le reste (en particulier des minorités). Pour ce courant, il faut d’abord définir la notion de bonheur 
-individuel et général. Le libertarisme prône la liberté individuelle où chacun dispose de soit comme il l’entend. Cela implique notamment
-que le suicide assisté est autorisé et que les impôts sont trop restrictifs (donc à proscrire).
+individuel et général. Le libertarisme prône la liberté individuelle où chacun dispose de soit comme il l’entend du moment que cela 
+ne restreint pas la liberté d'autrui.
 
 Notre équipe se composait de Ylies Chermitti (MT), Antoine De Gendt (IC), Colin Duchêne (HEC), Eva Laini (SV) et Valton Smajli (GC). 
 Aucun d’entre nous n’avait d’expérience en développement de jeu. Colin en connaissait le plus concernant la matière à gamifier car 
