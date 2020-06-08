@@ -275,6 +275,49 @@ define zoom_louche = 0.3
 
 define champi_achete = False
 
+#Nuit3
+
+image bureau_maire = im.Scale("Nuit3/Bureau/bureau1.jpg", 1920, 1080)
+
+define assistante = Character("Assistante")
+
+define im_assistante = "Nuit3/Assistante du maire/assistante_du_maire.png"
+
+define maire = Character("Maire")
+
+define im_maire = "Nuit3/Maire/maire1.png"
+
+define zoom_maire = 1.0
+
+define zoom_assistante = 1.0
+
+image exterieur_tribunal = im.Scale("Nuit3/Tribunal/exterieur.jpg", 1920, 1080)
+
+define juge = Character("Juge")
+
+define im_juge = "Nuit3/Juge/juge1.png"
+
+define zoom_juge = 1.0
+
+image tribunal = im.Scale("Nuit3/Tribunal/interieur.jpg", 1920, 1080)
+
+define journaliste1 = Character("Journaliste 1")
+
+define im_journaliste1 = "Nuit3/Journaliste/journaliste1.png"
+
+define zoom_journaliste1 = 1.0
+
+define journaliste2 = Character("Journaliste 2")
+
+define im_journaliste2 = "Nuit3/Journaliste/journaliste2.png"
+
+define zoom_journaliste2 = 1.0
+
+image siege_juge = im.Scale("Nuit3/Tribunal/siege du juge.jpg", 1920, 1080)
+
+define nuit3_utilitarisme_done = False
+define nuit3_libertarianisme_done = False
+
 # Le jeu commence ici
 label start:
     #Bienvenue
@@ -2220,6 +2263,267 @@ label jour3_soir_maison:
   player "Kami-sama, répond... Répond à ma prière et..."
 
   player "Kami-sama..."
+
+  call hide_chars
+
+
+label nuit3:
+  scene universe
+  with dissolve
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
+  show screen show_char2(boy_angry, 0.5, 1.0, zoom_boy)
+  with dissolve
+
+  gml "Non même ce que tu dis c’est n’importe quoi !"
+  gmu "Comment ça ? C’est toi qui dis de la merde !"
+  gml "Je suis ton aîné alors forcément que j’ai raison"
+  gmu "Arrête de te prendre pour un grand. Tu as à peine 300 ans de plus que moi."
+  gml "Je sens que notre discussion va encore tourner en rond. Viens, on va demander l’avis à notre cobaye."
+  gml "Alors laquelle de nos idées t’as le plus séduit et convaincu ?"
+
+  menu:
+    "Idée de Shiawase":
+      gmu "GMU : Ah ah ah ! Alors on ne sait plus quoi dire ? Tu dois bien accepter que j’ai gagné !"
+      gml "N’importe quoi ! Tu ne lui pas présenté les limites évidentes de ton idée."
+      jump nuit3_utilitarisme
+    "Idée de Jiyu":
+      gml "Ce résultat était prévisible. Je t’ai prouvé une nouvelle fois que je suis meilleur que toi."
+      gmu "J’ai pas dit mon dernier mot ! On va voir comment le cobaye va réagir quand je lui montrerai les absurdités de ton idée."
+      jump nuit3_libertarianisme
+    "Aucune":
+      gml "Je sais comment régler ça. Je vais te montrer en quoi l’idée de mon frère est nul."
+      jump nuit3_libertarianisme
+    #TODO: Nombre minimal de points
+    "euh c’est quoi déjà vos idées ?":
+      gml ": Mais tu te fous de nous. On s’est fait chier à tout t’expliquer et toi tu n’en as rien à foutre. Frangin tu sais 
+	vraiment pas choisir les bonnes personnes. Je vais en chercher un qui aura un minimum d’intellect. Tuons-le !"
+      gmu "Bien dit !"
+      jump gameover
+    
+
+label nuit3_utilitarisme:
+
+  $ nuit3_utilitarisme_done = True
+
+  call hide_chars
+
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  gml "Je vais te mettre dans la peau du maire d’une ville en crise. Bonne chance à toi."
+
+  show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Comment ça en cri.."
+
+  call hide_chars
+
+  scene bureau_maire
+  with dissolve
+  
+  show screen show_char(im_maire, 0.0, 1.0, zoom_maire)
+  with dissolve
+
+  "Monsieur le maire vous êtes là ?"
+
+  maire "Euuh… oui rentrez."
+
+  show screen show_char1(im_assistante, 1.0, 1.0, zoom_assistante)
+  with dissolve
+
+  assistante "Monsieur le maire c’est une catastrophe ! La sécheresse va durer plus longtemps que prévu."
+
+  maire "Est-ce qu’on aura assez d’eau pour les habitants de la ville ?"
+
+  assistante "Non, Nous avons sous-estimé la situation et nous avons eu une gestion de l’eau catastrophique."
+
+  assistante "Jamais nous ne tiendrons d’ici la fin."
+
+  maire "Il n’y pas d’autre moyen de s’approvisionner en eau ?"
+
+  assistante "Malheureusement le temps que le prochain approvisionnement arrive, il sera déjà trop tard."
+
+  maire "Est-ce que nous pouvons encore rationner l'eau pour que tout le monde puisse avoir au moins le nécessaire pour survivre ?"
+
+  assistante "Si nous distribuons l'eau au strict minimum pour survivre, une partie de la population ne pourra pas survivre."
+
+  assistante "Monsieur le maire, il vous faut prendre une décision maintenant."
+
+  maire "Comment pourrait-on choisir qui devra vivre ou mourir ? On va se mettre toute la ville à dos. Ce serait l’anarchie. On ne pourrait pas réquisitionner de l’eau aux industries locales ?"
+
+  assistante "On pourrait mais cela paralyserait l’économie et donnerait lieux à une crise économique. Il y a de fortes chances que la population soit encore plus en colère que si on en laissait certains mourir… "
+
+  maire "Comment ça ?"
+
+  assistante "Vous vous souvenez de ce quartier qui trouble régulièrement l'ordre public."
+
+  maire "Vous parlez de celui qui fait régulièrement des émeutes car les habitants pensent que nous n’en faisons pas assez 
+pour les intégrer à la ville."
+
+  assistante "Exactement. Au début la majorité de la ville soutenait ce quartier. Il faut avouer que nous n'avions pas complètement
+respecté nos promesses électorales."
+
+  assistante "Mais récemment ces émeutes ont fini par impacter les autres quartiers. Vitrines cassées, magasins vandalisés, voitures incendiées…"
+
+  maire "Où voulez-vous en venir ?"
+
+  assistante "Le soutient de la population envers ce quartier a fortement diminué. Beaucoup ont même exprimé leur mécontentement
+et demandent des interventions plus musclées de la part de la police pour éviter ces débordements."
+
+  assistante ". Sur les réseaux sociaux nous avons déjà
+recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mécontentement général, si nous privons ce quartier d’eau pour le bien-être du plus grand nombre, la ville devrait nous soutenir."
+
+  assistante "C’est peut-être triste à dire mais la majorité serait bien plus satisfaite qu’on sacrifie ce quartier qu’ils détestent plutôt qu’on paralyse l’économie."
+
+  assistante "Quelle est votre décision ?"
+
+  menu:
+    "Assurer ka stabilité de la ville":
+      player "Nous devons assurer la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous."
+    "Nous n'allons pas sacrifier une minorité":
+      player "Ce n’est pas moral de sacrifier une minorité juste parce qu’elle ne plait pas à la ville. Nous ferons ce choix aléatoirement quitte à ce que ça ne plaise pas à tous le monde."
+    "Réquisitionner l'eau des industries locales":
+      player "Nous allons réquisitionner l’eau des industries locales comme ça tous le monde survit bien que ça ne maximise pas le bien-être collectif/ ça ne plaise pas à la majorité;"
+  
+  call hide_chars
+
+  if(nuit3_utilitarisme_done && nuit3_libertarianisme_done):
+    jump nuit3_suite
+
+  scene universe
+  with dissolve
+
+
+  #TODO: Transition pas comprise
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
+  show screen show_char2(boy, 0.5, 1.0, zoom_boy)
+  with dissolve
+
+  gmu "Si tu crois avoir gagné la partie avec cette situation, tu te trompes."
+
+label nuit3_libertarianisme:
+
+  $ nuit3_libertarianisme_done = True
+
+  gmu "On va aller au tribunal pour te présenter une nouvelle situation en lien avec l’idée de mon frère. Tu seras un juge."
+
+  call hide_chars
+
+  scene exterieur_tribunal
+  with dissolve
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char1(im_juge, 1.0, 1.0, zoom_juge)
+  with dissolve
+
+  gmu "Nous voici devant un tribunal."
+  gmu "Prépare toi à juger une affaire très particulière."
+
+  call hide_chars
+
+  scene tribunal
+  with dissolve
+
+  show screen show_char(im_journaliste1, 0.0, 1.0, zoom_journaliste1)
+  with dissolve
+
+  journaliste1 "Bonjour, nous voici en directe du tribunal pour cette affaire sordide qui a profondément choqué les habitants de tout un 
+village…"
+
+  player "Mais qu’est qu’il est en train de me faire faire."
+
+  call hide_chars
+
+  show screen show_char(im_journaliste1, 0.0, 1.0, zoom_journaliste1)
+  show screen show_char1(im_journaliste2, 1.0, 1.0, zoom_journaliste2)
+  show screen show_char2(im_juge, 0.5, 1.0, zoom_juge)
+  with dissolve
+
+
+  scene siege_juge
+  with dissolve
+
+  journaliste1 "Monsieur le juge que pensez-vous de cette affaire ?"
+
+  journaliste2 "Une autre question monsieur le juge, avec les chefs d’accusations qui pèsent sur coupable, avez-vous déjà réfléchi 
+à une sanction ?"
+
+  "La sécurité intervient et écarte les journalistes"
+
+  hide screen show_char
+  hide screen show_char1
+  with dissolve
+
+  juge "Bien, la séance est ouverte. Présentez les chefs d’accusations"
+
+  "Voici la situation. Gilbert a égorgé vivant son meilleur ami Justin puis l’a empaillé avant de le stocker dans son grenier."
+
+  "Justin lui avait dit qu’il souhaitait mourir et que son derniers souhait était de se faire égorger vivant puis empailler par un 
+taxidermiste."
+
+  "Gilbert étant taxidermiste de profession, il s’est assuré que Justin possédait une bonne capacité de discernement en lui 
+demandant sa carte de vote ainsi qu’une attestation récente d’un psychologue qui affirmait qu’il n’avait aucune maladie psychiatrique.
+  "
+
+  "Rassuré 
+  et puisque Justin est consentant ainsi que son meilleur ami, il s’est exécuté."
+
+  menu:
+    "Prison à vie":
+      juge "Je le mets en prison à vie pour homicide volontaire."
+    "Peine réduite":
+      juge ": Je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte"
+    "Relaxation":
+      juge "Je choisis de le relaxer. L’acte de Gilbert a beau être extrême, il n’atteint la liberté de personne."
+
+  call hide_chars
+
+  if(nuit3_libertarianisme_done && nuit3_utilitarisme_done):
+    jump nuit3_suite
+
+  jump nuit3_utilitarisme
+
+label gameover:
+  scene black_background
+  with dissolve
+
+  "GAMEOVER !"
+
+  return
+
+label nuit3_suite:
+
+  scene universe
+  with dissolve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
