@@ -2383,7 +2383,7 @@ recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mé
   assistante "Quelle est votre décision ?"
 
   menu:
-    "Assurer ka stabilité de la ville":
+    "Assurer la stabilité de la ville":
       player "Nous devons assurer la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous."
     "Nous n'allons pas sacrifier une minorité":
       player "Ce n’est pas moral de sacrifier une minorité juste parce qu’elle ne plait pas à la ville. Nous ferons ce choix aléatoirement quitte à ce que ça ne plaise pas à tous le monde."
@@ -2392,7 +2392,7 @@ recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mé
   
   call hide_chars
 
-  if(nuit3_utilitarisme_done && nuit3_libertarianisme_done):
+  if(nuit3_utilitarisme_done and nuit3_libertarianisme_done):
     jump nuit3_suite
 
   scene universe
@@ -2441,13 +2441,13 @@ village…"
 
   call hide_chars
 
+
+  scene siege_juge
+  with dissolve
+
   show screen show_char(im_journaliste1, 0.0, 1.0, zoom_journaliste1)
   show screen show_char1(im_journaliste2, 1.0, 1.0, zoom_journaliste2)
   show screen show_char2(im_juge, 0.5, 1.0, zoom_juge)
-  with dissolve
-
-
-  scene siege_juge
   with dissolve
 
   journaliste1 "Monsieur le juge que pensez-vous de cette affaire ?"
@@ -2479,13 +2479,13 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
     "Prison à vie":
       juge "Je le mets en prison à vie pour homicide volontaire."
     "Peine réduite":
-      juge ": Je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte"
+      juge "Je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte"
     "Relaxation":
       juge "Je choisis de le relaxer. L’acte de Gilbert a beau être extrême, il n’atteint la liberté de personne."
 
   call hide_chars
 
-  if(nuit3_libertarianisme_done && nuit3_utilitarisme_done):
+  if(nuit3_libertarianisme_done and nuit3_utilitarisme_done):
     jump nuit3_suite
 
   jump nuit3_utilitarisme
@@ -2503,49 +2503,51 @@ label nuit3_suite:
   scene universe
   with dissolve
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   "TEST!!!!!!!!!!!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

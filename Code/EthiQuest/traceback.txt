@@ -1,34 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 2423, in script
-  File "renpy/common/000statements.rpy", line 501, in execute_show_screen
-    args, kwargs = a.evaluate()
-  File "game/script.rpy", line 2423, in <module>
-NameError: name 'zoom_journaliste' is not defined
+  File "game/script.rpy", line 2395, in script
+SyntaxError: invalid syntax (game/script.rpy, line 2395)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 2423, in script
-  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\ast.py", line 1949, in execute
-    self.call("execute")
-  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\ast.py", line 1937, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\statements.py", line 277, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 501, in execute_show_screen
-    args, kwargs = a.evaluate()
-  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\ast.py", line 190, in evaluate
-    args.append(renpy.python.py_eval(v, locals=scope))
-  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 2423, in <module>
-NameError: name 'zoom_journaliste' is not defined
+  File "game/script.rpy", line 2395, in script
+  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\python.py", line 2057, in py_eval
+    code = py_compile(code, 'eval')
+  File "F:\Utilitaires\renpy-7.3.5-sdk\renpy\python.py", line 692, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/script.rpy, line 2395)
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 EthiQuest 1.2
-Mon Jun 08 16:52:54 2020
+Mon Jun 08 17:05:46 2020

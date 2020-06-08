@@ -1,18 +1,36 @@
-Pour ce genre de jeu, visual novel, il y une grosse phase de préparation avant de commencer la réelle implémentation. Il faut que tout le monde soit d’accord sur le déroulement de l’histoire, 
-son contexte, le rôle des personnages, les visuels, etc., … Il faut aussi s’assurer que la gamification de la matière scientifique s’insère bien dans le gameplay du jeu. C’est pourquoi les 
-premières semaines, les discussions représentaient le principal du travail. Très tôt, nous avons décidé de nous réunir deux fois par semaine, une fois le mardi après la leçon et une fois le 
-vendredi en fin d’après-midi. Lors de chacune de ces réunions, un bilan du travail effectué par chacun des membres du groupe était fait. Celui-ci consiste en une revue du travail, c’est-à-dire, 
-est ce que tel ou tel élément convient à tout le monde, sinon comment pourrait-on le modifier pour qu’il s’insère mieux dans le jeu ? Puis, après ces bilans qui représentaient bien 90% de la 
-réunion, généralement d’une durée de deux heures, on distribuait les tâches que chacun devait accomplir pour la prochaine fois. Ainsi, chaque membre s’est vu attribué un « rôle ». Eva, Ylies 
-et Valton travaillent principalement sur les scripts quand Colin travail sur les images, et je, Antoine, développe le jeu avec ren’py. Ces rôles ne sont pas « stricts » du tout. Ils représentent 
-ce sur quoi chaque membre du groupe a passé le plus de temps. En effet, Ylies a notamment travaillé sur les images et Colin et Antoine ont écrit un script. Les rôles ont cependant bien évolué lors 
-de la seconde partie du projet. Tout le monde s’est mis à la recherche d’images pour que notre jeu soit uniquement constitué de contenu libre de droit.  C’est sûr Colin qu’a reposé la lourde 
-responsabilité de rédiger le bilan explicatif de la dernière nuit car c’est lui qui avait le plus de connaissances dans ces courants. Aussi, tout le monde a participé activement aux bilans durant 
-toutes les semaines du projet. Après les deux premières semaines, les bases étant posées, nous avons pu commencer à écrire les scripts et implémenter le jeu, peut-être même un peu trop tôt. Au début, 
-nous avions décidé d’avoir 6 jours et 6 nuits mais compte tenu de la quantité astronomique de travail que cela représentait nous avons préféré réduire le jeu à trois jours et trois nuits. Je vais maintenant 
-parler de la programmation du jeu avec ren’py. Nous avons choisi d’utiliser cet outil car il semblait parfaitement adapter à nos besoins. En effet, ce moteur a été conçu dans le but de permettre la création 
-de visual novel. Son langage est très proche de python, dont j’ai des bases. Cependant, il m’a fallu plus de temps d’adaptation que prévu. Les deux dernières semaines avant les vacances, pour donner suite aux 
-remarques de Selim Krichane, nous sommes passés par une phase de réécriture total des scripts mais qui ne nous a pas obligé à revoir nos ambitions à la baisse. Vous pouvez regarder l’agenda que nous 
-nous sommes fixés tout au long du semestre en annexe.
+	Pour ce genre de jeu, visual novel, il y une grosse phase de préparation avant de commencer la réelle implémentation. Il faut que tout le monde 
+soit d’accord sur le déroulement de l’histoire, son contexte, le rôle des personnages, les visuels, etc., … Il faut aussi s’assurer que la gamification 
+de la matière scientifique s’insère bien dans le gameplay du jeu. C’est pourquoi les premières semaines, les discussions représentaient le principal 
+du travail.
+
+ 
+	Très tôt, nous avons décidé de nous réunir deux fois par semaine, une fois le mardi après la leçon et une fois le vendredi en fin d’après-midi. Lors 
+de chacune de ces réunions, un bilan du travail réalisé par chacun des membres du groupe était fait. Celui-ci consiste en une revue du travail effectué. 
+On débattait notamment sur les idées présentées et décidait si oui ou non on les gardait. C’est aussi là qu’on a veillé à la clarté des scripts, élément 
+essentiel pour un visual novel portant sur l’éthique. Cette étape fut parfois assez complexe car des choses évidentes pour certains ne l’étaient pas pour
+d’autres et il a donc fallu user de compromis pour arriver à un produit fini. Il est aussi difficile pour tout le monde de voir une partie de son travail
+ne pas prendre part dans le jeu. Puis, après ces bilans qui représentaient bien 90% de la réunion, on distribuait les tâches que chacun devait accomplir
+pour la prochaine fois. Ainsi, chaque membre s’est vu attribué un « rôle ». Eva, Ylies et Valton travaillent principalement sur les scripts quand Colin
+travail sur les images, et Antoine, développe le jeu avec ren’py. Ces rôles ne sont pas « stricts ». Ils représentent ce sur quoi chaque membre du groupe
+a passé le plus de temps. En effet, Ylies a notamment travaillé sur les images et Colin et Antoine ont écrit un script. Les rôles ont cependant bien évolué
+lors de la seconde partie du projet. Tout le monde s’est mis à la recherche d’images pour que notre jeu soit uniquement constitué de contenu libre de
+droit.  C’est sur Colin qu’a reposé la lourde responsabilité de rédiger le bilan explicatif de la dernière nuit car c’est lui qui avait le plus de
+connaissances en éthique. Aussi, tout le monde a participé activement aux bilans durant toutes les semaines du projet.
+
+
+	Après les deux premières semaines, les bases étant posées, nous avons pu commencer à écrire les scripts et implémenter le jeu, peut-être même un peu 
+trop tôt. Au début, nous avions décidé d’avoir 6 jours et 6 nuits mais compte tenu de la quantité astronomique de travail que cela représentait nous
+avons préféré réduire le jeu à trois jours et trois nuits. 
+
+
+	Parlons un peu programmation. Nous avons choisi d’utiliser ren’py car il semblait parfaitement adapter à nos besoins. En effet, ce moteur a été conçu
+dans le but de permettre la création de visual novel. Son langage est très proche de python, qui a déjà été utilisé par chaque membre du groupe. Le setup
+de ren’py pour avoir un « workflow » correct et fluide a pris plus de temps que prévu à Antoine, responsable de la programmation.
+
+ 
+	Les deux dernières semaines avant les vacances, pour donner suite aux remarques de Selim Krichane, nous sommes passés par une phase de réécriture total des
+scripts mais qui ne nous a pas obligé à revoir nos ambitions à la baisse. Vous pouvez regarder l’agenda que nous nous sommes fixés tout au long du semestre
+en annexe. Comme notre agenda était fixé de réunion en réunion et non planifié à l’avance pour tout le semestre, nous n’avons pas noté d’écart particulier 
+entre les prévisions et le travail réellement effectué.
 
 
