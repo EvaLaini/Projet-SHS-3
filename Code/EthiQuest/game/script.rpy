@@ -20,6 +20,10 @@ screen show_char2(path, alignX, alignY, zoomV):
   tag show_char2
   add path xalign alignX yalign alignY zoom zoomV
 
+screen show_char3(path, alignX, alignY, zoomV):
+  tag show_char3
+  add path xalign alignX yalign alignY zoom zoomV
+
 screen show_char_pos(path, posX, posY, zoomV):
   add path zoom zoomV xpos posX ypos posY
 
@@ -317,6 +321,25 @@ image siege_juge = im.Scale("Nuit3/Tribunal/siege du juge.jpg", 1920, 1080)
 
 define nuit3_utilitarisme_done = False
 define nuit3_libertarianisme_done = False
+
+define kami = Character("Kamimusubi")
+
+define im_kami = "Nuit3/Kamimusubi/kami.png"
+
+define zoom_kami = 1.4
+
+define choix_enfant = False
+define choix_adultes = False
+
+define sacrifice_quartier = False
+define sacrifice_aleatoire = False
+define sacrifice_economie = False
+
+define suicide_assiste = False
+
+define juge_relaxation = False
+define juge_reduction_peine = False
+define juge_perpetuite = False
 
 # Le jeu commence ici
 label start:
@@ -863,9 +886,11 @@ label reve1_hopital_after_op_next:
   menu:
     "S'occuper des adultes":
       $ utilitarisme+=2
+      $ choix_adultes = True
       call hide_chars from _call_hide_chars_19
       jump reve1_soins_adultes
     "S'occuper de l'enfant":
+      $ choix_enfant = True
       call hide_chars from _call_hide_chars_20
       jump reve1_soins_enfant
 
@@ -1704,6 +1729,7 @@ label nuit2_e1:
 
   menu:
     "Donner les somnifères":
+      $ suicide_assiste = True
       $ libertarianisme+=1
       player "Bon tenez après tout c’est votre choix, vous faites ce que vous voulez"
       dumas "Enfin.. merci beaucoup Monsieur, merci beaucoup."
@@ -2375,7 +2401,7 @@ respecté nos promesses électorales."
   assistante "Le soutient de la population envers ce quartier a fortement diminué. Beaucoup ont même exprimé leur mécontentement
 et demandent des interventions plus musclées de la part de la police pour éviter ces débordements."
 
-  assistante ". Sur les réseaux sociaux nous avons déjà
+  assistante "Sur les réseaux sociaux nous avons déjà
 recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mécontentement général, si nous privons ce quartier d’eau pour le bien-être du plus grand nombre, la ville devrait nous soutenir."
 
   assistante "C’est peut-être triste à dire mais la majorité serait bien plus satisfaite qu’on sacrifie ce quartier qu’ils détestent plutôt qu’on paralyse l’économie."
@@ -2384,10 +2410,13 @@ recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mé
 
   menu:
     "Assurer la stabilité de la ville":
+      $ sacrifice_quartier = True
       player "Nous devons assurer la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous."
     "Nous n'allons pas sacrifier une minorité":
+      $ sacrifice_aleatoire = True
       player "Ce n’est pas moral de sacrifier une minorité juste parce qu’elle ne plait pas à la ville. Nous ferons ce choix aléatoirement quitte à ce que ça ne plaise pas à tous le monde."
     "Réquisitionner l'eau des industries locales":
+      $ sacrifice_economie = True
       player "Nous allons réquisitionner l’eau des industries locales comme ça tous le monde survit bien que ça ne maximise pas le bien-être collectif/ ça ne plaise pas à la majorité;"
   
   call hide_chars
@@ -2477,10 +2506,13 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
 
   menu:
     "Prison à vie":
+      $ juge_perpetuite = True
       juge "Je le mets en prison à vie pour homicide volontaire."
     "Peine réduite":
+      $ juge_reduction_peine = True
       juge "Je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte"
     "Relaxation":
+      $ juge_relaxation = True
       juge "Je choisis de le relaxer. L’acte de Gilbert a beau être extrême, il n’atteint la liberté de personne."
 
   call hide_chars
@@ -2500,68 +2532,233 @@ label gameover:
 
 label nuit3_suite:
 
+  call hide_chars
+
   scene universe
   with dissolve
 
-  "TEST!!!!!!!!!!!"
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
+  show screen show_char2(boy, 0.5, 1.0, zoom_boy)
+  with dissolve
 
+  gml "Si c’est comme ça je vais lui montrer d’autres situations."
+  gmu "Je vais faire pareil. J’en ai encore d’autres en stock."
 
+  show screen show_char2(boy_angry, 0.5, 1.0, zoom_boy)
+  with dissolve
 
+  player "CA SUFFIT !!!"
 
+  player "J’en ai marre de vous. Vous me pourrissez la vie et je vais me débarrasser de vous définitivement !"
 
+  player "KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI !"
 
+  gml "Frangin je crois que le cobaye a craqué."
 
+  gmu "Je crois aussi. On en fait quoi ?"
 
+  gml "Je pense qu’on va en chercher un nouveau et…"
 
+  "Ca suffit maintenant !"
 
+  call hide_chars
 
+  scene black_background
+  with dissolve
 
+  scene universe
+  with dissolve
 
+  show screen show_char(game_master_1, 0.0, 1.0, 0.6)
+  show screen show_char1(game_master_2, 1.0, 1.0, 0.6)
+  show screen show_char2(boy, 0.3, 1.0, 0.15)
+  show screen show_char3(im_kami, 0.6, 1.0, 1.0)
+  with dissolve
 
+  kami "Qu’est-ce … qu’est -ce que je fais la ? Hé ! Qu’est-ce vous faites là ? "
 
+  gmu "Non mais … on fait rien de mal, on voulait juste… "
 
+  kami "Je vous avais dit de toujours me demander avant d’entrer dans un rêve ! C’est pas possible je m’absente juste 2 ans et on m’invoque à cause de vos conneries ! "
 
+  gml "Maître ! On voulait vérifier nos théories !"
 
+  kami "Vous pouvez faire ça sans faire chier un pauvre humain qui n’a rien demandé. Allez zou, à la maison !"
 
+  "Non ne faites pas ça maître ! "
 
+  call hide_chars
 
+  scene black_background
+  with dissolve
 
+  scene universe
+  with dissolve
 
+  show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
+  show screen show_char1(im_kami, 1.0, 1.0, zoom_kami)
+  with dissolve
 
+  player "Putain enfin !"
 
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
 
+  kami "Je suis vraiment désolé pour tout ce que ces deux crapules t’ont fait subir. Ils ont tellement de pouvoir et sont si immatures c’est dur de les contenir."
 
+  kami "Ces petits monstres se sont renseignés sur l’éthique des mortelles, j’aurais dû me douter que ça allait partir en sucette."
 
+  kami "Comme d’habitude, ils sont pas tombés d’accord et ont commencé à se disputer."
 
+  menu:
+    "L’éthique des mortelles ? ":
+      jump nuit3_suite_2
+    "...":
+      jump nuit3_suite_2
 
+label nuit3_suite_2:
+  kami "Shiawase a lu un livre sur l’utilitarisme et il est direct devenu fan."
 
+  kami "L’utilitarisme est une doctrine morale dont le principe est d’agir de façon à maximiser le bien-être collectif."
 
+  kami "Par là il faut comprendre qu’il faut quantifier le bonheur ou le malheur que généreraient nos choix, nos actions afin de déterminer si notre comportement était bon ou mauvais."
 
+  kami "Les utilitaristes considèrent que lorsqu’on fait un choix, s’il existait une autre possibilité où le bonheur total serait plus grand, alors notre action était injuste."
 
+  kami "Tu vois lors de ton premier rêve ..."
 
+  if(choix_adultes):
+    kami "Tu as choisi de t’occuper des trois adultes."
+    kami "Ton choix était utilitariste car tu as préféré t’assurer de la survie de trois personnes plutôt que d’essayer de sauver un enfant qui allait surement mourir."
+    kami "Tu as maximisé le bonheur global."
+  else:
+    kami "Tu as choisi de t’occuper de l’enfant."
+    kami "Ton choix n’était pas utilitariste car tu as préféré essayer de sauver un enfant qui était condamné plutôt que de t’assurer de la survie de trois personnes."
+    kami "Ton choix n’a pas maximisé le bonheur global puisqu’au final l’enfant est mort et un adulte également."
 
+  kami "Le concept de l’utilitarisme est intéressant mais comme tu l’as surement constaté il a des limites."
 
+  kami "D’abord quantifier le bonheur est très subjectif. Qu’est-ce que le bonheur ? Est-il le même pour tout le monde ?"
 
+  kami "Il y a beaucoup de situations où certains pensent que c’est l’option A qui maximisent le bien-être tandis que d’autres pensent que c’est l’option B."
+  kami "Ces divergences dans la façon d’estimer le bonheur ont donné lieu à de multiples variantes de l’utilitarisme."
+  kami "Mais bon au final dur de dire qui est le plus juste puisque, soyons honnêtes, il est impossible de quantifier objectivement le bonheur."
 
+  kami "De plus la théorie utilitariste est fondée sur la conséquence."
+  kami "Notre action est morale uniquement si les conséquences de celle-ci maximisent le bien-être."
+  kami "Or tu te doutes bien que dans un univers aussi complexe que le nôtre, il est assez utopiste de penser qu’un simple humain pourrait estimer correctement toutes les conséquences de ses actes."
 
-
-
-
+  menu:
+    "En effet":
+      jump nuit3_suite_3
+    "J'ai toujours calculer les conséquences de mes choix":
+      kami "Ahahahah mais qu’est-ce que tu es bête. Heureusement que tu m’as invoqué sinon les deux autres t’auraient tué."
+      show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+      with dissolve
+      player "…"
   
+  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  with dissolve
+
+  kami "Pour finir l’utilitarisme se concentre tellement sur le bien-être global qu’il en oublie les minorités."
+  kami "Imagine une société raciste où exécuter publiquement les personnes racisées maximiserait le bien-être collectif."
+  kami "Est-ce que l’action reste morale ?"
+  kami "Je ne pense pas qu’on puisse bafouer la dignité humaine au nom du bonheur global."
+
+  if(sacrifice_quartier):
+    kami "Pourtant avant, tu as choisi de sacrifier un quartier car cela convenait à la majorité."
+    kami "Ton choix était totalement utilitariste mais était-il moral ?"
+    kami "Ce pauvre quartier n’était pas plus responsable que les autres de la sécheresse alors pourquoi est-il le seul à en subir les conséquences ?"
+    kami "Je ne pense pas que sacrifier des vies pour le confort du plus grand nombre soit la meilleure chose à faire…"
+  elif(sacrifice_aleatoire):
+    kami "Avant, tu as choisi de sélectionner aléatoirement les personnes qui n’auront pas d’eau."
+    kami "Ton choix n’était pas utilitariste car sacrifier le quartier que la majorité déteste maximisait le bien-être."
+    kami "Pourtant ta décision me parait plus juste car tu n’as discriminé personne et tu as bien remarqué que le quartier n’était pas plus responsable que les autres de la sécheresse."
+  else:
+    kami "Avant, tu as choisi de garantir la survie de tous le monde et de sacrifier l’économie de la ville."
+    kami "Ton choix n’était pas utilitariste car la crise va surement fortement baisser le niveau de vie global ce qui ne maximise clairement pas le bien-être."
+    kami "Pourtant ta décision me parait plus juste car tu n’as discriminé personne et tu as bien remarqué que le quartier n’était pas plus responsable que les autres pour la sécheresse."
+  
+  kami "Jiyu lui est tombé sur un livre qui développe la théorie libertariste."
+  kami "Le libertarisme ou libertarianisme, est un courant éthique qui prône une société où l’Etat n’aurait comme unique rôle de respecter les droits de l’hommes ainsi que le droit de propriété."
+  kami "Pour eux du moment que nos actions n’atteignent en rien la liberté des autres alors on a le droit de les faire."
+  kami "Par conséquent ils considèrent l’impôt comme immoral puisqu’il enfreint notre liberté de disposer de notre revenu. Lors de ton second rêve :"
+
+  if(suicide_assiste):
+    kami "Tu as choisi de donner les somnifères à M.Dumas. C’est un choix libertariste puisque tu considères que M.Dumas a le droit de disposer de sa vie comme il l’entend."
+    kami "C’est sa liberté et il ne dérange personne, même pas sa famille malheureusement."
+  else:
+    kami "Tu as refusé de donner les somnifères à M.Dumas. Ton choix n’est pas libertariste puisque te empêche M.Dumas de disposer de sa vie comme il l’entend."
+    kami "Tu limites sa liberté alors que sa volonté ne dérange personne, même pas sa famille."
+  
+  kami "Tout comme l’utilitarisme, cette doctrine est intéressante et offre des pistes sur comment concevoir notre morale mais elle comporte également de nombreuses limites."
+
+  menu:
+    "Quoi comme limites":
+      jump nuit3_suite_4
+    "En fait vous êtes wikipédia Monsieur ?":
+      kami "Monsieur !? Je suis quand même le créateur de l’univers, wikipédia compris."
+      kami "Je n’arrive pas à croire que tu oses te moquer de moi, tu ferais mieux de fermer ta grande bouche si tu tiens à l’humanité."
+      player "D’accord. (Dieu a vraiment pas d’humour… oh ! est-ce qu’il sait que je pense ça !? J’espère pas…)"
+      jump nuit3_suite_4
+    "...":
+      jump nuit3_suite_4
 
 
 
+label nuit3_suite_4:
+  kami "D’abord cette doctrine ne prend pas en compte les inégalités sociales."
+  kami "Dans une société libertariste, les riches seraient encore plus privilégiés que maintenant puisqu’ils pourraient subvenir à tous leurs besoins sans jamais donner pour la collectivité publique."
+  kami "Ainsi tous aides sociales seraient extrêmement limitées si ce n’est inexistantes."
+  kami "D’après les idées libertaristes, on peut choisir de partager ou non car on mérite entièrement tout notre revenu."
+  kami "Cela sous-entend qu’il n’y aurait pas de problèmes à laisser mourir une population de faim même si on a largement les moyens de la nourrir."
+  kami "De plus tous les contrats devraient être légaux."
+  kami "Cela peut mener à des situations totalement inhumaines."
+  kami "Par exemple une personne pauvre en très grande difficulté, ne bénéficiant de presque aucune aide, pourrait se retrouver à devoir vendre son rein pour nourrir sa famille."
 
+  kami "Enfin le libertarisme valorise tellement le consentement que ça en est dérangeant. Avec l’histoire du taxidermiste par exemple."
 
+  if(juge_relaxation):
+    kami "Tu as beau avoir acquitté Gilbert. Je me demande si c’était le bon choix."
+    kami "Est-ce moral d’autoriser les crimes et les mutilations les plus sordides au nom du consentement et de la liberté de chacun ?"
+    kami "Même si ce qu’a fait Gilbert était autorisé par son ami et qu’il a dérangé personne, je me demande si on a vraiment envie de laisser en liberté quelqu’un qui a empaillé un être humain."
+  elif(juge_reduction_peine):
+    kami "Tu as choisi de mettre Gilbert en prison avec peine réduite."
+    kami "Même si au fond, Gilbert n’entravait pas la liberté des autres, tu as bien remarqué que ce n’était pas très moral de laisser en liberté quelqu’un qui a empaillé un être humain."
+    kami "Comme quoi, il faut toujours réfléchir quand on fait un choix moral et pas bêtement appliqué une doctrine."
+  else:
+    kami "Tu as choisi de mettre Gilbert en prison."
+    kami "Même si au fond, Gilbert n’entravait pas la liberté des autres, tu as bien remarqué que ce n’était pas très moral de laisser en liberté quelqu’un qui a empaillé un être humain."
+    kami "Comme quoi, il faut toujours réfléchir quand on fait un choix moral et pas bêtement appliqué une doctrine."
+    kami "Après peut-être que tu as été un peu rude avec une peine pour homicide volontaire."
+    kami "Gilbert était certes conscient de son acte mais il s’était tout de même assuré du discernement de son amis avant de procéder."
+    kami "Peut-être ne mérite-t-il pas la même sanction qu’un meurtrier qui a tué par pur plaisir."
 
+  kami "Au final Shiawase et Jiyu sont venu t’embêter pour prouver que leur vision était la meilleure mais au fond, aucune ne l’est vraiment."
+  kami "L’utilitarisme ou le libertarisme, ces deux doctrines offrent de bonnes pistes de réflexions sur la morale mais les deux sont limitées et c’est à toi, simple être humain, de réfléchir un minimum à tes choix et de ne pas appliquer bêtement une doctrine machinalement."
+  kami "Si jamais l’éthique t’intéresse humain, je te conseille de te renseigner sur le kantisme, c’est aussi une doctrine morale mais assez différente que les deux que tu as vues et personnellement je l’aime bien."
 
+  menu:
+    "J'en ai marre de l'éthique":
+      player "Ca devrait aller je suis un peu gavé de l’éthique là…"
+      kami "Ahah je comprends ta douleur humain."
+      kami "Je dois te laisser je suis assez demandé malheureusement."
+      kami "Navré pour Shiawase et Jiyu ça n’arrivera plus ne t’en fais pas. Sur ce REVEIL !"
+    "Le kantisme ?":
+      player "Le kantisme ? C’est noté je vais regarder ce que c’est ! Au point où j’en suis autant être calé dans le domaine..."
+      kami "On dirait que t’es motivé ça fait plaisir."
+      kami "Je dois te laisser je suis assez demandé malheureusement."
+      kami "Navré pour Shiawase et Jiyu ça n’arrivera plus ne t’en fais pas. Sur ce REVEIL !"
 
+  call hide_chars
 
+  scene black_background
+  with dissolve
 
+  "Fin."
 
-
-
-
+  return
 
 
 
@@ -2571,6 +2768,7 @@ label hide_chars:
   hide screen show_char
   hide screen show_char1
   hide screen show_char2
+  hide screen show_char3
   hide screen show_char_pos
   hide screen show_char_pos1
   hide screen show_char_pos2
