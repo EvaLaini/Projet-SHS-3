@@ -87,6 +87,13 @@ Mardi 09/06 14h:
 	. Ylies --> Visuel soir 3
 	. Antoine --> Implémentation soir 3 + amélioration Gestion de projet
 	. Eva --> Cohérence et corrections
+	
+Jeudi 11/06 :
+	. Antoine --> Update nuit 3
+	. Colin --> Game design concept
+	. Ylies --> fin post-crédit
+	. Tous --> playtest
+	
 A regarder :
 	. Choix grisés
 	. Intéraction avec l'environnement
