@@ -6,7 +6,7 @@
 # Déclarez les personnages utilisés dans le jeu.
 
 # Narrateur
-define narrateur = Character('Narrateur', color="#ebc634")
+define narrateur = Character('Narrateur', color="#ebac34")
 
 screen show_char(path, alignX, alignY, zoomV):
   tag show_char
@@ -37,7 +37,7 @@ screen show_char_pos3(path, posX, posY, zoomV):
   add path zoom zoomV xpos posX ypos posY
 
 #Hero ========================================================================================
-define player = Character("[nom]", color="#ebc634", image="boy")
+define player = Character("[nom]", color="#f9e571", image="boy")
 
 define boy_angry = "Perso/hero/boy_angry.png"
 define boy_confused = "Perso/hero/boy_confused.png"
@@ -61,7 +61,7 @@ define zoom_dad=0.4
 #========================================================================================
 
 #Meilleur amie ========================================================================================
-define best_friend = Character("Emma", color="#3443eb", image="best_friend")
+define best_friend = Character("Emma", color="#e382fd", image="best_friend")
 define best_friend_neutral = "Perso/amie/amie_neutral.png"
 define best_friend_angry = "Perso/amie/amie_angry.png"
 define best_friend_annoyed = "Perso/amie/amie_gene.png"
@@ -73,7 +73,7 @@ define zoom_best_friend = 0.6
 #========================================================================================
 
 #Mere ========================================================================================
-define mere = Character("Maman", color="#ebe834", image="mere")
+define mere = Character("Maman", color="#6255b4", image="mere")
 define mere_neutral = "Perso/mere/mere_bienveillante.png"
 define mere_angry = "Perso/mere/mere_colere.png"
 define mere_happy = "Perso/mere/mere_rire.png"
@@ -83,7 +83,7 @@ define zoom_mom = 1.4
 # ========================================================================================
 
 #Professeur =========================================================================
-define teacher = Character("Professeur", color="#ebe834", image="teacher")
+define teacher = Character("Professeur", color="#963e20", image="teacher")
 define teacherP = "Perso/professeur/professeur_talking.png"
 define teacher_annoyed = "Perso/professeur/professeur_angry.png"
 
@@ -91,24 +91,24 @@ define zoom_teacher = 0.3
 #=====================================================================================
 
 #GM =========================================================================
-define gmu = Character('Shiawase', color="#c8ffc8", image = "game_master_1")
+define gmu = Character('Shiawase', color="#88aedb", image = "game_master_1")
 define game_master_1 = "Perso/gm1/GM1_1.png"
 
-define gml = Character("Jiyu", color="#c8ffc8")
+define gml = Character("Jiyu", color="#c7f9f2")
 define game_master_2 = "Perso/gm2/GM2_1.png"
 
 # =========================================================================
 
 #Docteur perso =========================================================================
-define doc = Character("[nom]", color="#c8ffc8")
+define doc = Character("[nom]", color="#f9e571")
 define docteur = "Perso/docteur/Dr_noname.png"
 
 define zoom_doc = 0.4
 # ======================================================================================
 
 #Camarade =========================================================================
-define camarade_1 = Character("Camarade", color="#32a852")
-define camarade_2 = Character("Autre camarade", color="#32a852")
+define camarade_1 = Character("Camarade sportif", color="#32a852")
+define camarade_2 = Character("Camarade studieux", color="#81ec9e")
 #======================================================================================
 
 #Infirmiere ======================================================================================
@@ -119,13 +119,13 @@ define zoom_infirmiere = 1.0
 
 
 #SDF
-define sdf = Character("SDF", color="#85ce25")
+define sdf = Character("SDF", color="#54d0ff")
 
 define sdf_normal = "Jour2/SDF/SDF.png"
 define zoom_sdf = 1.2
 
 
-define mere_enfant = Character("Mère affolée", color="#85ce25")
+define mere_enfant = Character("Mère affolée", color="#eca781")
 
 define mere_enfant_im = "Soir1/mere/coral_sad.png"
 
@@ -139,7 +139,7 @@ image earth_close = im.Scale("Intro/earth_close.jpg", 1920, 1080)
 image earth_far = im.Scale("Intro/earth_far.jpg", 1920, 1080)
 image universe = im.Scale("Intro/universe.png", 1920, 1080)
 
-#Chambre hreo
+#Chambre hero
 image room_hero = im.Scale("Backgrounds/chambre_hero/room_day.png", 1920, 1080)
 image room_hero_night = im.Scale("Backgrounds/chambre_hero/room_night.png", 1920, 1080)
 image room_night_light = im.Scale("Backgrounds/chambre_hero/room_night_light.png", 1920, 1080)
@@ -157,15 +157,15 @@ image ecole_exterieur = im.Scale("Backgrounds/ecole/Ecole.jpg", 1920, 1080)
 
 image rue_avec_enfants = im.Scale("Backgrounds/ecole/Ecole.jpg", 1920, 1080)
 
-define enfant1 = Character("Enfant 1")
+define enfant1 = Character("Enfant effrayé", color="#71e0f0")
 define im_enfant1 = "Jour3/Rue_avec_enfants/Enfant_1.png"
 define zoom_enfant1 = 1.0
 
-define enfant2 = Character("Enfant 2")
+define enfant2 = Character("Enfant méchant", color="#d61212")
 define im_enfant2 = "Jour3/Rue_avec_enfants/Enfant_2.png"
 define zoom_enfant2 = 1.0
 
-define enfant3 = Character("Enfant 3")
+define enfant3 = Character("Enfant moqueur", color="#296dff")
 define im_enfant3 = "Jour3/Rue_avec_enfants/Enfant_3.png"
 define zoom_enfant3 = 1.0
 
@@ -224,7 +224,7 @@ image EMS_devanture = im.Scale("Nuit2/entree_EMS.jpg", 1920, 1080)
 
 image EMS_reception = im.Scale("Nuit2/reception.jpg", 1920, 1080)
 
-define receptioniste = Character("Murielle")
+define receptioniste = Character("Murielle", color="#969696")
 
 define im_receptioniste = "Nuit2/Justine/Hana_casual_neutral.png"
 
@@ -243,7 +243,7 @@ define zoom_raymond = 1.7
 
 define superieur = Character("Supérieur")
 
-define justine = Character("Justine")
+define justine = Character("Justine", color="#85b8ff")
 
 define im_justine = "Nuit2/justine.png"
 
@@ -283,11 +283,11 @@ define champi_achete = False
 
 image bureau_maire = im.Scale("Nuit3/Bureau/bureau1.jpg", 1920, 1080)
 
-define assistante = Character("Assistante")
+define assistante = Character("Assistante", color="#e50404")
 
-define im_assistante = "Nuit3/Assistante du maire/assistante_du_maire.png"
+define im_assistante = "Nuit3/Supp/f338.png"
 
-define maire = Character("Maire")
+define maire = Character("Maire [nom]", color="#f9e571")
 
 define im_maire = "Nuit3/Maire/maire1.png"
 
@@ -297,7 +297,7 @@ define zoom_assistante = 1.0
 
 image exterieur_tribunal = im.Scale("Nuit3/Tribunal/exterieur.jpg", 1920, 1080)
 
-define juge = Character("Juge")
+define juge = Character("Juge [nom]", color="#f9e571")
 
 define im_juge = "Nuit3/Juge/juge1.png"
 
@@ -305,13 +305,13 @@ define zoom_juge = 1.0
 
 image tribunal = im.Scale("Nuit3/Tribunal/interieur.jpg", 1920, 1080)
 
-define journaliste1 = Character("Journaliste 1")
+define journaliste1 = Character("Journaliste enjoué")
 
 define im_journaliste1 = "Nuit3/Journaliste/journaliste1.png"
 
 define zoom_journaliste1 = 1.0
 
-define journaliste2 = Character("Journaliste 2")
+define journaliste2 = Character("Journaliste prenant des notes", color="#77ff4e")
 
 define im_journaliste2 = "Nuit3/Journaliste/journaliste2.png"
 
@@ -322,7 +322,7 @@ image siege_juge = im.Scale("Nuit3/Tribunal/siege du juge.jpg", 1920, 1080)
 define nuit3_utilitarisme_done = False
 define nuit3_libertarianisme_done = False
 
-define kami = Character("Kamimusubi")
+define kami = Character("Kamimusubi", color="#fffdc6")
 
 define im_kami = "Nuit3/Kamimusubi/kami.png"
 
@@ -372,12 +372,12 @@ label intro_gm:
     #with dissolve
     show screen show_char(game_master_1, -0.1, 1.0, 1.0)
     with dissolve
-
+    gmu "NON PAS DU TOUT, TU TE TROMPES !"
 
     show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
     with dissolve
 
-    gmu "NON PAS DU TOUT, TU TE TROMPES !"
+
     gml "C'EST TOI QUI TE TROMPES TU RACONTES N'IMPORTE QUOI !"
 
     gmu "De toute façon c’est moi le plus grand alors c’est moi qui décide."
@@ -809,7 +809,7 @@ label reve1_hopital_after_op:
   narrateur "Après quelques minutes tu te trouve dans une salle d’opération avec d’autres chirurgiens."
   narrateur "Au début, tu n’es pas sûr de ce qu’il faut faire, mais comme par magie, tu commences à procéder à l’opération comme si
   c’était quelque chose que tu avais fait tout ta vie."
-  narrateur "Après l'opération, tu ne sais plus vraiment quoi faire. Tu comprends encore moins qu'est ce que tu fais ici."
+  narrateur "Après l'opération, tu ne sais plus vraiment quoi faire. Tu comprends encore moins ce que tu fais ici."
   narrateur "Que faire ?"
 
   menu:
@@ -1390,10 +1390,10 @@ label nuit2:
   gml "Non pas du tout. Hier tu étais dans la dimension de mon frère. Il t'a raconté n'importe quoi et c'est à mon tour de
        t'expliquer comment je vois le monde et comment il devrait être régi."
 
-  gml "Tu verras c'est bien plus réaliste que l'idée de mon idiot de frère.  Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté. 
+  gml "Tu verras c'est bien plus réaliste que l'idée de mon idiot de frère.  Mon idée est l’incarnation même de la liberté. La liberté protégée par la liberté.
   C’est pas beau ça ? Tu verras c’est simple à comprendre."
 
-  "*Le GML claque des doigts et les deux personnes se trouvent dans un parc où on peut voir quelqu’un manger une glace*"
+
 
   call hide_chars
 
@@ -1401,15 +1401,20 @@ label nuit2:
   with dissolve
 
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
-  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+
+
+
   show screen show_char2(im_glace, 0.5, 1.0, zoom_glace)
   with dissolve
 
-  gml "Tu vois le mec là-bas qui mange une glace ? C’est John. Pourquoi il a le droit de manger une glace ? Eh bien c’est simple 
+  narrateur "Jiyu claque des doigts et vous vous retrouvez dans un parc où on peut voir quelqu’un manger une glace."
+
+  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  gml "Tu vois le mec là-bas qui mange une glace ? C’est John."
+  gml "Pourquoi il a le droit de manger une glace ? Eh bien, c’est simple,
        il l’a achetée légitimement avec son argent et il ne dérange personne."
 
-  "*LE GML claque de nouveau des doigts et les deux se retrouvent dans un jardin où on voit un nain de jardin*"
 
 
   call hide_chars
@@ -1417,11 +1422,13 @@ label nuit2:
   scene maison_martine
   with dissolve
 
+  narrateur "Jiyu claque de nouveau des doigts et vous vous retrouvez cette fois dans un jardin où on voit un nain de jardin."
+
   show screen show_char(game_master_2, 0.0, 1.0, 1.0)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  gml "Là on est devant la maison de Martine. Attend... "
+  gml "Là, on est devant la maison de Martine. Attend... "
 
   hide screen show_char
   with dissolve
@@ -1430,12 +1437,12 @@ label nuit2:
   show screen show_char2(nain_de_jardin, 0.5, 1.0, zoom_nain)
   with dissolve
 
-  gml "Ca c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, comme je l'ai fait hehe, il entrave la liberté 
+  gml "Lui, c’est le nain de jardin de Martine. Si John venait à prendre ce nain de jardin sans l’accord de Martine, comme je l'ai fait hehe, il entrave la liberté
       de propriété de Martine et donc son action est mauvaise."
   gml "Tu vois un peu l’idée ? Tes actions sont immorales uniquement si elles entravent la liberté de quelqu'un d'autre."
-  gml "Mais si Martine est d’accord, alors il n’y a pas de problème et comme ils n’embêtent personne, alors personne n’a le droit d’empêcher leur échange."
-  gml "Bien, qu’est-ce que tu en penses jusque-là ?"
-
+  gml "Mais si Martine est d’accord que John lui prenne son nain, alors il n’y a pas de problème."
+  gml "Et comme ils n’embêtent personne, alors personne n’a le droit d’empêcher leur échange."
+  gml "Bien."
   call hide_chars
 
   scene universe
@@ -1444,7 +1451,7 @@ label nuit2:
   show screen show_char(game_master_2, 0.0, 1.0, 1.0)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
-
+  gml "Qu’est-ce que t'en penses jusque-là ?"
   menu:
     "Je suis d'accord":
       player "Je suis d’accord, du moment que l’on entrave pas la liberté de quelqu’un d’autre, on peut faire ce qu’on veut."
@@ -1454,8 +1461,8 @@ label nuit2:
       gml "Je vois qu’il te faut plus d’exemples."
     "Pas d'accord":
       player "Je suis pas trop d’accord, je trouve ce principe limité, il faudrait l’accompagner de règles plus détaillées."
-      gml "Tu verras c’est une idée qui se gère par elle-même."
-  
+      gml "Tu verras, c’est une idée qui se gère par elle-même."
+
   gml "Bien, alors on va voir si tu es d'accord avec moi. Premier cas ultra simple."
   gml "Dans l’immeuble de John le bruit dérange son voisinage à partir de 21h. Est-ce qu’il a le droit de jouer du piano dans l’après-midi ?"
 
@@ -1464,9 +1471,11 @@ label nuit2:
       $ libertarianisme+=1
       gml "Bien, les locataires n'étant pas dérangés par le bruit du piano, il est tout à fait moral de la part de John de jouer du piano."
     "Non":
-      gml "Eh non, il a bien le droit de le faire. Si ça avait été après 21h, il n’aurait pas eu le droit puisqu’il aurait entravé la liberté de dormir des autres locataires."
+      gml "Eh non, il a bien le droit de le faire."
+      gml "Si ça avait été après 21h, il n’aurait pas eu le droit puisqu’il aurait entravé la liberté de dormir des autres locataires."
 
-  gml "Maintenant, une situation un peu plus compliquée. John souhaite acheter de la cocaïne afin de passer une bonne soirée. Pour cela,
+  gml "Maintenant, une situation un peu plus compliquée."
+  gml "John souhaite acheter de la cocaïne afin de passer une bonne soirée. Pour cela,
        il se rend chez un dealeur qu'il connaît bien et qui lui vend de la cocaïne de qualité."
   gml " Est-ce que John a le droit de procéder à ce genre d'échange ? "
 
@@ -1475,13 +1484,13 @@ label nuit2:
       $ libertarianisme+=1
       player "Oui, il n'entrave la liberté de personne ici."
       gml "Exactement ! On pourrait remettre en question le mode de vie de John qui n'est pas très saint mais concrètement,
-	         l'achat qu'il fait n'atteint en rien la liberté de qui que ce soit."
+	         l'achat qu'il fait n'atteint en rien à la liberté de qui que ce soit."
     "Non":
-      player "Non, la vente et l'achat de drogues dures est illégale."
-      gml "C'est peut-être illégal, mais John ne dérange personne. C'est ça le problème avec l'Etat, il se mêle de choses qui ne le 
+      player "Non, la vente et l'achat de drogues dures est illégal."
+      gml "C'est peut-être illégal, mais John ne dérange personne. C'est ça le problème avec l'Etat, il se mêle de choses qui ne le
 	         regardent pas !"
-  
-  gml "Bien, tu devrais avoir compris le concept. Passons à autre chose. Que penses-tu de l'impôt ? "
+
+  gml "Bon, tu devrais avoir compris le concept. Passons à la suite. Que penses-tu de l'impôt ? "
 
   menu:
     "C'est nécessaire":
@@ -1499,36 +1508,36 @@ label nuit2:
       gml "Si je gagne de l'argent à la sueur de mon front,
 	        je mérite d'en profiter entièrement. Le gouvernement, en me taxant, atteint ma liberté de profiter librement de mon revenu."
       player "L'impôt est donc immoral et ne devrait pas exister."
-  
+
   if libertarianisme>=2:
-    gml "Bien tu m’as l’air d’avoir bien compris le concept."
+    gml "Bien, tu m’as l’air d’avoir bien compris le concept."
     gml "Je te propose une petit mise en situation histoire de te convaincre entièrement."
-    gml "Tu vas travailler dans une maison de retraite."
+    gml "Pour cette partie, tu vas travailler dans une maison de retraite."
   else:
     gml "T’as vraiment pas l’air d’avoir compris ce que je te raconte."
-    gml "On va faire une petite mise en situation pour te mettre les idées au claire."
-    gml "Tu vas travailler dans une maison de retraite."
+    gml "On va faire une petite mise en situation pour te mettre les idées au clair."
+    gml "Pour ça, tu vas travailler dans une maison de retraite."
 
-  "*Le GML claque des doigts et ils re trouvent avec le héros devant une maison de retraite*"
 
   call hide_chars
 
   scene EMS_devanture
   with dissolve
 
+  narrateur "Jiyu claque des doigts et tu l'auras compris, j'espère, vous vous retrouvez devant une maison de retraite."
 
   show screen show_char(game_master_2, 0.0, 1.0, 1.0)
-  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  gml "Bon je vais pas venir avec toi je déteste les vieux moi."
-  gml "Je te laisse t’annoncer à la réception, dépêche-toi t’es sensé commencer dans 5min et ne fuis pas hein."
-  gml "C’est pas parce qu’on est dans un rêve que je peux pas te faire souffrir hehe. Aller à plus !"
+  gml "Bon, pour ça je vais pas venir avec toi, je déteste les vieux, moi."
+  gml "Je te laisse t’annoncer à la réception. Dépêche-toi t’es sensé commencer dans 5min et ne fuis pas, hein!"
+  gml "C’est pas parce qu’on est dans un rêve que je peux pas te faire souffrir, hehe. Aller à plus !"
 
   hide screen show_char
   with dissolve
 
-  player "Pfff ils commencent à me fatiguer ces petits démons…"
+  player "Pfff, ils commencent à me fatiguer ces petits démons…"
 
   call hide_chars
 
@@ -1536,10 +1545,10 @@ label nuit2:
   with dissolve
 
   show screen show_char(im_receptioniste, 0.0, 1.0, zoom_receptioniste)
-  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  receptioniste "Oh salut [nom] !"
+  receptioniste "Oh, salut [nom] !"
 
   player "Salut Murielle."
 
@@ -1547,19 +1556,22 @@ label nuit2:
 
   menu:
     "Oui":
-      player "On peut dire ça ouai…"
-      receptioniste "Bref dépêche toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche."
+      player "On peut dire ça, ouais…"
+      receptioniste "Bref, dépêche toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme Raymond à prendre sa douche."
     "Cryptique":
-      player "Je passe une mauvaise nuit en ce moment même"
-      receptioniste "Tu te crois drôle ? Je t’ai dit d’arrêter de me draguer sale beauf. Dépêche-toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche"
+      player "Je passe une mauvaise nuit en ce moment même."
+      receptioniste "Tu te crois drôle ? Je t’ai dit d’arrêter de me draguer, sale beauf."
+      receptioniste "Dépêche-toi, tu commences dans 3min. Tu dois te rendre dans la salle 548 pour aider Mme Raymond à prendre sa douche."
     "...":
       player "..."
       receptioniste "T’as vraiment pas l’air en forme mais faut te ressaisir."
-      receptioniste "Tu commences dans 3min et tu dois te rendre dans la salle 548 pour aider Mme.Raymond à prendre sa douche."
-  
+      receptioniste "Tu commences dans 3min et tu dois te rendre dans la salle 548 pour aider Mme Raymond à prendre sa douche."
+
+  show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
+  with dissolve
   player "Sa… sa douche !?"
 
-  receptioniste "Bah oui elle peut pas se doucher toute seule fait pas le surpris. Allez fonce !"
+  receptioniste "Bah oui, elle peut pas se doucher toute seule, fait pas le surpris. Allez, fonce !"
 
   call hide_chars
 
@@ -1569,8 +1581,8 @@ label nuit2:
   show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  player "Ce métier m’a l’air d’être plus difficile que chirurgien …"
-  player "Je connaissais le nom de Murielle sans l’avoir jamais vue, on dirait que comme dans l’autre rêve, je connais mon environnement."
+  player "Ce métier m’a l’air d’être encore plus difficile que chirurgien…"
+  player "Je connaissais le nom de Murielle sans l’avoir jamais vue en vrai, on dirait que comme dans l’autre rêve, je connais mon environnement magiquement."
 
   call hide_chars
 
@@ -1582,11 +1594,11 @@ label nuit2:
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  player "Bonjour Mme.Raymond"
+  player "Bonjour Mme Raymond."
 
-  raymond "Bonjour Monsieur, vous avez 2min et 23 secondes de retard c’est inacceptable !"
+  raymond "Monsieur, vous avez 2min et 23 secondes de retard c’est inacceptable !"
 
-  player "Ecoutez madame on fait ce qu’on peut. Allez allons-y"
+  player "Ecoutez madame, on fait ce qu’on peut. Bon allez, allons-y."
 
   call hide_chars
 
@@ -1596,31 +1608,35 @@ label nuit2:
   scene EMS_chambre_raymond
   with dissolve
 
-  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  player "Pffff je ne me suis pas trompé. C’était 100x plus éprouvant que d’opérer à cœur ouvert."
 
-  "*téléphone sonne*"
+  player "Ouh là, je ne me suis pas trompé. C’était cent fois plus éprouvant que d’opérer à cœur ouvert."
+
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  narrateur "Ton téléphone sonne."
 
   player "Allô ?"
 
-  superieur "Oui Evan, tu dois aller dans la chambre de M.Dumas pour lui administrer ses médicaments, chambre 433."
-  
-  superieur "Oublie pas de prendre les médicament au rez-de-chaussée avant j’en ai marre de te voir faire 10 allers-retours on perd du temps."
+  superieur "Oui [nom], tu dois aller dans la chambre de M.Dumas pour lui administrer ses médicaments, chambre 433."
+
+  superieur "Oublie pas de prendre les médicament au rez-de-chaussée avant. J’en ai marre de te voir faire 10 allers-retours inutiles par jour. On perd du temps."
 
   menu:
-    "Je fais ca tout de suite":
-      player "Ca marche je fais ça tout de suite."
+    "Je fais ça tout de suite":
+      player "Ca marche, je fais ça tout de suite."
       superieur "Fais vite pour une fois, ça te changera…"
       player "Je ferais mieux de pas traîner."
-    "Quel médicament ?":
-      player "Ok je dois prendre quoi comme médicament ?"
-      superieur "Comme d’habitude bon sang ! Tu vas vite devoir arrêter ce genre de question si tu veux continuer à travailler ici."
+    "Quels médicaments ?":
+      player "Ok, je dois prendre quoi comme médicaments ?"
+      superieur "Comme d’habitude, bon sang ! Tu vas vite devoir arrêter ce genre de questions si tu veux continuer à travailler ici."
       player "Maintenant que j’y réfléchis, c’est Justine qui s’occupe des médicaments que je dois administrer… Je ferais mieux de me pas traîner."
     "10 allers-retours ?":
-      player "Exactement 10, tu as fait 10 aller-retours hier qui n’étaient pas du tout nécessaire. On en reparlera ce soir crois-moi !"
-      superieur "Je ferais mieux de ne pas traîner."
+      superieur "Exactement 10. Tu as fait 10 aller-retours hier qui n’étaient pas du tout nécessaires. On en reparlera ce soir crois-moi !"
+      player "Je ferais mieux de ne pas traîner."
 
   call hide_chars
 
@@ -1631,34 +1647,41 @@ label nuit2:
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  player "Salut Justine, il me faudrait les médicaments quotidiens de M.Dumas s’il-te-plaît."
+  player "Salut Justine, il me faudrait les médicaments quotidiens de M.Dumas, s’il-te-plaît."
 
-  justine "Oui ils sont déjà prêts tiens."
-  justine "Oh et puis, essaye de discuter un moment avec lui, je sais que le supérieur déteste ça mais ça doit bientôt faire 10ans que M.Dumas ne reçoit plus de visite,
-           le pauvre il se sent tellement seul."
-  
-  player "Bien-sûr je ferais tout pour toi Justine."
+  justine "Oui, ils sont déjà prêts. Tiens."
+  justine "Oh et puis, essaye de discuter un moment avec lui. Je sais que le supérieur déteste ça, mais ça doit bientôt faire 10ans que M.Dumas ne reçoit plus de visites...
+           Le pauvre se sent tellement seul."
 
-  "Verification du contenu"
+  player "Bien-sûr, je ferais tout pour toi Justine."
 
-  player "Mmmmh on dirait qu’il manque les somnifères."
+  narrateur "Tu vérifies le contenu du récipient."
+
+  show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Mmmmh, on dirait qu’il manque les somnifères."
 
   justine "Mais c’est normal ça."
 
-  justine "Les somnifères sont dans le petit coffre-fort juste à côté de la table de chevet comme pour toute les chambres."
+  justine "Les somnifères sont dans le petit coffre-fort juste à côté de la table de chevet, comme pour toute les chambres."
 
   justine "Tu devrais avoir la clef dans ton trousseau de travail."
 
-  player "Ah ok bizarre j’étais pas au courant."
+  player "Ah ok, bizarre, j’étais pas au courant."
 
   justine "Ca a été mis en place y’a quelques jours seulement."
 
-  justine "On leur donne tellement de somnifères que la direction a jugé que ce serait plus efficace 
-          de mettre un stock directement dans chaque chambre plutôt que de tout le temps aller demander l’autorisation à la pharmacie."
+  justine "On leur donne tellement de somnifères que la direction a jugé que ce serait plus efficace
+          de mettre un stock directement dans chaque chambre plutôt que d'aller demander l’autorisation à la pharmacie tout le temps."
 
-  justine "Par-contre ça fait qu’ils sont plus du tout réglementés, ils subissent le même contrôle qu’un vulgaire stock de gants ahah."
+  justine "Par-contre ça fait qu’ils sont plus du tout réglementés, ils subissent le même contrôle qu’un vulgaire stock de mouchoirs, ahah."
+
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
 
   player "Ah d’accord, merci pour l’info Justine et à bientôt !"
+  justine "A plus [nom]!"
 
   call hide_chars
 
@@ -1674,49 +1697,65 @@ label nuit2:
   dumas "Merci bien vous êtes très aimable."
 
   menu:
-    "Comment ca va ?":
-      player "Comment ça va Monsieur Dumas ?"
-      dumas "Pas très bien, je ne peux presque plus me mouvoir, j’ai besoins d’assistance pour prendre mes médicaments, prendre ma douche, m’habiller n’importe quoi !"
+    "Comment ça va ?":
+      player "Comment vous allez aujourd'hui, Monsieur Dumas ?"
+      dumas "Pas très bien, je ne peux presque plus me mouvoir, j’ai besoins d’assistance pour prendre mes médicaments, prendre ma douche, m’habiller, pour n’importe quoi !"
       dumas "C’est insupportable. Si vous saviez à quel point je m’ennuie."
+
+      show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+      with dissolve
+
       menu:
-        "Que faites-vous ?":
-          player "Qu’est-ce que vous faites de vos journées alors ?"
+        "Que faites-vous, alors ?":
+          player "Qu’est-ce que vous faites de vos journées, alors ?"
           dumas "Rien du tout. Cela fait plus de 10ans que j’attends ma mort quotidiennement."
-          player "Je suis sincèrement navré Monsieur Dumas… Vous n’avez pas de famille ?"
+          player "Je suis sincèrement navré Monsieur Dumas…"
+          player "Vous n’avez pas de famille ?"
           dumas "Mon fils unique venait régulièrement me rendre visite avec ses enfants."
           dumas "Au moins deux fois par semaine."
           dumas "Il avait même prévu de me faire emménager chez lui dès qu’il trouvait une plus grande maison."
           dumas "Il détestait me voir dans cette maison de retraite."
           dumas "Malheureusement, il est mort il y a 10ans lors d’un accident de voiture."
-          dumas "Il y avait… il y avait ses deux enfants et sa femme dedans."
+          dumas "Il y avait… Il y avait ses deux enfants et sa femme dedans."
           dumas "En une fraction de seconde je me suis retrouvé sans famille, plus seul que jamais."
     "Vous n'avez plus de visites ?":
-      player "«On m’a dit que vous n’aviez plus de visites. Comment ça se fait ?"
+      player "On m’a dit que vous n’aviez plus de visites. Comment ça se fait ?"
       dumas "Mon fils unique venait régulièrement me rendre visite avec ses enfants."
       dumas "Au moins deux fois par semaine."
       dumas "Il avait même prévu de me faire emménager chez lui dès qu’il trouvait une plus grande maison."
       dumas "Il détestait me voir dans cette maison de retraite."
       dumas "Malheureusement, il est mort il y a 10ans lors d’un accident de voiture."
+      show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+      with dissolve
       dumas "Il y avait… il y avait ses deux enfants et sa femme dedans."
       dumas "En une fraction de seconde je me suis retrouvé sans famille, plus seul que jamais."
       menu:
         "Je peux faire quelque chose ?":
-          player "Toute mes condoléances Monsieur Dumas. Est-ce que je peux faire quelque chose pour vous ?"
+          player "Toute mes condoléances Monsieur Dumas..."
+          show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+          with dissolve
+          player "Est-ce que je peux faire quelque chose pour vous ?"
           jump nuit2_e1
         "Cétait votre seul famille ?":
           player "Toutes mes condoléances Monsieur Dumas. C’était la seule famille que vous aviez ?"
           dumas "J’ai bien encore deux salopes de tantes mais croyez-moi, si elles venaient me rendre visite, ma situation serait encore pire."
           dumas "Elle sont insupportables je préfère encore être seul que me faire critiquer des heures durant par ces vipères."
-          player "C’est pas faux !"
-  
+          player "Je peux bien comprendre ça..."
+
   dumas "Est-ce… est-ce que vous pourriez me rendre un service ?"
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
   player "Bien-sûr Monsieur Dumas, qu’est-ce que vous voulez ?"
 
 label nuit2_e1:
-  dumas "J’ai entendu dire que les somnifères ne sont plus contrôlés c’est vrai ?"
-  player "Tout à fait on vient de m’en parler justement. Pourquoi ?"
-  dumas "S’il vous plait, pourriez-vous m’en donner une dizaine que j’en finisse."
-  player "Mais enfin M.Dumas je peux p.."
+  dumas "J’ai entendu dire que les somnifères ne sont plus contrôlés, c’est vrai ?"
+  player "Tout à fait, on vient de m’en parler justement. Pourquoi ?"
+  dumas "S’il vous plait, pourriez-vous m’en donner une dizaine que j’en finisse ?"
+
+  show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
+  with dissolve
+
+  player "Mais enfin, M.Dumas je peux p.."
   dumas "S’il vous plait … Je n’en peux plus."
   dumas "Cela fait des années qu’on ne me rend plus visite, des années que je suis seul à attendre l’inévitable."
   dumas "J’ai demandé un suicide assisté mais cette foutu association chrétienne ne veut rien entendre."
@@ -1724,19 +1763,22 @@ label nuit2_e1:
 
   player "..."
 
-  dumas "Tout ce que vous avez à faire c’est me donner les somnifères, je suis encore capable de les ingérer moi-même et vous ne risquez rien puisqu’ils ne sont plus contrôlés."
+  dumas "Tout ce que vous avez à faire, c’est me donner les somnifères, je suis encore capable de les ingérer moi-même et vous ne risquez rien puisqu’ils ne sont plus contrôlés."
   dumas "S’il vous plait… aidez-moi."
 
   menu:
     "Donner les somnifères":
       $ suicide_assiste = True
       $ libertarianisme+=1
-      player "Bon tenez après tout c’est votre choix, vous faites ce que vous voulez"
-      dumas "Enfin.. merci beaucoup Monsieur, merci beaucoup."
+      show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
+      with dissolve
+      player "Bon, tenez... Après tout, c’est votre choix, vous faites ce que vous voulez."
+      dumas "Enfin.. Merci beaucoup Monsieur, merci beaucoup."
       jump nuit2_somni
     "Refuser de lui donner les somnifères":
-      player "C’est pas mon problème. Je suis auxiliaire de santé pas bourreau. Débrouillez-vous sans moi !"
-      dumas "Non attendez ATTENDEEEEZ !"
+      player "C’est pas mon problème. Je suis auxiliaire de santé, pas bourreau. Débrouillez-vous sans moi !"
+      dumas "Non attendez!"
+      dumas "ATTENDEEEEZ !"
       jump nuit2_non_somni
 
 label nuit2_somni:
@@ -1748,7 +1790,8 @@ label nuit2_somni:
   show screen show_char1(boy_sad, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  player "J’ai fait le bon choix mais ça reste perturbant d’aider quelqu’un à mourir. J’espère qu’on ne va pas savoir que c’est moi."
+  player "J’ai fait le bon choix, mais ça reste perturbant d’aider quelqu’un à mourir."
+  player "J’espère qu’on ne va pas savoir que c’est moi qui l'ai aidé !"
 
   call hide_chars
 
@@ -1763,19 +1806,11 @@ label nuit2_non_somni:
   show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  player "Pour qui il se prend, ce n’est pas à moi de me salir les mains. Je n’y peux rien si la maison de retraite ne veut pas l’aider, ils doivent avoir leurs raisons."
+  player "Pour qui il se prend ??"
+  player "C'est pas à moi de me salir les mains. Je n’y peux rien!"
+  player "Si la maison de retraite ne veut pas l’aider, ils doivent bien avoir leurs raisons..."
 
   call hide_chars
-
-
-  
-
-
-
-  
-
-
-
 
 
 
@@ -1788,15 +1823,15 @@ label nuit2_non_somni:
 label jour3:
   scene room_hero_night
   with dissolve
-
+  narrateur "Sans transition, tu te retrouve tout à coup dans ton lit."
   show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "HAAAAAA !!!"
 
-  narrateur "Il te faut un moment pour te rappeler qui tu es et où tu te trouves"
+  narrateur "Il te faut un moment pour te rappeler qui tu es et où tu te trouves."
 
-  player "*halète* J'en peux plus ! Si ça continue je vais devenir dingue !"
+  player "*halète* J'en peux plus ! Si ça continue, je vais devenir dingue !"
   player "Il faut absolument que je trouve une solution."
 
   mere "Tout va bien, chéri ? Je t'ai entendu crier!"
@@ -1817,7 +1852,10 @@ label jour3:
 
   player "J'arrive!"
 
+
   call hide_chars from _call_hide_chars_35
+
+  narrateur"Tu décides de ne rien dire à ta mère. Emma est ta meilleure amie, si quelqu'un peut te comprendre, c'est bien elle!"
 
 label jour3_ecole:
   scene ecole_exterieur
@@ -2048,12 +2086,15 @@ label jour3_rue_enfants:
 
   scene rue_avec_enfants
   with dissolve
+
+  show screen show_char_pos3(boy_sad, 1400, 300, zoom_boy)
+  with dissolve
+
   player  "Alors, je crois qu'il faut aller par là."
 
   show screen show_char_pos(im_enfant1, -100, 300, zoom_enfant1)
   show screen show_char_pos1(im_enfant2, 400, 300, zoom_enfant2)
   show screen show_char_pos2(im_enfant3, 800, 300, zoom_enfant3)
-  show screen show_char_pos3(boy_sad, 1400, 300, zoom_boy)
   with dissolve
 
   enfant1 "Laissez-moi tranquille, j'essaye de faire mes devoirs!"
@@ -2101,7 +2142,7 @@ label jour3_defense:
 
 
 label jour3_rue:
-  scene avant_rue
+  scene ruelle_sombre
   with dissolve
 
   show screen show_char(boy, 0.0, 1.0, zoom_boy)
@@ -2113,7 +2154,7 @@ label jour3_rue:
 
   call hide_chars from _call_hide_chars_42
 
-  scene ruelle_sombre
+  scene avant_rue
   with dissolve
 
   show screen show_char(boy, 0.0, 1.0, zoom_boy)
@@ -2196,8 +2237,8 @@ label jour3_soir_bibliotheque:
   scene bibliotheque_nuit
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
-  show screen show_char1(best_friend_neutral, 1.0, 3.0, zoom_best_friend)
+  show screen show_char(boy, 0.4, 1.0, zoom_boy)
+  show screen show_char1(best_friend_neutral, 0.1, 3.7, zoom_best_friend)
   with dissolve
 
   best_friend "Ah te voilà! T'en as mis du temps, ça fait un moment que je t'attends."
@@ -2223,7 +2264,7 @@ label jour3_soir_bibliotheque:
   best_friend "Ah, encore une chose! Ils disent que tu peux aider le kami à trouver le chemin de tes rêves en l'appelant par son nom cinq fois."
   player "Donc s'il ne vient pas tout de suite, il suffit que je dise Kamimusubi cinq fois?"
   best_friend "C'est ça."
-  show screen show_char(boy_sad, 0.0, 1.0, zoom_boy)
+  show screen show_char(boy_sad, 0.4, 1.0, zoom_boy)
   with dissolve
 
 
@@ -2240,21 +2281,22 @@ label jour3_soir_bibliotheque:
   scene bibliotheque_nuit
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
-  show screen show_char1(best_friend_neutral, 1.0, 3.0, zoom_best_friend)
+  show screen show_char(boy, 0.4, 1.0, zoom_boy)
+  show screen show_char1(best_friend_neutral, 0.1, 3.0, zoom_best_friend)
   with dissolve
 
   best_friend "A toi, [nom]. Quand tu es prêt, sonne la cloche et dis les paroles rituelles."
   "Ding..."
-
+  "..."
   "Ding..."
-
+  "..."
   "Ding..."
-
-  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
-  with dissolve
+  "..."
 
   player "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
+
+  show screen show_char(boy_confused, 0.4, 1.0, zoom_boy)
+  with dissolve
 
   player "..."
   best_friend "Tu penses que ça a marché?"
@@ -2274,11 +2316,21 @@ label jour3_soir_maison:
   with dissolve
 
   player "Dans quelques heures, tout ce calvaire sera enfin fini et je pourrai reprendre ma vie comme avant!"
+
+  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+  with dissolve
+
   player "Enfin, si le rituel a fonctionné..."
+  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  with dissolve
   player "Je suis trop stressé, je vais jamais réussir à m'endormir!"
+
+  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+  with dissolve
 
   if champi_achete:
     player "Mais au pire, si ça marche pas, j'ai toujours le champignon de cet aprem..."
+
 
   player  "Peut-être que si je répète la phrase d'invocation, il y aura plus de chance que Kamimusubi vienne?"
 
@@ -2299,35 +2351,41 @@ label nuit3:
 
   show screen show_char(game_master_1, 0.0, 1.0, 1.0)
   show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
-  show screen show_char2(boy_angry, 0.5, 1.0, zoom_boy)
   with dissolve
 
-  gml "Non même ce que tu dis c’est n’importe quoi !"
-  gmu "Comment ça ? C’est toi qui dis de la merde !"
-  gml "Je suis ton aîné alors forcément que j’ai raison"
-  gmu "Arrête de te prendre pour un grand. Tu as à peine 300 ans de plus que moi."
-  gml "Je sens que notre discussion va encore tourner en rond. Viens, on va demander l’avis à notre cobaye."
-  gml "Alors laquelle de nos idées t’as le plus séduit et convaincu ?"
+  gmu "Non même ce que tu dis c’est n’importe quoi !"
+  gml "Comment ça ? C’est toi qui dis de la merde !"
+  gmu "Je suis ton aîné alors forcément que j’ai raison!"
+  gml "Arrête de te prendre pour un grand. Tu as à peine 300 ans de plus que moi."
+  gmu "Je sens que notre discussion va encore tourner en rond. Viens, on va demander l’avis à notre cobaye."
+
+  show screen show_char2(boy_angry, 0.5, 1.0, zoom_boy)
+  with dissolve
+  gmu "Ah, le voilà!"
+  gml "Alors, laquelle de nos idées t’as le plus séduit et convaincu ?"
 
   menu:
     "Idée de Shiawase":
-      gmu "GMU : Ah ah ah ! Alors on ne sait plus quoi dire ? Tu dois bien accepter que j’ai gagné !"
-      gml "N’importe quoi ! Tu ne lui pas présenté les limites évidentes de ton idée."
+      gmu "Ah ah ah ! Alors on ne sait plus quoi dire ? Tu dois bien accepter que j’ai gagné !"
+      gml "N’importe quoi ! Tu lui pas présenté les limites évidentes de ton idée."
+      gml "C'est vraiment à moi de tout faire ici!"
       jump nuit3_utilitarisme
     "Idée de Jiyu":
       gml "Ce résultat était prévisible. Je t’ai prouvé une nouvelle fois que je suis meilleur que toi."
       gmu "J’ai pas dit mon dernier mot ! On va voir comment le cobaye va réagir quand je lui montrerai les absurdités de ton idée."
       jump nuit3_libertarianisme
     "Aucune":
-      gml "Je sais comment régler ça. Je vais te montrer en quoi l’idée de mon frère est nul."
+      gml "Je sais comment régler ça. Je vais te montrer en quoi l’idée de mon frère est nulle."
       jump nuit3_libertarianisme
     #TODO: Nombre minimal de points
-    "euh c’est quoi déjà vos idées ?":
-      gml ": Mais tu te fous de nous. On s’est fait chier à tout t’expliquer et toi tu n’en as rien à foutre. Frangin tu sais 
-	vraiment pas choisir les bonnes personnes. Je vais en chercher un qui aura un minimum d’intellect. Tuons-le !"
+    "Euh, c’est quoi déjà vos idées ?":
+      gml "Mais tu te fous de nous??"
+      gmu"On s’est fait chier à tout t’expliquer et toi tu n’en as rien à foutre."
+      gml "Frangin, tu sais vraiment pas choisir les bonnes personnes. Je vais en chercher un autre qui aura un minimum d’intellect."
+      gml "Tuons-le !"
       gmu "Bien dit !"
       jump gameover
-    
+
 
 label nuit3_utilitarisme:
 
@@ -2340,7 +2398,8 @@ label nuit3_utilitarisme:
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  gml "Je vais te mettre dans la peau du maire d’une ville en crise. Bonne chance à toi."
+  gml "Pour te montrer une bonne fois pour toutes que les idées de mon frère sont stupides, je vais te mettre dans la peau du maire d’une ville en crise."
+  gml "Bonne chance à toi!"
 
   show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
   with dissolve
@@ -2351,50 +2410,56 @@ label nuit3_utilitarisme:
 
   scene bureau_maire
   with dissolve
-  
+
   show screen show_char(im_maire, 0.0, 1.0, zoom_maire)
   with dissolve
 
-  "Monsieur le maire vous êtes là ?"
+  assistante "Monsieur le maire vous êtes là ?"
 
   maire "Euuh… oui rentrez."
+
+  narrateur "Une fois de plus tu te retrouve plongé dans une situation étrange sans explications."
+  narrateur "Heureusement, tu commences à avoir l'habitude."
 
   show screen show_char1(im_assistante, 1.0, 1.0, zoom_assistante)
   with dissolve
 
-  assistante "Monsieur le maire c’est une catastrophe ! La sécheresse va durer plus longtemps que prévu."
+  assistante "Monsieur le maire, c’est une catastrophe ! La sécheresse va durer plus longtemps que prévu!"
 
   maire "Est-ce qu’on aura assez d’eau pour les habitants de la ville ?"
 
-  assistante "Non, Nous avons sous-estimé la situation et nous avons eu une gestion de l’eau catastrophique."
+  assistante "Non, nous avons sous-estimé la situation et nous avons eu une gestion de l’eau catastrophique."
 
-  assistante "Jamais nous ne tiendrons d’ici la fin."
+  assistante "Jamais nous ne tiendrons tous d’ici la fin de la sécheresse."
 
-  maire "Il n’y pas d’autre moyen de s’approvisionner en eau ?"
+  maire "Il n’y pas d’autres moyens de s’approvisionner en eau ?"
 
-  assistante "Malheureusement le temps que le prochain approvisionnement arrive, il sera déjà trop tard."
+  assistante "Malheureusement, le temps que le prochain approvisionnement arrive, il sera déjà trop tard."
 
   maire "Est-ce que nous pouvons encore rationner l'eau pour que tout le monde puisse avoir au moins le nécessaire pour survivre ?"
 
-  assistante "Si nous distribuons l'eau au strict minimum pour survivre, une partie de la population ne pourra pas survivre."
+  assistante "Même si nous distribuons l'eau au strict minimum pour survivre, une partie de la population ne pourra pas survivre."
 
   assistante "Monsieur le maire, il vous faut prendre une décision maintenant."
 
-  maire "Comment pourrait-on choisir qui devra vivre ou mourir ? On va se mettre toute la ville à dos. Ce serait l’anarchie. On ne pourrait pas réquisitionner de l’eau aux industries locales ?"
+  maire "Comment pourrait-on choisir qui devra vivre ou mourir ? On va se mettre toute la ville à dos. Ce serait l’anarchie."
+  maire "On ne pourrait pas réquisitionner l’eau des industries locales ?"
 
-  assistante "On pourrait mais cela paralyserait l’économie et donnerait lieux à une crise économique. Il y a de fortes chances que la population soit encore plus en colère que si on en laissait certains mourir… "
+  assistante "On pourrait mais cela paralyserait l’économie et donnerait lieux à une crise économique. Il y a de fortes chances que la population soit encore plus en colère que si on en laissait simplement certains mourir… "
 
-  maire "Comment ça ?"
+  maire "Qu'est ce que vous voulez dire ?"
 
-  assistante "Vous vous souvenez de ce quartier qui trouble régulièrement l'ordre public."
+  assistante "Eh bien..."
+  assistante "Vous vous souvenez de ce quartier qui trouble régulièrement l'ordre public?"
 
-  maire "Vous parlez de celui qui fait régulièrement des émeutes car les habitants pensent que nous n’en faisons pas assez 
-pour les intégrer à la ville."
+  maire "Vous parlez de celui qui fait régulièrement des émeutes car les habitants pensent que nous n’en faisons pas assez
+pour les intégrer à la ville?"
 
-  assistante "Exactement. Au début la majorité de la ville soutenait ce quartier. Il faut avouer que nous n'avions pas complètement
+  assistante "Exactement. Au début la majorité de la ville soutenait ce quartier."
+  assistante "Il faut avouer que nous n'avions pas complètement
 respecté nos promesses électorales."
 
-  assistante "Mais récemment ces émeutes ont fini par impacter les autres quartiers. Vitrines cassées, magasins vandalisés, voitures incendiées…"
+  assistante "Mais récemment, ces émeutes ont fini par impacter les autres quartiers. Vitrines cassées, magasins vandalisés, voitures incendiées…"
 
   maire "Où voulez-vous en venir ?"
 
@@ -2402,27 +2467,43 @@ respecté nos promesses électorales."
 et demandent des interventions plus musclées de la part de la police pour éviter ces débordements."
 
   assistante "Sur les réseaux sociaux nous avons déjà
-recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mécontentement général, si nous privons ce quartier d’eau pour le bien-être du plus grand nombre, la ville devrait nous soutenir."
+recensé de nombreux messages de haine à l'encontre de ce quartier."
+  assistante "Au vu du mécontentement général, si nous privons ce quartier d’eau pour le bien-être du plus grand nombre, la majorité de la ville devrait nous soutenir."
 
-  assistante "C’est peut-être triste à dire mais la majorité serait bien plus satisfaite qu’on sacrifie ce quartier qu’ils détestent plutôt qu’on paralyse l’économie."
+  assistante "C’est peut-être triste à dire, mais la majorité serait bien plus satisfaite qu’on sacrifie ce quartier qu’ils détestent plutôt qu’on paralyse l’économie."
 
-  assistante "Quelle est votre décision ?"
+  assistante "Alors, quelle est votre décision ?"
 
   menu:
-    "Assurer la stabilité de la ville":
+    "Assurer la stabilité de la ville en sacrifiant un quartier":
       $ sacrifice_quartier = True
       player "Nous devons assurer la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous."
-    "Nous n'allons pas sacrifier une minorité":
+    "Nous allons faire ce choix aléatoirement":
       $ sacrifice_aleatoire = True
       player "Ce n’est pas moral de sacrifier une minorité juste parce qu’elle ne plait pas à la ville. Nous ferons ce choix aléatoirement quitte à ce que ça ne plaise pas à tous le monde."
     "Réquisitionner l'eau des industries locales":
       $ sacrifice_economie = True
       player "Nous allons réquisitionner l’eau des industries locales comme ça tous le monde survit bien que ça ne maximise pas le bien-être collectif/ ça ne plaise pas à la majorité;"
-  
+
   call hide_chars
+
+  scene universe
+  with dissolve
+  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
+  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
+  with dissolve
+  gml "Je crois que cette situation t'as bien permi de voir que le concept de bonheur majoritaire est débile."
+  gml "Même un idiot aura compris que ça pourrait jamais marcher!"
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  with dissolve
+  gmu "Jiyu!"
+  gmu "Si tu crois avoir gagné la partie avec cette situation, tu te trompes."
 
   if(nuit3_utilitarisme_done and nuit3_libertarianisme_done):
     jump nuit3_suite
+
+
 
   scene universe
   with dissolve
@@ -2430,18 +2511,25 @@ recensé plusieurs messages de haines à l'encontre de ce quartier. Au vu du mé
 
   #TODO: Transition pas comprise
 
-  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
-  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
-  show screen show_char2(boy, 0.5, 1.0, zoom_boy)
-  with dissolve
 
+  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
+  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
+  with dissolve
+  gml "Je crois que cette situation t'as bien permi de voir que le concept de bonheur majoritaire est débile."
+  gml "Même un idiot aura compris que ça pourrait jamais marcher!"
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  with dissolve
+  gmu "Jiyu!"
   gmu "Si tu crois avoir gagné la partie avec cette situation, tu te trompes."
 
 label nuit3_libertarianisme:
 
   $ nuit3_libertarianisme_done = True
 
-  gmu "On va aller au tribunal pour te présenter une nouvelle situation en lien avec l’idée de mon frère. Tu seras un juge."
+  gmu "On va aller au tribunal pour te présenter une nouvelle situation en lien avec l’idée de ma soeur."
+  gmu "Cette fois, pas moyen que tu penses que c'est elle qui a les meilleures idées!"
+  gmu "Pour cette situation, tu seras un juge."
 
   call hide_chars
 
@@ -2452,9 +2540,11 @@ label nuit3_libertarianisme:
   show screen show_char1(im_juge, 1.0, 1.0, zoom_juge)
   with dissolve
 
-  gmu "Nous voici devant un tribunal."
+  juge "Tiens, je suis vieux cette fois..."
+  gmu "Je te félicite pour cette observation inutile."
+  gmu "Bref, comme tu peux le voir, nous voici devant un tribunal."
   gmu "Prépare toi à juger une affaire très particulière."
-
+  gmu "Tu verras bien que l'idée de Jiyu est nulle en pratique!"
   call hide_chars
 
   scene tribunal
@@ -2463,10 +2553,10 @@ label nuit3_libertarianisme:
   show screen show_char(im_journaliste1, 0.0, 1.0, zoom_journaliste1)
   with dissolve
 
-  journaliste1 "Bonjour, nous voici en directe du tribunal pour cette affaire sordide qui a profondément choqué les habitants de tout un 
+  journaliste1 "Bonjour, nous voici en direct du tribunal pour cette affaire sordide qui a profondément choqué les habitants de tout un
 village…"
 
-  player "Mais qu’est qu’il est en train de me faire faire."
+  juge "Mais qu’est qu’il est en train de me faire faire ??"
 
   call hide_chars
 
@@ -2475,34 +2565,39 @@ village…"
   with dissolve
 
   show screen show_char(im_journaliste1, 0.0, 1.0, zoom_journaliste1)
-  show screen show_char1(im_journaliste2, 1.0, 1.0, zoom_journaliste2)
   show screen show_char2(im_juge, 0.5, 1.0, zoom_juge)
   with dissolve
 
-  journaliste1 "Monsieur le juge que pensez-vous de cette affaire ?"
+  journaliste1 "Monsieur le juge, que pensez-vous de cette affaire ?"
 
-  journaliste2 "Une autre question monsieur le juge, avec les chefs d’accusations qui pèsent sur coupable, avez-vous déjà réfléchi 
+  show screen show_char1(im_journaliste2, 1.0, 1.0, zoom_journaliste2)
+  with dissolve
+
+  journaliste2 "Une autre question monsieur le juge, avec les chefs d’accusations qui pèsent sur le coupable, avez-vous déjà réfléchi
 à une sanction ?"
 
-  "La sécurité intervient et écarte les journalistes"
+  "La sécurité intervient et écarte les journalistes."
 
   hide screen show_char
   hide screen show_char1
   with dissolve
 
-  juge "Bien, la séance est ouverte. Présentez les chefs d’accusations"
+  juge "Bien, nous pouvons commencer."
+  juge "La séance est ouverte. Présentez les chefs d’accusations."
 
-  "Voici la situation. Gilbert a égorgé vivant son meilleur ami Justin puis l’a empaillé avant de le stocker dans son grenier."
+  "Voici la situation. Gilbert a égorgé vivant son meilleur ami Justin, puis l’a empaillé avant de le stocker dans son grenier."
 
-  "Justin lui avait dit qu’il souhaitait mourir et que son derniers souhait était de se faire égorger vivant puis empailler par un 
+  "Justin lui avait dit qu’il souhaitait mourir et que son derniers souhait était de se faire égorger vivant puis empailler par un
 taxidermiste."
 
-  "Gilbert étant taxidermiste de profession, il s’est assuré que Justin possédait une bonne capacité de discernement en lui 
-demandant sa carte de vote ainsi qu’une attestation récente d’un psychologue qui affirmait qu’il n’avait aucune maladie psychiatrique.
+  "Gilbert étant taxidermiste de profession, Justin lui as demandé son aide."
+  "Gilbert s’est d'abord assuré que Justin possédait une bonne capacité de discernement en lui
+demandant sa carte de vote ainsi qu’une attestation récente d’un psychologue qui affirmait qu’il avait pleine possession de ses moyens.
   "
 
-  "Rassuré 
-  et puisque Justin est consentant ainsi que son meilleur ami, il s’est exécuté."
+  "Rassuré
+  et puisque Justin était consentant en plus d'être son meilleur ami, Gilbert s’est exécuté."
+  "Monsieur le juge, maintenant que vous avez toutes les informations, quel est votre verdict?"
 
   menu:
     "Prison à vie":
@@ -2510,12 +2605,21 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
       juge "Je le mets en prison à vie pour homicide volontaire."
     "Peine réduite":
       $ juge_reduction_peine = True
-      juge "Je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte"
+      juge "Je le mets en prison mais je réduis la peine car je dispose d’une preuve irréfutable que Justin était consentant et conscient de son acte."
     "Relaxation":
       $ juge_relaxation = True
-      juge "Je choisis de le relaxer. L’acte de Gilbert a beau être extrême, il n’atteint la liberté de personne."
+      juge "Je choisis de le relaxer. L’acte de Gilbert a beau être extrême, il n’atteint la liberté de personne vu que Justin était consentant."
 
   call hide_chars
+
+  scene universe
+  with dissolve
+
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
+  with dissolve
+  gmu "Hahahahah, en tout cas on peut dire que cette situation t'as bien montré la débilité des idées de Jiyu!"
+  gmu "Maintenant, t'est obligé d'être d'accord avec moi!"
 
   if(nuit3_libertarianisme_done and nuit3_utilitarisme_done):
     jump nuit3_suite
@@ -2523,10 +2627,13 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   jump nuit3_utilitarisme
 
 label gameover:
+  call hide_chars
+
   scene black_background
   with dissolve
 
-  "GAMEOVER !"
+  narrateur "Ce n'était vraiment pas la bonne chose à dire !"
+  narrateur "GAMEOVER !"
 
   return
 
@@ -2542,8 +2649,8 @@ label nuit3_suite:
   show screen show_char2(boy, 0.5, 1.0, zoom_boy)
   with dissolve
 
-  gml "Si c’est comme ça je vais lui montrer d’autres situations."
-  gmu "Je vais faire pareil. J’en ai encore d’autres en stock."
+  gml "Si c’est comme ça je vais lui montrer d’autres situations pour qu'il voie bien que mon idée, c'est la meilleure sans aucun doute!"
+  gmu "T'inquiète, je vais faire pareil ! J’en ai encore plein d’autres en stock."
 
   show screen show_char2(boy_angry, 0.5, 1.0, zoom_boy)
   with dissolve
@@ -2554,13 +2661,13 @@ label nuit3_suite:
 
   player "KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI ! KAMIMUSUBI !"
 
-  gml "Frangin je crois que le cobaye a craqué."
+  gml "Frangin, je crois que le cobaye a craqué."
 
   gmu "Je crois aussi. On en fait quoi ?"
 
   gml "Je pense qu’on va en chercher un nouveau et…"
 
-  "Ca suffit maintenant !"
+  gmu "Attend frangine, je crois qu'il se passe quelque chose!"
 
   call hide_chars
 
@@ -2572,57 +2679,74 @@ label nuit3_suite:
 
   show screen show_char(game_master_1, 0.0, 1.0, 0.6)
   show screen show_char1(game_master_2, 1.0, 1.0, 0.6)
-  show screen show_char2(boy, 0.3, 1.0, 0.15)
-  show screen show_char3(im_kami, 0.6, 1.0, 1.0)
+  show screen show_char2(boy_confused, 0.77, 1.0, 0.15)
+  show screen show_char3(im_kami, 0.3, 1.5, 1.5)
   with dissolve
 
-  kami "Qu’est-ce … qu’est -ce que je fais la ? Hé ! Qu’est-ce vous faites là ? "
+  kami "Qu’est-ce …"
+  kami "Qu’est -ce que je fais la ?"
+  kami "Hé ! Qu’est-ce VOUS faites là ?? "
 
-  gmu "Non mais … on fait rien de mal, on voulait juste… "
+  gmu "Ah mais … On fait rien de mal..."
+  gml "Oui, on voulait juste… "
 
-  kami "Je vous avais dit de toujours me demander avant d’entrer dans un rêve ! C’est pas possible je m’absente juste 2 ans et on m’invoque à cause de vos conneries ! "
+  kami "SILENCE!"
+  kami "Je vous avais dit de toujours me demander avant d’entrer dans un rêve !"
+  kami "C’est pas possible, je m’absente juste deux ans pour réfléchir à mes créations et on m’invoque à cause de vos conneries ! "
 
   gml "Maître ! On voulait vérifier nos théories !"
 
-  kami "Vous pouvez faire ça sans faire chier un pauvre humain qui n’a rien demandé. Allez zou, à la maison !"
+  kami "Vous pouvez faire ça sans faire chier un pauvre humain qui n’a rien demandé."
+  gmu "Mais Maître..."
+  kami "Suffit! Allez zou, à la maison !"
 
-  "Non ne faites pas ça maître ! "
-
-  call hide_chars
+  gml "Non Maître, ne faites p..."
 
   scene black_background
   with dissolve
 
+  hide screen show_char
+  hide screen show_char1
+
   scene universe
   with dissolve
 
-  show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
-  show screen show_char1(im_kami, 1.0, 1.0, zoom_kami)
+  kami "Bon, maintenant on va pouvoir parler tranquillement."
+
+
+  hide screen show_char2
+  hide screen show_char3
+
+  show screen show_char(boy_nervous, 1.0, 1.0, zoom_boy)
+  show screen show_char1(im_kami, 0.1, 1.0, zoom_kami)
   with dissolve
 
-  player "Putain enfin !"
+  player "Putain, enfin !"
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  kami "Je suis vraiment désolé pour tout ce que ces deux crapules t’ont fait subir. Ils ont tellement de pouvoir et sont si immatures c’est dur de les contenir."
+  kami "Je suis vraiment désolé pour tout ce que ces deux crapules t’ont fait subir. Ils ont tellement de pouvoir et sont si immatures que c’est dur de les contenir."
 
-  kami "Ces petits monstres se sont renseignés sur l’éthique des mortelles, j’aurais dû me douter que ça allait partir en sucette."
+  kami "Bon, je te dois au moins des explications pour ce qu'il t'es arrivé, petit."
+  kami "Quand ces petits monstres ont décidé de se renseigner sur l’éthique des mortels, j’aurais dû me douter que ça allait dérailler."
 
-  kami "Comme d’habitude, ils sont pas tombés d’accord et ont commencé à se disputer."
+  kami "Comme d’habitude, ils n'ont pas réussi à se mettre d’accord et ont commencé à se disputer."
 
   menu:
-    "L’éthique des mortelles ? ":
+    "L’éthique des mortels ? ":
       jump nuit3_suite_2
     "...":
       jump nuit3_suite_2
 
 label nuit3_suite_2:
   kami "Shiawase a lu un livre sur l’utilitarisme et il est direct devenu fan."
+  kami "Mais comme ce n'est qu'un enfant, il a pris au mot tout ce qu'il a lu."
+  kami "Je vais t'expliquer un peu mieux les idées de ce courant, humain."
 
   kami "L’utilitarisme est une doctrine morale dont le principe est d’agir de façon à maximiser le bien-être collectif."
 
-  kami "Par là il faut comprendre qu’il faut quantifier le bonheur ou le malheur que généreraient nos choix, nos actions afin de déterminer si notre comportement était bon ou mauvais."
+  kami "Par là, il faut comprendre qu’il faut quantifier le bonheur ou le malheur que généreraient nos choix, nos actions afin de déterminer si notre comportement était bon ou mauvais."
 
   kami "Les utilitaristes considèrent que lorsqu’on fait un choix, s’il existait une autre possibilité où le bonheur total serait plus grand, alors notre action était injuste."
 
@@ -2631,34 +2755,35 @@ label nuit3_suite_2:
   if(choix_adultes):
     kami "Tu as choisi de t’occuper des trois adultes."
     kami "Ton choix était utilitariste car tu as préféré t’assurer de la survie de trois personnes plutôt que d’essayer de sauver un enfant qui allait surement mourir."
-    kami "Tu as maximisé le bonheur global."
+    kami "Tu as maximisé le bonheur global, humain."
   else:
     kami "Tu as choisi de t’occuper de l’enfant."
-    kami "Ton choix n’était pas utilitariste car tu as préféré essayer de sauver un enfant qui était condamné plutôt que de t’assurer de la survie de trois personnes."
-    kami "Ton choix n’a pas maximisé le bonheur global puisqu’au final l’enfant est mort et un adulte également."
+    kami "Ton choix n’était pas utilitariste car tu as préféré essayer de sauver un enfant qui était condamné d'avance plutôt que de t’assurer de la survie de trois personnes."
+    kami "Ton choix n’a pas maximisé le bonheur global puisqu’au final aussi bien l’enfant qu'un adulte sont morts."
 
-  kami "Le concept de l’utilitarisme est intéressant mais comme tu l’as surement constaté il a des limites."
+  kami "Le concept de l’utilitarisme est intéressant, mais comme tu l’as surement constaté, il a des limites."
 
-  kami "D’abord quantifier le bonheur est très subjectif. Qu’est-ce que le bonheur ? Est-il le même pour tout le monde ?"
+  kami "D’abord, quantifier le bonheur est très subjectif."
+  kami "Qu’est-ce que le bonheur ? Est-il le même pour tout le monde ? Quels critères utiliser ?"
 
-  kami "Il y a beaucoup de situations où certains pensent que c’est l’option A qui maximisent le bien-être tandis que d’autres pensent que c’est l’option B."
+  kami "Il y a beaucoup de situations où certains pensent que c’est l’option A qui maximise le bien-être tandis que d’autres pensent que c’est l’option B."
   kami "Ces divergences dans la façon d’estimer le bonheur ont donné lieu à de multiples variantes de l’utilitarisme."
-  kami "Mais bon au final dur de dire qui est le plus juste puisque, soyons honnêtes, il est impossible de quantifier objectivement le bonheur."
+  kami "Mais bon, au final, c'est impossible de dire qui est le plus juste puisque, soyons honnêtes, il est impossible de quantifier objectivement le bonheur."
 
-  kami "De plus la théorie utilitariste est fondée sur la conséquence."
+  kami "De plus, la théorie utilitariste est fondée sur la conséquence."
   kami "Notre action est morale uniquement si les conséquences de celle-ci maximisent le bien-être."
   kami "Or tu te doutes bien que dans un univers aussi complexe que le nôtre, il est assez utopiste de penser qu’un simple humain pourrait estimer correctement toutes les conséquences de ses actes."
 
   menu:
     "En effet":
       jump nuit3_suite_3
-    "J'ai toujours calculer les conséquences de mes choix":
-      kami "Ahahahah mais qu’est-ce que tu es bête. Heureusement que tu m’as invoqué sinon les deux autres t’auraient tué."
-      show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+    "J'ai toujours réussi à calculer les conséquences de mes choix":
+      kami "Ahahahah, mais qu’est-ce que tu es bête, petit. Heureusement que tu m’as invoqué sinon les deux autres t’auraient certainement tué."
+      show screen show_char(boy_flustered, 1.0, 1.0, zoom_boy)
       with dissolve
       player "…"
-  
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+
+  show screen show_char(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
   kami "Pour finir l’utilitarisme se concentre tellement sur le bien-être global qu’il en oublie les minorités."
@@ -2679,7 +2804,7 @@ label nuit3_suite_2:
     kami "Avant, tu as choisi de garantir la survie de tous le monde et de sacrifier l’économie de la ville."
     kami "Ton choix n’était pas utilitariste car la crise va surement fortement baisser le niveau de vie global ce qui ne maximise clairement pas le bien-être."
     kami "Pourtant ta décision me parait plus juste car tu n’as discriminé personne et tu as bien remarqué que le quartier n’était pas plus responsable que les autres pour la sécheresse."
-  
+
   kami "Jiyu lui est tombé sur un livre qui développe la théorie libertariste."
   kami "Le libertarisme ou libertarianisme, est un courant éthique qui prône une société où l’Etat n’aurait comme unique rôle de respecter les droits de l’hommes ainsi que le droit de propriété."
   kami "Pour eux du moment que nos actions n’atteignent en rien la liberté des autres alors on a le droit de les faire."
@@ -2689,18 +2814,20 @@ label nuit3_suite_2:
     kami "Tu as choisi de donner les somnifères à M.Dumas. C’est un choix libertariste puisque tu considères que M.Dumas a le droit de disposer de sa vie comme il l’entend."
     kami "C’est sa liberté et il ne dérange personne, même pas sa famille malheureusement."
   else:
-    kami "Tu as refusé de donner les somnifères à M.Dumas. Ton choix n’est pas libertariste puisque te empêche M.Dumas de disposer de sa vie comme il l’entend."
+    kami "Tu as refusé de donner les somnifères à M.Dumas. Ton choix n’est pas libertariste puisque tu as empêché M.Dumas de disposer de sa vie comme il l’entend."
     kami "Tu limites sa liberté alors que sa volonté ne dérange personne, même pas sa famille."
-  
-  kami "Tout comme l’utilitarisme, cette doctrine est intéressante et offre des pistes sur comment concevoir notre morale mais elle comporte également de nombreuses limites."
+
+  kami "Tout comme l’utilitarisme, cette doctrine est intéressante et offre des pistes sur comment concevoir notre morale, mais elle comporte également de nombreuses limites."
 
   menu:
-    "Quoi comme limites":
+    "Quoi comme limites ?":
       jump nuit3_suite_4
-    "En fait vous êtes wikipédia Monsieur ?":
+    "En fait, vous êtes wikipédia Monsieur ?":
       kami "Monsieur !? Je suis quand même le créateur de l’univers, wikipédia compris."
       kami "Je n’arrive pas à croire que tu oses te moquer de moi, tu ferais mieux de fermer ta grande bouche si tu tiens à l’humanité."
       player "D’accord. (Dieu a vraiment pas d’humour… oh ! est-ce qu’il sait que je pense ça !? J’espère pas…)"
+      kami "..."
+      kami "Bon, revenons à nos moutons, comme vous dites vous humains."
       jump nuit3_suite_4
     "...":
       jump nuit3_suite_4
@@ -2708,48 +2835,62 @@ label nuit3_suite_2:
 
 
 label nuit3_suite_4:
-  kami "D’abord cette doctrine ne prend pas en compte les inégalités sociales."
+  kami "D’abord, cette doctrine du libertarisme ne prend pas en compte les inégalités sociales."
   kami "Dans une société libertariste, les riches seraient encore plus privilégiés que maintenant puisqu’ils pourraient subvenir à tous leurs besoins sans jamais donner pour la collectivité publique."
-  kami "Ainsi tous aides sociales seraient extrêmement limitées si ce n’est inexistantes."
+  kami "Ainsi tous aides sociales seraient extrêmement limitées, si ce n’est inexistantes."
   kami "D’après les idées libertaristes, on peut choisir de partager ou non car on mérite entièrement tout notre revenu."
-  kami "Cela sous-entend qu’il n’y aurait pas de problèmes à laisser mourir une population de faim même si on a largement les moyens de la nourrir."
+  kami "Cela sous-entend qu’il n’y aurait pas de problèmes à laisser mourir une population de faim, même si on aurait largement les moyens de la nourrir."
   kami "De plus tous les contrats devraient être légaux."
   kami "Cela peut mener à des situations totalement inhumaines."
-  kami "Par exemple une personne pauvre en très grande difficulté, ne bénéficiant de presque aucune aide, pourrait se retrouver à devoir vendre son rein pour nourrir sa famille."
-
-  kami "Enfin le libertarisme valorise tellement le consentement que ça en est dérangeant. Avec l’histoire du taxidermiste par exemple."
+  kami "Par exemple, une personne pauvre en très grande difficulté, ne bénéficiant de presque aucune aide, pourrait se retrouver à devoir vendre son rein pour nourrir sa famille."
+  kami "Bon, tu me diras que c'est déjà ce qui se passe dans votre monde."
+  kami "Enfin, le libertarisme valorise tellement le consentement que ça en est dérangeant. Avec l’histoire du taxidermiste par exemple."
 
   if(juge_relaxation):
     kami "Tu as beau avoir acquitté Gilbert. Je me demande si c’était le bon choix."
     kami "Est-ce moral d’autoriser les crimes et les mutilations les plus sordides au nom du consentement et de la liberté de chacun ?"
-    kami "Même si ce qu’a fait Gilbert était autorisé par son ami et qu’il a dérangé personne, je me demande si on a vraiment envie de laisser en liberté quelqu’un qui a empaillé un être humain."
+    kami "Même si ce qu’a fait Gilbert était autorisé par son ami et qu’il n'a dérangé personne, je me demande si on a vraiment envie de laisser en liberté quelqu’un qui a empaillé un être humain."
   elif(juge_reduction_peine):
     kami "Tu as choisi de mettre Gilbert en prison avec peine réduite."
     kami "Même si au fond, Gilbert n’entravait pas la liberté des autres, tu as bien remarqué que ce n’était pas très moral de laisser en liberté quelqu’un qui a empaillé un être humain."
-    kami "Comme quoi, il faut toujours réfléchir quand on fait un choix moral et pas bêtement appliqué une doctrine."
+    kami "Comme quoi, il faut toujours réfléchir quand on fait un choix moral et pas bêtement appliquer une doctrine."
   else:
     kami "Tu as choisi de mettre Gilbert en prison."
     kami "Même si au fond, Gilbert n’entravait pas la liberté des autres, tu as bien remarqué que ce n’était pas très moral de laisser en liberté quelqu’un qui a empaillé un être humain."
-    kami "Comme quoi, il faut toujours réfléchir quand on fait un choix moral et pas bêtement appliqué une doctrine."
-    kami "Après peut-être que tu as été un peu rude avec une peine pour homicide volontaire."
-    kami "Gilbert était certes conscient de son acte mais il s’était tout de même assuré du discernement de son amis avant de procéder."
-    kami "Peut-être ne mérite-t-il pas la même sanction qu’un meurtrier qui a tué par pur plaisir."
+    kami "Comme quoi, il faut toujours réfléchir quand on fait un choix moral et pas bêtement appliquer une doctrine."
+    kami "Après, peut-être que tu as été un peu rude avec une peine pour homicide volontaire."
+    kami "Gilbert était certes conscient de son acte, mais il s’était tout de même assuré du discernement de son ami avant de procéder."
+    kami "Peut-être ne mérite-t-il pas la même sanction qu’un meurtrier qui a tué un pauvre innocent."
 
-  kami "Au final Shiawase et Jiyu sont venu t’embêter pour prouver que leur vision était la meilleure mais au fond, aucune ne l’est vraiment."
-  kami "L’utilitarisme ou le libertarisme, ces deux doctrines offrent de bonnes pistes de réflexions sur la morale mais les deux sont limitées et c’est à toi, simple être humain, de réfléchir un minimum à tes choix et de ne pas appliquer bêtement une doctrine machinalement."
-  kami "Si jamais l’éthique t’intéresse humain, je te conseille de te renseigner sur le kantisme, c’est aussi une doctrine morale mais assez différente que les deux que tu as vues et personnellement je l’aime bien."
+  kami "Au final, Shiawase et Jiyu sont venu t’embêter pour prouver que leur vision était la meilleure mais au fond, aucune ne l’est vraiment."
+  kami "L’utilitarisme ou le libertarisme, ces deux doctrines offrent de bonnes pistes de réflexions sur la morale mais les deux sont limitées."
+  kami "C’est à toi, simple être humain, de réfléchir un minimum à tes choix et de ne pas appliquer bêtement une doctrine machinalement."
+  kami "J'espère que cette histoire aura au moins eu le mérite de te faire réfléchir, petit."
+  menu :
+    "Oh oui, ça c'est sûr!":
+        kami "Ah, peut-être qu'il y a de l'espoir pour les humains après tout."
+    "Pas vraiment...":
+        kami "Alors je te conseille de t'y mettre dès maintenant!"
+    "Mes idées sont meilleures!":
+        kami "Tu es bien bête si tu n'est même pas capable de te remettre en question!"
+        kami "Parfois j'oublie à quel point les humains peuvent être étroits d'esprit..."
+
+  kami "Enfin, si jamais l’éthique t’intéresse, humain, je te conseille de te renseigner sur le kantisme."
+  kami "C’est aussi une doctrine morale mais assez différente que les deux que tu as vues et personnellement, je l’aime bien."
 
   menu:
-    "J'en ai marre de l'éthique":
+    "J'en ai marre de l'éthique!":
       player "Ca devrait aller je suis un peu gavé de l’éthique là…"
-      kami "Ahah je comprends ta douleur humain."
-      kami "Je dois te laisser je suis assez demandé malheureusement."
-      kami "Navré pour Shiawase et Jiyu ça n’arrivera plus ne t’en fais pas. Sur ce REVEIL !"
+      kami "Ah, je ne comprendrais jamais la paresse des humains."
+      kami "Je dois te laisser malheureusement. En tant que dieu-créateur, je suis assez demandé, vois-tu."
+      kami "Navré pour Shiawase et Jiyu, ça n’arrivera plus, ne t’en fais pas."
+      kami "Sur ce, REVEILLE-TOI !"
     "Le kantisme ?":
-      player "Le kantisme ? C’est noté je vais regarder ce que c’est ! Au point où j’en suis autant être calé dans le domaine..."
-      kami "On dirait que t’es motivé ça fait plaisir."
-      kami "Je dois te laisser je suis assez demandé malheureusement."
-      kami "Navré pour Shiawase et Jiyu ça n’arrivera plus ne t’en fais pas. Sur ce REVEIL !"
+      player "Le kantisme ? C’est noté je vais regarder ce que c’est ! Au point où j’en suis, autant être calé dans le domaine..."
+      kami "HAHAHA, on dirait que t’es motivé, ça fait plaisir."
+      kami "Je dois te laisser malheureusement. En tant que dieu-créateur, je suis assez demandé, vois-tu."
+      kami "Navré pour Shiawase et Jiyu, ça n’arrivera plus ne t’en fais pas."
+      kami "Sur ce, REVEILLE-TOI !"
 
   call hide_chars
 
