@@ -1,8 +1,85 @@
 scène post-credits
 ========================================================================================================================================
+image phone1 = im.Scale("Post credits/phone1.jpg", 1920, 1080)
+image phone2 = im.Scale("Post credits/phone2.jpg", 1920, 1080)
+image phone3 = im.Scale("Post credits/phone3.jpg", 1920, 1080)
 
+image phone4_0_1 = im.Scale("Post credits/phone4_0_1.jpg", 1920, 1080)
+image phone4_0_2 = im.Scale("Post credits/phone4_0_2.jpg", 1920, 1080)
+image phone4_0_3 = im.Scale("Post credits/phone4_0_3.jpg", 1920, 1080)
+image phone4_0_4 = im.Scale("Post credits/phone4_0_4.jpg", 1920, 1080)
+image phone4_1_0 = im.Scale("Post credits/phone4_1_0.jpg", 1920, 1080)
+image phone4_1_1 = im.Scale("Post credits/phone4_1_1.jpg", 1920, 1080)
+image phone4_1_2 = im.Scale("Post credits/phone4_1_2.jpg", 1920, 1080)
+image phone4_1_3 = im.Scale("Post credits/phone4_1_3.jpg", 1920, 1080)
+image phone4_1_4 = im.Scale("Post credits/phone4_1_4.jpg", 1920, 1080)
+image phone4_2_0 = im.Scale("Post credits/phone4_2_0.jpg", 1920, 1080)
+image phone4_2_1 = im.Scale("Post credits/phone4_2_1.jpg", 1920, 1080)
+image phone4_2_2 = im.Scale("Post credits/phone4_2_2.jpg", 1920, 1080)
+image phone4_2_3 = im.Scale("Post credits/phone4_2_3.jpg", 1920, 1080)
+image phone4_2_4 = im.Scale("Post credits/phone4_2_4.jpg", 1920, 1080)
+image phone4_3_0 = im.Scale("Post credits/phone4_3_0.jpg", 1920, 1080)
+image phone4_3_1 = im.Scale("Post credits/phone4_3_1.jpg", 1920, 1080)
+image phone4_3_2 = im.Scale("Post credits/phone4_3_2.jpg", 1920, 1080)
+image phone4_3_3 = im.Scale("Post credits/phone4_3_3.jpg", 1920, 1080)
+image phone4_3_4 = im.Scale("Post credits/phone4_3_4.jpg", 1920, 1080)
+image phone4_4_0 = im.Scale("Post credits/phone4_4_0.jpg", 1920, 1080)
+image phone4_4_1 = im.Scale("Post credits/phone4_4_1.jpg", 1920, 1080)
+image phone4_4_2 = im.Scale("Post credits/phone4_4_2.jpg", 1920, 1080)
+image phone4_4_3 = im.Scale("Post credits/phone4_4_3.jpg", 1920, 1080)
+image phone4_4_4 = im.Scale("Post credits/phone4_4_4.jpg", 1920, 1080)
 
-========================================================================================================================================
+image phone5_0_1 = im.Scale("Post credits/phone5_0_1.jpg", 1920, 1080)
+image phone5_0_2 = im.Scale("Post credits/phone5_0_2.jpg", 1920, 1080)
+image phone5_0_3 = im.Scale("Post credits/phone5_0_3.jpg", 1920, 1080)
+image phone5_0_4 = im.Scale("Post credits/phone5_0_4.jpg", 1920, 1080)
+image phone5_1_0 = im.Scale("Post credits/phone5_1_0.jpg", 1920, 1080)
+image phone5_1_1 = im.Scale("Post credits/phone5_1_1.jpg", 1920, 1080)
+image phone5_1_2 = im.Scale("Post credits/phone5_1_2.jpg", 1920, 1080)
+image phone5_1_3 = im.Scale("Post credits/phone5_1_3.jpg", 1920, 1080)
+image phone5_1_4 = im.Scale("Post credits/phone5_1_4.jpg", 1920, 1080)
+image phone5_2_0 = im.Scale("Post credits/phone5_2_0.jpg", 1920, 1080)
+image phone5_2_1 = im.Scale("Post credits/phone5_2_1.jpg", 1920, 1080)
+image phone5_2_2 = im.Scale("Post credits/phone5_2_2.jpg", 1920, 1080)
+image phone5_2_3 = im.Scale("Post credits/phone5_2_3.jpg", 1920, 1080)
+image phone5_2_4 = im.Scale("Post credits/phone5_2_4.jpg", 1920, 1080)
+image phone5_3_0 = im.Scale("Post credits/phone5_3_0.jpg", 1920, 1080)
+image phone5_3_1 = im.Scale("Post credits/phone5_3_1.jpg", 1920, 1080)
+image phone5_3_2 = im.Scale("Post credits/phone5_3_2.jpg", 1920, 1080)
+image phone5_3_3 = im.Scale("Post credits/phone5_3_3.jpg", 1920, 1080)
+image phone5_3_4 = im.Scale("Post credits/phone5_3_4.jpg", 1920, 1080)
+image phone5_4_0 = im.Scale("Post credits/phone5_4_0.jpg", 1920, 1080)
+image phone5_4_1 = im.Scale("Post credits/phone5_4_1.jpg", 1920, 1080)
+image phone5_4_2 = im.Scale("Post credits/phone5_4_2.jpg", 1920, 1080)
+image phone5_4_3 = im.Scale("Post credits/phone5_4_3.jpg", 1920, 1080)
+image phone5_4_4 = im.Scale("Post credits/phone5_4_4.jpg", 1920, 1080)
+
+image phone6_0_1 = im.Scale("Post credits/phone6_0_1.jpg", 1920, 1080)
+image phone6_0_2 = im.Scale("Post credits/phone6_0_2.jpg", 1920, 1080)
+image phone6_0_3 = im.Scale("Post credits/phone6_0_3.jpg", 1920, 1080)
+image phone6_0_4 = im.Scale("Post credits/phone6_0_4.jpg", 1920, 1080)
+image phone6_1_0 = im.Scale("Post credits/phone6_1_0.jpg", 1920, 1080)
+image phone6_1_1 = im.Scale("Post credits/phone6_1_1.jpg", 1920, 1080)
+image phone6_1_2 = im.Scale("Post credits/phone6_1_2.jpg", 1920, 1080)
+image phone6_1_3 = im.Scale("Post credits/phone6_1_3.jpg", 1920, 1080)
+image phone6_1_4 = im.Scale("Post credits/phone6_1_4.jpg", 1920, 1080)
+image phone6_2_0 = im.Scale("Post credits/phone6_2_0.jpg", 1920, 1080)
+image phone6_2_1 = im.Scale("Post credits/phone6_2_1.jpg", 1920, 1080)
+image phone6_2_2 = im.Scale("Post credits/phone6_2_2.jpg", 1920, 1080)
+image phone6_2_3 = im.Scale("Post credits/phone6_2_3.jpg", 1920, 1080)
+image phone6_2_4 = im.Scale("Post credits/phone6_2_4.jpg", 1920, 1080)
+image phone6_3_0 = im.Scale("Post credits/phone6_3_0.jpg", 1920, 1080)
+image phone6_3_1 = im.Scale("Post credits/phone6_3_1.jpg", 1920, 1080)
+image phone6_3_2 = im.Scale("Post credits/phone6_3_2.jpg", 1920, 1080)
+image phone6_3_3 = im.Scale("Post credits/phone6_3_3.jpg", 1920, 1080)
+image phone6_3_4 = im.Scale("Post credits/phone6_3_4.jpg", 1920, 1080)
+image phone6_4_0 = im.Scale("Post credits/phone6_4_0.jpg", 1920, 1080)
+image phone6_4_1 = im.Scale("Post credits/phone6_4_1.jpg", 1920, 1080)
+image phone6_4_2 = im.Scale("Post credits/phone6_4_2.jpg", 1920, 1080)
+image phone6_4_3 = im.Scale("Post credits/phone6_4_3.jpg", 1920, 1080)
+image phone6_4_4 = im.Scale("Post credits/phone6_4_4.jpg", 1920, 1080)
+=======================================================================================================================================
+
 kami "sur ce, reveille-toi"
 
 *scène crédits*
@@ -49,23 +126,463 @@ label :
     
     player "Des points..."
     
-    scene phone4_1_0
-    with dissolve
+    if utilitarisme == 0 and libertarinisme == 1 :
     
-    "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        scene phone4_0_1
+        with dissolve
     
-    scene phone5_1_0
-    with dissolve
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
     
-    "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        scene phone5_0_1
+        with dissolve
     
-    scene phone6_1_0
-    with dissolve
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
     
-    "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        scene phone6_0_1
+        with dissolve
     
-    player "..."
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
     
+        player "..."
+        
+    elif utilitarisme == 0 and libertarinisme == 2 :
+    
+        scene phone4_0_2
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_0_2
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_0_2
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 0 and libertarinisme == 3 :
+    
+        scene phone4_0_3
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_0_3
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_0_3
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 0 and libertarinisme == 4 :
+    
+        scene phone4_0_4
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_0_4
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_0_4
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 1 and libertarinisme == 0 :
+    
+        scene phone4_1_0
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_1_0
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_1_0
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 1 and libertarinisme == 1 :
+    
+        scene phone4_1_1
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_1_1
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_1_1
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 1 and libertarinisme == 2 :
+    
+        scene phone4_1_2
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_1_2
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_1_2
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 1 and libertarinisme == 3 :
+    
+        scene phone4_1_3
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_1_3
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_1_3
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 1 and libertarinisme == 4 :
+    
+        scene phone4_1_4
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_1_4
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_1_4
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 2 and libertarinisme == 0 :
+    
+        scene phone4_2_0
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_2_0
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_2_0
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 2 and libertarinisme == 1 :
+    
+        scene phone4_2_1
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_2_1
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_2_1
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 2 and libertarinisme == 2 :
+    
+        scene phone4_2_2
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_2_2
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_2_2
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 2 and libertarinisme == 3 :
+    
+        scene phone4_2_3
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_2_3
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_2_3
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 2 and libertarinisme == 4 :
+    
+        scene phone4_2_4
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_2_4
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_2_4
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 3 and libertarinisme == 0 :
+    
+        scene phone4_3_0
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_3_0
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_3_0
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 3 and libertarinisme == 1 :
+    
+        scene phone4_3_1
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_3_1
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_3_1
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 3 and libertarinisme == 2 :
+    
+        scene phone4_3_2
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_3_2
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_3_2
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 3 and libertarinisme == 3 :
+    
+        scene phone4_3_3
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_3_3
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_3_3
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 3 and libertarinisme == 4 :
+    
+        scene phone4_3_4
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_3_4
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_3_4
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 4 and libertarinisme == 0 :
+    
+        scene phone4_4_0
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_4_0
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_4_0
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 4 and libertarinisme == 1 :
+    
+        scene phone4_4_1
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_4_1
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_4_1
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 4 and libertarinisme == 2 :
+    
+        scene phone4_4_2
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_4_2
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_4_2
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 4 and libertarinisme == 3 :
+    
+        scene phone4_4_3
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_4_3
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_4_3
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+        
+    elif utilitarisme == 4 and libertarinisme == 4 :
+    
+        scene phone4_4_4
+        with dissolve
+    
+        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+        scene phone5_4_4
+        with dissolve
+    
+        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+        scene phone6_4_4
+        with dissolve
+    
+        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+        player "..."
+       
+       
     scene room_hero
     with dissolve
 
