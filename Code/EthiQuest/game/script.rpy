@@ -2482,7 +2482,7 @@ label nuit3_utilitarisme:
   maire "Comment pourrait-on choisir qui devrait vivre ou mourir ? On va se mettre toute la ville à dos. Ce serait l’anarchie."
   maire "On ne pourrait pas réquisitionner l’eau des industries locales ?"
 
-  assistante "On pourrait mais cela paralyserait l’économie et donnerait lieux à une crise économique. Il y a de fortes chances que la population soit encore plus en colère que si on en laissait simplement certains mourir… "
+  assistante "On pourrait mais cela paralyserait l’économie et donnerait lieu à une crise économique. Il y a de fortes chances que la population soit encore plus en colère que si on en laissait simplement certains mourir… "
 
   maire "Qu'est ce que vous voulez dire ?"
 
