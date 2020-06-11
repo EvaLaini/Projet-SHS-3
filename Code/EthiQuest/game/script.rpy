@@ -2790,15 +2790,15 @@ label nuit3_suite:
       jump nuit3_suite_2
 
 label nuit3_suite_2:
-  kami "Shiawase a lu un livre sur l’utilitarisme et il est direct devenu fan."
+  kami "Shiawase a lu un livre sur l’utilitarisme et il est immédiatement devenu fan."
   kami "Mais comme ce n'est qu'un enfant, il a pris au mot tout ce qu'il a lu."
   kami "Je vais t'expliquer un peu mieux les idées de ce courant, humain."
 
   kami "L’utilitarisme est une doctrine morale dont le principe est d’agir de façon à maximiser le bien-être collectif."
 
-  kami "Par là, il faut comprendre qu’il faut quantifier le bonheur ou le malheur que généreraient nos choix, nos actions afin de déterminer si notre comportement était bon ou mauvais."
+  kami "Par là, il faut comprendre qu’il faut quantifier le bonheur ou le malheur que nos choix, nos actions ont généré afin de déterminer si notre comportement était bon ou mauvais."
 
-  kami "Les utilitaristes considèrent que lorsqu’on fait un choix, s’il existait une autre possibilité où le bonheur total serait plus grand, alors notre action était injuste."
+  kami "Les utilitaristes considèrent que lorsque l’on fait un choix, s’il existe une autre possibilité où le bonheur total est plus grand, alors notre action était injuste."
 
   kami "Tu vois lors de ton premier rêve ..."
 
@@ -2814,7 +2814,7 @@ label nuit3_suite_2:
   kami "Le concept de l’utilitarisme est intéressant, mais comme tu l’as surement constaté, il a des limites."
 
   kami "D’abord, quantifier le bonheur est très subjectif."
-  kami "Qu’est-ce que le bonheur ? Est-il le même pour tout le monde ? Quels critères utiliser ?"
+  kami "Qu’est-ce que le bonheur ? Est-il le même pour tout le monde ? Quels critères prendre en compte ?"
 
   kami "Il y a beaucoup de situations où certains pensent que c’est l’option A qui maximise le bien-être tandis que d’autres pensent que c’est l’option B."
   kami "Ces divergences dans la façon d’estimer le bonheur ont donné lieu à de multiples variantes de l’utilitarisme."
@@ -2837,27 +2837,29 @@ label nuit3_suite_2:
   with dissolve
 
   kami "Pour finir l’utilitarisme se concentre tellement sur le bien-être global qu’il en oublie les minorités."
-  kami "Imagine une société raciste où exécuter publiquement les personnes racisées maximiserait le bien-être collectif."
+  kami "Imagine une société où exécuter publiquement les personnes appartenant à une minorité maximiserait le bien-être collectif."
   kami "Est-ce que l’action reste morale ?"
   kami "Je ne pense pas qu’on puisse bafouer la dignité humaine au nom du bonheur global."
 
   if(sacrifice_quartier):
-    kami "Pourtant avant, tu as choisi de sacrifier un quartier car cela convenait à la majorité."
+    kami "Pourtant, juste avant, tu as choisi de sacrifier un quartier car cela convenait à la majorité."
     kami "Ton choix était totalement utilitariste mais était-il moral ?"
     kami "Ce pauvre quartier n’était pas plus responsable que les autres de la sécheresse alors pourquoi est-il le seul à en subir les conséquences ?"
     kami "Je ne pense pas que sacrifier des vies pour le confort du plus grand nombre soit la meilleure chose à faire…"
   elif(sacrifice_aleatoire):
-    kami "Avant, tu as choisi de sélectionner aléatoirement les personnes qui n’auront pas d’eau."
+    kami "Juste avant, tu as choisi de sélectionner aléatoirement les personnes qui n’auront pas d’eau."
     kami "Ton choix n’était pas utilitariste car sacrifier le quartier que la majorité déteste maximisait le bien-être."
     kami "Pourtant ta décision me parait plus juste car tu n’as discriminé personne et tu as bien remarqué que le quartier n’était pas plus responsable que les autres de la sécheresse."
   else:
-    kami "Avant, tu as choisi de garantir la survie de tous le monde et de sacrifier l’économie de la ville."
+    kami "Juste avant, tu as choisi de garantir la survie de tout le monde et de sacrifier l’économie de la ville."
     kami "Ton choix n’était pas utilitariste car la crise va surement fortement baisser le niveau de vie global ce qui ne maximise clairement pas le bien-être."
-    kami "Pourtant ta décision me parait plus juste car tu n’as discriminé personne et tu as bien remarqué que le quartier n’était pas plus responsable que les autres pour la sécheresse."
+    kami "Pourtant ta décision me parait plus juste car tu n’as discriminé personne et tu as bien remarqué que le quartier n’était pas plus responsable que les autres de la sécheresse."
+
+  kami "Toutefois le livre de Shiawase couvrait uniquement l’utilitarisme. Il existe plusieurs autres courants."
 
   kami "Jiyu lui est tombé sur un livre qui développe la théorie libertariste."
-  kami "Le libertarisme ou libertarianisme, est un courant éthique qui prône une société où l’Etat n’aurait comme unique rôle de respecter les droits de l’hommes ainsi que le droit de propriété."
-  kami "Pour eux du moment que nos actions n’atteignent en rien la liberté des autres alors on a le droit de les faire."
+  kami "Le libertarisme ou libertarianisme, est un courant éthique qui prône une société où l’Etat n’aurait comme unique rôle de respecter les droits de l’Homme ainsi que le droit de propriété."
+  kami "Selon les libertaristes, du moment que nos actions n’atteignent en rien la liberté des autres alors on a le droit de les faire."
   kami "Par conséquent ils considèrent l’impôt comme immoral puisqu’il enfreint notre liberté de disposer de notre revenu. Lors de ton second rêve :"
 
   if(suicide_assiste):
@@ -2887,9 +2889,9 @@ label nuit3_suite_2:
 label nuit3_suite_4:
   kami "D’abord, cette doctrine du libertarisme ne prend pas en compte les inégalités sociales."
   kami "Dans une société libertariste, les riches seraient encore plus privilégiés que maintenant puisqu’ils pourraient subvenir à tous leurs besoins sans jamais donner pour la collectivité publique."
-  kami "Ainsi tous aides sociales seraient extrêmement limitées, si ce n’est inexistantes."
+  kami "Ainsi, toutes les aides sociales seraient extrêmement limitées, si ce n’est inexistantes."
   kami "D’après les idées libertaristes, on peut choisir de partager ou non car on mérite entièrement tout notre revenu."
-  kami "Cela sous-entend qu’il n’y aurait pas de problèmes à laisser mourir une population de faim, même si on aurait largement les moyens de la nourrir."
+  kami "Cela sous-entend qu’il n’y aurait pas de problèmes à laisser mourir une population de faim, même si on a largement les moyens de la nourrir."
   kami "De plus tous les contrats devraient être légaux."
   kami "Cela peut mener à des situations totalement inhumaines."
   kami "Par exemple, une personne pauvre en très grande difficulté, ne bénéficiant de presque aucune aide, pourrait se retrouver à devoir vendre son rein pour nourrir sa famille."
@@ -2913,8 +2915,7 @@ label nuit3_suite_4:
     kami "Peut-être ne mérite-t-il pas la même sanction qu’un meurtrier qui a tué un pauvre innocent."
 
   kami "Au final, Shiawase et Jiyu sont venu t’embêter pour prouver que leur vision était la meilleure mais au fond, aucune ne l’est vraiment."
-  kami "L’utilitarisme ou le libertarisme, ces deux doctrines offrent de bonnes pistes de réflexions sur la morale mais les deux sont limitées."
-  kami "C’est à toi, simple être humain, de réfléchir un minimum à tes choix et de ne pas appliquer bêtement une doctrine machinalement."
+  kami "L’utilitarisme ou le libertarisme, ces deux doctrines offrent de bonnes pistes de réflexions sur la morale mais les deux sont limitées et c’est à toi, simple être humain, de réfléchir un minimum à tes choix et de ne pas appliquer bêtement une doctrine."
   kami "J'espère que cette histoire aura au moins eu le mérite de te faire réfléchir, petit."
   menu :
     "Oh oui, ça c'est sûr !":
