@@ -1,85 +1,110 @@
 scène post-credits
 ========================================================================================================================================
-image credits = im.Scale("Credits/credits.jpg", 1920, 1080)
+image credits = im.Scale("Credits/credits.png", 1920, 1080)
 
-image phone1 = im.Scale("Post credits/phone1.jpg", 1920, 1080)
-image phone2 = im.Scale("Post credits/phone2.jpg", 1920, 1080)
-image phone3 = im.Scale("Post credits/phone3.jpg", 1920, 1080)
+image phone1 = im.Scale("Post credits/phone1.PNG", 1920, 1080)
+image phone2 = im.Scale("Post credits/phone2.PNG", 1920, 1080)
+image phone3 = im.Scale("Post credits/phone3.PNG", 1920, 1080)
 
-image phone4_0_1 = im.Scale("Post credits/phone4_0_1.jpg", 1920, 1080)
-image phone4_0_2 = im.Scale("Post credits/phone4_0_2.jpg", 1920, 1080)
-image phone4_0_3 = im.Scale("Post credits/phone4_0_3.jpg", 1920, 1080)
-image phone4_0_4 = im.Scale("Post credits/phone4_0_4.jpg", 1920, 1080)
-image phone4_1_0 = im.Scale("Post credits/phone4_1_0.jpg", 1920, 1080)
-image phone4_1_1 = im.Scale("Post credits/phone4_1_1.jpg", 1920, 1080)
-image phone4_1_2 = im.Scale("Post credits/phone4_1_2.jpg", 1920, 1080)
-image phone4_1_3 = im.Scale("Post credits/phone4_1_3.jpg", 1920, 1080)
-image phone4_1_4 = im.Scale("Post credits/phone4_1_4.jpg", 1920, 1080)
-image phone4_2_0 = im.Scale("Post credits/phone4_2_0.jpg", 1920, 1080)
-image phone4_2_1 = im.Scale("Post credits/phone4_2_1.jpg", 1920, 1080)
-image phone4_2_2 = im.Scale("Post credits/phone4_2_2.jpg", 1920, 1080)
-image phone4_2_3 = im.Scale("Post credits/phone4_2_3.jpg", 1920, 1080)
-image phone4_2_4 = im.Scale("Post credits/phone4_2_4.jpg", 1920, 1080)
-image phone4_3_0 = im.Scale("Post credits/phone4_3_0.jpg", 1920, 1080)
-image phone4_3_1 = im.Scale("Post credits/phone4_3_1.jpg", 1920, 1080)
-image phone4_3_2 = im.Scale("Post credits/phone4_3_2.jpg", 1920, 1080)
-image phone4_3_3 = im.Scale("Post credits/phone4_3_3.jpg", 1920, 1080)
-image phone4_3_4 = im.Scale("Post credits/phone4_3_4.jpg", 1920, 1080)
-image phone4_4_0 = im.Scale("Post credits/phone4_4_0.jpg", 1920, 1080)
-image phone4_4_1 = im.Scale("Post credits/phone4_4_1.jpg", 1920, 1080)
-image phone4_4_2 = im.Scale("Post credits/phone4_4_2.jpg", 1920, 1080)
-image phone4_4_3 = im.Scale("Post credits/phone4_4_3.jpg", 1920, 1080)
-image phone4_4_4 = im.Scale("Post credits/phone4_4_4.jpg", 1920, 1080)
+image phone4_0_1 = im.Scale("Post credits/phone4_0_1.PNG", 1920, 1080)
+image phone4_0_2 = im.Scale("Post credits/phone4_0_2.PNG", 1920, 1080)
+image phone4_0_3 = im.Scale("Post credits/phone4_0_3.PNG", 1920, 1080)
+image phone4_0_4 = im.Scale("Post credits/phone4_0_4.PNG", 1920, 1080)
+image phone4_1_0 = im.Scale("Post credits/phone4_1_0.PNG", 1920, 1080)
+image phone4_1_1 = im.Scale("Post credits/phone4_1_1.PNG", 1920, 1080)
+image phone4_1_2 = im.Scale("Post credits/phone4_1_2.PNG", 1920, 1080)
+image phone4_1_3 = im.Scale("Post credits/phone4_1_3.PNG", 1920, 1080)
+image phone4_1_4 = im.Scale("Post credits/phone4_1_4.PNG", 1920, 1080)
+image phone4_2_0 = im.Scale("Post credits/phone4_2_0.PNG", 1920, 1080)
+image phone4_2_1 = im.Scale("Post credits/phone4_2_1.PNG", 1920, 1080)
+image phone4_2_2 = im.Scale("Post credits/phone4_2_2.PNG", 1920, 1080)
+image phone4_2_3 = im.Scale("Post credits/phone4_2_3.PNG", 1920, 1080)
+image phone4_2_4 = im.Scale("Post credits/phone4_2_4.PNG", 1920, 1080)
+image phone4_3_0 = im.Scale("Post credits/phone4_3_0.PNG", 1920, 1080)
+image phone4_3_1 = im.Scale("Post credits/phone4_3_1.PNG", 1920, 1080)
+image phone4_3_2 = im.Scale("Post credits/phone4_3_2.PNG", 1920, 1080)
+image phone4_3_3 = im.Scale("Post credits/phone4_3_3.PNG", 1920, 1080)
+image phone4_3_4 = im.Scale("Post credits/phone4_3_4.PNG", 1920, 1080)
+image phone4_4_0 = im.Scale("Post credits/phone4_4_0.PNG", 1920, 1080)
+image phone4_4_1 = im.Scale("Post credits/phone4_4_1.PNG", 1920, 1080)
+image phone4_4_2 = im.Scale("Post credits/phone4_4_2.PNG", 1920, 1080)
+image phone4_4_3 = im.Scale("Post credits/phone4_4_3.PNG", 1920, 1080)
+image phone4_4_4 = im.Scale("Post credits/phone4_4_4.PNG", 1920, 1080)
 
-image phone5_0_1 = im.Scale("Post credits/phone5_0_1.jpg", 1920, 1080)
-image phone5_0_2 = im.Scale("Post credits/phone5_0_2.jpg", 1920, 1080)
-image phone5_0_3 = im.Scale("Post credits/phone5_0_3.jpg", 1920, 1080)
-image phone5_0_4 = im.Scale("Post credits/phone5_0_4.jpg", 1920, 1080)
-image phone5_1_0 = im.Scale("Post credits/phone5_1_0.jpg", 1920, 1080)
-image phone5_1_1 = im.Scale("Post credits/phone5_1_1.jpg", 1920, 1080)
-image phone5_1_2 = im.Scale("Post credits/phone5_1_2.jpg", 1920, 1080)
-image phone5_1_3 = im.Scale("Post credits/phone5_1_3.jpg", 1920, 1080)
-image phone5_1_4 = im.Scale("Post credits/phone5_1_4.jpg", 1920, 1080)
-image phone5_2_0 = im.Scale("Post credits/phone5_2_0.jpg", 1920, 1080)
-image phone5_2_1 = im.Scale("Post credits/phone5_2_1.jpg", 1920, 1080)
-image phone5_2_2 = im.Scale("Post credits/phone5_2_2.jpg", 1920, 1080)
-image phone5_2_3 = im.Scale("Post credits/phone5_2_3.jpg", 1920, 1080)
-image phone5_2_4 = im.Scale("Post credits/phone5_2_4.jpg", 1920, 1080)
-image phone5_3_0 = im.Scale("Post credits/phone5_3_0.jpg", 1920, 1080)
-image phone5_3_1 = im.Scale("Post credits/phone5_3_1.jpg", 1920, 1080)
-image phone5_3_2 = im.Scale("Post credits/phone5_3_2.jpg", 1920, 1080)
-image phone5_3_3 = im.Scale("Post credits/phone5_3_3.jpg", 1920, 1080)
-image phone5_3_4 = im.Scale("Post credits/phone5_3_4.jpg", 1920, 1080)
-image phone5_4_0 = im.Scale("Post credits/phone5_4_0.jpg", 1920, 1080)
-image phone5_4_1 = im.Scale("Post credits/phone5_4_1.jpg", 1920, 1080)
-image phone5_4_2 = im.Scale("Post credits/phone5_4_2.jpg", 1920, 1080)
-image phone5_4_3 = im.Scale("Post credits/phone5_4_3.jpg", 1920, 1080)
-image phone5_4_4 = im.Scale("Post credits/phone5_4_4.jpg", 1920, 1080)
+image phone5_0_1 = im.Scale("Post credits/phone5_0_1.PNG", 1920, 1080)
+image phone5_0_2 = im.Scale("Post credits/phone5_0_2.PNG", 1920, 1080)
+image phone5_0_3 = im.Scale("Post credits/phone5_0_3.PNG", 1920, 1080)
+image phone5_0_4 = im.Scale("Post credits/phone5_0_4.PNG", 1920, 1080)
+image phone5_1_0 = im.Scale("Post credits/phone5_1_0.PNG", 1920, 1080)
+image phone5_1_1 = im.Scale("Post credits/phone5_1_1.PNG", 1920, 1080)
+image phone5_1_2 = im.Scale("Post credits/phone5_1_2.PNG", 1920, 1080)
+image phone5_1_3 = im.Scale("Post credits/phone5_1_3.PNG", 1920, 1080)
+image phone5_1_4 = im.Scale("Post credits/phone5_1_4.PNG", 1920, 1080)
+image phone5_2_0 = im.Scale("Post credits/phone5_2_0.PNG", 1920, 1080)
+image phone5_2_1 = im.Scale("Post credits/phone5_2_1.PNG", 1920, 1080)
+image phone5_2_2 = im.Scale("Post credits/phone5_2_2.PNG", 1920, 1080)
+image phone5_2_3 = im.Scale("Post credits/phone5_2_3.PNG", 1920, 1080)
+image phone5_2_4 = im.Scale("Post credits/phone5_2_4.PNG", 1920, 1080)
+image phone5_3_0 = im.Scale("Post credits/phone5_3_0.PNG", 1920, 1080)
+image phone5_3_1 = im.Scale("Post credits/phone5_3_1.PNG", 1920, 1080)
+image phone5_3_2 = im.Scale("Post credits/phone5_3_2.PNG", 1920, 1080)
+image phone5_3_3 = im.Scale("Post credits/phone5_3_3.PNG", 1920, 1080)
+image phone5_3_4 = im.Scale("Post credits/phone5_3_4.PNG", 1920, 1080)
+image phone5_4_0 = im.Scale("Post credits/phone5_4_0.PNG", 1920, 1080)
+image phone5_4_1 = im.Scale("Post credits/phone5_4_1.PNG", 1920, 1080)
+image phone5_4_2 = im.Scale("Post credits/phone5_4_2.PNG", 1920, 1080)
+image phone5_4_3 = im.Scale("Post credits/phone5_4_3.PNG", 1920, 1080)
+image phone5_4_4 = im.Scale("Post credits/phone5_4_4.PNG", 1920, 1080)
 
-image phone6_0_1 = im.Scale("Post credits/phone6_0_1.jpg", 1920, 1080)
-image phone6_0_2 = im.Scale("Post credits/phone6_0_2.jpg", 1920, 1080)
-image phone6_0_3 = im.Scale("Post credits/phone6_0_3.jpg", 1920, 1080)
-image phone6_0_4 = im.Scale("Post credits/phone6_0_4.jpg", 1920, 1080)
-image phone6_1_0 = im.Scale("Post credits/phone6_1_0.jpg", 1920, 1080)
-image phone6_1_1 = im.Scale("Post credits/phone6_1_1.jpg", 1920, 1080)
-image phone6_1_2 = im.Scale("Post credits/phone6_1_2.jpg", 1920, 1080)
-image phone6_1_3 = im.Scale("Post credits/phone6_1_3.jpg", 1920, 1080)
-image phone6_1_4 = im.Scale("Post credits/phone6_1_4.jpg", 1920, 1080)
-image phone6_2_0 = im.Scale("Post credits/phone6_2_0.jpg", 1920, 1080)
-image phone6_2_1 = im.Scale("Post credits/phone6_2_1.jpg", 1920, 1080)
-image phone6_2_2 = im.Scale("Post credits/phone6_2_2.jpg", 1920, 1080)
-image phone6_2_3 = im.Scale("Post credits/phone6_2_3.jpg", 1920, 1080)
-image phone6_2_4 = im.Scale("Post credits/phone6_2_4.jpg", 1920, 1080)
-image phone6_3_0 = im.Scale("Post credits/phone6_3_0.jpg", 1920, 1080)
-image phone6_3_1 = im.Scale("Post credits/phone6_3_1.jpg", 1920, 1080)
-image phone6_3_2 = im.Scale("Post credits/phone6_3_2.jpg", 1920, 1080)
-image phone6_3_3 = im.Scale("Post credits/phone6_3_3.jpg", 1920, 1080)
-image phone6_3_4 = im.Scale("Post credits/phone6_3_4.jpg", 1920, 1080)
-image phone6_4_0 = im.Scale("Post credits/phone6_4_0.jpg", 1920, 1080)
-image phone6_4_1 = im.Scale("Post credits/phone6_4_1.jpg", 1920, 1080)
-image phone6_4_2 = im.Scale("Post credits/phone6_4_2.jpg", 1920, 1080)
-image phone6_4_3 = im.Scale("Post credits/phone6_4_3.jpg", 1920, 1080)
-image phone6_4_4 = im.Scale("Post credits/phone6_4_4.jpg", 1920, 1080)
+image phone6_0_1 = im.Scale("Post credits/phone6_0_1.PNG", 1920, 1080)
+image phone6_0_2 = im.Scale("Post credits/phone6_0_2.PNG", 1920, 1080)
+image phone6_0_3 = im.Scale("Post credits/phone6_0_3.PNG", 1920, 1080)
+image phone6_0_4 = im.Scale("Post credits/phone6_0_4.PNG", 1920, 1080)
+image phone6_1_0 = im.Scale("Post credits/phone6_1_0.PNG", 1920, 1080)
+image phone6_1_1 = im.Scale("Post credits/phone6_1_1.PNG", 1920, 1080)
+image phone6_1_2 = im.Scale("Post credits/phone6_1_2.PNG", 1920, 1080)
+image phone6_1_3 = im.Scale("Post credits/phone6_1_3.PNG", 1920, 1080)
+image phone6_1_4 = im.Scale("Post credits/phone6_1_4.PNG", 1920, 1080)
+image phone6_2_0 = im.Scale("Post credits/phone6_2_0.PNG", 1920, 1080)
+image phone6_2_1 = im.Scale("Post credits/phone6_2_1.PNG", 1920, 1080)
+image phone6_2_2 = im.Scale("Post credits/phone6_2_2.PNG", 1920, 1080)
+image phone6_2_3 = im.Scale("Post credits/phone6_2_3.PNG", 1920, 1080)
+image phone6_2_4 = im.Scale("Post credits/phone6_2_4.PNG", 1920, 1080)
+image phone6_3_0 = im.Scale("Post credits/phone6_3_0.PNG", 1920, 1080)
+image phone6_3_1 = im.Scale("Post credits/phone6_3_1.PNG", 1920, 1080)
+image phone6_3_2 = im.Scale("Post credits/phone6_3_2.PNG", 1920, 1080)
+image phone6_3_3 = im.Scale("Post credits/phone6_3_3.PNG", 1920, 1080)
+image phone6_3_4 = im.Scale("Post credits/phone6_3_4.PNG", 1920, 1080)
+image phone6_4_0 = im.Scale("Post credits/phone6_4_0.PNG", 1920, 1080)
+image phone6_4_1 = im.Scale("Post credits/phone6_4_1.PNG", 1920, 1080)
+image phone6_4_2 = im.Scale("Post credits/phone6_4_2.PNG", 1920, 1080)
+image phone6_4_3 = im.Scale("Post credits/phone6_4_3.PNG", 1920, 1080)
+image phone6_4_4 = im.Scale("Post credits/phone6_4_4.PNG", 1920, 1080)
+
+image phone7_0_1 = im.Scale("Post credits/phone7_0_1.PNG", 1920, 1080)
+image phone7_0_2 = im.Scale("Post credits/phone7_0_2.PNG", 1920, 1080)
+image phone7_0_3 = im.Scale("Post credits/phone7_0_3.PNG", 1920, 1080)
+image phone7_0_4 = im.Scale("Post credits/phone7_0_4.PNG", 1920, 1080)
+image phone7_1_0 = im.Scale("Post credits/phone7_1_0.PNG", 1920, 1080)
+image phone7_1_1 = im.Scale("Post credits/phone7_1_1.PNG", 1920, 1080)
+image phone7_1_2 = im.Scale("Post credits/phone7_1_2.PNG", 1920, 1080)
+image phone7_1_3 = im.Scale("Post credits/phone7_1_3.PNG", 1920, 1080)
+image phone7_1_4 = im.Scale("Post credits/phone7_1_4.PNG", 1920, 1080)
+image phone7_2_0 = im.Scale("Post credits/phone7_2_0.PNG", 1920, 1080)
+image phone7_2_1 = im.Scale("Post credits/phone7_2_1.PNG", 1920, 1080)
+image phone7_2_2 = im.Scale("Post credits/phone7_2_2.PNG", 1920, 1080)
+image phone7_2_3 = im.Scale("Post credits/phone7_2_3.PNG", 1920, 1080)
+image phone7_2_4 = im.Scale("Post credits/phone7_2_4.PNG", 1920, 1080)
+image phone7_3_0 = im.Scale("Post credits/phone7_3_0.PNG", 1920, 1080)
+image phone7_3_1 = im.Scale("Post credits/phone7_3_1.PNG", 1920, 1080)
+image phone7_3_2 = im.Scale("Post credits/phone7_3_2.PNG", 1920, 1080)
+image phone7_3_3 = im.Scale("Post credits/phone7_3_3.PNG", 1920, 1080)
+image phone7_3_4 = im.Scale("Post credits/phone7_3_4.PNG", 1920, 1080)
+image phone7_4_0 = im.Scale("Post credits/phone7_4_0.PNG", 1920, 1080)
+image phone7_4_1 = im.Scale("Post credits/phone7_4_1.PNG", 1920, 1080)
+image phone7_4_2 = im.Scale("Post credits/phone7_4_2.PNG", 1920, 1080)
+image phone7_4_3 = im.Scale("Post credits/phone7_4_3.PNG", 1920, 1080)
+image phone7_4_4 = im.Scale("Post credits/phone7_4_4.PNG", 1920, 1080)
 =======================================================================================================================================
 
 kami "sur ce, reveille-toi"
@@ -149,7 +174,7 @@ label post_credits :
         scene phone4_0_1
         with dissolve
     
-        "Au final, tu a obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_0_1
         with dissolve
@@ -173,17 +198,22 @@ label post_credits :
         scene phone4_0_2
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_0_2
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_0_2
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_0_2
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -192,17 +222,22 @@ label post_credits :
         scene phone4_0_3
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_0_3
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_0_3
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_0_3
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -211,150 +246,190 @@ label post_credits :
         scene phone4_0_4
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_0_4
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_0_4
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_0_4
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
+       
     elif utilitarisme == 1 and libertarinisme == 0 :
     
         scene phone4_1_0
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_1_0
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_1_0
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_1_0
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 1 and libertarinisme == 1 :
+       
+   elif utilitarisme == 1 and libertarinisme == 1 :
     
         scene phone4_1_1
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_1_1
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_1_1
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_1_1
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 1 and libertarinisme == 2 :
+       
+   elif utilitarisme == 1 and libertarinisme == 2 :
     
         scene phone4_1_2
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_1_2
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_1_2
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_1_2
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 1 and libertarinisme == 3 :
+       
+   elif utilitarisme == 1 and libertarinisme == 3 :
     
         scene phone4_1_3
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_1_3
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_1_3
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_1_3
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 1 and libertarinisme == 4 :
+       
+   elif utilitarisme == 1 and libertarinisme == 4 :
     
         scene phone4_1_4
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_1_4
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_1_4
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_1_4
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 2 and libertarinisme == 0 :
+       
+   elif utilitarisme == 2 and libertarinisme == 0 :
     
         scene phone4_2_0
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_2_0
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_2_0
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_2_0
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 2 and libertarinisme == 1 :
+       
+   elif utilitarisme == 2 and libertarinisme == 1 :
     
         scene phone4_2_1
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_2_1
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_2_1
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_2_1
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -363,37 +438,47 @@ label post_credits :
         scene phone4_2_2
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_2_2
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_2_2
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_2_2
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
+    
     elif utilitarisme == 2 and libertarinisme == 3 :
     
         scene phone4_2_3
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_2_3
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_2_3
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
-    
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_2_3
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
+   
         player "..."
         
     elif utilitarisme == 2 and libertarinisme == 4 :
@@ -401,17 +486,22 @@ label post_credits :
         scene phone4_2_4
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_2_4
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_2_4
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_2_4
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -420,131 +510,166 @@ label post_credits :
         scene phone4_3_0
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_3_0
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_3_0
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_3_0
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 3 and libertarinisme == 1 :
+       
+   elif utilitarisme == 3 and libertarinisme == 1 :
     
         scene phone4_3_1
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_3_1
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_3_1
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_3_1
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 3 and libertarinisme == 2 :
+       
+   elif utilitarisme == 3 and libertarinisme == 2 :
     
         scene phone4_3_2
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_3_2
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_3_2
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_3_2
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 3 and libertarinisme == 3 :
+       
+   elif utilitarisme == 3 and libertarinisme == 3 :
     
         scene phone4_3_3
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_3_3
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_3_3
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_3_3
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 3 and libertarinisme == 4 :
+       
+   elif utilitarisme == 3 and libertarinisme == 4 :
     
         scene phone4_3_4
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_3_4
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_3_4
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_3_4
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 4 and libertarinisme == 0 :
+       
+   elif utilitarisme == 4 and libertarinisme == 0 :
     
         scene phone4_4_0
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_4_0
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_4_0
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_4_0
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-        
-    elif utilitarisme == 4 and libertarinisme == 1 :
+       
+   elif utilitarisme == 4 and libertarinisme == 1 :
     
         scene phone4_4_1
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_4_1
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_4_1
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_4_1
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -553,17 +678,22 @@ label post_credits :
         scene phone4_4_2
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_4_2
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_4_2
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_4_2
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -572,17 +702,22 @@ label post_credits :
         scene phone4_4_3
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_4_3
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_4_3
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_4_3
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
         
@@ -591,20 +726,25 @@ label post_credits :
         scene phone4_4_4
         with dissolve
     
-        "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
     
         scene phone5_4_4
         with dissolve
     
-        "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
     
         scene phone6_4_4
         with dissolve
     
-        "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+        "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+        
+        scene phone7_4_4
+        with dissolve
+        
+        "Je viens de découvrir les smileys !!! *smiley*"
     
         player "..."
-       
+        
        
     scene room_hero
     with dissolve
