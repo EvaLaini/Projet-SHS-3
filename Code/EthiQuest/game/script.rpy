@@ -1113,7 +1113,7 @@ label jour2_classe:
 
   player "Ah, désolé Professeur... J'ai mal dormi cette nuit."
 
-  teacher "Hum, je vais laisser passer pour cette fois, mais tâches à ce que cela ne se reproduise plus !"
+  teacher "Hum, je vais laisser passer pour cette fois, mais tâche à ce que cela ne se reproduise plus !"
 
   call hide_chars from _call_hide_chars_28
 
