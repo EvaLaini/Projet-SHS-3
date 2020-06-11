@@ -2647,10 +2647,10 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   if(nuit3_libertarianisme_done and nuit3_utilitarisme_done):
     jump nuit3_suite
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(game_master_2, 1.0, 1.0, 1.0)
   with dissolve
-  gmu "Jiyu !"
-  gmu "Si tu crois avoir gagné la partie avec ce rêve, tu te trompes."
+  gml "Shiawase !"
+  gml "Si tu crois avoir gagné la partie avec ce rêve, tu te trompes."
 
   jump nuit3_utilitarisme
 
