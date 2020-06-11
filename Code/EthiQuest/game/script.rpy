@@ -2638,7 +2638,7 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   scene universe
   with dissolve
 
-  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char1(game_master_1, 0.0, 1.0, 1.0)
   show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
   with dissolve
   gmu "Hahahahah, en tout cas on peut dire que cette situation t'as bien montré la débilité des idées de Jiyu !"
