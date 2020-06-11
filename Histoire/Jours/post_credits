@@ -84,7 +84,7 @@ image phone6_4_4 = im.Scale("Post credits/phone6_4_4.jpg", 1920, 1080)
 
 kami "sur ce, reveille-toi"
 
-*scène crédits*
+    call hide_chars
 
 label credits :
     
@@ -98,8 +98,9 @@ label credits :
     "Valton"
     "Ylies"
     
-    "Pour les visuels :"
+    "Pour les visuels, les crédits sont sur la page https://schizoa.itch.io/ethiquest"
     
+    "Ce jeu a été développé dans le cadre du cours de SHS 'Le jeu vidéo : média natif du numérique' donné à l'EPFL par Yannick Rochat et Selim Krichane"
 
 label post_credits :
 
