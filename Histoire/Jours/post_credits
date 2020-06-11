@@ -162,6 +162,8 @@ label post_credits :
     
     "En effet ! ;)"
     
+    player "C'est sur que c'est plus efficace que les cauchemars."
+    
     scene phone3
     with dissolve
     
