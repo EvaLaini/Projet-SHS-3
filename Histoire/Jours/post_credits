@@ -1,0 +1,85 @@
+scène post-credits
+========================================================================================================================================
+
+
+========================================================================================================================================
+kami "sur ce, reveille-toi"
+
+*scène crédits*
+
+label :
+
+    scene black_background
+    with dissolve
+    
+    player "Je suis où ?"
+    
+    scene room_hero
+    with dissolve
+
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+    with dissolve
+    
+    player "Ah ! Enfin je re trouve ma chambre."
+    player "Toutes ces histoires m'ont vraiment donné mal à la tête. J'espère en être débarassé pour de bon."
+    player "J'ai appris plein de truc avec Kamimusubi mais les deux autres ne savent vraiment pas s'y prendre."
+    player "Ils ont voulu me tuer !!!!"
+    player "En tout cas, je suis pas près de les oublier."
+    
+    "Vrrrrrr Vrrrrrr"
+    
+    player "Tiens, un message !?"
+    
+    scene phone1
+    with dissolve
+    
+    "Encore désolé pour ce que t'on fais subir Jiyu et Shiawase."
+    
+    player "C'est Kamimusubi !!!!"
+    
+    scene phone2
+    with dissolve
+    
+    "C'est rien. C'était instructif ! ;)"
+    
+    scene phone3
+    with dissolve
+    
+    "Je voulais juste te faire un retour sur les points de courant que t'ont rapporté tes choix."
+    
+    player "Des points..."
+    
+    scene phone4_1_0
+    with dissolve
+    
+    "Au final, tu a obtenu x points en utilitarisme et x points en libertarisme."
+    
+    scene phone5_1_0
+    with dissolve
+    
+    "Si jamais tu veux faire d'autres choix et en observer les consequences hésite pas à me contacter"
+    
+    scene phone6_1_0
+    with dissolve
+    
+    "Je te laisse. J'ai encore perdu de vue Jiyu est Shiawase. A la prochaine ! ;)"
+    
+    player "..."
+    
+    scene room_hero
+    with dissolve
+
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+    with dissolve
+    
+    player "..."
+    player "Kamimusubi m'envoie des émojis maintenant !!!!"
+    player "Faut absolument que je raconte ça à Emma !"
+    
+    hide screen show_char1
+    with dissolve
+    
+    ""
+    
+    scene fin
+    with dissolve
