@@ -1518,7 +1518,7 @@ label nuit2:
 
 
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_39
 
   scene plage
   with dissolve
@@ -1540,7 +1540,7 @@ label nuit2:
 
 
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_47
 
   scene maison_martine
   with dissolve
@@ -1566,7 +1566,7 @@ label nuit2:
   gml "Mais si Martine est d’accord pour que John lui prenne son nain, alors il n’y a pas de problème."
   gml "Et comme ils n’embêtent personne, alors personne n’a le droit d’empêcher leur échange."
   gml "Bien."
-  call hide_chars
+  call hide_chars from _call_hide_chars_48
 
   scene universe
   with dissolve
@@ -1650,7 +1650,7 @@ label nuit2:
     gml "Pour ça, tu vas travailler dans une maison de retraite."
 
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_49
 
   scene EMS_devanture
   with dissolve
@@ -1670,7 +1670,7 @@ label nuit2:
 
   player "Pfff, ils commencent à me fatiguer ces petits démons…"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_50
 
   scene EMS_reception
   with dissolve
@@ -1688,28 +1688,28 @@ label nuit2:
   menu:
     "Ouai":
       player "On peut dire ça, ouai…"
-      receptioniste "Bref, dépêche toi, tu commences dans 3 minutes. Salle 548, Mme Raymond à doucher."
+      receptioniste "Bref, dépêche toi, tu commences dans 3 minutes. Chambre 548, Mme Raymond à doucher."
       show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
       with dissolve
       player "Dou... doucher !?"
     "Ironique":
       player "Je passe une mauvaise nuit en ce moment même."
       receptioniste "Tu te crois drôle ? Je t’ai déjà dit d’arrêter de me draguer, sale beauf."
-      receptioniste "Dépêche-toi, tu commences dans 3 minutes. Salle 548, Mme Raymond à doucher."
+      receptioniste "Dépêche-toi, tu commences dans 3 minutes. Chambre 548, Mme Raymond à doucher."
       show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
       with dissolve
       player "Dou... doucher !?"
     "...":
       player "..."
       receptioniste "T’as vraiment pas l’air en forme mais faut te ressaisir."
-      receptioniste "Tu commences dans 3 minutes. Salle 548 pour aider Mme Raymond à prendre sa douche."
+      receptioniste "Tu commences dans 3 minutes. Chambre 548 pour aider Mme Raymond à prendre sa douche."
       show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
       with dissolve
       player "Sa… sa douche !?"
 
   receptioniste "Bah oui, elle peut pas se doucher toute seule, fait pas le surpris. Allez, fonce !"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_51
 
   scene EMS_couloir
   with dissolve
@@ -1720,7 +1720,7 @@ label nuit2:
   player "(Ce métier m’a l’air d’être encore plus difficile que chirurgien…)"
   player "(Je connaissais le nom de Murielle sans l’avoir jamais vue en vrai. On dirait que comme dans l’autre rêve, je connais mon environnement magiquement.)"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_52
 
   scene EMS_chambre_raymond
   with dissolve
@@ -1736,7 +1736,7 @@ label nuit2:
 
   player "Ecoutez madame, on fait ce qu’on peut. Bon, allons-y."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_53
 
   scene black_background
   with dissolve
@@ -1774,7 +1774,7 @@ label nuit2:
       superieur "Exactement 10. Tu as fait 10 aller-retours hier qui n’étaient pas du tout nécessaires. On en reparlera ce soir, crois-moi !"
       player "(Je ferais mieux de ne pas traîner.)"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_54
 
   scene EMS_pharmacie
   with dissolve
@@ -1819,7 +1819,7 @@ label nuit2:
   player "Ah d’accord, merci pour l’info Justine et à bientôt !"
   justine "A plus [nom] !"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_55
 
   scene chambre_Dumas
   with dissolve
@@ -1921,7 +1921,7 @@ label nuit2_e1:
       jump nuit2_non_somni
 
 label nuit2_somni:
-  call hide_chars
+  call hide_chars from _call_hide_chars_56
 
   scene EMS_couloir
   with dissolve
@@ -1932,12 +1932,12 @@ label nuit2_somni:
   player "(J’ai fait le bon choix, mais ça reste perturbant d’aider quelqu’un à mourir.)"
   player "(J’espère qu’on ne va pas savoir que c’est moi qui l'ai aidé !)"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_57
 
   jump jour3
 
 label nuit2_non_somni:
-  call hide_chars
+  call hide_chars from _call_hide_chars_58
 
   scene EMS_couloir
   with dissolve
@@ -1949,7 +1949,7 @@ label nuit2_non_somni:
   player "(C'est pas à moi de me salir les mains. Je n’y peux rien !)"
   player "(Si la maison de retraite ne veut pas l’aider, ils doivent bien avoir leurs raisons...)"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_59
 
 
 
@@ -2493,7 +2493,7 @@ label jour3_soir_maison:
 
   player "Kami-sama..."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_60
 
 
 label nuit3:
@@ -2567,7 +2567,7 @@ label nuit3_utilitarisme:
 
   player "Comment ça en cri.."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_61
 
   scene bureau_maire
   with dissolve
@@ -2650,7 +2650,7 @@ recensé de nombreux messages de haine à l'encontre de ce quartier."
       $ sacrifice_economie = True
       maire "Nous allons réquisitionner l’eau des industries locales même si ça paralyse l’économie."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_62
 
   scene universe
   with dissolve
@@ -2678,7 +2678,7 @@ label nuit3_libertarianisme:
   gmu "Cette fois, pas moyen que tu penses que c'est elle qui a les meilleures idées !"
   gmu "Pour cette situation, tu seras un juge."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_63
 
   scene exterieur_tribunal
   with dissolve
@@ -2692,7 +2692,7 @@ label nuit3_libertarianisme:
   gmu "Bref, comme tu peux le voir, nous voici devant un tribunal."
   gmu "Prépare toi à juger une affaire très particulière."
   gmu "Tu verras bien que l'idée de Jiyu est nulle en pratique !"
-  call hide_chars
+  call hide_chars from _call_hide_chars_64
 
   scene tribunal
   with dissolve
@@ -2705,7 +2705,7 @@ village…"
 
   juge "(Mais qu’est qu’il est en train de me faire faire ??)"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_65
 
 
   scene siege_juge
@@ -2757,7 +2757,7 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
       $ juge_relaxation = True
       juge "Je choisis de le relaxer. L’acte de Gilbert a beau être extrême, il n’atteint la liberté de personne vu que Justin était consentant."
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_66
 
   scene universe
   with dissolve
@@ -2780,7 +2780,7 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   jump nuit3_utilitarisme
 
 label gameover:
-  call hide_chars
+  call hide_chars from _call_hide_chars_67
 
   scene black_background
   with dissolve
@@ -2799,7 +2799,7 @@ label gameover:
 
 label nuit3_suite:
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_68
 
   scene universe
   with dissolve
@@ -2851,7 +2851,7 @@ label nuit3_suite:
 
   gmu "Allez, tuons-le !"
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_69
 
   scene black_background
   with dissolve
@@ -3083,7 +3083,7 @@ label nuit3_suite_4:
   kami "REVEILLE-TOI !"
 
 
-  call hide_chars
+  call hide_chars from _call_hide_chars_70
 
   label credits :
 
