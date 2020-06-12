@@ -669,7 +669,7 @@ label jour1_manger:
     with dissolve
 
 
-    best_friend "Heureusement qu'on s'est dépêchés, on a eu les dernières places !"
+    best_friend "Heureusement qu'on s'est dépêché, on a eu les dernières places !"
     best_friend "Avec les examens qui arrivent tout le monde est stressé et veut manger au plus vite pour avoir le temps de réviser..."
     menu:
       "Sûr de soi":
@@ -799,7 +799,7 @@ label reve_1:
 
   gmu "Hey ! Te voilà enfin !"
 
-  narrateur "Tu te retrouve en face d’un mystérieux personnage dans une salle étrange."
+  narrateur "Tu te retrouves en face d’un mystérieux personnage dans une salle étrange."
 
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
@@ -2766,7 +2766,7 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   show screen show_char2(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
   gmu "Hahahahah, en tout cas on peut dire que cette situation t'as bien montré la débilité des idées de Jiyu !"
-  gmu "Maintenant, t'est obligé d'être d'accord avec moi !"
+  gmu "Maintenant, t'es obligé d'être d'accord avec moi !"
 
   if(nuit3_libertarianisme_done and nuit3_utilitarisme_done):
     jump nuit3_suite
