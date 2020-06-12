@@ -172,6 +172,9 @@ define zoom_enfant3 = 1.0
 #Crédits
 image credits = im.Scale("Credits/credits.png", 1920, 1080)
 
+#Gameover
+image gameover = im.Scale("Gameover/gameover.png", 1920, 1080)
+
 #Post-crédits
 image phone1 = im.Scale("Post credits/phone1.png", 607, 1080)
 image phone2 = im.Scale("Post credits/phone2.png", 607, 1080)
@@ -571,7 +574,7 @@ label jour1_appartement:
     scene salon
     with dissolve
 
-    show screen show_char(mere_neutral, 0.0, 1.0, zoom_mom)
+    show screen show_char(im.Flip(mere_neutral, True), 0.0, 1.0, zoom_mom)
     with dissolve
 
     show screen show_char1(boy, 1.0, 1.0, zoom_boy)
@@ -770,7 +773,7 @@ label jour1_chambre_soir:
     scene room_night_light
     with dissolve
 
-    show screen show_char(boy_sad, 0.0, 1.0, zoom_boy)
+    show screen show_char(im.Flip(boy_sad, True), 0.0, 1.0, zoom_boy)
     with dissolve
 
     player "J'ai fini mes devoirs mais j'arrive pas à dormir..."
@@ -807,10 +810,10 @@ label reve_1:
 
   menu:
     "Qui es-tu ?":
-      "Qui est-tu ?"
+      player "Qui est-tu ?"
       jump reve1_next
     "Où suis-je ?":
-      "Où suis-je ?"
+      player "Où suis-je ?"
       jump reve1_next
 
 label reve1_next:
@@ -885,7 +888,7 @@ label reve1_hopital:
   show screen show_char(docteur, 0.0, 1.0, zoom_doc)
   with dissolve
 
-  show screen show_char1(game_master_1, 1.0, 1.0, 1.0)
+  show screen show_char1(im.Flip(game_master_1, True), 1.0, 1.0, 1.0)
   with dissolve
 
   narrateur "Shiawase claque des doigts et les deux se retrouvent devant un hôpital."
@@ -908,7 +911,7 @@ label reve1_hopital_interieur:
   show screen show_char(docteur, 0.0, 1.0, zoom_doc)
   with dissolve
 
-  show screen show_char1(infirmierePath, 0.95, 1.0, zoom_infirmiere)
+  show screen show_char1(im.Flip(infirmierePath, True), 0.95, 1.0, zoom_infirmiere)
   with dissolve
 
   infirmiere "Vous voilà enfin. Le patient est déjà prêt pour son opération. Il s’agit d’une fracture de l’avant-bras.
@@ -1112,7 +1115,7 @@ label jour2:
 
   "Tu te réveilles en sursaut, des sueurs froides coulant dans ton dos."
 
-  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_shocked, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "Qu'est-ce que c'était que ce rêve ??"
@@ -1179,7 +1182,7 @@ label jour2_cuisine:
       $ brioche_state=1
     "Laisser la brioche à ton père":
       $ brioche_state=2
-    "Partager la brioche en deux" if utilitarisme>=2:
+    "Partager la brioche en deux" if utilitarisme>=3:
       $ brioche_state=3
 
 
@@ -1193,7 +1196,7 @@ label jour2_classe:
   scene classroom_teacher
   with dissolve
 
-  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_shocked, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Je n'arrive pas à me concentrer...)"
@@ -1207,16 +1210,15 @@ label jour2_classe:
     "Mais ce sont des fous":
       player "(Mais je me suis toujours dit qu'ils devaient être fous ou rechercher l'attention !)"
     "C'est plutôt cool en fait":
-      show screen show_char(boy_happy, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy_happy, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "(Je me suis toujours dit que c'était trop classe !)"
     "Je n'y crois pas":
       player "(Je ne sais pas si je peux vraiment y croire...)"
 
-
   teacher "[nom] ! Qu'est-ce que tu as ce matin ?? Ça fait 3 fois que je te pose une question et tu ne fais que regarder dans le vide !"
 
-  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_flustered, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "Ah, désolé Professeur... J'ai mal dormi cette nuit."
@@ -1284,7 +1286,7 @@ label jour2_salle_info:
   scene salle_info_ouverte
   with dissolve
 
-  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_shocked, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Je n'aime pas mentir à Emma mais là je n'avais pas le choix...)"
@@ -1319,7 +1321,7 @@ label jour2_info_next:
   scene salle_info_ferme
   with dissolve
 
-  show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_nervous, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
 
@@ -1336,7 +1338,7 @@ label jour2_rue:
   scene rue
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   if brioche_state==1:
@@ -1356,19 +1358,19 @@ label jour2_boulangerie:
   scene boulangerie
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   show screen show_char1(sdf_normal, 1.0, 1.0, zoom_sdf)
   with dissolve
 
   sdf "Eh !"
   sdf "Eh, toi là !"
 
-  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_flustered, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "On m'a parlé ?"
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   sdf "Ah, oui c'était moi ! Excuse moi mais tu a l'air de quelqu'un de généreux. J'ai perdu mon travail l'année passée, ma femme m'a quitté depuis et on m'a éjecté de mon appart..."
@@ -1387,7 +1389,7 @@ label jour2_boulangerie:
       hide screen show_char1
       with dissolve
       player "(Même si mes amis risquent d'être déçus et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui !)"
-    "Mais je te donne la moité." if utilitarisme>=1:
+    "Mais je te donne la moité." if utilitarisme>=2:
       $ sdf_state=2
       player "Mais je t'en donne la moitié, ils se contenteront de pain sans chocolat !"
       sdf "Merci ! Je suis sûr que tes amis t'en voudront pas d'aider quelqu'un dans le besoin."
@@ -1395,26 +1397,26 @@ label jour2_boulangerie:
       hide screen show_char1
       with dissolve
       player "(Même si mes amis risquent d'être déçus et que ma mère va encore me faire une remarque, j'ai fait une bonne action aujourd'hui !)"
-    "Je suis désolé." if utilitarisme>=2:
+    "Je suis désolé." if utilitarisme>=3:
       $ sdf_state=2
-      show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy_flustered, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "Je suis désolé demande à quelqu'un d'autre. Bonne chance !"
       sdf "..."
       hide screen show_char1
       with dissolve
-      show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy_confused, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "(J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois !)"
-    "Trouves-toi du travail !" if utilitarisme>=3:
+    "Trouves-toi du travail !" if utilitarisme>=4:
       $ sdf_state=2
-      show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy_angry, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "Trouve toi un travail au lieu de vivre comme un parasite !"
       sdf "..."
       hide screen show_char1
       with dissolve
-      show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy_confused, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "(J'ai peut-être loupé une chance de faire une bonne action mais au moins mes amis et ma mère ne seront pas déçus cette fois !)"
 
@@ -1437,7 +1439,7 @@ label jour2_fin:
   scene salon_crepuscule
   with dissolve
 
-  show screen show_char(mere_neutral, 0.0, 1.0, zoom_mom)
+  show screen show_char(im.Flip(mere_neutral, True), 0.0, 1.0, zoom_mom)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1500,7 +1502,7 @@ label nuit2:
   scene universe
   with dissolve
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1530,7 +1532,7 @@ label nuit2:
 
   narrateur "Jiyu claque des doigts et vous vous retrouvez sur une plage où on peut voir quelqu’un manger une glace."
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   gml "Tu vois le mec là-bas qui mange une glace ? C’est John."
   gml "Pourquoi il a le droit de manger une glace ? Eh bien, c’est simple,
@@ -1545,7 +1547,7 @@ label nuit2:
 
   narrateur "Jiyu claque de nouveau des doigts et vous vous retrouvez cette fois dans un jardin où on voit un nain de jardin."
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1554,7 +1556,7 @@ label nuit2:
   hide screen show_char
   with dissolve
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char2(nain_de_jardin, 0.5, 1.0, zoom_nain)
   with dissolve
 
@@ -1569,7 +1571,7 @@ label nuit2:
   scene universe
   with dissolve
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
   gml "Qu’est-ce que t'en penses jusque-là ?"
@@ -1655,7 +1657,7 @@ label nuit2:
 
   narrateur "Jiyu claque des doigts et tu l'auras compris, j'espère, vous vous retrouvez devant une maison de retraite."
 
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
+  show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1684,8 +1686,8 @@ label nuit2:
   receptioniste "T’en fais une des ces têtes t’as passé une mauvaise nuit ?"
 
   menu:
-    "Oui":
-      player "On peut dire ça, ouais…"
+    "Ouai":
+      player "On peut dire ça, ouai…"
       receptioniste "Bref, dépêche toi, tu commences dans 3 minutes. Salle 548, Mme Raymond à doucher."
       show screen show_char1(boy_flustered, 1.0, 1.0, zoom_boy)
       with dissolve
@@ -1777,7 +1779,7 @@ label nuit2:
   scene EMS_pharmacie
   with dissolve
 
-  show screen show_char(im_justine, 0.0, 1.0, zoom_justine)
+  show screen show_char(im.Flip(im_justine, True), 0.0, 1.0, zoom_justine)
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
 
@@ -1960,8 +1962,8 @@ label nuit2_non_somni:
 label jour3:
   scene room_hero_night
   with dissolve
-  narrateur "Sans transition, tu te retrouve tout à coup dans ton lit."
-  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  narrateur "Tu te retrouve tout à coup dans ton lit."
+  show screen show_char(im.Flip(boy_shocked, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "HAAAAAA !!!"
@@ -2001,7 +2003,7 @@ label jour3_ecole:
   scene ecole_exterieur
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Pour une fois, je suis un peu en avance en cours.)"
@@ -2009,13 +2011,13 @@ label jour3_ecole:
   show screen show_char1(im_fumeur, 1.0, 1.0, zoom_fumeur)
   with dissolve
 
-  show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_angry, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Hum, je croyais que c'était interdit de fumer vers les écoles...)"
 
   hide screen show_char1
-  show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_nervous, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
 
@@ -2034,7 +2036,7 @@ label jour3_ecole:
   show screen show_char1(im_fumeur, 1.0, 1.0, zoom_fumeur)
   with dissolve
 
-  show screen show_char(boy_angry, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_angry, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Ah, il m'a envoyé sa fumée dans la tête !)"
@@ -2044,25 +2046,25 @@ label jour3_ecole:
   player "(Est-ce que je lui dis quelque chose ?)"
 
   menu:
-    "Non, rien, il a le droit de faire ce qu'il veux..." if libertarianisme>=1:
-      show screen show_char(boy, 0.0, 1.0, zoom_boy)
+    "Non, rien, il a le droit de faire ce qu'il veux..." if libertarianisme>=3:
+      show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "(Non, rien, il a le droit de faire ce qu'il veux...)"
       fumeur "Bonne journée, gamin !"
       player "Ah ! A vous aussi..."
     "Lui demander de la jeter ailleurs":
       player "Monsieur ! Jeter des cigarettes dans les fleurs, c'est très mauvais écologiquement !"
-      show screen show_char(boy, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "Est-ce que vous pouvez la jeter dans une poubelle ?"
       fumeur "Euh... Oui, okay..."
       player "Merci ! Bonne journée."
       fumeur "Ouais... A toi aussi."
-    "Réprimander" if utilitarisme>=1:
+    "Réprimander" if utilitarisme>=3:
       player "Monsieur ! Fumer c'est mauvais pour la santé ! Et en plus ça coûte super cher aux assurances tous les cancers..."
       fumeur "De quoi tu te mèles, gamin ! C'est ma vie et elle te regarde pas !"
       hide screen show_char1
-      show screen show_char(boy_nervous, 0.0, 1.0, zoom_boy)
+      show screen show_char(im.Flip(boy_nervous, True), 0.0, 1.0, zoom_boy)
       with dissolve
       player "(Ah, peut-être que c'était pas la bonne méthode...)"
 
@@ -2072,7 +2074,7 @@ label jour3_ecole:
 
   narrateur "Tu sens ton téléphone vibrer."
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Ah c'est déjà la réponse d'Emma !)"
@@ -2234,7 +2236,7 @@ label jour3_rue_enfants:
 
   show screen show_char_pos(im_enfant1, -100, 300, zoom_enfant1)
   show screen show_char_pos1(im_enfant2, 400, 300, zoom_enfant2)
-  show screen show_char_pos2(im_enfant3, 800, 300, zoom_enfant3)
+  show screen show_char_pos2(im.Flip(im_enfant3, True), 800, 300, zoom_enfant3)
   with dissolve
 
   enfant1 "Laissez-moi tranquille, j'essaye de faire mes devoirs !"
@@ -2250,20 +2252,23 @@ label jour3_rue_enfants:
   player "(Je peux quand même pas rester sans rien faire, non ?)"
 
   menu:
-    "Partir" if utilitarisme>=1 and libertarianisme>=2:
+    "Partir" if utilitarisme>=2 and libertarianisme>=3:
       narrateur "Tu pars discrètement en évitant les enfants."
       jump jour3_rue
-    "Aller à l'encontre des agresseurs" if utilitarisme>=1:
+    "Aller à l'encontre des agresseurs" if utilitarisme>=2:
       player "Ca suffit, laissez ce garçon tranquille ! Ses histoires familiales ne vous concernent pas et si c'est un bon élève, tant mieux pour lui !"
       jump jour3_defense
     "Défendre le père":
       player "Si son père est parti, c'est qu'il avait ses raisons et elles ne vous regardent pas !"
       jump jour3_defense
-    "Défendre l'enfant" if libertarianisme>=1:
+    "Défendre l'enfant" if libertarianisme>=2:
       player "Ca suffit, laissez ce garçon tranquille ! Il a bien le droit de faire ses devoirs tranquille !"
       jump jour3_defense
 
 label jour3_defense:
+
+  show screen show_char_pos2(im_enfant3, 800, 300, zoom_enfant3)
+  with dissolve
 
   enfant3 "Pfff, de quoi tu te mèle ?"
   enfant2 "Laisse tomber, on y va."
@@ -2278,14 +2283,15 @@ label jour3_defense:
   enfant1 "Oui, peut-être..."
   player "Bon, je dois y aller. A plus."
 
-  call hide_chars from _call_hide_chars_41
-
 
 label jour3_rue:
+
+  call hide_chars from _call_hide_chars_41
+
   scene ruelle_sombre
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Avec ces histoires, je vais devoir me dépêcher d'aller acheter ce qu'il me faut pour l'invocation.)"
@@ -2297,7 +2303,7 @@ label jour3_rue:
   scene avant_rue
   with dissolve
 
-  show screen show_char(boy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Cette ruelle est vraiment glauque, je serais jamais passé par là normalement...)"
@@ -2324,7 +2330,7 @@ label jour3_rue:
 
   perso_louche "Eh petit !"
 
-  show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_shocked, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   perso_louche "Oui, toi !"
@@ -2332,10 +2338,12 @@ label jour3_rue:
   perso_louche "Approche, j'ai ce qu'il te faut..."
 
   menu:
-    "Aller voir" if libertarianisme>=1:
+    "Aller voir" if libertarianisme>=2:
       jump jour3_louche
     "Partir":
       player "Ca m'intéresse pas. Au revoir."
+      show screen show_char(boy_shocked, 0.0, 1.0, zoom_boy)
+      with dissolve
       perso_louche "Tu sais pas c'que tu rates..."
       narrateur "Sans un regard en arrière, tu te dépêche de quitter la ruelle pour retourner à la bibliothèque."
       jump jour3_soir_bibliotheque
@@ -2349,8 +2357,9 @@ label jour3_louche:
   perso_louche "Hehe, avec ça, tu parles avec qui tu veux, crois moi !"
 
   menu:
-    "J'achète" if libertarianisme>=2:
+    "J'achète" if libertarianisme>=3:
       $ champi_achete = True
+      player "Je veux bien essayer. C'est combien ?"
       perso_louche "T'as fait le bon choix, petit. Tiens, c'est 20.- pour un champi magique !"
       player "Voilà... Au revoir."
       perso_louche "C'est ça..."
@@ -2362,7 +2371,7 @@ label jour3_louche:
       perso_louche "Tu sais pas c'que tu rates..."
       narrateur "Sans un regard en arrière, tu te dépêche de quitter la ruelle pour retourner à la bibliothèque."
       jump jour3_soir_bibliotheque
-    "Non, mes parents seraient furieux !" if utilitarisme>=2:
+    "Non, mes parents seraient furieux !" if utilitarisme>=3:
       player "Non, si mes parents l'apprenent, ils me tueraient !"
       perso_louche "C'que tu fais dans ton coin regardes que toi, petit !"
       perso_louche "Bah, tant pis pour toi..."
@@ -2454,20 +2463,20 @@ label jour3_soir_maison:
   scene room_hero_night
   with dissolve
 
-  show screen show_char(boy_happy, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_happy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "Dans quelques heures, tout ce calvaire sera enfin fini et je pourrai reprendre ma vie comme avant !"
 
-  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_confused, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "Enfin, si le rituel a fonctionné..."
-  show screen show_char(boy_flustered, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_flustered, True), 0.0, 1.0, zoom_boy)
   with dissolve
   player "Je suis trop stressé, je vais jamais réussir à m'endormir !"
 
-  show screen show_char(boy_confused, 0.0, 1.0, zoom_boy)
+  show screen show_char(im.Flip(boy_confused, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   if champi_achete:
@@ -2507,26 +2516,37 @@ label nuit3:
   gml "Alors, laquelle de nos idées t’as le plus séduit et convaincu ?"
 
   menu:
-    "Idée de Shiawase":
+    "Idée de Shiawase" if (utilitarisme != 0 or libertarianisme != 0) :
+      show screen show_char2(boy, 0.5, 1.0, zoom_boy)
+      with dissolve
+      player "Pour moi, les principes de ton frère sont les meilleures."
       gmu "Ah ah ah ! Alors on ne sait plus quoi dire ? Tu dois bien accepter que j’ai gagné !"
       gml "N’importe quoi ! Tu lui pas présenté les limites évidentes de ton idée."
       gml "C'est vraiment à moi de tout faire ici !"
       $ nuit3_utilitarisme_first = True
       jump nuit3_utilitarisme
-    "Idée de Jiyu":
+    "Idée de Jiyu" if (utilitarisme != 0 or libertarianisme != 0) :
+      show screen show_char2(boy, 0.5, 1.0, zoom_boy)
+      with dissolve
+      player "Je trouve tes principes plus intéressants que ceux de ton frère."
       gml "Ce résultat était prévisible. Je t’ai prouvé une nouvelle fois que je suis meilleure que toi."
       gmu "J’ai pas dit mon dernier mot ! On va voir comment le cobaye va réagir quand je lui montrerai les absurdités de ton idée."
       $ nuit3_libertarianisme_first = True
       jump nuit3_libertarianisme
-    "Aucune":
+    "Aucune" if (utilitarisme != 0 or libertarianisme != 0) :
+      show screen show_char2(boy_sad, 0.5, 1.0, zoom_boy)
+      with dissolve
+      player "Aucune ! Je ne suis convaincu ni par l'un ni par l'autre."
       gml "Je sais comment régler ça. Je vais te montrer en quoi l’idée de mon frère est nulle."
       $ nuit3_libertarianisme_first = True
       jump nuit3_libertarianisme
-    #TODO: Nombre minimal de points
-    "Euh, c’est quoi déjà vos idées ?":
-      gml "Mais tu te fous de nous ??"
-      gmu"On s’est fait chier à tout t’expliquer et toi tu n’en as rien à foutre."
-      gml "Frangin, tu sais vraiment pas choisir les bonnes personnes. Je vais en chercher un autre qui aura un minimum d’intellect."
+    "Euh, c’est quoi déjà vos idées ?"  if (utilitarisme == 0 and libertarianisme == 0):
+      show screen show_char2(boy_nervous, 0.5, 1.0, zoom_boy)
+      with dissolve
+      player "Euh, c’est quoi déjà vos idées ?"
+      gml "Mais tu te fous de nous ??!!"
+      gmu "On s’est fait chier à tout t’expliquer et toi t’en as rien à foutre."
+      gml "Frangin, tu sais vraiment pas choisir les bonnes personnes. Je vais en chercher un autre avec un minimum d’intellect."
       gml "Tuons-le !"
       gmu "Bien dit !"
       jump gameover
@@ -2536,17 +2556,13 @@ label nuit3_utilitarisme:
 
   $ nuit3_utilitarisme_done = True
 
-  call hide_chars
-
-
-  show screen show_char(game_master_2, 0.0, 1.0, 1.0)
-  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
-  with dissolve
-
   gml "Pour te montrer une bonne fois pour toutes que les idées de mon frère sont stupides, je vais te mettre dans la peau du maire d’une ville en crise."
   gml "Bonne chance à toi !"
 
-  show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
+  hide screen show_char
+  hide screen show_char1
+
+  show screen show_char2(boy_nervous, 0.5, 1.0, zoom_boy)
   with dissolve
 
   player "Comment ça en cri.."
@@ -2626,20 +2642,20 @@ recensé de nombreux messages de haine à l'encontre de ce quartier."
   menu:
     "Assurer la stabilité de la ville en sacrifiant un quartier":
       $ sacrifice_quartier = True
-      player "Nous devons assurer la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous."
+      maire "Nous devons assurer la stabilité et la survie de la ville. Nous devons sacrifier ce quartier pour le bien de tous."
     "Nous allons faire ce choix aléatoirement":
       $ sacrifice_aleatoire = True
-      player "Ce n’est pas moral de sacrifier une minorité juste parce qu’elle ne plait pas à la ville. Nous ferons ce choix aléatoirement quitte à ce que ça ne plaise pas à tout le monde."
+      maire "Ce n’est pas moral de sacrifier une minorité juste parce qu’elle ne plait pas à la ville. Nous ferons ce choix aléatoirement quitte à ce que ça ne plaise pas à tout le monde."
     "Réquisitionner l'eau des industries locales":
       $ sacrifice_economie = True
-      player "Nous allons réquisitionner l’eau des industries locales même si ça paralyse l’économie."
+      maire "Nous allons réquisitionner l’eau des industries locales même si ça paralyse l’économie."
 
   call hide_chars
 
   scene universe
   with dissolve
   show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
-  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
+  show screen show_char2(im.Flip(boy_confused, True), 0, 1.0, zoom_boy)
   with dissolve
   gml "Je crois que cette situation t'as bien permi de voir que le concept de bonheur majoritaire est débile."
   gml "Même un idiot comprendrait que ça peux pas marcher !"
@@ -2647,12 +2663,12 @@ recensé de nombreux messages de haine à l'encontre de ce quartier."
   if(nuit3_utilitarisme_done and nuit3_libertarianisme_done):
     jump nuit3_suite
 
+  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
   show screen show_char(game_master_1, 0.0, 1.0, 1.0)
   with dissolve
   gmu "Jiyu !"
   gmu "Si tu crois avoir gagné la partie avec ce rêve, tu te trompes."
 
-  #TODO: Transition pas comprise
 
 label nuit3_libertarianisme:
 
@@ -2668,7 +2684,7 @@ label nuit3_libertarianisme:
   with dissolve
 
   show screen show_char(game_master_1, 0.0, 1.0, 1.0)
-  show screen show_char1(im_juge, 1.0, 1.0, zoom_juge)
+  show screen show_char1(im.Flip(im_juge, True), 1.0, 1.0, zoom_juge)
   with dissolve
 
   juge "Tiens, je suis vieux cette fois..."
@@ -2746,8 +2762,8 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   scene universe
   with dissolve
 
-  show screen show_char1(game_master_1, 0.0, 1.0, 1.0)
-  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
+  show screen show_char(game_master_1, 0.0, 1.0, 1.0)
+  show screen show_char2(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
   gmu "Hahahahah, en tout cas on peut dire que cette situation t'as bien montré la débilité des idées de Jiyu !"
   gmu "Maintenant, t'est obligé d'être d'accord avec moi !"
@@ -2755,7 +2771,8 @@ demandant sa carte de vote ainsi qu’une attestation récente d’un psychologu
   if(nuit3_libertarianisme_done and nuit3_utilitarisme_done):
     jump nuit3_suite
 
-  show screen show_char(game_master_2, 1.0, 1.0, 1.0)
+  show screen show_char2(boy_confused, 0.5, 1.0, zoom_boy)
+  show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
   with dissolve
   gml "Shiawase !"
   gml "Si tu crois avoir gagné la partie avec ce rêve, tu te trompes."
@@ -2769,7 +2786,14 @@ label gameover:
   with dissolve
 
   narrateur "Ce n'était vraiment pas la bonne chose à dire !"
-  narrateur "GAMEOVER !"
+  narrateur "Tu as fait fort pour avoir mal répondu à toutes les questions."
+  narrateur "Ou alors tu as un morale très spécifique !"
+  narrateur "Dans tous les cas..."
+
+  scene gameover
+  with dissolve
+
+  "GAMEOVER !"
 
   return
 
@@ -2892,7 +2916,8 @@ label nuit3_suite:
   kami "Comme d’habitude, ils n'ont pas réussi à se mettre d’accord et ont commencé à se disputer."
 
   menu:
-    "L’éthique des mortels ? ":
+    "L’éthique des mortels ?":
+      player "L’éthique des mortels ?"
       jump nuit3_suite_2
     "...":
       jump nuit3_suite_2
@@ -2933,9 +2958,10 @@ label nuit3_suite_2:
   kami "Or tu te doutes bien que dans un univers aussi complexe que le nôtre, il est assez utopiste de penser qu’un simple humain pourrait estimer correctement toutes les conséquences de ses actes."
 
   menu:
-    "En effet":
-      jump nuit3_suite_3
+    "En effet !":
+      player "En effet !"
     "J'ai toujours réussi à calculer les conséquences de mes choix":
+      player "Moi, j'ai toujours réussi à calculer les conséquences de mes choix"
       kami "Ahahahah, mais qu’est-ce que tu es bête, petit. Heureusement que tu m’as invoqué sinon les deux autres t’auraient certainement tué."
       show screen show_char(boy_flustered, 1.0, 1.0, zoom_boy)
       with dissolve
@@ -2980,9 +3006,12 @@ label nuit3_suite_2:
   kami "Tout comme l’utilitarisme, cette doctrine est intéressante et offre des pistes sur comment concevoir notre morale, mais elle comporte également de nombreuses limites."
 
   menu:
-    "Quoi comme limites ?":
+    "Des limites ?":
+      player "Des limites ?"
+      kami "En effet !"
       jump nuit3_suite_4
     "En fait, vous êtes wikipédia Monsieur ?":
+      player "En fait, vous êtes wikipédia Monsieur ?"
       kami "Monsieur !? Je suis quand même le créateur de l’univers, wikipédia compris."
       kami "Je n’arrive pas à croire que tu oses te moquer de moi, tu ferais mieux de fermer ta grande bouche si tu tiens à l’humanité."
       player "D’accord. (Dieu a vraiment pas d’humour… oh ! est-ce qu’il sait que je pense ça !? J’espère pas…)"
@@ -3027,10 +3056,13 @@ label nuit3_suite_4:
   kami "J'espère que cette histoire aura au moins eu le mérite de te faire réfléchir, petit."
   menu :
     "Oh oui, ça c'est sûr !":
+        player "Oh oui, ça c'est sûr !"
         kami "Ah, peut-être qu'il y a de l'espoir pour les humains après tout."
     "Pas vraiment...":
+        player "Pas vraiment..."
         kami "Alors je te conseille de t'y mettre dès maintenant !"
     "Mes idées sont meilleures !":
+        player "Mes idées sont meilleures !"
         kami "Tu es bien bête si tu n'est même pas capable de te remettre en question !"
         kami "Parfois j'oublie à quel point les humains peuvent être étroits d'esprit..."
 
@@ -3094,8 +3126,20 @@ label post_credits :
     player "Ah ! Enfin, je retrouve ma chambre."
     player "Toutes ces histoires m'ont vraiment donné mal à la tête. J'espère en être débarassé pour de bon."
     player "J'ai appris plein de truc avec Kamimusubi, mais les deux autres ne savent vraiment pas s'y prendre."
+
+    show screen show_char1(boy_angry, 1.0, 1.0, zoom_boy)
+    with dissolve
+
     player "ILS ONT VOULU ME TUER !!!!"
+
+    show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
+    with dissolve
+
     player "*Soupir*..."
+
+    show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+    with dissolve
+
     player "En tout cas, je suis pas près de les oublier."
 
     narrateur "Ton téléphone vibre."
@@ -3107,7 +3151,7 @@ label post_credits :
     scene phone1
     with dissolve
 
-    "Cher humain, je viens de découvrir cette méthode de communication. C'est très pratique."
+    "Cher humain,\nJe viens de découvrir cette méthode de communication. C'est très pratique."
 
     player "C'est Kamimusubi !!!!"
 
