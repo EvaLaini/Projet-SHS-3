@@ -497,7 +497,7 @@ label intro_gm:
     gml "Mais non, on a le même âge ! Et c’est moi la plus forte."
 
     gmu "Arrête un peu tes conneries ! On ne peut pas laisser tout le monde faire ce qu’il veut. Il faut des règles."
-    gml " Mais il y a des règles ! Chacun dispose de lui-même comme il le souhaite, sans que personne ne puisse l’en empêcher."
+    gml "Mais il y a des règles ! Chacun dispose de lui-même comme il le souhaite, sans que personne ne puisse l’en empêcher."
     gmu "Ça ne marchera jamais !"
     gml "Bien sûr que si ! "
     gml "Et tu penses que laisser la décision au plus grand nombre, c'est plus efficace ?"
@@ -1157,7 +1157,7 @@ label jour2_cuisine:
   mere "Il va falloir te reprendre, chou, n'oublie pas que tu as un groupe de travail ce soir."
   player  "Ah oui... Et en plus, c'est mon tour d'amener un truc à manger aujourd'hui."
   player "D'ailleurs, je peux avoir des sous ?"
-  mere "Tiens, 10.-, mais ne fais pas comme la dernière fois, achète vraiment quelque chose pour tes amis !"
+  mere "Tiens, 10 francs, mais ne fais pas comme la dernière fois, achète vraiment quelque chose pour tes amis !"
 
   show screen show_char_pos1(boy_flustered, 1300, 500, 0.4)
   with dissolve
@@ -1346,7 +1346,7 @@ label jour2_rue:
     player "(Mais bon, j'ai d'autres choses à penser.)"
 
   player "(Il me semble qu'il y a une boulangerie au coin de cette rue.)"
-  player "(Avec 10.-, je vais pouvoir me rattraper de la dernière fois, où j'ai oublié d'amener quelque chose !)"
+  player "(Avec 10 francs, je vais pouvoir me rattraper de la dernière fois, où j'ai oublié d'amener quelque chose !)"
   player "(Peut-être des croissants pour tout le monde... Ou du pain et plein de chocolat ?)"
   player "Hummmm...."
 
@@ -2360,7 +2360,7 @@ label jour3_louche:
     "J'achète" if libertarianisme>=3:
       $ champi_achete = True
       player "Je veux bien essayer. C'est combien ?"
-      perso_louche "T'as fait le bon choix, petit. Tiens, c'est 20.- pour un champi magique !"
+      perso_louche "T'as fait le bon choix, petit. Tiens, c'est 20 francs pour un champi magique !"
       player "Voilà... Au revoir."
       perso_louche "C'est ça..."
       player "(Je vais le garder de côté, comme ça, si le rituel ne marche pas, j'ai toujours une autre solution...)"
