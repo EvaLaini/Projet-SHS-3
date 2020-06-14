@@ -803,12 +803,14 @@ label jour1_chambre_soir:
 
 label reve_1:
 
+  stop music fadeout 5.0
+
   scene black_background
   with dissolve
 
   ""
 
-  play music nuit fadeout 5.0 fadein 1.0
+  play music nuit fadein 1.0
 
   scene universe
   with dissolve
@@ -1506,7 +1508,7 @@ label jour2_fin:
     show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
     mere "Ton père était content que tu lui aies laissé la moitié de la brioche. Il était étonné de cette réflexion venant de ta part."
-    player "haha ! On en apprend tous les jours !"
+    player "Haha ! On en apprend tous les jours !"
     player "(Ou dans mon cas la nuit.)"
     mere "C'est bien mon chéri, tu deviens vraiment mature."
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
@@ -2904,7 +2906,7 @@ label nuit3_suite:
 
   player "CA SUFFIT !!!"
 
-  player "J’en ai marre de vous. Vous me pourrissez la vie et je vais me débarrasser de vous définitivement !"
+  player "J’en ai marre de vous ! Vous me pourrissez la vie et je vais me débarrasser de vous définitivement !"
 
   player "(Merde ! C'était quoi le rituel déjà ?)"
 
@@ -3187,7 +3189,7 @@ label nuit3_suite_4:
 
     "Pour les visuels et les sons, les crédits sont sur la page https://schizoa.itch.io/ethiquest"
 
-    "Ce jeu a été développé dans le cadre du cours de SHS 'Le jeu vidéo : média natif du numérique' donné à l'EPFL par Yannick Rochat et Selim Krichane"
+    "Ce jeu a été développé dans le cadre du cours de SHS \"Le jeu vidéo : média natif du numérique\" donné à l'EPFL par Yannick Rochat et Selim Krichane"
     "Nous espérons sincèrement qu'il vous a plu."
     "Merci d'avoir joué à notre jeu !"
 
