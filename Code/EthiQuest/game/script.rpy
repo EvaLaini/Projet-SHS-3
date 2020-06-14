@@ -36,6 +36,12 @@ screen show_char_pos2(path, posX, posY, zoomV):
 screen show_char_pos3(path, posX, posY, zoomV):
   add path zoom zoomV xpos posX ypos posY
 
+#Music =======================================================================================
+
+define open = "audio/airtone_-_reNovation.mp3"
+define jour = "audio/illurock.opus"
+define nuit = "audio/airtone_-_reCreation.mp3"
+
 #Hero ========================================================================================
 define player = Character("[nom]", color="#f9e571", image="boy")
 
@@ -103,7 +109,7 @@ define game_master_2 = "Perso/gm2/GM2_1.png"
 define doc = Character("[nom]", color="#f9e571")
 define docteur = "Perso/docteur/Dr_noname.png"
 
-define zoom_doc = 0.4
+define zoom_doc = 0.6
 # ======================================================================================
 
 #Camarade =========================================================================
@@ -468,7 +474,7 @@ label start:
     if not nom:
       $nom = "Lucas"
 
-    "Tu es [nom] !"
+    "Salut [nom] !"
 
     jump intro_gm
 
@@ -476,14 +482,12 @@ label start:
 
 label intro_gm:
 
+    play music open fadein 5.0
+
     scene universe
     with dissolve
 
-    #show screen test_screen()
-
-    #show game_master_1
-    #with dissolve
-    show screen show_char(game_master_1, -0.1, 1.0, 1.0)
+    show screen show_char(game_master_1, 0.0, 1.0, 1.0)
     with dissolve
     gmu "NON PAS DU TOUT, TU TE TROMPES !"
 
@@ -523,7 +527,7 @@ label intro_gm_earth:
     scene earth_far
     with dissolve
 
-    show screen show_char(game_master_1, -0.1, 1.0, 1.0)
+    show screen show_char(game_master_1, 0, 1.0, 1.0)
     with dissolve
 
     show screen show_char1(game_master_2, 1.0, 1.0, 1.0)
@@ -547,16 +551,22 @@ label intro_context:
     scene earth_close
     with dissolve
 
-    narrateur "Les deux enfants-dieux décident d'aller choisir un humain sur la planète Terre pour être le sujet de leurs expériences."
+    narrateur "Ils décident d'aller choisir un humain sur la planète Terre pour être le sujet de leurs expériences."
 
     jump jour1_appartement
 
 label jour1_appartement:
 
+    stop music fadeout 2.0
+
     scene black_background
     with dissolve
 
+    ""
+
+    play sound "audio/toctoc.mp3"
     "TOC TOC TOC"
+    stop sound
 
     mere "Réveille-toi, [nom] ! Tu vas être en retard à l'école !!"
 
@@ -566,8 +576,11 @@ label jour1_appartement:
     show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
 
-    player "*Bâille* Il faut que j'aille à la cuisine prendre mon petit-déjeuner avant d'aller en cours..."
+    play music jour fadein 3.0
 
+    play sound "audio/baille.mp3"
+    player "*Bâille* Il faut que j'aille à la cuisine prendre mon petit-déjeuner avant d'aller en cours..."
+    stop sound
 
     call hide_chars from _call_hide_chars_1
 
@@ -583,7 +596,10 @@ label jour1_appartement:
     mere "Ah tu es debout, très bien ! Voilà tes céréales, [nom]. Mange-les vite, tu dois te dépêcher."
 
 
+    queue sound ["audio/crunch.mp3", "<silence 0.5>", "audio/crunch.mp3"]
     player "*Crunch, crunch*"
+    stop sound
+
     player "Bon j'y vais ! À ce soir maman."
     mere "Bonne journée, mon chou !"
     menu:
@@ -651,20 +667,11 @@ label jour1_lunch:
     best_friend "Je vois ! Dépêchons-nous d'aller manger, il y a déjà une queue."
     player "J'arrive !"
 
-    call hide_chars from _call_hide_chars_6
-
     jump jour1_manger
 
 label jour1_manger:
-    scene black_background
-    with dissolve
-
-    scene lunchroom_full
-    with dissolve
 
     show screen show_char(best_friend_smile, 0.7, 3.0, zoom_best_friend)
-    with dissolve
-
     show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
     with dissolve
 
@@ -690,10 +697,13 @@ label jour1_manger:
     best_friend "Je sais ! Mais imagine si les rêves avaient des conséquences sur la réalité ! Ca serait terrifiant..."
     player "En effet... Heureusement, que ça reste dans nos têtes !"
 
+    play sound "audio/Sonnerie Ecole effet sonore.mp3"
+
     "*Ding* *Ding*"
 
     best_friend "Ah, c'est l'heure de retourner en classe. Bon, j'y vais. Bon aprem [nom] !"
 
+    stop sound
 
     call hide_chars from _call_hide_chars_7
 
@@ -722,6 +732,7 @@ label jour1_cours:
     player "Ils plaisantent pas avec ces examens..."
     camarade_2 "Vraiment... Et en plus, on a une grosse journée demain..."
     player "Il va falloir que j'aille me coucher tôt si je veux être en forme."
+    player "Bon, il est temps de rentrer."
 
     call hide_chars from _call_hide_chars_9
 
@@ -732,8 +743,6 @@ label jour1_maison_soir:
 
     scene salon
     with dissolve
-
-    narrateur "De retour à la maison."
 
     show screen show_char_pos(dad_path, -150, 500, zoom_dad)
     with dissolve
@@ -762,7 +771,10 @@ label jour1_maison_soir:
     dad "Ne lui mets pas tant de pression, c'est encore un enfant."
     player "Papa !"
     mere "Oui, je sais... Un adolescent."
+
+    play sound "audio/soupir.mp3"
     player "*Soupir* Je vais travailler dans ma chambre."
+    stop sound
 
     call hide_chars from _call_hide_chars_10
 
@@ -791,6 +803,13 @@ label jour1_chambre_soir:
 
 label reve_1:
 
+  scene black_background
+  with dissolve
+
+  ""
+
+  play music nuit fadeout 5.0 fadein 1.0
+
   scene universe
   with dissolve
 
@@ -799,10 +818,10 @@ label reve_1:
 
   gmu "Hey ! Te voilà enfin !"
 
-  narrateur "Tu te retrouves en face d’un mystérieux personnage dans une salle étrange."
-
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
+
+  player "..."
 
   player "C'est un rêve ?"
 
@@ -885,7 +904,7 @@ label reve1_hopital:
   scene hopital_exterieur
   with dissolve
 
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  show screen show_char(docteur, 0.0, -5.0, zoom_doc)
   with dissolve
 
   show screen show_char1(im.Flip(game_master_1, True), 1.0, 1.0, 1.0)
@@ -908,7 +927,7 @@ label reve1_hopital_interieur:
   scene hopital_couloir
   with dissolve
 
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  show screen show_char(docteur, 0.0, -5.0, zoom_doc)
   with dissolve
 
   show screen show_char1(im.Flip(infirmierePath, True), 0.95, 1.0, zoom_infirmiere)
@@ -930,7 +949,7 @@ label reve1_hopital_after_op:
   narrateur "Au début, tu n’es pas sûr de ce qu’il faut faire, mais par tu ne sais quelle magie, tu commences à procéder à l’opération comme si
   tu avais fait ça toute ta vie."
   narrateur "Après l'opération, tu ne sais plus vraiment quoi faire. Tu comprends encore moins ce que tu fais ici."
-  narrateur "Que faire ?"
+  narrateur "Que veux-tu faire ?"
 
   menu:
     "Aller dehors":
@@ -953,7 +972,7 @@ label reve1_hopital_after_op_next:
   show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
   with dissolve
 
-  show screen show_char1(docteur, 0.95, 1.1, zoom_doc)
+  show screen show_char1(docteur, 0.95, -5.0, zoom_doc)
   with dissolve
 
   doc "Qu’est-ce qu’il se passe ici ? "
@@ -981,7 +1000,7 @@ label reve1_hopital_after_op_next:
   show screen show_char(mere_enfant_im, 0.0, 1.0, zoom_mere_enfant)
   with dissolve
 
-  show screen show_char1(docteur, 1.0, 1.1, zoom_doc)
+  show screen show_char1(docteur, 1.0, -5.0, zoom_doc)
   with dissolve
 
   mere_enfant "S’il vous plaît, sauvez mon fils ! Je vous en supplie !"
@@ -1001,7 +1020,7 @@ label reve1_hopital_after_op_next:
   infirmiere "Mais il n’y a plus personne de disponible. Et puis, même si on intervient, vu son état, on n’est même pas sûr de pouvoir le sauver."
   mere_enfant "Vous devez sauver mon fils !"
   infirmiere "Madame, s'il vous plaît !"
-  infirmiere "Que voulez-vous faire docteur ?"
+  infirmiere "Vous devez y aller docteur !"
 
 
   menu:
@@ -1022,7 +1041,7 @@ label reve1_soins_adultes:
   with dissolve
 
   show screen show_char(infirmierePath, 0.0, 1.0, zoom_infirmiere)
-  show screen show_char1(docteur, 1.0, 1.0, zoom_doc)
+  show screen show_char1(docteur, 1.0, -5.0, zoom_doc)
   with dissolve
 
   infirmiere "J'ai un doute sur la façon de procéder ici. Cette zone est assez sensible et j'ai peur de lui sectionner une artère."
@@ -1045,7 +1064,7 @@ label reve1_soins_enfant:
   scene hopital_operation
   with dissolve
 
-  show screen show_char(docteur, 0.0, 1.0, zoom_doc)
+  show screen show_char(docteur, 0.0, -5.0, zoom_doc)
   with dissolve
 
   doc "(Il faut que je donne tout pour que cette mère revoie son enfant sain et sauf.)"
@@ -1110,6 +1129,8 @@ label bus_reve1:
 
 label jour2:
 
+  stop music
+
   scene room_hero
   with dissolve
 
@@ -1121,13 +1142,9 @@ label jour2:
   player "Qu'est-ce que c'était que ce rêve ??"
   player "Je n'en avais jamais fait d'aussi réaliste... J'en ai encore des frissons."
   player "En tout cas, ça me donne pas envie de devenir médecin !"
-
-  "..."
-  "..."
-
   player "Je ne me sens pas du tout reposé, c'est comme si j'avais vraiment dû faire ces opérations !"
   player "Et ces choix ..."
-  player "'Toujours maximiser le bonheur' ou je sais plus quoi ?"
+  player "\"Toujours maximiser le bonheur\" ou je sais plus quoi ?"
   menu:
     "C'était facile":
       player "Mais au moins, c'était facile de choisir !"
@@ -1144,6 +1161,9 @@ label jour2:
   jump jour2_cuisine
 
 label jour2_cuisine:
+
+  play music jour fadein 3.0
+
   scene salon
   with dissolve
 
@@ -1216,6 +1236,10 @@ label jour2_classe:
     "Je n'y crois pas":
       player "(Je ne sais pas si je peux vraiment y croire...)"
 
+
+  show screen show_char1(teacher_annoyed, 1.0, 1.0, zoom_teacher)
+  with dissolve
+
   teacher "[nom] ! Qu'est-ce que tu as ce matin ?? Ça fait 3 fois que je te pose une question et tu ne fais que regarder dans le vide !"
 
   show screen show_char(im.Flip(boy_flustered, True), 0.0, 1.0, zoom_boy)
@@ -1257,7 +1281,7 @@ label jour2_midi:
   best_friend "Je vois ça, quelque chose te tracasse ? Un problème à la maison ? Ou juste les examens ?"
 
   player "(Je ne peux pas lui parler de mon rêve, elle ne va jamais comprendre...)"
-  player "(Déjà qu'hier, je lui ai dit que les rêves ne sont pas réels, elle va me prendre pour un fou.)"
+  player "(Déjà qu'hier, je lui ai dit que les rêves n'étaient pas réels, elle va me prendre pour un fou.)"
 
   show screen show_char(boy_flustered, 1.0, 1.0, zoom_boy)
   with dissolve
@@ -1487,8 +1511,8 @@ label jour2_fin:
     mere "C'est bien mon chéri, tu deviens vraiment mature."
   show screen show_char1(boy, 1.0, 1.0, zoom_boy)
   with dissolve
-  "..."
-  "..."
+  player "..."
+  mere "..."
   player "J'ai mal dormi hier soir, je vais aller me coucher tôt pour rattraper ça."
   mere "D'accord, chou."
   mere "Bonne nuit et fait de beaux rêves !"
@@ -1499,6 +1523,14 @@ label jour2_fin:
 
 
 label nuit2:
+
+  scene black_background
+  with dissolve
+
+  ""
+
+  play music nuit fadeout 1.0 fadein 1.0
+
   scene universe
   with dissolve
 
@@ -1655,7 +1687,7 @@ label nuit2:
   scene EMS_devanture
   with dissolve
 
-  narrateur "Jiyu claque des doigts et tu l'auras compris, j'espère, vous vous retrouvez devant une maison de retraite."
+  narrateur "Jiyu claque des doigts et tu l'auras compris, vous vous retrouvez devant une maison de retraite."
 
   show screen show_char(im.Flip(game_master_2, True), 0.0, 1.0, 1.0)
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
@@ -1753,7 +1785,12 @@ label nuit2:
   show screen show_char1(boy_confused, 1.0, 1.0, zoom_boy)
   with dissolve
 
-  narrateur "Ton téléphone sonne."
+  play sound "audio/sonnerie tel.ogg" loop
+
+  ""
+  #narrateur "Ton téléphone sonne."
+
+  stop sound
 
   player "Allô ?"
 
@@ -1960,14 +1997,17 @@ label nuit2_non_somni:
 
 
 label jour3:
+
+  stop music
+
   scene room_hero_night
   with dissolve
-  narrateur "Tu te retrouve tout à coup dans ton lit."
   show screen show_char(im.Flip(boy_shocked, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "HAAAAAA !!!"
 
+  narrateur "Tu te retrouve tout à coup dans ton lit."
   narrateur "Il te faut un moment pour te rappeler qui tu es et où tu te trouves."
 
   player "*Halète* J'en peux plus ! Si ça continue, je vais devenir dingue !"
@@ -1984,7 +2024,9 @@ label jour3:
 
   mere "Fait vite, c'est bientôt l'heure de partir !"
 
+  play sound "audio/soupir.mp3"
   player "*Soupir* (Il faut vraiment que j'en parle à quelqu'un, mais ma mère va encore me dire que c'est juste le stress des examens et que je dois manger mieux...)"
+  stop sound
 
   player "(Alors qui ? Emma ?)"
 
@@ -2000,6 +2042,9 @@ label jour3:
   narrateur"Tu décides de ne rien dire à ta mère. Emma est ta meilleure amie, si quelqu'un peut te comprendre, c'est bien elle !"
 
 label jour3_ecole:
+
+  play music jour fadein 3.0
+
   scene ecole_exterieur
   with dissolve
 
@@ -2026,9 +2071,11 @@ label jour3_ecole:
   player  "(Courage ! Je vais lui envoyer un message pour se retrouver après les cours.)"
 
   player "Hum... "
-  player "'Coucou ! Est-ce que tu as du temps cet aprem pour que je te parle d'un truc ??'"
-  player "'Ce serait cool si tu pouvais me retrouver après les cours. J'ai besoin de toi !'"
+  player "\"Coucou ! Est-ce que tu as du temps cet aprem pour que je te parle d'un truc ??\""
+  player "\"Ce serait cool si tu pouvais me retrouver après les cours. J'ai besoin de toi !\""
 
+
+  play sound "audio/envoyé.ogg"
   player "Oui, autant faire simple. Envoyer !"
 
   player "Il reste plus qu'à attendre une réponse..."
@@ -2071,14 +2118,19 @@ label jour3_ecole:
   hide screen show_char1
   with dissolve
 
+  play audio "audio/vibreur.mp3"
+  play audio "audio/message.ogg"
+  ""
 
-  narrateur "Tu sens ton téléphone vibrer."
+  #narrateur "Tu sens ton téléphone vibrer."
 
   show screen show_char(im.Flip(boy, True), 0.0, 1.0, zoom_boy)
   with dissolve
 
   player "(Ah c'est déjà la réponse d'Emma !)"
-  player  "'Oui, pas de problème ! Retrouve-moi à la bibliothèque.'"
+  stop audio
+
+  player  "\"Oui, pas de problème ! Retrouve-moi à la bibliothèque.\""
 
   show screen show_char1(teacherP, 1.0, 1.0, zoom_teacher)
   with dissolve
@@ -2119,7 +2171,16 @@ label jour3_bibliotheque:
 
   best_friend "Quoi ?? Attends, je comprends pas. Explique-moi tout depuis le début !"
 
+  call hide_chars from _call_hide_chars_6
+  scene black_background
+  with dissolve
+
   narrateur "Après de longues explications détaillées..."
+
+  scene bibliotheque
+  show screen show_char(best_friend_neutral, 0.0, 3.0, zoom_best_friend)
+  show screen show_char1(boy, 1.0, 1.0, zoom_boy)
+  with dissolve
 
   best_friend "..."
 
@@ -2435,12 +2496,21 @@ label jour3_soir_bibliotheque:
   with dissolve
 
   best_friend "A toi, [nom]. Quand tu es prêt, sonne la cloche et dis les paroles rituelles."
+
+  stop music fadeout 2.0
+
+  ""
+
+  play sound "audio/gong.ogg"
   "Ding..."
   "..."
+  play sound "audio/gong.ogg"
   "Ding..."
   "..."
+  play sound "audio/gong.ogg"
   "Ding..."
   "..."
+  stop sound
 
   player "Kami-sama, réponds à ma prière et joins-toi à moi pour me libérer du poids de mes pêchés."
 
@@ -2460,6 +2530,8 @@ label jour3_soir_bibliotheque:
   call hide_chars from _call_hide_chars_46
 
 label jour3_soir_maison:
+
+  play music jour fadein 3.0
   scene room_hero_night
   with dissolve
 
@@ -2497,6 +2569,9 @@ label jour3_soir_maison:
 
 
 label nuit3:
+
+  play music nuit fadeout 1.0 fadein 1.0
+
   scene universe
   with dissolve
 
@@ -2544,6 +2619,9 @@ label nuit3:
       show screen show_char2(boy_nervous, 0.5, 1.0, zoom_boy)
       with dissolve
       player "Euh, c’est quoi déjà vos idées ?"
+
+      play music "audio/Bird_Food.mp3"
+
       gml "Mais tu te fous de nous ??!!"
       gmu "On s’est fait chier à tout t’expliquer et toi t’en as rien à foutre."
       gml "Frangin, tu sais vraiment pas choisir les bonnes personnes. Je vais en chercher un autre avec un minimum d’intellect."
@@ -2786,18 +2864,19 @@ label gameover:
   with dissolve
 
   narrateur "Ce n'était vraiment pas la bonne chose à dire !"
-  narrateur "Tu as fait fort pour avoir mal répondu à toutes les questions."
-  narrateur "Ou alors tu as un morale très spécifique !"
-  narrateur "Dans tous les cas..."
+  narrateur "Tu as fait fort pour n'avoir rien compris à ce qu'ils t'ont dit."
+  narrateur "En tout cas..."
 
   scene gameover
   with dissolve
 
-  "GAMEOVER !"
+  "Tu es mort !!!!"
 
   return
 
 label nuit3_suite:
+
+  play music "audio/Bird_Food.mp3" fadeout 3.0 fadein 3.0
 
   call hide_chars from _call_hide_chars_68
 
@@ -2851,8 +2930,11 @@ label nuit3_suite:
 
   gmu "Allez, tuons-le !"
 
+  stop music
+
   call hide_chars from _call_hide_chars_69
 
+  play sound "audio/whoosh.ogg"
   scene black_background
   with dissolve
 
@@ -2895,6 +2977,7 @@ label nuit3_suite:
 
   kami "Bon, maintenant on va pouvoir parler tranquillement."
 
+  play music "audio/gurdonark_-_Memories_of_Better_Times.mp3" fadein 3.0
 
   hide screen show_char2
   hide screen show_char3
@@ -2991,7 +3074,7 @@ label nuit3_suite_2:
 
   kami "Toutefois le livre de Shiawase couvrait uniquement l’utilitarisme. Il existe plusieurs autres courants."
 
-  kami "Jiyu lui est tombé sur un livre qui développe la théorie libertariste."
+  kami "Jiyu, elle, est tombée sur un livre qui développe la théorie libertariste."
   kami "Le libertarisme ou libertarianisme, est un courant éthique qui prône une société où l’Etat n’aurait comme unique rôle de respecter les droits de l’Homme ainsi que le droit de propriété."
   kami "Selon les libertaristes, du moment que nos actions n’atteignent en rien la liberté des autres alors on a le droit de les faire."
   kami "Par conséquent ils considèrent l’impôt comme immoral puisqu’il enfreint notre liberté de disposer de notre revenu. Lors de ton second rêve :"
@@ -3095,20 +3178,23 @@ label nuit3_suite_4:
     scene credits
     with dissolve
 
-    "Réalisé par : "
+    "Ce jeu a été réalisé par : "
     "Antoine"
     "Colin"
     "Eva"
     "Valton"
     "Ylies"
 
-    "Pour les visuels, les crédits sont sur la page https://schizoa.itch.io/ethiquest"
+    "Pour les visuels et les sons, les crédits sont sur la page https://schizoa.itch.io/ethiquest"
 
     "Ce jeu a été développé dans le cadre du cours de SHS 'Le jeu vidéo : média natif du numérique' donné à l'EPFL par Yannick Rochat et Selim Krichane"
+    "Nous espérons sincèrement qu'il vous a plu."
     "Merci d'avoir joué à notre jeu !"
 
 
 label post_credits :
+
+    stop music fadeout 2.0
 
     scene black_background
     with dissolve
@@ -3116,6 +3202,8 @@ label post_credits :
     ""
 
     player "Je suis où ?"
+
+    play music jour fadein 3.0
 
     scene room_hero
     with dissolve
@@ -3135,16 +3223,25 @@ label post_credits :
     show screen show_char1(boy_nervous, 1.0, 1.0, zoom_boy)
     with dissolve
 
+    play sound "audio/soupir.mp3"
     player "*Soupir*..."
+    stop sound
 
     show screen show_char1(boy, 1.0, 1.0, zoom_boy)
     with dissolve
 
     player "En tout cas, je suis pas près de les oublier."
 
-    narrateur "Ton téléphone vibre."
+    play audio "audio/message.ogg"
+    play audio "audio/vibreur.mp3"
+
+    #narrateur "Ton téléphone vibre."
+
+    ""
 
     player "Tiens, un message !?"
+
+    stop audio
 
     hide screen show_char1
 
@@ -3155,8 +3252,7 @@ label post_credits :
 
     player "C'est Kamimusubi !!!!"
 
-    scene black_background
-    with dissolve
+    play sound "audio/envoyé.ogg"
 
     scene phone2
     with dissolve
@@ -3164,6 +3260,11 @@ label post_credits :
     "En effet ! ;)"
 
     player "C'est sur que c'est plus efficace que les cauchemars."
+
+    stop sound
+
+    play audio "audio/message.ogg"
+    play audio "audio/vibreur.mp3"
 
     scene phone3
     with dissolve
@@ -3174,20 +3275,40 @@ label post_credits :
 
     if utilitarisme == 0 and libertarianisme == 1 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_0_1
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_0_1
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_0_1
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_0_1
         with dissolve
@@ -3198,20 +3319,40 @@ label post_credits :
 
     elif utilitarisme == 0 and libertarianisme == 2 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_0_2
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] points en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_0_2
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_0_2
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_0_2
         with dissolve
@@ -3222,20 +3363,40 @@ label post_credits :
 
     elif utilitarisme == 0 and libertarianisme == 3 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_0_3
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] points en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_0_3
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_0_3
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_0_3
         with dissolve
@@ -3246,20 +3407,40 @@ label post_credits :
 
     elif utilitarisme == 0 and libertarianisme == 4 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_0_4
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] points en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_0_4
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_0_4
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_0_4
         with dissolve
@@ -3270,20 +3451,40 @@ label post_credits :
 
     elif utilitarisme == 1 and libertarianisme == 0 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_1_0
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_1_0
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_1_0
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_1_0
         with dissolve
@@ -3294,20 +3495,40 @@ label post_credits :
 
     elif utilitarisme == 1 and libertarianisme == 1 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_1_1
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_1_1
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_1_1
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_1_1
         with dissolve
@@ -3318,20 +3539,40 @@ label post_credits :
 
     elif utilitarisme == 1 and libertarianisme == 2 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_1_2
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] points en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_1_2
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_1_2
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_1_2
         with dissolve
@@ -3342,20 +3583,40 @@ label post_credits :
 
     elif utilitarisme == 1 and libertarianisme == 3 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_1_3
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] points en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_1_3
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_1_3
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_1_3
         with dissolve
@@ -3366,20 +3627,40 @@ label post_credits :
 
     elif utilitarisme == 1 and libertarianisme == 4 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_1_4
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] point en utilitarisme et [libertarianisme] points en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_1_4
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_1_4
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_1_4
         with dissolve
@@ -3390,20 +3671,40 @@ label post_credits :
 
     elif utilitarisme == 2 and libertarianisme == 0 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_2_0
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_2_0
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_2_0
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_2_0
         with dissolve
@@ -3414,20 +3715,40 @@ label post_credits :
 
     elif utilitarisme == 2 and libertarianisme == 1 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_2_1
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_2_1
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_2_1
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_2_1
         with dissolve
@@ -3438,20 +3759,40 @@ label post_credits :
 
     elif utilitarisme == 2 and libertarianisme == 2 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_2_2
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_2_2
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_2_2
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_2_2
         with dissolve
@@ -3462,20 +3803,40 @@ label post_credits :
 
     elif utilitarisme == 2 and libertarianisme == 3 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_2_3
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_2_3
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_2_3
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_2_3
         with dissolve
@@ -3486,20 +3847,40 @@ label post_credits :
 
     elif utilitarisme == 2 and libertarianisme == 4 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_2_4
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_2_4
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_2_4
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_2_4
         with dissolve
@@ -3510,20 +3891,40 @@ label post_credits :
 
     elif utilitarisme == 3 and libertarianisme == 0 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_3_0
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_3_0
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_3_0
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_3_0
         with dissolve
@@ -3534,20 +3935,40 @@ label post_credits :
 
     elif utilitarisme == 3 and libertarianisme == 1 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_3_1
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_3_1
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_3_1
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_3_1
         with dissolve
@@ -3558,20 +3979,40 @@ label post_credits :
 
     elif utilitarisme == 3 and libertarianisme == 2 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_3_2
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_3_2
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_3_2
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_3_2
         with dissolve
@@ -3582,20 +4023,40 @@ label post_credits :
 
     elif utilitarisme == 3 and libertarianisme == 3 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_3_3
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_3_3
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_3_3
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_3_3
         with dissolve
@@ -3606,20 +4067,40 @@ label post_credits :
 
     elif utilitarisme == 3 and libertarianisme == 4 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_3_4
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_3_4
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_3_4
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_3_4
         with dissolve
@@ -3630,20 +4111,40 @@ label post_credits :
 
     elif utilitarisme == 4 and libertarianisme == 0 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_4_0
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_4_0
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_4_0
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_4_0
         with dissolve
@@ -3654,20 +4155,40 @@ label post_credits :
 
     elif utilitarisme == 4 and libertarianisme == 1 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_4_1
         with dissolve
 
-        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
+        "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] point en libertarisme."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone5_4_1
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_4_1
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_4_1
         with dissolve
@@ -3678,20 +4199,40 @@ label post_credits :
 
     elif utilitarisme == 4 and libertarianisme == 2 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_4_2
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_4_2
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_4_2
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_4_2
         with dissolve
@@ -3702,20 +4243,40 @@ label post_credits :
 
     elif utilitarisme == 4 and libertarianisme == 3 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_4_3
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_4_3
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_4_3
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_4_3
         with dissolve
@@ -3726,20 +4287,40 @@ label post_credits :
 
     elif utilitarisme == 4 and libertarianisme == 4 :
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone4_4_4
         with dissolve
 
         "Au final, tu as obtenu [utilitarisme] points en utilitarisme et [libertarianisme] points en libertarisme."
 
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
+
         scene phone5_4_4
         with dissolve
 
-        "Si jamais tu veux faire d'autres choix et en observer les consequences, n'hésite pas à me contacter."
+        "Si jamais tu veux faire d'autres choix et en observer les conséquences, n'hésite pas à me contacter."
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone6_4_4
         with dissolve
 
         "Je te laisse. J'ai encore perdu de vue Jiyu et Shiawase. A la prochaine ! *dragon*"
+
+        stop audio
+
+        play audio "audio/message.ogg"
+        play audio "audio/vibreur.mp3"
 
         scene phone7_4_4
         with dissolve
@@ -3748,6 +4329,8 @@ label post_credits :
 
         player "..."
 
+
+    stop audio
 
     scene room_hero
     with dissolve
@@ -3772,6 +4355,8 @@ label post_credits :
     with dissolve
 
     ""
+
+    stop music fadeout 2.0
 
     return
 
